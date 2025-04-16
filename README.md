@@ -19,17 +19,15 @@ puedes intalara AstroW de las siguientes maneras:
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manuelmv15/AstroW/css/style.css">
 ```
-
-
-### Opción 3: Vía CDN
-
-```html
-<link rel="stylesheet" href="https://cdn.tuservidor.com/astrocss/main.css">
+### Opción 3: Vía Statically CDN:
+``` html 
+<link rel="stylesheet" href="https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css">
 ```
 ## Uso
 Cómo usar el proyecto.
 
 ## Contribuciones
+Jeferson Alexis De La Cruz Ventura - CV23  [efersonDeLaCruz ](https://github.com/JefersonDeLaCruz)
 
 Carlos manuel melendez villatoro - MV23036 [manuelmv15](https://github.com/manuelmv15)
 
@@ -44,7 +42,7 @@ Licencia del proyecto.
   - [Inicio rapido](#inicio-rapido)
     - [Opción 1: Clonar el repositorio](#opción-1-clonar-el-repositorio)
     - [Opción 2: Vía jsDelivr](#opción-2-vía-jsdelivr)
-    - [Opción 3: Vía CDN](#opción-3-vía-cdn)
+    - [Opción 3: Vía Statically CDN:](#opción-3-vía-statically-cdn)
   - [Uso](#uso)
   - [Contribuciones](#contribuciones)
   - [Licencia](#licencia)
