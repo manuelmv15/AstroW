@@ -33,17 +33,3 @@ Carlos manuel melendez villatoro - MV23036 [manuelmv15](https://github.com/manue
 
 ## Licencia
 Licencia del proyecto.
-
-
-
-## 📚 Tabla de Contenido
-
-- [AstroW 0.01](#astrow-001)
-  - [Inicio rapido](#inicio-rapido)
-    - [Opción 1: Clonar el repositorio](#opción-1-clonar-el-repositorio)
-    - [Opción 2: Vía jsDelivr](#opción-2-vía-jsdelivr)
-    - [Opción 3: Vía Statically CDN:](#opción-3-vía-statically-cdn)
-  - [Uso](#uso)
-  - [Contribuciones](#contribuciones)
-  - [Licencia](#licencia)
-  - [📚 Tabla de Contenido](#-tabla-de-contenido)
