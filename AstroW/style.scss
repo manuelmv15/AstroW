@@ -1,0 +1,13 @@
+//el orden de importacion es importante
+
+//reset css y estilos base
+@use './base/_base.scss' as *;
+
+//variables y mixins(funciones)
+
+@use './utilidades/_utilidades.scss' as *;
+
+
+//componentes
+@use './componentes/_componentes.scss' as *;
+

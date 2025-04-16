@@ -1,0 +1,27 @@
+
+
+@use '../utilidades/variables' as util;
+
+
+
+.card{
+
+    display: block;
+    padding: util.$base-padding;
+    border: util.$base-border-thickness solid util.$info;
+    box-shadow: util.$base-box-shadow;
+
+    .card-title{
+        font-size: util.$base-font-size;
+        padding-bottom: util.$base-padding;
+        font-weight: bold;
+    }
+
+    .card-body{
+        font-size: util.$base-font-size;
+
+        a{
+            text-decoration: underline;
+        }
+    }
+}
