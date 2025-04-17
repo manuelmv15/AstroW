@@ -11,3 +11,7 @@
 //componentes
 @use './componentes/_componentes.scss' as *;
 
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'padding' as *;
+

@@ -1,0 +1,20 @@
+
+// Variables de padding
+$padding-desktop: 3%;
+$padding-tablet: 2%;
+$padding-mobile: 1%;
+
+@use 'variables' as *;
+@use 'mixins' as *; // esto hace que puedas usar @include respond-to
+
+%p-0 {
+  padding: $padding-desktop;
+
+  @include respond-to(tablet) {
+    padding: $padding-tablet;
+  }
+
+  @include respond-to(mobile) {
+    padding: $padding-mobile;
+  }
+}
