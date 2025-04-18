@@ -5,21 +5,11 @@
 
 @forward 'variables';
 
+@forward 'grid';
 
+@forward 'colors';
 
-
-//espaciados
-// @forward 'espaciado';
-
-
-
-//@forward 'containers';
-
-//@forward 'grid';
-
-// @forward 'colors';
-
-// @forward 'functions';
+@forward 'functions';
 
 
 $utilities: (
