@@ -11,3 +11,15 @@
 //componentes
 @use './componentes/_componentes.scss' as *;
 
+
+body{
+
+    // background-color: $theme-color-red;
+    font-family: $alt-font;
+
+}
+
+.theme-font{
+
+    font-family: $base-font;
+}
