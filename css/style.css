@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/astro-world");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,11 +54,3653 @@ table {
   border-spacing: 0;
 }
 
-/* aqui se definira todo lo realacionado con el espaciado de elementos ya sea padding, margins */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: row wrap;
+}
+
+.gap-0 > * {
+  padding: 0;
+}
+
+.gap-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.gap-1 > * {
+  padding: 10px;
+}
+
+.gap-1 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.gap-2 > * {
+  padding: 20px;
+}
+
+.gap-2 {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.gap-3 > * {
+  padding: 30px;
+}
+
+.gap-3 {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+@media (min-width: 0) {
+  .col-1-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  .col-1-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 720px) {
+  .col-1-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .col-1-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-1-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-4-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .col-5-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .col-6-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-7-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .col-8-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .col-9-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-10-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .col-11-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .col-12-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+.g-0 {
+  gap: 0;
+}
+
+.g-1 {
+  gap: 0.25rem;
+}
+
+.g-2 {
+  gap: 0.5rem;
+}
+
+.g-3 {
+  gap: 0.75rem;
+}
+
+.g-4 {
+  gap: 1rem;
+}
+
+.g-5 {
+  gap: 1.5rem;
+}
+
+.g-6 {
+  gap: 3rem;
+}
+
+.g-auto {
+  gap: auto;
+}
+
+.text-orange {
+  color: #f4a529;
+}
+
+.bg-color-orange {
+  background-color: #f4a529;
+}
+
+.text-hover-orange:hover {
+  color: #f4a529;
+}
+
+.text-orange-light-1 {
+  color: rgb(245.1, 174, 62.4);
+}
+
+.bg-color-orange-light-1 {
+  background-color: rgb(245.1, 174, 62.4);
+}
+
+.text-hover-orange-light-1:hover {
+  color: rgb(245.1, 174, 62.4);
+}
+
+.text-orange-light-2 {
+  color: rgb(246.2, 183, 83.8);
+}
+
+.bg-color-orange-light-2 {
+  background-color: rgb(246.2, 183, 83.8);
+}
+
+.text-hover-orange-light-2:hover {
+  color: rgb(246.2, 183, 83.8);
+}
+
+.text-orange-light-3 {
+  color: rgb(247.3, 192, 105.2);
+}
+
+.bg-color-orange-light-3 {
+  background-color: rgb(247.3, 192, 105.2);
+}
+
+.text-hover-orange-light-3:hover {
+  color: rgb(247.3, 192, 105.2);
+}
+
+.text-orange-light-4 {
+  color: rgb(248.4, 201, 126.6);
+}
+
+.bg-color-orange-light-4 {
+  background-color: rgb(248.4, 201, 126.6);
+}
+
+.text-hover-orange-light-4:hover {
+  color: rgb(248.4, 201, 126.6);
+}
+
+.text-orange-light-5 {
+  color: rgb(249.5, 210, 148);
+}
+
+.bg-color-orange-light-5 {
+  background-color: rgb(249.5, 210, 148);
+}
+
+.text-hover-orange-light-5:hover {
+  color: rgb(249.5, 210, 148);
+}
+
+.text-orange-light-6 {
+  color: rgb(250.6, 219, 169.4);
+}
+
+.bg-color-orange-light-6 {
+  background-color: rgb(250.6, 219, 169.4);
+}
+
+.text-hover-orange-light-6:hover {
+  color: rgb(250.6, 219, 169.4);
+}
+
+.text-orange-light-7 {
+  color: rgb(251.7, 228, 190.8);
+}
+
+.bg-color-orange-light-7 {
+  background-color: rgb(251.7, 228, 190.8);
+}
+
+.text-hover-orange-light-7:hover {
+  color: rgb(251.7, 228, 190.8);
+}
+
+.text-orange-light-8 {
+  color: rgb(252.8, 237, 212.2);
+}
+
+.bg-color-orange-light-8 {
+  background-color: rgb(252.8, 237, 212.2);
+}
+
+.text-hover-orange-light-8:hover {
+  color: rgb(252.8, 237, 212.2);
+}
+
+.text-orange-light-9 {
+  color: rgb(253.9, 246, 233.6);
+}
+
+.bg-color-orange-light-9 {
+  background-color: rgb(253.9, 246, 233.6);
+}
+
+.text-hover-orange-light-9:hover {
+  color: rgb(253.9, 246, 233.6);
+}
+
+.text-orange-dark-1 {
+  color: rgb(219.6, 148.5, 36.9);
+}
+
+.bg-color-orange-dark-1 {
+  background-color: rgb(219.6, 148.5, 36.9);
+}
+
+.text-hover-orange-dark-1:hover {
+  color: rgb(219.6, 148.5, 36.9);
+}
+
+.text-orange-dark-2 {
+  color: rgb(195.2, 132, 32.8);
+}
+
+.bg-color-orange-dark-2 {
+  background-color: rgb(195.2, 132, 32.8);
+}
+
+.text-hover-orange-dark-2:hover {
+  color: rgb(195.2, 132, 32.8);
+}
+
+.text-orange-dark-3 {
+  color: rgb(170.8, 115.5, 28.7);
+}
+
+.bg-color-orange-dark-3 {
+  background-color: rgb(170.8, 115.5, 28.7);
+}
+
+.text-hover-orange-dark-3:hover {
+  color: rgb(170.8, 115.5, 28.7);
+}
+
+.text-orange-dark-4 {
+  color: rgb(146.4, 99, 24.6);
+}
+
+.bg-color-orange-dark-4 {
+  background-color: rgb(146.4, 99, 24.6);
+}
+
+.text-hover-orange-dark-4:hover {
+  color: rgb(146.4, 99, 24.6);
+}
+
+.text-orange-dark-5 {
+  color: rgb(122, 82.5, 20.5);
+}
+
+.bg-color-orange-dark-5 {
+  background-color: rgb(122, 82.5, 20.5);
+}
+
+.text-hover-orange-dark-5:hover {
+  color: rgb(122, 82.5, 20.5);
+}
+
+.text-orange-dark-6 {
+  color: rgb(97.6, 66, 16.4);
+}
+
+.bg-color-orange-dark-6 {
+  background-color: rgb(97.6, 66, 16.4);
+}
+
+.text-hover-orange-dark-6:hover {
+  color: rgb(97.6, 66, 16.4);
+}
+
+.text-orange-dark-7 {
+  color: rgb(73.2, 49.5, 12.3);
+}
+
+.bg-color-orange-dark-7 {
+  background-color: rgb(73.2, 49.5, 12.3);
+}
+
+.text-hover-orange-dark-7:hover {
+  color: rgb(73.2, 49.5, 12.3);
+}
+
+.text-orange-dark-8 {
+  color: rgb(48.8, 33, 8.2);
+}
+
+.bg-color-orange-dark-8 {
+  background-color: rgb(48.8, 33, 8.2);
+}
+
+.text-hover-orange-dark-8:hover {
+  color: rgb(48.8, 33, 8.2);
+}
+
+.text-orange-dark-9 {
+  color: rgb(24.4, 16.5, 4.1);
+}
+
+.bg-color-orange-dark-9 {
+  background-color: rgb(24.4, 16.5, 4.1);
+}
+
+.text-hover-orange-dark-9:hover {
+  color: rgb(24.4, 16.5, 4.1);
+}
+
+.text-yellow {
+  color: #fad860;
+}
+
+.bg-color-yellow {
+  background-color: #fad860;
+}
+
+.text-hover-yellow:hover {
+  color: #fad860;
+}
+
+.text-yellow-light-1 {
+  color: rgb(250.5, 219.9, 111.9);
+}
+
+.bg-color-yellow-light-1 {
+  background-color: rgb(250.5, 219.9, 111.9);
+}
+
+.text-hover-yellow-light-1:hover {
+  color: rgb(250.5, 219.9, 111.9);
+}
+
+.text-yellow-light-2 {
+  color: rgb(251, 223.8, 127.8);
+}
+
+.bg-color-yellow-light-2 {
+  background-color: rgb(251, 223.8, 127.8);
+}
+
+.text-hover-yellow-light-2:hover {
+  color: rgb(251, 223.8, 127.8);
+}
+
+.text-yellow-light-3 {
+  color: rgb(251.5, 227.7, 143.7);
+}
+
+.bg-color-yellow-light-3 {
+  background-color: rgb(251.5, 227.7, 143.7);
+}
+
+.text-hover-yellow-light-3:hover {
+  color: rgb(251.5, 227.7, 143.7);
+}
+
+.text-yellow-light-4 {
+  color: rgb(252, 231.6, 159.6);
+}
+
+.bg-color-yellow-light-4 {
+  background-color: rgb(252, 231.6, 159.6);
+}
+
+.text-hover-yellow-light-4:hover {
+  color: rgb(252, 231.6, 159.6);
+}
+
+.text-yellow-light-5 {
+  color: rgb(252.5, 235.5, 175.5);
+}
+
+.bg-color-yellow-light-5 {
+  background-color: rgb(252.5, 235.5, 175.5);
+}
+
+.text-hover-yellow-light-5:hover {
+  color: rgb(252.5, 235.5, 175.5);
+}
+
+.text-yellow-light-6 {
+  color: rgb(253, 239.4, 191.4);
+}
+
+.bg-color-yellow-light-6 {
+  background-color: rgb(253, 239.4, 191.4);
+}
+
+.text-hover-yellow-light-6:hover {
+  color: rgb(253, 239.4, 191.4);
+}
+
+.text-yellow-light-7 {
+  color: rgb(253.5, 243.3, 207.3);
+}
+
+.bg-color-yellow-light-7 {
+  background-color: rgb(253.5, 243.3, 207.3);
+}
+
+.text-hover-yellow-light-7:hover {
+  color: rgb(253.5, 243.3, 207.3);
+}
+
+.text-yellow-light-8 {
+  color: rgb(254, 247.2, 223.2);
+}
+
+.bg-color-yellow-light-8 {
+  background-color: rgb(254, 247.2, 223.2);
+}
+
+.text-hover-yellow-light-8:hover {
+  color: rgb(254, 247.2, 223.2);
+}
+
+.text-yellow-light-9 {
+  color: rgb(254.5, 251.1, 239.1);
+}
+
+.bg-color-yellow-light-9 {
+  background-color: rgb(254.5, 251.1, 239.1);
+}
+
+.text-hover-yellow-light-9:hover {
+  color: rgb(254.5, 251.1, 239.1);
+}
+
+.text-yellow-dark-1 {
+  color: rgb(225, 194.4, 86.4);
+}
+
+.bg-color-yellow-dark-1 {
+  background-color: rgb(225, 194.4, 86.4);
+}
+
+.text-hover-yellow-dark-1:hover {
+  color: rgb(225, 194.4, 86.4);
+}
+
+.text-yellow-dark-2 {
+  color: rgb(200, 172.8, 76.8);
+}
+
+.bg-color-yellow-dark-2 {
+  background-color: rgb(200, 172.8, 76.8);
+}
+
+.text-hover-yellow-dark-2:hover {
+  color: rgb(200, 172.8, 76.8);
+}
+
+.text-yellow-dark-3 {
+  color: rgb(175, 151.2, 67.2);
+}
+
+.bg-color-yellow-dark-3 {
+  background-color: rgb(175, 151.2, 67.2);
+}
+
+.text-hover-yellow-dark-3:hover {
+  color: rgb(175, 151.2, 67.2);
+}
+
+.text-yellow-dark-4 {
+  color: rgb(150, 129.6, 57.6);
+}
+
+.bg-color-yellow-dark-4 {
+  background-color: rgb(150, 129.6, 57.6);
+}
+
+.text-hover-yellow-dark-4:hover {
+  color: rgb(150, 129.6, 57.6);
+}
+
+.text-yellow-dark-5 {
+  color: #7d6c30;
+}
+
+.bg-color-yellow-dark-5 {
+  background-color: #7d6c30;
+}
+
+.text-hover-yellow-dark-5:hover {
+  color: #7d6c30;
+}
+
+.text-yellow-dark-6 {
+  color: rgb(100, 86.4, 38.4);
+}
+
+.bg-color-yellow-dark-6 {
+  background-color: rgb(100, 86.4, 38.4);
+}
+
+.text-hover-yellow-dark-6:hover {
+  color: rgb(100, 86.4, 38.4);
+}
+
+.text-yellow-dark-7 {
+  color: rgb(75, 64.8, 28.8);
+}
+
+.bg-color-yellow-dark-7 {
+  background-color: rgb(75, 64.8, 28.8);
+}
+
+.text-hover-yellow-dark-7:hover {
+  color: rgb(75, 64.8, 28.8);
+}
+
+.text-yellow-dark-8 {
+  color: rgb(50, 43.2, 19.2);
+}
+
+.bg-color-yellow-dark-8 {
+  background-color: rgb(50, 43.2, 19.2);
+}
+
+.text-hover-yellow-dark-8:hover {
+  color: rgb(50, 43.2, 19.2);
+}
+
+.text-yellow-dark-9 {
+  color: rgb(25, 21.6, 9.6);
+}
+
+.bg-color-yellow-dark-9 {
+  background-color: rgb(25, 21.6, 9.6);
+}
+
+.text-hover-yellow-dark-9:hover {
+  color: rgb(25, 21.6, 9.6);
+}
+
+.text-red {
+  color: #790707;
+}
+
+.bg-color-red {
+  background-color: #790707;
+}
+
+.text-hover-red:hover {
+  color: #790707;
+}
+
+.text-red-light-1 {
+  color: rgb(134.4, 31.8, 31.8);
+}
+
+.bg-color-red-light-1 {
+  background-color: rgb(134.4, 31.8, 31.8);
+}
+
+.text-hover-red-light-1:hover {
+  color: rgb(134.4, 31.8, 31.8);
+}
+
+.text-red-light-2 {
+  color: rgb(147.8, 56.6, 56.6);
+}
+
+.bg-color-red-light-2 {
+  background-color: rgb(147.8, 56.6, 56.6);
+}
+
+.text-hover-red-light-2:hover {
+  color: rgb(147.8, 56.6, 56.6);
+}
+
+.text-red-light-3 {
+  color: rgb(161.2, 81.4, 81.4);
+}
+
+.bg-color-red-light-3 {
+  background-color: rgb(161.2, 81.4, 81.4);
+}
+
+.text-hover-red-light-3:hover {
+  color: rgb(161.2, 81.4, 81.4);
+}
+
+.text-red-light-4 {
+  color: rgb(174.6, 106.2, 106.2);
+}
+
+.bg-color-red-light-4 {
+  background-color: rgb(174.6, 106.2, 106.2);
+}
+
+.text-hover-red-light-4:hover {
+  color: rgb(174.6, 106.2, 106.2);
+}
+
+.text-red-light-5 {
+  color: #bc8383;
+}
+
+.bg-color-red-light-5 {
+  background-color: #bc8383;
+}
+
+.text-hover-red-light-5:hover {
+  color: #bc8383;
+}
+
+.text-red-light-6 {
+  color: rgb(201.4, 155.8, 155.8);
+}
+
+.bg-color-red-light-6 {
+  background-color: rgb(201.4, 155.8, 155.8);
+}
+
+.text-hover-red-light-6:hover {
+  color: rgb(201.4, 155.8, 155.8);
+}
+
+.text-red-light-7 {
+  color: rgb(214.8, 180.6, 180.6);
+}
+
+.bg-color-red-light-7 {
+  background-color: rgb(214.8, 180.6, 180.6);
+}
+
+.text-hover-red-light-7:hover {
+  color: rgb(214.8, 180.6, 180.6);
+}
+
+.text-red-light-8 {
+  color: rgb(228.2, 205.4, 205.4);
+}
+
+.bg-color-red-light-8 {
+  background-color: rgb(228.2, 205.4, 205.4);
+}
+
+.text-hover-red-light-8:hover {
+  color: rgb(228.2, 205.4, 205.4);
+}
+
+.text-red-light-9 {
+  color: rgb(241.6, 230.2, 230.2);
+}
+
+.bg-color-red-light-9 {
+  background-color: rgb(241.6, 230.2, 230.2);
+}
+
+.text-hover-red-light-9:hover {
+  color: rgb(241.6, 230.2, 230.2);
+}
+
+.text-red-dark-1 {
+  color: rgb(108.9, 6.3, 6.3);
+}
+
+.bg-color-red-dark-1 {
+  background-color: rgb(108.9, 6.3, 6.3);
+}
+
+.text-hover-red-dark-1:hover {
+  color: rgb(108.9, 6.3, 6.3);
+}
+
+.text-red-dark-2 {
+  color: rgb(96.8, 5.6, 5.6);
+}
+
+.bg-color-red-dark-2 {
+  background-color: rgb(96.8, 5.6, 5.6);
+}
+
+.text-hover-red-dark-2:hover {
+  color: rgb(96.8, 5.6, 5.6);
+}
+
+.text-red-dark-3 {
+  color: rgb(84.7, 4.9, 4.9);
+}
+
+.bg-color-red-dark-3 {
+  background-color: rgb(84.7, 4.9, 4.9);
+}
+
+.text-hover-red-dark-3:hover {
+  color: rgb(84.7, 4.9, 4.9);
+}
+
+.text-red-dark-4 {
+  color: rgb(72.6, 4.2, 4.2);
+}
+
+.bg-color-red-dark-4 {
+  background-color: rgb(72.6, 4.2, 4.2);
+}
+
+.text-hover-red-dark-4:hover {
+  color: rgb(72.6, 4.2, 4.2);
+}
+
+.text-red-dark-5 {
+  color: rgb(60.5, 3.5, 3.5);
+}
+
+.bg-color-red-dark-5 {
+  background-color: rgb(60.5, 3.5, 3.5);
+}
+
+.text-hover-red-dark-5:hover {
+  color: rgb(60.5, 3.5, 3.5);
+}
+
+.text-red-dark-6 {
+  color: rgb(48.4, 2.8, 2.8);
+}
+
+.bg-color-red-dark-6 {
+  background-color: rgb(48.4, 2.8, 2.8);
+}
+
+.text-hover-red-dark-6:hover {
+  color: rgb(48.4, 2.8, 2.8);
+}
+
+.text-red-dark-7 {
+  color: rgb(36.3, 2.1, 2.1);
+}
+
+.bg-color-red-dark-7 {
+  background-color: rgb(36.3, 2.1, 2.1);
+}
+
+.text-hover-red-dark-7:hover {
+  color: rgb(36.3, 2.1, 2.1);
+}
+
+.text-red-dark-8 {
+  color: rgb(24.2, 1.4, 1.4);
+}
+
+.bg-color-red-dark-8 {
+  background-color: rgb(24.2, 1.4, 1.4);
+}
+
+.text-hover-red-dark-8:hover {
+  color: rgb(24.2, 1.4, 1.4);
+}
+
+.text-red-dark-9 {
+  color: rgb(12.1, 0.7, 0.7);
+}
+
+.bg-color-red-dark-9 {
+  background-color: rgb(12.1, 0.7, 0.7);
+}
+
+.text-hover-red-dark-9:hover {
+  color: rgb(12.1, 0.7, 0.7);
+}
+
+.text-pitch {
+  color: #9e6555;
+}
+
+.bg-color-pitch {
+  background-color: #9e6555;
+}
+
+.text-hover-pitch:hover {
+  color: #9e6555;
+}
+
+.text-pitch-light-1 {
+  color: rgb(167.7, 116.4, 102);
+}
+
+.bg-color-pitch-light-1 {
+  background-color: rgb(167.7, 116.4, 102);
+}
+
+.text-hover-pitch-light-1:hover {
+  color: rgb(167.7, 116.4, 102);
+}
+
+.text-pitch-light-2 {
+  color: rgb(177.4, 131.8, 119);
+}
+
+.bg-color-pitch-light-2 {
+  background-color: rgb(177.4, 131.8, 119);
+}
+
+.text-hover-pitch-light-2:hover {
+  color: rgb(177.4, 131.8, 119);
+}
+
+.text-pitch-light-3 {
+  color: rgb(187.1, 147.2, 136);
+}
+
+.bg-color-pitch-light-3 {
+  background-color: rgb(187.1, 147.2, 136);
+}
+
+.text-hover-pitch-light-3:hover {
+  color: rgb(187.1, 147.2, 136);
+}
+
+.text-pitch-light-4 {
+  color: rgb(196.8, 162.6, 153);
+}
+
+.bg-color-pitch-light-4 {
+  background-color: rgb(196.8, 162.6, 153);
+}
+
+.text-hover-pitch-light-4:hover {
+  color: rgb(196.8, 162.6, 153);
+}
+
+.text-pitch-light-5 {
+  color: rgb(206.5, 178, 170);
+}
+
+.bg-color-pitch-light-5 {
+  background-color: rgb(206.5, 178, 170);
+}
+
+.text-hover-pitch-light-5:hover {
+  color: rgb(206.5, 178, 170);
+}
+
+.text-pitch-light-6 {
+  color: rgb(216.2, 193.4, 187);
+}
+
+.bg-color-pitch-light-6 {
+  background-color: rgb(216.2, 193.4, 187);
+}
+
+.text-hover-pitch-light-6:hover {
+  color: rgb(216.2, 193.4, 187);
+}
+
+.text-pitch-light-7 {
+  color: rgb(225.9, 208.8, 204);
+}
+
+.bg-color-pitch-light-7 {
+  background-color: rgb(225.9, 208.8, 204);
+}
+
+.text-hover-pitch-light-7:hover {
+  color: rgb(225.9, 208.8, 204);
+}
+
+.text-pitch-light-8 {
+  color: rgb(235.6, 224.2, 221);
+}
+
+.bg-color-pitch-light-8 {
+  background-color: rgb(235.6, 224.2, 221);
+}
+
+.text-hover-pitch-light-8:hover {
+  color: rgb(235.6, 224.2, 221);
+}
+
+.text-pitch-light-9 {
+  color: rgb(245.3, 239.6, 238);
+}
+
+.bg-color-pitch-light-9 {
+  background-color: rgb(245.3, 239.6, 238);
+}
+
+.text-hover-pitch-light-9:hover {
+  color: rgb(245.3, 239.6, 238);
+}
+
+.text-pitch-dark-1 {
+  color: rgb(142.2, 90.9, 76.5);
+}
+
+.bg-color-pitch-dark-1 {
+  background-color: rgb(142.2, 90.9, 76.5);
+}
+
+.text-hover-pitch-dark-1:hover {
+  color: rgb(142.2, 90.9, 76.5);
+}
+
+.text-pitch-dark-2 {
+  color: rgb(126.4, 80.8, 68);
+}
+
+.bg-color-pitch-dark-2 {
+  background-color: rgb(126.4, 80.8, 68);
+}
+
+.text-hover-pitch-dark-2:hover {
+  color: rgb(126.4, 80.8, 68);
+}
+
+.text-pitch-dark-3 {
+  color: rgb(110.6, 70.7, 59.5);
+}
+
+.bg-color-pitch-dark-3 {
+  background-color: rgb(110.6, 70.7, 59.5);
+}
+
+.text-hover-pitch-dark-3:hover {
+  color: rgb(110.6, 70.7, 59.5);
+}
+
+.text-pitch-dark-4 {
+  color: rgb(94.8, 60.6, 51);
+}
+
+.bg-color-pitch-dark-4 {
+  background-color: rgb(94.8, 60.6, 51);
+}
+
+.text-hover-pitch-dark-4:hover {
+  color: rgb(94.8, 60.6, 51);
+}
+
+.text-pitch-dark-5 {
+  color: rgb(79, 50.5, 42.5);
+}
+
+.bg-color-pitch-dark-5 {
+  background-color: rgb(79, 50.5, 42.5);
+}
+
+.text-hover-pitch-dark-5:hover {
+  color: rgb(79, 50.5, 42.5);
+}
+
+.text-pitch-dark-6 {
+  color: rgb(63.2, 40.4, 34);
+}
+
+.bg-color-pitch-dark-6 {
+  background-color: rgb(63.2, 40.4, 34);
+}
+
+.text-hover-pitch-dark-6:hover {
+  color: rgb(63.2, 40.4, 34);
+}
+
+.text-pitch-dark-7 {
+  color: rgb(47.4, 30.3, 25.5);
+}
+
+.bg-color-pitch-dark-7 {
+  background-color: rgb(47.4, 30.3, 25.5);
+}
+
+.text-hover-pitch-dark-7:hover {
+  color: rgb(47.4, 30.3, 25.5);
+}
+
+.text-pitch-dark-8 {
+  color: rgb(31.6, 20.2, 17);
+}
+
+.bg-color-pitch-dark-8 {
+  background-color: rgb(31.6, 20.2, 17);
+}
+
+.text-hover-pitch-dark-8:hover {
+  color: rgb(31.6, 20.2, 17);
+}
+
+.text-pitch-dark-9 {
+  color: rgb(15.8, 10.1, 8.5);
+}
+
+.bg-color-pitch-dark-9 {
+  background-color: rgb(15.8, 10.1, 8.5);
+}
+
+.text-hover-pitch-dark-9:hover {
+  color: rgb(15.8, 10.1, 8.5);
+}
+
+.text-gray {
+  color: #acc1d3;
+}
+
+.bg-color-gray {
+  background-color: #acc1d3;
+}
+
+.text-hover-gray:hover {
+  color: #acc1d3;
+}
+
+.text-gray-light-1 {
+  color: rgb(180.3, 199.2, 215.4);
+}
+
+.bg-color-gray-light-1 {
+  background-color: rgb(180.3, 199.2, 215.4);
+}
+
+.text-hover-gray-light-1:hover {
+  color: rgb(180.3, 199.2, 215.4);
+}
+
+.text-gray-light-2 {
+  color: rgb(188.6, 205.4, 219.8);
+}
+
+.bg-color-gray-light-2 {
+  background-color: rgb(188.6, 205.4, 219.8);
+}
+
+.text-hover-gray-light-2:hover {
+  color: rgb(188.6, 205.4, 219.8);
+}
+
+.text-gray-light-3 {
+  color: rgb(196.9, 211.6, 224.2);
+}
+
+.bg-color-gray-light-3 {
+  background-color: rgb(196.9, 211.6, 224.2);
+}
+
+.text-hover-gray-light-3:hover {
+  color: rgb(196.9, 211.6, 224.2);
+}
+
+.text-gray-light-4 {
+  color: rgb(205.2, 217.8, 228.6);
+}
+
+.bg-color-gray-light-4 {
+  background-color: rgb(205.2, 217.8, 228.6);
+}
+
+.text-hover-gray-light-4:hover {
+  color: rgb(205.2, 217.8, 228.6);
+}
+
+.text-gray-light-5 {
+  color: rgb(213.5, 224, 233);
+}
+
+.bg-color-gray-light-5 {
+  background-color: rgb(213.5, 224, 233);
+}
+
+.text-hover-gray-light-5:hover {
+  color: rgb(213.5, 224, 233);
+}
+
+.text-gray-light-6 {
+  color: rgb(221.8, 230.2, 237.4);
+}
+
+.bg-color-gray-light-6 {
+  background-color: rgb(221.8, 230.2, 237.4);
+}
+
+.text-hover-gray-light-6:hover {
+  color: rgb(221.8, 230.2, 237.4);
+}
+
+.text-gray-light-7 {
+  color: rgb(230.1, 236.4, 241.8);
+}
+
+.bg-color-gray-light-7 {
+  background-color: rgb(230.1, 236.4, 241.8);
+}
+
+.text-hover-gray-light-7:hover {
+  color: rgb(230.1, 236.4, 241.8);
+}
+
+.text-gray-light-8 {
+  color: rgb(238.4, 242.6, 246.2);
+}
+
+.bg-color-gray-light-8 {
+  background-color: rgb(238.4, 242.6, 246.2);
+}
+
+.text-hover-gray-light-8:hover {
+  color: rgb(238.4, 242.6, 246.2);
+}
+
+.text-gray-light-9 {
+  color: rgb(246.7, 248.8, 250.6);
+}
+
+.bg-color-gray-light-9 {
+  background-color: rgb(246.7, 248.8, 250.6);
+}
+
+.text-hover-gray-light-9:hover {
+  color: rgb(246.7, 248.8, 250.6);
+}
+
+.text-gray-dark-1 {
+  color: rgb(154.8, 173.7, 189.9);
+}
+
+.bg-color-gray-dark-1 {
+  background-color: rgb(154.8, 173.7, 189.9);
+}
+
+.text-hover-gray-dark-1:hover {
+  color: rgb(154.8, 173.7, 189.9);
+}
+
+.text-gray-dark-2 {
+  color: rgb(137.6, 154.4, 168.8);
+}
+
+.bg-color-gray-dark-2 {
+  background-color: rgb(137.6, 154.4, 168.8);
+}
+
+.text-hover-gray-dark-2:hover {
+  color: rgb(137.6, 154.4, 168.8);
+}
+
+.text-gray-dark-3 {
+  color: rgb(120.4, 135.1, 147.7);
+}
+
+.bg-color-gray-dark-3 {
+  background-color: rgb(120.4, 135.1, 147.7);
+}
+
+.text-hover-gray-dark-3:hover {
+  color: rgb(120.4, 135.1, 147.7);
+}
+
+.text-gray-dark-4 {
+  color: rgb(103.2, 115.8, 126.6);
+}
+
+.bg-color-gray-dark-4 {
+  background-color: rgb(103.2, 115.8, 126.6);
+}
+
+.text-hover-gray-dark-4:hover {
+  color: rgb(103.2, 115.8, 126.6);
+}
+
+.text-gray-dark-5 {
+  color: rgb(86, 96.5, 105.5);
+}
+
+.bg-color-gray-dark-5 {
+  background-color: rgb(86, 96.5, 105.5);
+}
+
+.text-hover-gray-dark-5:hover {
+  color: rgb(86, 96.5, 105.5);
+}
+
+.text-gray-dark-6 {
+  color: rgb(68.8, 77.2, 84.4);
+}
+
+.bg-color-gray-dark-6 {
+  background-color: rgb(68.8, 77.2, 84.4);
+}
+
+.text-hover-gray-dark-6:hover {
+  color: rgb(68.8, 77.2, 84.4);
+}
+
+.text-gray-dark-7 {
+  color: rgb(51.6, 57.9, 63.3);
+}
+
+.bg-color-gray-dark-7 {
+  background-color: rgb(51.6, 57.9, 63.3);
+}
+
+.text-hover-gray-dark-7:hover {
+  color: rgb(51.6, 57.9, 63.3);
+}
+
+.text-gray-dark-8 {
+  color: rgb(34.4, 38.6, 42.2);
+}
+
+.bg-color-gray-dark-8 {
+  background-color: rgb(34.4, 38.6, 42.2);
+}
+
+.text-hover-gray-dark-8:hover {
+  color: rgb(34.4, 38.6, 42.2);
+}
+
+.text-gray-dark-9 {
+  color: rgb(17.2, 19.3, 21.1);
+}
+
+.bg-color-gray-dark-9 {
+  background-color: rgb(17.2, 19.3, 21.1);
+}
+
+.text-hover-gray-dark-9:hover {
+  color: rgb(17.2, 19.3, 21.1);
+}
+
+.text-blue {
+  color: #2a4058;
+}
+
+.bg-color-blue {
+  background-color: #2a4058;
+}
+
+.text-hover-blue:hover {
+  color: #2a4058;
+}
+
+.text-blue-light-1 {
+  color: rgb(63.3, 83.1, 104.7);
+}
+
+.bg-color-blue-light-1 {
+  background-color: rgb(63.3, 83.1, 104.7);
+}
+
+.text-hover-blue-light-1:hover {
+  color: rgb(63.3, 83.1, 104.7);
+}
+
+.text-blue-light-2 {
+  color: rgb(84.6, 102.2, 121.4);
+}
+
+.bg-color-blue-light-2 {
+  background-color: rgb(84.6, 102.2, 121.4);
+}
+
+.text-hover-blue-light-2:hover {
+  color: rgb(84.6, 102.2, 121.4);
+}
+
+.text-blue-light-3 {
+  color: rgb(105.9, 121.3, 138.1);
+}
+
+.bg-color-blue-light-3 {
+  background-color: rgb(105.9, 121.3, 138.1);
+}
+
+.text-hover-blue-light-3:hover {
+  color: rgb(105.9, 121.3, 138.1);
+}
+
+.text-blue-light-4 {
+  color: rgb(127.2, 140.4, 154.8);
+}
+
+.bg-color-blue-light-4 {
+  background-color: rgb(127.2, 140.4, 154.8);
+}
+
+.text-hover-blue-light-4:hover {
+  color: rgb(127.2, 140.4, 154.8);
+}
+
+.text-blue-light-5 {
+  color: rgb(148.5, 159.5, 171.5);
+}
+
+.bg-color-blue-light-5 {
+  background-color: rgb(148.5, 159.5, 171.5);
+}
+
+.text-hover-blue-light-5:hover {
+  color: rgb(148.5, 159.5, 171.5);
+}
+
+.text-blue-light-6 {
+  color: rgb(169.8, 178.6, 188.2);
+}
+
+.bg-color-blue-light-6 {
+  background-color: rgb(169.8, 178.6, 188.2);
+}
+
+.text-hover-blue-light-6:hover {
+  color: rgb(169.8, 178.6, 188.2);
+}
+
+.text-blue-light-7 {
+  color: rgb(191.1, 197.7, 204.9);
+}
+
+.bg-color-blue-light-7 {
+  background-color: rgb(191.1, 197.7, 204.9);
+}
+
+.text-hover-blue-light-7:hover {
+  color: rgb(191.1, 197.7, 204.9);
+}
+
+.text-blue-light-8 {
+  color: rgb(212.4, 216.8, 221.6);
+}
+
+.bg-color-blue-light-8 {
+  background-color: rgb(212.4, 216.8, 221.6);
+}
+
+.text-hover-blue-light-8:hover {
+  color: rgb(212.4, 216.8, 221.6);
+}
+
+.text-blue-light-9 {
+  color: rgb(233.7, 235.9, 238.3);
+}
+
+.bg-color-blue-light-9 {
+  background-color: rgb(233.7, 235.9, 238.3);
+}
+
+.text-hover-blue-light-9:hover {
+  color: rgb(233.7, 235.9, 238.3);
+}
+
+.text-blue-dark-1 {
+  color: rgb(37.8, 57.6, 79.2);
+}
+
+.bg-color-blue-dark-1 {
+  background-color: rgb(37.8, 57.6, 79.2);
+}
+
+.text-hover-blue-dark-1:hover {
+  color: rgb(37.8, 57.6, 79.2);
+}
+
+.text-blue-dark-2 {
+  color: rgb(33.6, 51.2, 70.4);
+}
+
+.bg-color-blue-dark-2 {
+  background-color: rgb(33.6, 51.2, 70.4);
+}
+
+.text-hover-blue-dark-2:hover {
+  color: rgb(33.6, 51.2, 70.4);
+}
+
+.text-blue-dark-3 {
+  color: rgb(29.4, 44.8, 61.6);
+}
+
+.bg-color-blue-dark-3 {
+  background-color: rgb(29.4, 44.8, 61.6);
+}
+
+.text-hover-blue-dark-3:hover {
+  color: rgb(29.4, 44.8, 61.6);
+}
+
+.text-blue-dark-4 {
+  color: rgb(25.2, 38.4, 52.8);
+}
+
+.bg-color-blue-dark-4 {
+  background-color: rgb(25.2, 38.4, 52.8);
+}
+
+.text-hover-blue-dark-4:hover {
+  color: rgb(25.2, 38.4, 52.8);
+}
+
+.text-blue-dark-5 {
+  color: #15202c;
+}
+
+.bg-color-blue-dark-5 {
+  background-color: #15202c;
+}
+
+.text-hover-blue-dark-5:hover {
+  color: #15202c;
+}
+
+.text-blue-dark-6 {
+  color: rgb(16.8, 25.6, 35.2);
+}
+
+.bg-color-blue-dark-6 {
+  background-color: rgb(16.8, 25.6, 35.2);
+}
+
+.text-hover-blue-dark-6:hover {
+  color: rgb(16.8, 25.6, 35.2);
+}
+
+.text-blue-dark-7 {
+  color: rgb(12.6, 19.2, 26.4);
+}
+
+.bg-color-blue-dark-7 {
+  background-color: rgb(12.6, 19.2, 26.4);
+}
+
+.text-hover-blue-dark-7:hover {
+  color: rgb(12.6, 19.2, 26.4);
+}
+
+.text-blue-dark-8 {
+  color: rgb(8.4, 12.8, 17.6);
+}
+
+.bg-color-blue-dark-8 {
+  background-color: rgb(8.4, 12.8, 17.6);
+}
+
+.text-hover-blue-dark-8:hover {
+  color: rgb(8.4, 12.8, 17.6);
+}
+
+.text-blue-dark-9 {
+  color: rgb(4.2, 6.4, 8.8);
+}
+
+.bg-color-blue-dark-9 {
+  background-color: rgb(4.2, 6.4, 8.8);
+}
+
+.text-hover-blue-dark-9:hover {
+  color: rgb(4.2, 6.4, 8.8);
+}
+
+.text-link {
+  color: #4258ff;
+}
+
+.bg-color-link {
+  background-color: #4258ff;
+}
+
+.text-hover-link:hover {
+  color: #4258ff;
+}
+
+.text-link-light-1 {
+  color: rgb(84.9, 104.7, 255);
+}
+
+.bg-color-link-light-1 {
+  background-color: rgb(84.9, 104.7, 255);
+}
+
+.text-hover-link-light-1:hover {
+  color: rgb(84.9, 104.7, 255);
+}
+
+.text-link-light-2 {
+  color: rgb(103.8, 121.4, 255);
+}
+
+.bg-color-link-light-2 {
+  background-color: rgb(103.8, 121.4, 255);
+}
+
+.text-hover-link-light-2:hover {
+  color: rgb(103.8, 121.4, 255);
+}
+
+.text-link-light-3 {
+  color: rgb(122.7, 138.1, 255);
+}
+
+.bg-color-link-light-3 {
+  background-color: rgb(122.7, 138.1, 255);
+}
+
+.text-hover-link-light-3:hover {
+  color: rgb(122.7, 138.1, 255);
+}
+
+.text-link-light-4 {
+  color: rgb(141.6, 154.8, 255);
+}
+
+.bg-color-link-light-4 {
+  background-color: rgb(141.6, 154.8, 255);
+}
+
+.text-hover-link-light-4:hover {
+  color: rgb(141.6, 154.8, 255);
+}
+
+.text-link-light-5 {
+  color: rgb(160.5, 171.5, 255);
+}
+
+.bg-color-link-light-5 {
+  background-color: rgb(160.5, 171.5, 255);
+}
+
+.text-hover-link-light-5:hover {
+  color: rgb(160.5, 171.5, 255);
+}
+
+.text-link-light-6 {
+  color: rgb(179.4, 188.2, 255);
+}
+
+.bg-color-link-light-6 {
+  background-color: rgb(179.4, 188.2, 255);
+}
+
+.text-hover-link-light-6:hover {
+  color: rgb(179.4, 188.2, 255);
+}
+
+.text-link-light-7 {
+  color: rgb(198.3, 204.9, 255);
+}
+
+.bg-color-link-light-7 {
+  background-color: rgb(198.3, 204.9, 255);
+}
+
+.text-hover-link-light-7:hover {
+  color: rgb(198.3, 204.9, 255);
+}
+
+.text-link-light-8 {
+  color: rgb(217.2, 221.6, 255);
+}
+
+.bg-color-link-light-8 {
+  background-color: rgb(217.2, 221.6, 255);
+}
+
+.text-hover-link-light-8:hover {
+  color: rgb(217.2, 221.6, 255);
+}
+
+.text-link-light-9 {
+  color: rgb(236.1, 238.3, 255);
+}
+
+.bg-color-link-light-9 {
+  background-color: rgb(236.1, 238.3, 255);
+}
+
+.text-hover-link-light-9:hover {
+  color: rgb(236.1, 238.3, 255);
+}
+
+.text-link-dark-1 {
+  color: rgb(59.4, 79.2, 229.5);
+}
+
+.bg-color-link-dark-1 {
+  background-color: rgb(59.4, 79.2, 229.5);
+}
+
+.text-hover-link-dark-1:hover {
+  color: rgb(59.4, 79.2, 229.5);
+}
+
+.text-link-dark-2 {
+  color: rgb(52.8, 70.4, 204);
+}
+
+.bg-color-link-dark-2 {
+  background-color: rgb(52.8, 70.4, 204);
+}
+
+.text-hover-link-dark-2:hover {
+  color: rgb(52.8, 70.4, 204);
+}
+
+.text-link-dark-3 {
+  color: rgb(46.2, 61.6, 178.5);
+}
+
+.bg-color-link-dark-3 {
+  background-color: rgb(46.2, 61.6, 178.5);
+}
+
+.text-hover-link-dark-3:hover {
+  color: rgb(46.2, 61.6, 178.5);
+}
+
+.text-link-dark-4 {
+  color: rgb(39.6, 52.8, 153);
+}
+
+.bg-color-link-dark-4 {
+  background-color: rgb(39.6, 52.8, 153);
+}
+
+.text-hover-link-dark-4:hover {
+  color: rgb(39.6, 52.8, 153);
+}
+
+.text-link-dark-5 {
+  color: rgb(33, 44, 127.5);
+}
+
+.bg-color-link-dark-5 {
+  background-color: rgb(33, 44, 127.5);
+}
+
+.text-hover-link-dark-5:hover {
+  color: rgb(33, 44, 127.5);
+}
+
+.text-link-dark-6 {
+  color: rgb(26.4, 35.2, 102);
+}
+
+.bg-color-link-dark-6 {
+  background-color: rgb(26.4, 35.2, 102);
+}
+
+.text-hover-link-dark-6:hover {
+  color: rgb(26.4, 35.2, 102);
+}
+
+.text-link-dark-7 {
+  color: rgb(19.8, 26.4, 76.5);
+}
+
+.bg-color-link-dark-7 {
+  background-color: rgb(19.8, 26.4, 76.5);
+}
+
+.text-hover-link-dark-7:hover {
+  color: rgb(19.8, 26.4, 76.5);
+}
+
+.text-link-dark-8 {
+  color: rgb(13.2, 17.6, 51);
+}
+
+.bg-color-link-dark-8 {
+  background-color: rgb(13.2, 17.6, 51);
+}
+
+.text-hover-link-dark-8:hover {
+  color: rgb(13.2, 17.6, 51);
+}
+
+.text-link-dark-9 {
+  color: rgb(6.6, 8.8, 25.5);
+}
+
+.bg-color-link-dark-9 {
+  background-color: rgb(6.6, 8.8, 25.5);
+}
+
+.text-hover-link-dark-9:hover {
+  color: rgb(6.6, 8.8, 25.5);
+}
+
+.text-primary {
+  color: #00d1b2;
+}
+
+.bg-color-primary {
+  background-color: #00d1b2;
+}
+
+.text-hover-primary:hover {
+  color: #00d1b2;
+}
+
+.text-primary-light-1 {
+  color: rgb(25.5, 213.6, 185.7);
+}
+
+.bg-color-primary-light-1 {
+  background-color: rgb(25.5, 213.6, 185.7);
+}
+
+.text-hover-primary-light-1:hover {
+  color: rgb(25.5, 213.6, 185.7);
+}
+
+.text-primary-light-2 {
+  color: rgb(51, 218.2, 193.4);
+}
+
+.bg-color-primary-light-2 {
+  background-color: rgb(51, 218.2, 193.4);
+}
+
+.text-hover-primary-light-2:hover {
+  color: rgb(51, 218.2, 193.4);
+}
+
+.text-primary-light-3 {
+  color: rgb(76.5, 222.8, 201.1);
+}
+
+.bg-color-primary-light-3 {
+  background-color: rgb(76.5, 222.8, 201.1);
+}
+
+.text-hover-primary-light-3:hover {
+  color: rgb(76.5, 222.8, 201.1);
+}
+
+.text-primary-light-4 {
+  color: rgb(102, 227.4, 208.8);
+}
+
+.bg-color-primary-light-4 {
+  background-color: rgb(102, 227.4, 208.8);
+}
+
+.text-hover-primary-light-4:hover {
+  color: rgb(102, 227.4, 208.8);
+}
+
+.text-primary-light-5 {
+  color: rgb(127.5, 232, 216.5);
+}
+
+.bg-color-primary-light-5 {
+  background-color: rgb(127.5, 232, 216.5);
+}
+
+.text-hover-primary-light-5:hover {
+  color: rgb(127.5, 232, 216.5);
+}
+
+.text-primary-light-6 {
+  color: rgb(153, 236.6, 224.2);
+}
+
+.bg-color-primary-light-6 {
+  background-color: rgb(153, 236.6, 224.2);
+}
+
+.text-hover-primary-light-6:hover {
+  color: rgb(153, 236.6, 224.2);
+}
+
+.text-primary-light-7 {
+  color: rgb(178.5, 241.2, 231.9);
+}
+
+.bg-color-primary-light-7 {
+  background-color: rgb(178.5, 241.2, 231.9);
+}
+
+.text-hover-primary-light-7:hover {
+  color: rgb(178.5, 241.2, 231.9);
+}
+
+.text-primary-light-8 {
+  color: rgb(204, 245.8, 239.6);
+}
+
+.bg-color-primary-light-8 {
+  background-color: rgb(204, 245.8, 239.6);
+}
+
+.text-hover-primary-light-8:hover {
+  color: rgb(204, 245.8, 239.6);
+}
+
+.text-primary-light-9 {
+  color: rgb(229.5, 250.4, 247.3);
+}
+
+.bg-color-primary-light-9 {
+  background-color: rgb(229.5, 250.4, 247.3);
+}
+
+.text-hover-primary-light-9:hover {
+  color: rgb(229.5, 250.4, 247.3);
+}
+
+.text-primary-dark-1 {
+  color: rgb(0, 188.1, 160.2);
+}
+
+.bg-color-primary-dark-1 {
+  background-color: rgb(0, 188.1, 160.2);
+}
+
+.text-hover-primary-dark-1:hover {
+  color: rgb(0, 188.1, 160.2);
+}
+
+.text-primary-dark-2 {
+  color: rgb(0, 167.2, 142.4);
+}
+
+.bg-color-primary-dark-2 {
+  background-color: rgb(0, 167.2, 142.4);
+}
+
+.text-hover-primary-dark-2:hover {
+  color: rgb(0, 167.2, 142.4);
+}
+
+.text-primary-dark-3 {
+  color: rgb(0, 146.3, 124.6);
+}
+
+.bg-color-primary-dark-3 {
+  background-color: rgb(0, 146.3, 124.6);
+}
+
+.text-hover-primary-dark-3:hover {
+  color: rgb(0, 146.3, 124.6);
+}
+
+.text-primary-dark-4 {
+  color: rgb(0, 125.4, 106.8);
+}
+
+.bg-color-primary-dark-4 {
+  background-color: rgb(0, 125.4, 106.8);
+}
+
+.text-hover-primary-dark-4:hover {
+  color: rgb(0, 125.4, 106.8);
+}
+
+.text-primary-dark-5 {
+  color: rgb(0, 104.5, 89);
+}
+
+.bg-color-primary-dark-5 {
+  background-color: rgb(0, 104.5, 89);
+}
+
+.text-hover-primary-dark-5:hover {
+  color: rgb(0, 104.5, 89);
+}
+
+.text-primary-dark-6 {
+  color: rgb(0, 83.6, 71.2);
+}
+
+.bg-color-primary-dark-6 {
+  background-color: rgb(0, 83.6, 71.2);
+}
+
+.text-hover-primary-dark-6:hover {
+  color: rgb(0, 83.6, 71.2);
+}
+
+.text-primary-dark-7 {
+  color: rgb(0, 62.7, 53.4);
+}
+
+.bg-color-primary-dark-7 {
+  background-color: rgb(0, 62.7, 53.4);
+}
+
+.text-hover-primary-dark-7:hover {
+  color: rgb(0, 62.7, 53.4);
+}
+
+.text-primary-dark-8 {
+  color: rgb(0, 41.8, 35.6);
+}
+
+.bg-color-primary-dark-8 {
+  background-color: rgb(0, 41.8, 35.6);
+}
+
+.text-hover-primary-dark-8:hover {
+  color: rgb(0, 41.8, 35.6);
+}
+
+.text-primary-dark-9 {
+  color: rgb(0, 20.9, 17.8);
+}
+
+.bg-color-primary-dark-9 {
+  background-color: rgb(0, 20.9, 17.8);
+}
+
+.text-hover-primary-dark-9:hover {
+  color: rgb(0, 20.9, 17.8);
+}
+
+.text-info {
+  color: #66d1ff;
+}
+
+.bg-color-info {
+  background-color: #66d1ff;
+}
+
+.text-hover-info:hover {
+  color: #66d1ff;
+}
+
+.text-info-light-1 {
+  color: rgb(117.3, 213.6, 255);
+}
+
+.bg-color-info-light-1 {
+  background-color: rgb(117.3, 213.6, 255);
+}
+
+.text-hover-info-light-1:hover {
+  color: rgb(117.3, 213.6, 255);
+}
+
+.text-info-light-2 {
+  color: rgb(132.6, 218.2, 255);
+}
+
+.bg-color-info-light-2 {
+  background-color: rgb(132.6, 218.2, 255);
+}
+
+.text-hover-info-light-2:hover {
+  color: rgb(132.6, 218.2, 255);
+}
+
+.text-info-light-3 {
+  color: rgb(147.9, 222.8, 255);
+}
+
+.bg-color-info-light-3 {
+  background-color: rgb(147.9, 222.8, 255);
+}
+
+.text-hover-info-light-3:hover {
+  color: rgb(147.9, 222.8, 255);
+}
+
+.text-info-light-4 {
+  color: rgb(163.2, 227.4, 255);
+}
+
+.bg-color-info-light-4 {
+  background-color: rgb(163.2, 227.4, 255);
+}
+
+.text-hover-info-light-4:hover {
+  color: rgb(163.2, 227.4, 255);
+}
+
+.text-info-light-5 {
+  color: rgb(178.5, 232, 255);
+}
+
+.bg-color-info-light-5 {
+  background-color: rgb(178.5, 232, 255);
+}
+
+.text-hover-info-light-5:hover {
+  color: rgb(178.5, 232, 255);
+}
+
+.text-info-light-6 {
+  color: rgb(193.8, 236.6, 255);
+}
+
+.bg-color-info-light-6 {
+  background-color: rgb(193.8, 236.6, 255);
+}
+
+.text-hover-info-light-6:hover {
+  color: rgb(193.8, 236.6, 255);
+}
+
+.text-info-light-7 {
+  color: rgb(209.1, 241.2, 255);
+}
+
+.bg-color-info-light-7 {
+  background-color: rgb(209.1, 241.2, 255);
+}
+
+.text-hover-info-light-7:hover {
+  color: rgb(209.1, 241.2, 255);
+}
+
+.text-info-light-8 {
+  color: rgb(224.4, 245.8, 255);
+}
+
+.bg-color-info-light-8 {
+  background-color: rgb(224.4, 245.8, 255);
+}
+
+.text-hover-info-light-8:hover {
+  color: rgb(224.4, 245.8, 255);
+}
+
+.text-info-light-9 {
+  color: rgb(239.7, 250.4, 255);
+}
+
+.bg-color-info-light-9 {
+  background-color: rgb(239.7, 250.4, 255);
+}
+
+.text-hover-info-light-9:hover {
+  color: rgb(239.7, 250.4, 255);
+}
+
+.text-info-dark-1 {
+  color: rgb(91.8, 188.1, 229.5);
+}
+
+.bg-color-info-dark-1 {
+  background-color: rgb(91.8, 188.1, 229.5);
+}
+
+.text-hover-info-dark-1:hover {
+  color: rgb(91.8, 188.1, 229.5);
+}
+
+.text-info-dark-2 {
+  color: rgb(81.6, 167.2, 204);
+}
+
+.bg-color-info-dark-2 {
+  background-color: rgb(81.6, 167.2, 204);
+}
+
+.text-hover-info-dark-2:hover {
+  color: rgb(81.6, 167.2, 204);
+}
+
+.text-info-dark-3 {
+  color: rgb(71.4, 146.3, 178.5);
+}
+
+.bg-color-info-dark-3 {
+  background-color: rgb(71.4, 146.3, 178.5);
+}
+
+.text-hover-info-dark-3:hover {
+  color: rgb(71.4, 146.3, 178.5);
+}
+
+.text-info-dark-4 {
+  color: rgb(61.2, 125.4, 153);
+}
+
+.bg-color-info-dark-4 {
+  background-color: rgb(61.2, 125.4, 153);
+}
+
+.text-hover-info-dark-4:hover {
+  color: rgb(61.2, 125.4, 153);
+}
+
+.text-info-dark-5 {
+  color: rgb(51, 104.5, 127.5);
+}
+
+.bg-color-info-dark-5 {
+  background-color: rgb(51, 104.5, 127.5);
+}
+
+.text-hover-info-dark-5:hover {
+  color: rgb(51, 104.5, 127.5);
+}
+
+.text-info-dark-6 {
+  color: rgb(40.8, 83.6, 102);
+}
+
+.bg-color-info-dark-6 {
+  background-color: rgb(40.8, 83.6, 102);
+}
+
+.text-hover-info-dark-6:hover {
+  color: rgb(40.8, 83.6, 102);
+}
+
+.text-info-dark-7 {
+  color: rgb(30.6, 62.7, 76.5);
+}
+
+.bg-color-info-dark-7 {
+  background-color: rgb(30.6, 62.7, 76.5);
+}
+
+.text-hover-info-dark-7:hover {
+  color: rgb(30.6, 62.7, 76.5);
+}
+
+.text-info-dark-8 {
+  color: rgb(20.4, 41.8, 51);
+}
+
+.bg-color-info-dark-8 {
+  background-color: rgb(20.4, 41.8, 51);
+}
+
+.text-hover-info-dark-8:hover {
+  color: rgb(20.4, 41.8, 51);
+}
+
+.text-info-dark-9 {
+  color: rgb(10.2, 20.9, 25.5);
+}
+
+.bg-color-info-dark-9 {
+  background-color: rgb(10.2, 20.9, 25.5);
+}
+
+.text-hover-info-dark-9:hover {
+  color: rgb(10.2, 20.9, 25.5);
+}
+
+.text-success {
+  color: #48c78e;
+}
+
+.bg-color-success {
+  background-color: #48c78e;
+}
+
+.text-hover-success:hover {
+  color: #48c78e;
+}
+
+.text-success-light-1 {
+  color: rgb(90.3, 204.6, 153.3);
+}
+
+.bg-color-success-light-1 {
+  background-color: rgb(90.3, 204.6, 153.3);
+}
+
+.text-hover-success-light-1:hover {
+  color: rgb(90.3, 204.6, 153.3);
+}
+
+.text-success-light-2 {
+  color: rgb(108.6, 210.2, 164.6);
+}
+
+.bg-color-success-light-2 {
+  background-color: rgb(108.6, 210.2, 164.6);
+}
+
+.text-hover-success-light-2:hover {
+  color: rgb(108.6, 210.2, 164.6);
+}
+
+.text-success-light-3 {
+  color: rgb(126.9, 215.8, 175.9);
+}
+
+.bg-color-success-light-3 {
+  background-color: rgb(126.9, 215.8, 175.9);
+}
+
+.text-hover-success-light-3:hover {
+  color: rgb(126.9, 215.8, 175.9);
+}
+
+.text-success-light-4 {
+  color: rgb(145.2, 221.4, 187.2);
+}
+
+.bg-color-success-light-4 {
+  background-color: rgb(145.2, 221.4, 187.2);
+}
+
+.text-hover-success-light-4:hover {
+  color: rgb(145.2, 221.4, 187.2);
+}
+
+.text-success-light-5 {
+  color: rgb(163.5, 227, 198.5);
+}
+
+.bg-color-success-light-5 {
+  background-color: rgb(163.5, 227, 198.5);
+}
+
+.text-hover-success-light-5:hover {
+  color: rgb(163.5, 227, 198.5);
+}
+
+.text-success-light-6 {
+  color: rgb(181.8, 232.6, 209.8);
+}
+
+.bg-color-success-light-6 {
+  background-color: rgb(181.8, 232.6, 209.8);
+}
+
+.text-hover-success-light-6:hover {
+  color: rgb(181.8, 232.6, 209.8);
+}
+
+.text-success-light-7 {
+  color: rgb(200.1, 238.2, 221.1);
+}
+
+.bg-color-success-light-7 {
+  background-color: rgb(200.1, 238.2, 221.1);
+}
+
+.text-hover-success-light-7:hover {
+  color: rgb(200.1, 238.2, 221.1);
+}
+
+.text-success-light-8 {
+  color: rgb(218.4, 243.8, 232.4);
+}
+
+.bg-color-success-light-8 {
+  background-color: rgb(218.4, 243.8, 232.4);
+}
+
+.text-hover-success-light-8:hover {
+  color: rgb(218.4, 243.8, 232.4);
+}
+
+.text-success-light-9 {
+  color: rgb(236.7, 249.4, 243.7);
+}
+
+.bg-color-success-light-9 {
+  background-color: rgb(236.7, 249.4, 243.7);
+}
+
+.text-hover-success-light-9:hover {
+  color: rgb(236.7, 249.4, 243.7);
+}
+
+.text-success-dark-1 {
+  color: rgb(64.8, 179.1, 127.8);
+}
+
+.bg-color-success-dark-1 {
+  background-color: rgb(64.8, 179.1, 127.8);
+}
+
+.text-hover-success-dark-1:hover {
+  color: rgb(64.8, 179.1, 127.8);
+}
+
+.text-success-dark-2 {
+  color: rgb(57.6, 159.2, 113.6);
+}
+
+.bg-color-success-dark-2 {
+  background-color: rgb(57.6, 159.2, 113.6);
+}
+
+.text-hover-success-dark-2:hover {
+  color: rgb(57.6, 159.2, 113.6);
+}
+
+.text-success-dark-3 {
+  color: rgb(50.4, 139.3, 99.4);
+}
+
+.bg-color-success-dark-3 {
+  background-color: rgb(50.4, 139.3, 99.4);
+}
+
+.text-hover-success-dark-3:hover {
+  color: rgb(50.4, 139.3, 99.4);
+}
+
+.text-success-dark-4 {
+  color: rgb(43.2, 119.4, 85.2);
+}
+
+.bg-color-success-dark-4 {
+  background-color: rgb(43.2, 119.4, 85.2);
+}
+
+.text-hover-success-dark-4:hover {
+  color: rgb(43.2, 119.4, 85.2);
+}
+
+.text-success-dark-5 {
+  color: rgb(36, 99.5, 71);
+}
+
+.bg-color-success-dark-5 {
+  background-color: rgb(36, 99.5, 71);
+}
+
+.text-hover-success-dark-5:hover {
+  color: rgb(36, 99.5, 71);
+}
+
+.text-success-dark-6 {
+  color: rgb(28.8, 79.6, 56.8);
+}
+
+.bg-color-success-dark-6 {
+  background-color: rgb(28.8, 79.6, 56.8);
+}
+
+.text-hover-success-dark-6:hover {
+  color: rgb(28.8, 79.6, 56.8);
+}
+
+.text-success-dark-7 {
+  color: rgb(21.6, 59.7, 42.6);
+}
+
+.bg-color-success-dark-7 {
+  background-color: rgb(21.6, 59.7, 42.6);
+}
+
+.text-hover-success-dark-7:hover {
+  color: rgb(21.6, 59.7, 42.6);
+}
+
+.text-success-dark-8 {
+  color: rgb(14.4, 39.8, 28.4);
+}
+
+.bg-color-success-dark-8 {
+  background-color: rgb(14.4, 39.8, 28.4);
+}
+
+.text-hover-success-dark-8:hover {
+  color: rgb(14.4, 39.8, 28.4);
+}
+
+.text-success-dark-9 {
+  color: rgb(7.2, 19.9, 14.2);
+}
+
+.bg-color-success-dark-9 {
+  background-color: rgb(7.2, 19.9, 14.2);
+}
+
+.text-hover-success-dark-9:hover {
+  color: rgb(7.2, 19.9, 14.2);
+}
+
+.text-warning {
+  color: #ffb70f;
+}
+
+.bg-color-warning {
+  background-color: #ffb70f;
+}
+
+.text-hover-warning:hover {
+  color: #ffb70f;
+}
+
+.text-warning-light-1 {
+  color: rgb(255, 190.2, 39);
+}
+
+.bg-color-warning-light-1 {
+  background-color: rgb(255, 190.2, 39);
+}
+
+.text-hover-warning-light-1:hover {
+  color: rgb(255, 190.2, 39);
+}
+
+.text-warning-light-2 {
+  color: rgb(255, 197.4, 63);
+}
+
+.bg-color-warning-light-2 {
+  background-color: rgb(255, 197.4, 63);
+}
+
+.text-hover-warning-light-2:hover {
+  color: rgb(255, 197.4, 63);
+}
+
+.text-warning-light-3 {
+  color: rgb(255, 204.6, 87);
+}
+
+.bg-color-warning-light-3 {
+  background-color: rgb(255, 204.6, 87);
+}
+
+.text-hover-warning-light-3:hover {
+  color: rgb(255, 204.6, 87);
+}
+
+.text-warning-light-4 {
+  color: rgb(255, 211.8, 111);
+}
+
+.bg-color-warning-light-4 {
+  background-color: rgb(255, 211.8, 111);
+}
+
+.text-hover-warning-light-4:hover {
+  color: rgb(255, 211.8, 111);
+}
+
+.text-warning-light-5 {
+  color: #ffdb87;
+}
+
+.bg-color-warning-light-5 {
+  background-color: #ffdb87;
+}
+
+.text-hover-warning-light-5:hover {
+  color: #ffdb87;
+}
+
+.text-warning-light-6 {
+  color: rgb(255, 226.2, 159);
+}
+
+.bg-color-warning-light-6 {
+  background-color: rgb(255, 226.2, 159);
+}
+
+.text-hover-warning-light-6:hover {
+  color: rgb(255, 226.2, 159);
+}
+
+.text-warning-light-7 {
+  color: rgb(255, 233.4, 183);
+}
+
+.bg-color-warning-light-7 {
+  background-color: rgb(255, 233.4, 183);
+}
+
+.text-hover-warning-light-7:hover {
+  color: rgb(255, 233.4, 183);
+}
+
+.text-warning-light-8 {
+  color: rgb(255, 240.6, 207);
+}
+
+.bg-color-warning-light-8 {
+  background-color: rgb(255, 240.6, 207);
+}
+
+.text-hover-warning-light-8:hover {
+  color: rgb(255, 240.6, 207);
+}
+
+.text-warning-light-9 {
+  color: rgb(255, 247.8, 231);
+}
+
+.bg-color-warning-light-9 {
+  background-color: rgb(255, 247.8, 231);
+}
+
+.text-hover-warning-light-9:hover {
+  color: rgb(255, 247.8, 231);
+}
+
+.text-warning-dark-1 {
+  color: rgb(229.5, 164.7, 13.5);
+}
+
+.bg-color-warning-dark-1 {
+  background-color: rgb(229.5, 164.7, 13.5);
+}
+
+.text-hover-warning-dark-1:hover {
+  color: rgb(229.5, 164.7, 13.5);
+}
+
+.text-warning-dark-2 {
+  color: rgb(204, 146.4, 12);
+}
+
+.bg-color-warning-dark-2 {
+  background-color: rgb(204, 146.4, 12);
+}
+
+.text-hover-warning-dark-2:hover {
+  color: rgb(204, 146.4, 12);
+}
+
+.text-warning-dark-3 {
+  color: rgb(178.5, 128.1, 10.5);
+}
+
+.bg-color-warning-dark-3 {
+  background-color: rgb(178.5, 128.1, 10.5);
+}
+
+.text-hover-warning-dark-3:hover {
+  color: rgb(178.5, 128.1, 10.5);
+}
+
+.text-warning-dark-4 {
+  color: rgb(153, 109.8, 9);
+}
+
+.bg-color-warning-dark-4 {
+  background-color: rgb(153, 109.8, 9);
+}
+
+.text-hover-warning-dark-4:hover {
+  color: rgb(153, 109.8, 9);
+}
+
+.text-warning-dark-5 {
+  color: rgb(127.5, 91.5, 7.5);
+}
+
+.bg-color-warning-dark-5 {
+  background-color: rgb(127.5, 91.5, 7.5);
+}
+
+.text-hover-warning-dark-5:hover {
+  color: rgb(127.5, 91.5, 7.5);
+}
+
+.text-warning-dark-6 {
+  color: rgb(102, 73.2, 6);
+}
+
+.bg-color-warning-dark-6 {
+  background-color: rgb(102, 73.2, 6);
+}
+
+.text-hover-warning-dark-6:hover {
+  color: rgb(102, 73.2, 6);
+}
+
+.text-warning-dark-7 {
+  color: rgb(76.5, 54.9, 4.5);
+}
+
+.bg-color-warning-dark-7 {
+  background-color: rgb(76.5, 54.9, 4.5);
+}
+
+.text-hover-warning-dark-7:hover {
+  color: rgb(76.5, 54.9, 4.5);
+}
+
+.text-warning-dark-8 {
+  color: rgb(51, 36.6, 3);
+}
+
+.bg-color-warning-dark-8 {
+  background-color: rgb(51, 36.6, 3);
+}
+
+.text-hover-warning-dark-8:hover {
+  color: rgb(51, 36.6, 3);
+}
+
+.text-warning-dark-9 {
+  color: rgb(25.5, 18.3, 1.5);
+}
+
+.bg-color-warning-dark-9 {
+  background-color: rgb(25.5, 18.3, 1.5);
+}
+
+.text-hover-warning-dark-9:hover {
+  color: rgb(25.5, 18.3, 1.5);
+}
+
+.text-danger {
+  color: #ff6685;
+}
+
+.bg-color-danger {
+  background-color: #ff6685;
+}
+
+.text-hover-danger:hover {
+  color: #ff6685;
+}
+
+.text-danger-light-1 {
+  color: rgb(255, 117.3, 145.2);
+}
+
+.bg-color-danger-light-1 {
+  background-color: rgb(255, 117.3, 145.2);
+}
+
+.text-hover-danger-light-1:hover {
+  color: rgb(255, 117.3, 145.2);
+}
+
+.text-danger-light-2 {
+  color: rgb(255, 132.6, 157.4);
+}
+
+.bg-color-danger-light-2 {
+  background-color: rgb(255, 132.6, 157.4);
+}
+
+.text-hover-danger-light-2:hover {
+  color: rgb(255, 132.6, 157.4);
+}
+
+.text-danger-light-3 {
+  color: rgb(255, 147.9, 169.6);
+}
+
+.bg-color-danger-light-3 {
+  background-color: rgb(255, 147.9, 169.6);
+}
+
+.text-hover-danger-light-3:hover {
+  color: rgb(255, 147.9, 169.6);
+}
+
+.text-danger-light-4 {
+  color: rgb(255, 163.2, 181.8);
+}
+
+.bg-color-danger-light-4 {
+  background-color: rgb(255, 163.2, 181.8);
+}
+
+.text-hover-danger-light-4:hover {
+  color: rgb(255, 163.2, 181.8);
+}
+
+.text-danger-light-5 {
+  color: rgb(255, 178.5, 194);
+}
+
+.bg-color-danger-light-5 {
+  background-color: rgb(255, 178.5, 194);
+}
+
+.text-hover-danger-light-5:hover {
+  color: rgb(255, 178.5, 194);
+}
+
+.text-danger-light-6 {
+  color: rgb(255, 193.8, 206.2);
+}
+
+.bg-color-danger-light-6 {
+  background-color: rgb(255, 193.8, 206.2);
+}
+
+.text-hover-danger-light-6:hover {
+  color: rgb(255, 193.8, 206.2);
+}
+
+.text-danger-light-7 {
+  color: rgb(255, 209.1, 218.4);
+}
+
+.bg-color-danger-light-7 {
+  background-color: rgb(255, 209.1, 218.4);
+}
+
+.text-hover-danger-light-7:hover {
+  color: rgb(255, 209.1, 218.4);
+}
+
+.text-danger-light-8 {
+  color: rgb(255, 224.4, 230.6);
+}
+
+.bg-color-danger-light-8 {
+  background-color: rgb(255, 224.4, 230.6);
+}
+
+.text-hover-danger-light-8:hover {
+  color: rgb(255, 224.4, 230.6);
+}
+
+.text-danger-light-9 {
+  color: rgb(255, 239.7, 242.8);
+}
+
+.bg-color-danger-light-9 {
+  background-color: rgb(255, 239.7, 242.8);
+}
+
+.text-hover-danger-light-9:hover {
+  color: rgb(255, 239.7, 242.8);
+}
+
+.text-danger-dark-1 {
+  color: rgb(229.5, 91.8, 119.7);
+}
+
+.bg-color-danger-dark-1 {
+  background-color: rgb(229.5, 91.8, 119.7);
+}
+
+.text-hover-danger-dark-1:hover {
+  color: rgb(229.5, 91.8, 119.7);
+}
+
+.text-danger-dark-2 {
+  color: rgb(204, 81.6, 106.4);
+}
+
+.bg-color-danger-dark-2 {
+  background-color: rgb(204, 81.6, 106.4);
+}
+
+.text-hover-danger-dark-2:hover {
+  color: rgb(204, 81.6, 106.4);
+}
+
+.text-danger-dark-3 {
+  color: rgb(178.5, 71.4, 93.1);
+}
+
+.bg-color-danger-dark-3 {
+  background-color: rgb(178.5, 71.4, 93.1);
+}
+
+.text-hover-danger-dark-3:hover {
+  color: rgb(178.5, 71.4, 93.1);
+}
+
+.text-danger-dark-4 {
+  color: rgb(153, 61.2, 79.8);
+}
+
+.bg-color-danger-dark-4 {
+  background-color: rgb(153, 61.2, 79.8);
+}
+
+.text-hover-danger-dark-4:hover {
+  color: rgb(153, 61.2, 79.8);
+}
+
+.text-danger-dark-5 {
+  color: rgb(127.5, 51, 66.5);
+}
+
+.bg-color-danger-dark-5 {
+  background-color: rgb(127.5, 51, 66.5);
+}
+
+.text-hover-danger-dark-5:hover {
+  color: rgb(127.5, 51, 66.5);
+}
+
+.text-danger-dark-6 {
+  color: rgb(102, 40.8, 53.2);
+}
+
+.bg-color-danger-dark-6 {
+  background-color: rgb(102, 40.8, 53.2);
+}
+
+.text-hover-danger-dark-6:hover {
+  color: rgb(102, 40.8, 53.2);
+}
+
+.text-danger-dark-7 {
+  color: rgb(76.5, 30.6, 39.9);
+}
+
+.bg-color-danger-dark-7 {
+  background-color: rgb(76.5, 30.6, 39.9);
+}
+
+.text-hover-danger-dark-7:hover {
+  color: rgb(76.5, 30.6, 39.9);
+}
+
+.text-danger-dark-8 {
+  color: rgb(51, 20.4, 26.6);
+}
+
+.bg-color-danger-dark-8 {
+  background-color: rgb(51, 20.4, 26.6);
+}
+
+.text-hover-danger-dark-8:hover {
+  color: rgb(51, 20.4, 26.6);
+}
+
+.text-danger-dark-9 {
+  color: rgb(25.5, 10.2, 13.3);
+}
+
+.bg-color-danger-dark-9 {
+  background-color: rgb(25.5, 10.2, 13.3);
+}
+
+.text-hover-danger-dark-9:hover {
+  color: rgb(25.5, 10.2, 13.3);
+}
+
+.text-black {
+  color: black;
+}
+
+.bg-color-black {
+  background-color: black;
+}
+
+.text-hover-black:hover {
+  color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.text-hover-white:hover {
+  color: white;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 0.75rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4.5rem;
+}
+
+.p-5 {
+  padding: 6rem;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pl-1 {
+  padding-left: 0.75rem;
+}
+
+.pl-2 {
+  padding-left: 1.5rem;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.pl-4 {
+  padding-left: 4.5rem;
+}
+
+.pl-5 {
+  padding-left: 6rem;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pr-1 {
+  padding-right: 0.75rem;
+}
+
+.pr-2 {
+  padding-right: 1.5rem;
+}
+
+.pr-3 {
+  padding-right: 3rem;
+}
+
+.pr-4 {
+  padding-right: 4.5rem;
+}
+
+.pr-5 {
+  padding-right: 6rem;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pt-1 {
+  padding-top: 0.75rem;
+}
+
+.pt-2 {
+  padding-top: 1.5rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pt-4 {
+  padding-top: 4.5rem;
+}
+
+.pt-5 {
+  padding-top: 6rem;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-2 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.pb-4 {
+  padding-bottom: 4.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 6rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 0.75rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.m-4 {
+  margin: 4.5rem;
+}
+
+.m-5 {
+  margin: 6rem;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.ml-1 {
+  margin-left: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 1.5rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.ml-4 {
+  margin-left: 4.5rem;
+}
+
+.ml-5 {
+  margin-left: 6rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: 0.75rem;
+}
+
+.mr-2 {
+  margin-right: 1.5rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+}
+
+.mr-4 {
+  margin-right: 4.5rem;
+}
+
+.mr-5 {
+  margin-right: 6rem;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 0.75rem;
+}
+
+.mt-2 {
+  margin-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4.5rem;
+}
+
+.mt-5 {
+  margin-top: 6rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-2 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 6rem;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.br {
+  border-radius: 5px;
+}
+
+.br-none {
+  border-radius: 0;
+}
+
+.br-sm {
+  border-radius: 2.5px;
+}
+
+.br-lg {
+  border-radius: 10px;
+}
+
+.br-xl {
+  border-radius: 20px;
+}
+
+.br-full {
+  border-radius: 50%;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+}
+
 .card {
   display: block;
   padding: 0.75rem;
-  border: 1px solid #f6c31c;
+  border: 1px solid #00d1b2;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .card .card-title {
@@ -70,4 +3713,567 @@ table {
 }
 .card .card-body a {
   text-decoration: underline;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #e5dcd7;
+}
+
+.btn-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #f4a529;
+}
+.btn-orange:hover {
+  background-color: rgb(245.1, 174, 62.4);
+}
+
+.btn-outlined-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #f4a529;
+}
+.btn-outlined-orange:hover {
+  background-color: #f4a529;
+}
+
+.btn-complement-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #f4a529;
+  color: rgb(62.4, 133.5, 245.1);
+}
+.btn-complement-orange:hover {
+  color: #f4a529;
+  background-color: rgb(62.4, 133.5, 245.1);
+}
+
+.btn-yellow {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fad860;
+}
+.btn-yellow:hover {
+  background-color: rgb(250.5, 219.9, 111.9);
+}
+
+.btn-outlined-yellow {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #fad860;
+}
+.btn-outlined-yellow:hover {
+  background-color: #fad860;
+}
+
+.btn-complement-yellow {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fad860;
+  color: rgb(111.9, 142.5, 250.5);
+}
+.btn-complement-yellow:hover {
+  color: #fad860;
+  background-color: rgb(111.9, 142.5, 250.5);
+}
+
+.btn-red {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #790707;
+}
+.btn-red:hover {
+  background-color: rgb(157.1109375, 9.0890625, 9.0890625);
+}
+
+.btn-outlined-red {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #790707;
+}
+.btn-outlined-red:hover {
+  background-color: #790707;
+}
+
+.btn-complement-red {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #790707;
+  color: rgb(9.0890625, 157.1109375, 157.1109375);
+}
+.btn-complement-red:hover {
+  color: #790707;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+}
+
+.btn-pitch {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #9e6555;
+}
+.btn-pitch:hover {
+  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556);
+}
+
+.btn-outlined-pitch {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #9e6555;
+}
+.btn-outlined-pitch:hover {
+  background-color: #9e6555;
+}
+
+.btn-complement-pitch {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #9e6555;
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+}
+.btn-complement-pitch:hover {
+  color: #9e6555;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+}
+
+.btn-gray {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #acc1d3;
+}
+.btn-gray:hover {
+  background-color: rgb(180.3, 199.2, 215.4);
+}
+
+.btn-outlined-gray {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #acc1d3;
+}
+.btn-outlined-gray:hover {
+  background-color: #acc1d3;
+}
+
+.btn-complement-gray {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #acc1d3;
+  color: rgb(215.4, 196.5, 180.3);
+}
+.btn-complement-gray:hover {
+  color: #acc1d3;
+  background-color: rgb(215.4, 196.5, 180.3);
+}
+
+.btn-blue {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #2a4058;
+}
+.btn-blue:hover {
+  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231);
+}
+
+.btn-outlined-blue {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #2a4058;
+}
+.btn-outlined-blue:hover {
+  background-color: #2a4058;
+}
+
+.btn-complement-blue {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #2a4058;
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+}
+.btn-complement-blue:hover {
+  color: #2a4058;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+}
+
+.btn-link {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #4258ff;
+}
+.btn-link:hover {
+  background-color: rgb(84.9, 104.7, 255);
+}
+
+.btn-outlined-link {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #4258ff;
+}
+.btn-outlined-link:hover {
+  background-color: #4258ff;
+}
+
+.btn-complement-link {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #4258ff;
+  color: rgb(255, 235.2, 84.9);
+}
+.btn-complement-link:hover {
+  color: #4258ff;
+  background-color: rgb(255, 235.2, 84.9);
+}
+
+.btn-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #00d1b2;
+}
+.btn-primary:hover {
+  background-color: rgb(0, 239.1, 203.6354066986);
+}
+
+.btn-outlined-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #00d1b2;
+}
+.btn-outlined-primary:hover {
+  background-color: #00d1b2;
+}
+
+.btn-complement-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #00d1b2;
+  color: rgb(239.1, 0, 35.4645933014);
+}
+.btn-complement-primary:hover {
+  color: #00d1b2;
+  background-color: rgb(239.1, 0, 35.4645933014);
+}
+
+.btn-info {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #66d1ff;
+}
+.btn-info:hover {
+  background-color: rgb(117.3, 213.6, 255);
+}
+
+.btn-outlined-info {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #66d1ff;
+}
+.btn-outlined-info:hover {
+  background-color: #66d1ff;
+}
+
+.btn-complement-info {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #66d1ff;
+  color: rgb(255, 158.7, 117.3);
+}
+.btn-complement-info:hover {
+  color: #66d1ff;
+  background-color: rgb(255, 158.7, 117.3);
+}
+
+.btn-success {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #48c78e;
+}
+.btn-success:hover {
+  background-color: rgb(90.3, 204.6, 153.3);
+}
+
+.btn-outlined-success {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #48c78e;
+}
+.btn-outlined-success:hover {
+  background-color: #48c78e;
+}
+
+.btn-complement-success {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #48c78e;
+  color: rgb(204.6, 90.3, 141.6);
+}
+.btn-complement-success:hover {
+  color: #48c78e;
+  background-color: rgb(204.6, 90.3, 141.6);
+}
+
+.btn-warning {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffb70f;
+}
+.btn-warning:hover {
+  background-color: rgb(255, 190.2, 39);
+}
+
+.btn-outlined-warning {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ffb70f;
+}
+.btn-outlined-warning:hover {
+  background-color: #ffb70f;
+}
+
+.btn-complement-warning {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffb70f;
+  color: rgb(39, 103.8, 255);
+}
+.btn-complement-warning:hover {
+  color: #ffb70f;
+  background-color: rgb(39, 103.8, 255);
+}
+
+.btn-danger {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6685;
+}
+.btn-danger:hover {
+  background-color: rgb(255, 117.3, 145.2);
+}
+
+.btn-outlined-danger {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ff6685;
+}
+.btn-outlined-danger:hover {
+  background-color: #ff6685;
+}
+
+.btn-complement-danger {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6685;
+  color: rgb(117.3, 255, 227.1);
+}
+.btn-complement-danger:hover {
+  color: #ff6685;
+  background-color: rgb(117.3, 255, 227.1);
+}
+
+.btn-black {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+}
+.btn-black:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+}
+
+.btn-outlined-black {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.btn-outlined-black:hover {
+  background-color: black;
+}
+
+.btn-complement-black {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+  color: rgb(25.5, 25.5, 25.5);
+}
+.btn-complement-black:hover {
+  color: black;
+  background-color: rgb(25.5, 25.5, 25.5);
+}
+
+.btn-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+}
+.btn-white:hover {
+  background-color: white;
+}
+
+.btn-outlined-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid white;
+}
+.btn-outlined-white:hover {
+  background-color: white;
+}
+
+.btn-complement-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: white;
+}
+.btn-complement-white:hover {
+  color: white;
+  background-color: white;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.theme-font {
+  font-family: "Astro World", sans-serif;
 }

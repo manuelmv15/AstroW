@@ -1,6 +1,249 @@
-//primero variables
+@use 'sass:map';
+
+@use 'variables' as *;
+
+
 @forward 'variables';
 
-//espaciados
-@forward 'espaciado';
+@forward 'grid';
 
+@forward 'colors';
+
+@forward 'functions';
+
+
+$utilities: (
+    "padding": (
+        'prefix': 'p',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,  
+            '3': $base-padding * 4,  
+            '4': $base-padding * 6,  
+            '5': $base-padding * 8
+        ),
+    ),
+    "padding-left": (
+        'prefix': 'pl',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,  
+            '3': $base-padding * 4,  
+            '4': $base-padding * 6,  
+            '5': $base-padding * 8
+        ),
+    ),
+    "padding-right": (
+        'prefix': 'pr',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,  
+            '3': $base-padding * 4,  
+            '4': $base-padding * 6,  
+            '5': $base-padding * 8
+        ),
+    ),
+    "padding-top": (
+        'prefix': 'pt',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,  
+            '3': $base-padding * 4,  
+            '4': $base-padding * 6,  
+            '5': $base-padding * 8
+        ),
+    ),
+    "padding-bottom": (
+        'prefix': 'pb',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,  
+            '3': $base-padding * 4,  
+            '4': $base-padding * 6,  
+            '5': $base-padding * 8
+        ),
+    ),
+    "margin": (
+        'prefix': 'm',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            'auto': auto
+        ),
+    ),
+    "margin-left": (
+        'prefix': 'ml',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            'auto': auto
+        ),
+    ),
+    "margin-right": (
+        'prefix': 'mr',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            'auto': auto
+        ),
+    ),
+    "margin-top": (
+        'prefix': 'mt',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            'auto': auto
+        ),
+    ),
+    "margin-bottom": (
+        'prefix': 'mb',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            'auto': auto
+        ),
+    ),
+    "border-radius": (
+        'prefix': 'br',
+        'values': (
+            'default': $base-border-radius,
+            'none': 0,
+            'sm': $base-border-radius * 0.5,
+            'lg': $base-border-radius * 2,
+            'xl': $base-border-radius * 4,
+            'full': 50%,
+        ),
+    ),
+    "display": (
+        'prefix': 'd',
+        'values': (
+            'none': none,
+            'inline': inline,
+            'inline-block': inline-block,
+            'block': block,
+            'flex': flex,
+            'inline-flex': inline-flex,
+            'grid': grid
+        ),
+    ),
+    "text-align": (
+        'prefix': 'text',
+        'values': (
+            'left': left,
+            'center': center,
+            'right': right,
+            'justify': justify
+        ),
+    ),
+    "font-weight": (
+        'prefix': 'fw',
+        'values': (
+            'light': 300,
+            'normal': 400,
+            'medium': 500,
+            'semibold': 600,
+            'bold': 700,
+            'black': 900
+        ),
+    ),
+    "width": (
+        'prefix': 'w',
+        'values': (
+            'auto': auto,
+            '25': 25%,
+            '50': 50%,
+            '75': 75%,
+            '100': 100%,
+            'screen': 100vw
+        ),
+    ),
+    "height": (
+        'prefix': 'h',
+        'values': (
+            'auto': auto,
+            '25': 25%,
+            '50': 50%,
+            '75': 75%,
+            '100': 100%,
+            'screen': 100vh
+        ),
+    ),
+
+    "opacity": (
+        'prefix': 'opacity',
+        'values': (
+            '0': 0,
+            '25': 0.25,
+            '50': 0.5,
+            '75': 0.75,
+            '100': 1
+        ),
+    ),
+
+    "font-size": (
+        'prefix': 'text',
+        'values': (
+            'xs': 0.75rem,    // 12px (base 16px)
+            'sm': 0.875rem,   // 14px
+            'base': 1rem,     // 16px (tamaño por defecto)
+            'lg': 1.125rem,   // 18px
+            'xl': 1.25rem,    // 20px
+            '2xl': 1.5rem,   // 24px
+            '3xl': 1.875rem,  // 30px
+            '4xl': 2.25rem,   // 36px
+            '5xl': 3rem,      // 48px
+            '6xl': 3.75rem,   // 60px
+            '7xl': 4.5rem,    // 72px
+            '8xl': 6rem,      // 96px
+            '9xl': 8rem       // 128px
+        ),
+    ),
+);
+
+
+//generar las clases de utilidades
+
+@each $property, $map in $utilities{
+
+    $prefix: map.get($map, 'prefix');
+    $values: map.get($map, 'values');
+
+    @each $k, $v in $values{
+
+        @if($k == 'default'){
+            .#{$prefix}{
+                #{$property}: $v;
+            }
+        }@else{
+            .#{$prefix}-#{$k}{
+                #{$property}: $v;
+            }
+        }
+    }
+
+}

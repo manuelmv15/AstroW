@@ -1,27 +1,65 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+@import url('https://fonts.cdnfonts.com/css/astro-world');
 
-
+$base-font: 'Astro World', sans-serif;
+$alt-font: "Outfit", sans-serif;
 
 //variables para el espaciado, margin paddings etc
 
 
 
-// theme colors
+// theme colors astroworld (estos colores correponden a la tematica de la lib)
 
-$primario: #326dee;
-$secundario:#1ac888;
-$advertencia:#d32752;
-$info:#f6c31c;
+$theme-color-orange: #f4a529;
+$theme-color-yellow: #fad860;
+$theme-color-red: #790707;
+$theme-color-pitch: #9e6555;
+$theme-color-gray: #acc1d3;
+$theme-color-blue: #2a4058;
+
+//actual useful colors (estos serian los colores 'usables')
+$link-color: #4258ff;
+$primary-color: #00d1b2;
+$info-color: #66d1ff;
+$success-color: #48c78e;
+$warning-color:#ffb70f;
+$danger-color:#ff6685;
+
+
+//map de colores que servira para generar tonos de colores ya sean mas claros o oscurs
+$colors: (
+    "orange": $theme-color-orange,
+    "yellow": $theme-color-yellow,
+    "red": $theme-color-red,
+    "pitch": $theme-color-pitch,
+    "gray": $theme-color-gray,
+    "blue": $theme-color-blue,
+    "link": $link-color,
+    "primary": $primary-color,
+    "info": $info-color,
+    "success": $success-color,
+    "warning": $warning-color,
+    "danger": $danger-color,
+    "black": black,
+    "white": white,
+
+);
+
 // spacing
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;
 // borders
 $base-border-thickness: 1px;
-$base-border-radius: 20px;
+$base-border-radius: 5px;
 // box-shadow
 $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+
 // font sizes
 
 $base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;

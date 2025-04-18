@@ -1,0 +1,68 @@
+
+@use "variables" as c;
+@use 'sass:color' as *;
+
+@each $key, $value in c.$colors{
+
+    .text-#{$key}{
+        color: $value;
+    }
+
+
+    .bg-color-#{$key}{
+
+        background-color: $value;
+    }
+
+    //calse para los colores del efecto hover
+    .text-hover-#{$key}{
+
+        &:hover{// aspersan selecciona el elemento padre, osea q es como si tuvieramos .text-hover-red:hover{}. util si depues se necesitan usar mas sudoselectors para dicho element
+    
+            color: $value;
+            
+        }
+    }
+
+
+    @if($value != black and $value != white){//nos aseguramod que no genere variaciones de colores para balnco y negro
+
+
+        //light vasriations, cada color tiene variaciones de si mismo pero con un tono mas claro
+        @for $i from 1 through 9{
+            .text-#{$key}-light-#{$i}{
+                color: mix(white, $value, $i *10%);
+            }
+
+            .bg-color-#{$key}-light-#{$i}{
+                background-color: mix(white, $value, $i *10%);
+            }
+
+            .text-hover-#{$key}-light-#{$i}{
+                &:hover{
+                    color: mix(white, $value, $i*10%);
+                }
+            }
+            
+        }
+
+        //ahora para variaciones mas oscuras
+        @for $i from 1 through 9{
+            .text-#{$key}-dark-#{$i}{
+                color: mix(black, $value, $i *10%);
+            }
+
+            .bg-color-#{$key}-dark-#{$i}{
+                background-color: mix(black, $value, $i *10%);
+            }
+
+            .text-hover-#{$key}-dark-#{$i}{
+                &:hover{
+                    color: mix(black, $value, $i*10%);
+                }
+            }
+            
+        }
+    }
+    
+}
