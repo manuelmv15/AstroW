@@ -11,34 +11,60 @@ $breakpoints: (
 
 );
 
-
-@mixin xs{
-    @media(min-width: map.get($breakpoints, "xs")){
-        @content;
+// para mobil first (min-width)
+@mixin respond-to($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        $bp-value: map.get($breakpoints, $breakpoint);
+        @if $bp-value > 0 {
+            @media (min-width: $bp-value) {
+                @content;
+            }
+        } @else {
+            @content; // Para xs (0px) aplica siempre
+        }
+    } @else {
+        @error "Breakpoint '#{$breakpoint}' no está definido en $breakpoints";
     }
 }
 
-@mixin sm{
-    @media(min-width: map.get($breakpoints, "sm")){
-        @content;
+// para desktop first (max-width)
+@mixin max-width($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        $bp-value: map.get($breakpoints, $breakpoint);
+        @if $bp-value > 0 {
+            @media (max-width: calc($bp-value - 1px)) {
+                @content;
+            }
+        }
+    } @else {
+        @error "Breakpoint '#{$breakpoint}' no está definido en $breakpoints";
     }
 }
 
-@mixin md{
-    @media(min-width: map.get($breakpoints, "md")){
-        @content;
+
+
+
+//especifi por breakpoint 
+@mixin sm {
+    @include respond-to('sm') { 
+        @content; 
     }
 }
 
-@mixin lg{
-    @media(min-width: map.get($breakpoints, "lg")){
-        @content;
+@mixin md {
+    @include respond-to('md') { 
+        @content; 
     }
 }
 
-@mixin xl{
-    @media(min-width: map.get($breakpoints, "xl")){
-        @content;
+@mixin lg {
+    @include respond-to('lg') { 
+        @content; 
     }
 }
 
+@mixin xl {
+    @include respond-to('xl') { 
+        @content; 
+    }
+}

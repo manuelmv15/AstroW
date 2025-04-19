@@ -15,18 +15,77 @@ $grid-gaps: (
 
 );
 
-$gap-atajos: (
-  "gap": "g",
-)!default;
+
+
+//FLEX FELX FLEX FLEX FLEX
+
+$justify-content-values: flex-start, flex-end, center, space-between, space-around, space-evenly;
+
+$flex-directions-values: row, column, row-reverse, column-reverse;
+
+$align-items-values: flex-start, flex-end, center, baseline, stretch;
 
 
 
-$layout-values: flex-start, flex-end, center, space-between, space-around;
+//clases para justify content
+@each $value in $justify-content-values{
+
+    .justify-#{$value}{
+        justify-content: $value;
+    }
+}
+//calses poara flex directions
+@each $value in $flex-directions-values{
+    .flex-dir-#{$value}{
+        
+        flex-direction: $value;
+    }
+}
+
+// Clases responsive
+@each $bp-name, $bp-value in $breakpoints {
+    @if $bp-value > 0 {
+      @include respond-to($bp-name) {
+        @each $direction in $flex-directions-values {
+          .#{$bp-name}\:flex-#{$direction} {
+            flex-direction: $direction;
+          }
+        }
+      }
+    }
+  }
+
+//clases para aling-items, align-self and align-content ya que tienen los mismos valores
+@each $value in $align-items-values{
+
+    .ai-#{$value}{
+        align-items: $value;
+    }
+
+    .ac-#{$value}{
+        align-content: $value;
+    }
+
+    .as-#{$value}{
+        align-self: $value;
+    }
+}
+//propiedades para elementos flex
+.flex-1{
+    flex: 1;
+}
+
+//clases para order
+@for $i from 1 through $grid-columns{
+    .order-#{$i}{
+        order: #{$i};
+    }
+}
 
 .container{
 
-    width: 100%;
-    max-width: 1200px;
+    // width: 100%;
+    // max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -35,12 +94,12 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 .row {
 
     display: flex;
-    flex-wrap: row wrap;
+    flex-wrap: wrap;
 }
 //grid gaps calses
 
 
-@each $k, $v in $grid_gaps{
+@each $k, $v in $grid-gaps{
 
     .gap-#{$k} > *{
         padding: $v;//padding?
@@ -52,68 +111,38 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     }
 }
 
-//clases para justify content
-@each $value in $layout_values{
 
-    .justify-#{$value}{
-        justify-content: $value;
+
+
+
+@for $i from 1 through $grid-columns{
+    .col-#{$i}{
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: math.div($i * 100%, $grid-columns);
     }
 }
 
 
-//col  clases
-
-@include xs{
-    @for $i from 1 through $grid-columns{
-        .col-#{$i}-xs{
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
+//NUEVA IMPLEMENTACION PARA LOS MIXINS CON BREAKPOINTS
+@each $bp-name, $bp-value in $breakpoints {
+    @if $bp-value > 0 {
+        @include respond-to($bp-name) {
+            @for $i from 1 through $grid-columns{
+                .#{$bp-name}\:col-#{$i}{
+                    box-sizing: border-box;
+                    flex-grow: 0;
+                    width: math.div($i * 100%, $grid-columns);
+                }
+            }
         }
     }
 }
 
+//clases utiles para flex
 
-@include sm{
-    @for $i from 1 through $grid-columns{
-        .col-#{$i}-sm{
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
-}
 
-@include md{
-    @for $i from 1 through $grid-columns{
-        .col-#{$i}-md{
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
-}
-
-@include lg{
-    @for $i from 1 through $grid-columns{
-        .col-#{$i}-lg{
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
-}
-
-@include xl{
-    @for $i from 1 through $grid-columns{
-        .col-#{$i}-xl{
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-        }
-    }
-}
-
+//FIN FLEXXX
 
 $gap-map: (
   "0": 0,
@@ -126,6 +155,11 @@ $gap-map: (
   "auto": auto,
 )!default;
 
+$gap-atajos: (
+  "gap": "g",
+)!default;
+
+
   //para general las clases con la propiedad gap, solo se aplicara a elementos flex o grid pero en este caso flex ya que de momento no hay gird
 @each $propiedad, $atajo in $gap-atajos {
   @each $key, $value in $gap-map{
@@ -137,3 +171,77 @@ $gap-map: (
 
   }
 }
+
+
+//soporte para grid
+
+//grid container
+.grid {
+    display: grid;
+    gap: 1rem; // gap base, se puede sobreescribir con clases
+  }
+  
+  //columnas del grid
+  @for $i from 1 through 12 {
+    .grid-cols-#{$i} {
+      grid-template-columns: repeat(#{$i}, 1fr);
+    }
+  
+    .col-span-#{$i} {
+      grid-column: span #{$i} / span #{$i};
+    }
+  }
+  
+  // Filas del grid (opcional)
+  @for $i from 1 through 6 {
+    .grid-rows-#{$i} {
+      grid-template-rows: repeat(#{$i}, 1fr);
+    }
+  
+    .row-span-#{$i} {
+      grid-row: span #{$i} / span #{$i};
+    }
+  }
+  
+
+  
+@mixin generar-grid-classes($prefix : "") {
+    
+    @for $i from 1 through 12 {
+        .#{$prefix}grid-cols-#{$i} {
+          grid-template-columns: repeat(#{$i}, 1fr);
+        }
+    
+        .#{$prefix}col-span-#{$i} {
+          grid-column: span #{$i} / span #{$i};
+        }
+    }
+    
+    @for $i from 1 through 6 {
+        .#{$prefix}grid-rows-#{$i} {
+          grid-template-rows: repeat(#{$i}, 1fr);
+        }
+    
+        .#{$prefix}row-span-#{$i} {
+          grid-row: span #{$i} / span #{$i};
+        }
+    }
+    
+    @each $key, $value in $gap-map {
+        .#{$prefix}gap-#{$key} {
+          gap: #{$value};
+        }
+    }
+}
+
+
+
+// Responsive grid utilizando respond-to para cada breakpoint
+@each $bp-name, $bp-value in $breakpoints {
+    @if $bp-value > 0 {
+        @include respond-to($bp-name) {
+            @include generar-grid-classes("#{$bp-name}\\:");
+        }
+    }
+}
+  

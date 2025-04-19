@@ -1,0 +1,75 @@
+@use 'sass:map';
+@use '../utilidades/breakpoints' as *;
+@use '../utilidades/variables' as *;
+
+//variables de diseño
+$container-padding: 1rem;
+$container-border: 1px solid #ccc;
+$container-radius: 0.5rem;
+$container-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+// tamanios máximos por breakpoint
+$container-widths: (
+  "xs": 100%,
+  "sm": 540px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1140px,
+);
+
+// === ESTILOS BASE ===
+
+@mixin container-base {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}
+
+// === VARIACIONES DE ESTILO ===
+
+@mixin container-bordered {
+  border: $container-border;
+  border-radius: $container-radius;
+}
+
+@mixin container-shadowed {
+  box-shadow: $container-shadow;
+  border-radius: $container-radius;
+}
+
+@mixin container-solid($bg-color: #f8f9fa) {
+  background-color: $bg-color;
+  border-radius: $container-radius;
+}
+
+// === CONTAINER FLOW commo fluid de bostra
+
+.container-flow {
+  @include container-base;
+  max-width: 100%;
+}
+
+// === CONTAINERS POR ESTILO Y BREAKPOINT ===
+
+@each $style in (base, bordered, shadow, solid) {
+  @each $breakpoint, $width in $container-widths {
+
+    .container-#{$style}-#{$breakpoint} {
+      @include container-base;
+
+      @if $style == bordered {
+        @include container-bordered;
+      } @else if $style == shadow {
+        @include container-shadowed;
+      } @else if $style == solid {
+        @include container-solid();
+      }
+
+      @include respond-to($breakpoint) {
+        max-width: $width;
+      }
+    }
+  }
+}
