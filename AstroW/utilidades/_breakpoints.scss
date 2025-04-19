@@ -1,4 +1,3 @@
-
 @use 'sass:map';
 
 $breakpoints: (
@@ -45,6 +44,11 @@ $breakpoints: (
 
 
 //especifi por breakpoint 
+@mixin xs {
+    @include respond-to('xs') {
+      @content;
+    }
+  }  
 @mixin sm {
     @include respond-to('sm') { 
         @content; 

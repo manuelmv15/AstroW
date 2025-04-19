@@ -1,0 +1,84 @@
+@use '../utilidades/breakpoints' as *;
+@use '../utilidades/variables' as *;
+@use 'sass:map';
+
+
+@mixin navbar{
+  
+  display: flex;
+  align-items: center;
+  padding: $base-padding;
+  background-color: map.get($colors, "blue");
+  font-family: $base-font;
+  box-shadow: $base-box-shadow;
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: $base-margin;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        text-decoration: none;
+        color: map.get($colors, "white");
+        font-size: $base-font-size;
+        font-weight: 700;
+        padding: 0.5rem 1rem;
+        border-radius: $base-border-radius;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: map.get($colors, "link");
+        }
+      }
+    }
+  }
+
+  @include respond-to(xs) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    ul {
+      flex-direction: column;
+      gap: $base-padding;
+    }
+  }
+
+  @include respond-to(sm) {
+    flex-direction: row;
+
+    ul {
+      flex-direction: row;
+    }
+  }
+
+  @include respond-to(md) {
+    font-size: $font-size-sm;
+  }
+
+  @include respond-to(lg) {
+    font-size: $base-font-size;
+  }
+
+  @include respond-to(xl) {
+    font-size: $font-size-lg;
+    a{
+      color:black ;
+    }
+
+  }
+}
+
+.navbar-left {
+  justify-content: flex-start;
+  @include navbar()
+}
+
+.navbar-right {
+  justify-content: flex-end;
+  @include navbar()
+}
+
+

@@ -10638,6 +10638,128 @@ table {
   color: white;
 }
 
+.navbar-left {
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #2a4058;
+  font-family: "Astro World", sans-serif;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navbar-left ul {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+.navbar-left ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.navbar-left ul li a:hover {
+  background-color: #4258ff;
+}
+.navbar-left ul {
+  flex-direction: column;
+  gap: 0.75rem;
+}
+@media (min-width: 480px) {
+  .navbar-left {
+    flex-direction: row;
+  }
+  .navbar-left ul {
+    flex-direction: row;
+  }
+}
+@media (min-width: 720px) {
+  .navbar-left {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 960px) {
+  .navbar-left {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-left {
+    font-size: 1.5rem;
+  }
+  .navbar-left a {
+    color: black;
+  }
+}
+
+.navbar-right {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #2a4058;
+  font-family: "Astro World", sans-serif;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navbar-right ul {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+.navbar-right ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.navbar-right ul li a:hover {
+  background-color: #4258ff;
+}
+.navbar-right ul {
+  flex-direction: column;
+  gap: 0.75rem;
+}
+@media (min-width: 480px) {
+  .navbar-right {
+    flex-direction: row;
+  }
+  .navbar-right ul {
+    flex-direction: row;
+  }
+}
+@media (min-width: 720px) {
+  .navbar-right {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 960px) {
+  .navbar-right {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-right {
+    font-size: 1.5rem;
+  }
+  .navbar-right a {
+    color: black;
+  }
+}
+
 body {
   font-family: "Outfit", sans-serif;
 }
