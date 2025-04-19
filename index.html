@@ -6,29 +6,40 @@
     <title>Pagina prueba</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>yeah</h1>
-
-    <div class="container">
-
+<body class="bg-color-primary-light-7">
     
+
+    <div class="container w-screen max-w-xl">
+
+      <header class="pos-sticky top-0 bg-color-orange-light-6 p-1 br mb-2 mt-2">
+        <!-- Contenido del header -->
+         <h1 class="text-center title">header sticky</h1>
+      </header>
       <div class="container">
-        <h1 class="text-center theme-font text-2xl">🌌 AstroCSS Demo</h1>
+        <h1 class="text-center theme-font title">🌌 AstroCSS Demo</h1>
       </div>
 
       <!-- Containers -->
       <section>
         <h2>Containers</h2>
-        <div class="container container-sm" style="background-color: #f3f3f3;">Container SM</div>
-        <div class="container container-md" style="background-color: #ddd;">Container MD</div>
-        <div class="container container-lg" style="background-color: #bbb;">Container LG</div>
+        
+      </section>
+
+      <section>
+        <h6 class="title text-center mt-4 mb-4">Tamanios de texto</h6>
+        <p class="text-xs bg-color-primary-light-2 m-1">Lorem, ipsum dolor. XS</p>
+        <p class="text-base bg-color-primary-dark-3 m-1">Lorem, ipsum dolor. base</p>
+        <p class="text-xl bg-color-primary-light-4 m-1">Lorem, ipsum dolor. xl</p>
+        <p class="text-2xl bg-color-primary-light-6 m-1">Lorem, ipsum dolor. 2xl</p>
+        <p class="text-4xl bg-color-primary-light-8 m-1">Lorem, ipsum dolor. 4xl</p>
+        <p class="text-6xl bg-color-primary-dark-1 m-1">Lorem, ipsum dolor. 6xl</p>
       </section>
     
       <!-- Grid / Flex Layout -->
       <section>
-        <h2 class="text-lg text-center mt-2 mb-2">Layout: Filas y Columnas</h2>
+        <h2 class="text-lg text-center mt-2 mb-2 ">Layout: Filas y Columnas</h2>
         <div class="row p-1 g-4" style="background-color: aqua;">
-          <div class="col-1-xs" style="background-color: #cce;">Col 4</div>
+          <div class="sm:col-3 md:col-6" style="background-color: #cce;">Col 4</div>
           <div class="col-1-xs" style="background-color: #ddf;">Col 4</div>
           <div class="col-1-xs" style="background-color: #eef;">Col 4</div>
           <div class="col-1-xs" style="background-color: beige;">Col 6</div>
@@ -71,5 +82,81 @@
       <a href="#" class="btn-complement-red">click me</a>
       <a href="#" class="btn-complement-pitch br">click me</a>
     </div>
+
+    <h1 class="theme-font title text-center mt-4 mb-2">grid alternativa</h1>
+
+    <!-- Grid base, 2 columnas en xs, 4 columnas en md -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3" style="background: #f0f0f0; padding: 1rem;">
+  
+      <div class="col-span-2 md:col-span-2" style="background: #bde0fe; padding: 1rem;">
+      Bloque 1 (col-span-2)
+      </div>
+
+      <div class="col-span-1 md:col-span-1" style="background: #a2d2ff; padding: 1rem;">
+      Bloque 2 (col-span-1)
+      </div>
+
+      <div class="col-span-1 md:col-span-1" style="background: #9bf6ff; padding: 1rem;">
+      Bloque 3 (col-span-1)
+      </div>
+
+      <div class="col-span-2 md:col-span-4" style="background: #caffbf; padding: 1rem;">
+      Bloque 4 (ocupa todo en md)
+      </div>
+
+      <div class="col-span-1 md:col-span-1" style="background: #ffd6a5; padding: 1rem;">
+      Bloque 5
+      </div>
+
+      <div class="col-span-1 md:col-span-1" style="background: #fdffb6; padding: 1rem;">
+      Bloque 6
+      </div>
+
+      <div class="col-span-2 md:col-span-2" style="background: #ffadad; padding: 1rem;">
+      Bloque 7
+      </div>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 sm:grid-cols-1 g-6 mt-4 mb-4 bg-color-success-light-9 p-1">
+
+      <div class="card br-lg shadow-2xl bg-color-white">
+        <h5 class="card-title">habla</h5>
+
+        <p class="card-body">Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      
+      <div class="card br bg-color-white">
+        <h5 class="card-title ">habla</h5>
+
+        <p class="card-body">Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+     
+
+    </div>
+
+    
+    <div class="mt-2 mb-2 bg-color-primary-dark-3 w-25 h-25 shadow-2xl shadow-boom">ds
+      
+    </div>
+
+    <div class="" style="
+          background: white;
+          margin: 3rem;
+          padding: 3rem;
+          border-radius: 12px;
+        ">
+      <p style="margin: 0;">Probando sombra 2xl</p>
+    </div>
+    
+    <div class="shadow" style="
+          background: white;
+          margin: 3rem;
+          padding: 3rem;
+          border-radius: 12px;
+        ">
+      <p style="margin: 0;">Probando sombra 2xl</p>
+    </div>
+
 </body>
 </html>

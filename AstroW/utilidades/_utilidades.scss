@@ -1,9 +1,16 @@
 @use 'sass:map';
-
+@use 'sass:list';
+@use 'sass:math';
 @use 'variables' as *;
-
+//primero variables
 
 @forward 'variables';
+
+@use 'breakpoints' as *;
+
+
+
+
 
 @forward 'grid';
 
@@ -17,7 +24,7 @@ $utilities: (
         'prefix': 'p',
         'values': (
             '0': 0,
-            '1': $base-padding,
+            '1': min($base-padding, 8%),
             '2': $base-padding * 2,  
             '3': $base-padding * 4,  
             '4': $base-padding * 6,  
@@ -139,18 +146,18 @@ $utilities: (
             'full': 50%,
         ),
     ),
-    "display": (
-        'prefix': 'd',
-        'values': (
-            'none': none,
-            'inline': inline,
-            'inline-block': inline-block,
-            'block': block,
-            'flex': flex,
-            'inline-flex': inline-flex,
-            'grid': grid
-        ),
-    ),
+    // "display": (
+    //     'prefix': 'd',
+    //     'values': (
+    //         'none': none,
+    //         'inline': inline,
+    //         'inline-block': inline-block,
+    //         'block': block,
+    //         'flex': flex,
+    //         'inline-flex': inline-flex,
+    //         'grid': grid
+    //     ),
+    // ),
     "text-align": (
         'prefix': 'text',
         'values': (
@@ -160,6 +167,16 @@ $utilities: (
             'justify': justify
         ),
     ),
+
+    "font-style": (
+        'prefix': 'text',
+        'values': (
+            'normal': normal,
+            'italic': italic,
+            'oblique': oblique
+        ),
+    ),
+
     "font-weight": (
         'prefix': 'fw',
         'values': (
@@ -173,24 +190,28 @@ $utilities: (
     ),
     "width": (
         'prefix': 'w',
+        'responsive': true,
         'values': (
             'auto': auto,
             '25': 25%,
             '50': 50%,
             '75': 75%,
             '100': 100%,
-            'screen': 100vw
+            'screen': 100dvw,
+            'fit': fit-content
         ),
     ),
     "height": (
         'prefix': 'h',
+        'responsive': true,
         'values': (
             'auto': auto,
             '25': 25%,
             '50': 50%,
             '75': 75%,
             '100': 100%,
-            'screen': 100vh
+            'screen': 100dvh,
+            'fit': fit-content
         ),
     ),
 
@@ -223,26 +244,186 @@ $utilities: (
             '9xl': 8rem       // 128px
         ),
     ),
+
+    "position": (
+        'prefix': 'pos',
+        'values': (
+            'static': static,
+            'fixed': fixed,
+            'absolute': absolute,
+            'relative': relative,
+            'sticky': sticky
+        ),
+    ),
+    "top": (
+        'prefix': 'top',
+        'values': (
+            '0': 0,
+            '50': 50%,
+            '100': 100%,
+            'auto': auto
+        ),
+    ),
+    "right": (
+        'prefix': 'right',
+        'values': (
+            '0': 0,
+            '50': 50%,
+            '100': 100%,
+            'auto': auto
+        ),
+    ),
+    "bottom": (
+        'prefix': 'bottom',
+        'values': (
+            '0': 0,
+            '50': 50%,
+            '100': 100%,
+            'auto': auto
+        ),
+    ),
+    "left": (
+        'prefix': 'left',
+        'values': (
+            '0': 0,
+            '50': 50%,
+            '100': 100%,
+            'auto': auto
+        ),
+    ),
+
+    "max-width": (
+        'prefix': 'max-w',
+        'responsive': true,
+        'values': (
+            'xs': map.get($breakpoints, 'xs'),
+            'sm': map.get($breakpoints, 'sm'),
+            'md': map.get($breakpoints, 'md'),
+            'lg': map.get($breakpoints, 'lg'),
+            'xl': map.get($breakpoints, 'xl'),
+            'full': 100%,
+            'screen': 100vw,
+            'none': none
+        ),
+    ),
+
+    
+    "min-width": (
+        'prefix': 'min-w',
+        'responsive': true,
+        'values': (
+            'xs': map.get($breakpoints, 'xs'),
+            'sm': map.get($breakpoints, 'sm'),
+            'md': map.get($breakpoints, 'md'),
+            'lg': map.get($breakpoints, 'lg'),
+            'xl': map.get($breakpoints, 'xl'),
+            'full': 100%,
+            'screen': 100vw,
+            'none': none
+        ),
+    ),
+
+    "max-height": (
+        'prefix': 'max-h',
+        'responsive': true,
+        'values': (
+            'xs': map.get($breakpoints, 'xs'),
+            'sm': map.get($breakpoints, 'sm'),
+            'md': map.get($breakpoints, 'md'),
+            'lg': map.get($breakpoints, 'lg'),
+            'xl': map.get($breakpoints, 'xl'),
+            'full': 100%,
+            'screen': 100vw,
+            'none': none
+        ),
+    ),
+
+    
+    "min-height": (
+        'prefix': 'min-h',
+        'responsive': true,
+        'values': (
+            'xs': map.get($breakpoints, 'xs'),
+            'sm': map.get($breakpoints, 'sm'),
+            'md': map.get($breakpoints, 'md'),
+            'lg': map.get($breakpoints, 'lg'),
+            'xl': map.get($breakpoints, 'xl'),
+            'full': 100%,
+            'screen': 100vw,
+            'none': none
+        ),
+    ),
+
+   "box-shadow": (
+        'prefix': 'shadow',
+        'values': (
+            'none': none,
+            'sm': (0 1px 2px 0 rgba(0, 0, 0, 0.08)), 
+            'default': (0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08)), 
+            'md': (0 4px 6px -1px rgba(0, 0, 0, 0.15), 0 2px 4px -1px rgba(0, 0, 0, 0.1)), 
+            'lg': (0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1)), 
+            'xl': (0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.15)), 
+            '2xl': (0 25px 50px -12px rgba(0, 0, 0, 0.4)), 
+            '3xl': (0 35px 70px -15px rgba(0, 0, 0, 0.5)), 
+            'boom': (0 10px 20px rgba(0, 0, 0, 0.8)),
+            'inner': inset 0 2px 4px 0 rgba(0, 0, 0, 0.1), 
+            'outline': (0 0 0 3px rgba(66, 153, 225, 0.6)) 
+        ),
+    ),
 );
 
 
 //generar las clases de utilidades
 
-@each $property, $map in $utilities{
 
-    $prefix: map.get($map, 'prefix');
-    $values: map.get($map, 'values');
+//la logica del mapa es simple key -> propiedad css y su value: -> seria un sub mapa con el prefejo y un mapa de values
 
-    @each $k, $v in $values{
+@each $propiedad, $map in $utilities{
+    
+    //verificamos si el mapa contiene la valores, sino entnoes no generamos clases para dicha utilidad
+    //map.has-key() corresponde a una funcion del modulo map de sass
+    //recibe como param el mapa y la key que se buscara coincidencia dentro de dicho mapa
+    //en este caso $map , value. dicha funcion returna un bool
+    //tambien se verifica que el mapa de values tenga al menos 1 par dicho en terminos practicos un valor
+    @if(map.has-key($map, 'values') and list.length(map.get($map, 'values')) > 0){
 
-        @if($k == 'default'){
-            .#{$prefix}{
-                #{$property}: $v;
+        $prefix: map.get($map, 'prefix');
+        $values: map.get($map, 'values');
+        $responsive: map.get($map, 'responsive', false);
+
+        @each $key, $value in $values{
+
+
+            @if($key == 'default'){
+                .#{$prefix}{
+                    #{$propiedad}: #{$value};
+                }
+            }@else{
+                .#{$prefix}-#{$key}{
+                    #{$propiedad}: #{$value};
+                }
             }
-        }@else{
-            .#{$prefix}-#{$k}{
-                #{$property}: $v;
+
+            @if($responsive){
+                @each $bp-name, $bp-value in $breakpoints{
+
+                    @if($bp-value > 0){
+                        @include respond-to($bp-name){
+
+                            @if($key == 'default'){
+                                .#{$bp-name}\:#{$prefix}{
+                                    #{$propiedad}: #{$value};
+                                }
+                            }@else{
+                                .#{$bp-name}\:#{$prefix}-#{$key}{
+                                    #{$propiedad}: #{$value};
+                                }
+                            }
+                        }
+                    }
+                }
             }
+            
         }
     }
 
