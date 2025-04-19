@@ -24,6 +24,11 @@
         }
     }
 
+    //clase para bordes de colores
+    .bordered-#{$key}{
+        border: 1px solid #{$value};
+    }
+
 
     @if($value != black and $value != white){//nos aseguramod que no genere variaciones de colores para balnco y negro
 
