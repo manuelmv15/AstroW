@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/astro-world");
+@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -10643,7 +10644,9 @@ body {
 }
 
 .theme-font {
-  font-family: "Astro World", sans-serif;
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .title {
