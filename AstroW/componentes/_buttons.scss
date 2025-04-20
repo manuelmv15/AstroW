@@ -4,12 +4,12 @@
 @use '../utilidades/variables' as *;
 @use '../utilidades/functions' as *;
 
-@mixin btn-base($bg-color: #e5dcd7){
+@mixin btn-base($bg-color: transparent){
 
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    border: 0;
+    border: 1px solid black;
     padding: $base-padding $base-padding * 2;
     // border-radius: 5px; lo saque de momento ya que hay una utilidad que aplica esta regla
     background-color: $bg-color
@@ -71,7 +71,7 @@
         .btn-outlined-#{$key}-#{$size}{//gen a boton con fondo blanco delineado con color respectivo
             @include btn-base(#fff);
             @include btn-size($size);
-            border: $base-border-thickness solid $value;
+            border: calc($base-border-thickness + 1px) solid $value;
             &:hover{
                 background-color: $value;
             }

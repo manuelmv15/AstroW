@@ -1,73 +1,242 @@
-
 @use "variables" as c;
 @use 'sass:color' as *;
 
-@each $key, $value in c.$colors{
+@use 'sass:math' as math;
 
-    .text-#{$key}{
+@each $key, $value in c.$colors {
+
+    .text-#{$key} {
         color: $value;
     }
 
+    .text-#{$key}-override {
+        color: $value !important;
+    }
 
-    .bg-color-#{$key}{
+
+    .bg-color-#{$key} {
 
         background-color: $value;
     }
 
     //calse para los colores del efecto hover
-    .text-hover-#{$key}{
+    .text-hover-#{$key} {
 
-        &:hover{// aspersan selecciona el elemento padre, osea q es como si tuvieramos .text-hover-red:hover{}. util si depues se necesitan usar mas sudoselectors para dicho element
-    
+        &:hover {
+            // aspersan selecciona el elemento padre, osea q es como si tuvieramos .text-hover-red:hover{}. util si depues se necesitan usar mas sudoselectors para dicho element
+
             color: $value;
-            
+
         }
     }
 
     //clase para bordes de colores
-    .bordered-#{$key}{
+    .bordered-#{$key} {
         border: 1px solid #{$value};
     }
 
+    //a tag
 
-    @if($value != black and $value != white){//nos aseguramod que no genere variaciones de colores para balnco y negro
+    .link-#{$key} {
+        color: $value;
+        text-decoration: underline;
+    }
+
+    .link-hover-#{$key} {
+        &:hover {
+            color: $value;
+            text-decoration: none;
+        }
+    }
+
+    .link-visited-#{$key} {
+        &:visited {
+            color: $value;
+        }
+    }
+
+    .link-active-#{$key} {
+        &:active {
+            color: $value;
+        }
+    }
+
+    .link-style-#{$key} {
+        color: $value;
+        text-decoration: underline;
+
+        &:hover {
+            color: adjust($color: $value, $lightness: 10%);
+            text-decoration: none;
+        }
+
+        &:active {
+            color: adjust($color: $value, $blackness: 10%);
+        }
+
+        &:visited {
+            color: mix(purple, $value, 30%);
+        }
+    }
+
+    //tezzt area para cuando hay mucho texto q colorear
+    .text-area-#{$key} {
+        color: $value;
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: mix(black, $value, 20%); // Títulos más oscuros
+        }
+        
+        p {
+            color: mix(white, $value, 15%); // Párrafos ligeramente más claros
+        }
+        
+        a {
+            color: adjust($color: $value, $hue: 30deg); // Enlaces con variación de tono
+            text-decoration: underline;
+            
+            &:hover {
+                color: $value;
+            }
+        }
+    }
+
+    @if($value !=black and $value !=white) {
+        //nos aseguramod que no genere variaciones de colores para balnco y negro
 
 
         //light vasriations, cada color tiene variaciones de si mismo pero con un tono mas claro
-        @for $i from 1 through 9{
-            .text-#{$key}-light-#{$i}{
+        @for $i from 1 through 9 {
+            .text-#{$key}-light-#{$i} {
                 color: mix(white, $value, $i *10%);
             }
 
-            .bg-color-#{$key}-light-#{$i}{
+            .bg-color-#{$key}-light-#{$i} {
                 background-color: mix(white, $value, $i *10%);
             }
 
-            .text-hover-#{$key}-light-#{$i}{
-                &:hover{
+            .text-hover-#{$key}-light-#{$i} {
+                &:hover {
                     color: mix(white, $value, $i*10%);
                 }
             }
-            
+
+            .link-style-#{$key}-light-#{$i} {
+                color: mix(white, $value, $i * 10%);
+                text-decoration: underline;
+
+                &:hover {
+                    color: mix(white, $value, ($i + 1) * 10%);
+                }
+
+                &:active {
+                    color: mix(white, $value, ($i - 1) * 10%);
+                }
+
+                &:visited {
+                    color: mix(purple, mix(white, $value, $i * 10%), 30%);
+                }
+            }
+
+            //selecto de colres para cuando hay q cambiar color a micho texto
+            // NOVEDAD: Variaciones claras para text-area
+            .text-area-#{$key}-light-#{$i} {
+                color: mix(white, $value, $i * 10%);
+                
+                h1, h2, h3, h4, h5, h6 {
+                    color: mix(black, mix(white, $value, $i * 10%), 15%);
+                }
+                
+                p {
+                    color: mix(white, $value, ($i + 1) * 10%);
+                }
+                
+                a {
+                    color: adjust($color: mix(white, $value, $i * 10%), $hue: 30deg);
+                    
+                    &:hover {
+                        color: mix(white, $value, ($i - 1) * 10%);
+                    }
+                }
+            }
+
         }
 
         //ahora para variaciones mas oscuras
-        @for $i from 1 through 9{
-            .text-#{$key}-dark-#{$i}{
+        @for $i from 1 through 9 {
+            .text-#{$key}-dark-#{$i} {
                 color: mix(black, $value, $i *10%);
             }
 
-            .bg-color-#{$key}-dark-#{$i}{
+            .bg-color-#{$key}-dark-#{$i} {
                 background-color: mix(black, $value, $i *10%);
             }
 
-            .text-hover-#{$key}-dark-#{$i}{
-                &:hover{
+            .text-hover-#{$key}-dark-#{$i} {
+                &:hover {
                     color: mix(black, $value, $i*10%);
                 }
             }
-            
+
+            .link-style-#{$key}-dark-#{$i} {
+                color: mix(black, $value, $i * 10%);
+                text-decoration: underline;
+
+                &:hover {
+                    color: mix(black, $value, ($i - 1) * 10%);
+                }
+
+                &:active {
+                    color: mix(black, $value, ($i + 1) * 10%);
+                }
+
+                &:visited {
+                    color: mix(purple, mix(black, $value, $i * 10%), 30%);
+                }
+            }
+
+            // NOVEDAD: Variaciones oscuras para text-area
+            .text-area-#{$key}-dark-#{$i} {
+                color: mix(black, $value, $i * 10%);
+                
+                h1, h2, h3, h4, h5, h6 {
+                    color: mix(black, $value, ($i + 1) * 10%);
+                }
+                
+                p {
+                    color: mix(black, $value, math.abs(($i - 2)) * 10%);
+                }
+                
+                a {
+                    color: adjust($color: mix(black, $value, $i * 10%), $hue: -30deg);
+                    
+                    &:hover {
+                        color: mix(black, $value, ($i + 1) * 10%);
+                    }
+                }
+            }
         }
     }
-    
+
+}
+
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.underline-hover {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.no-underline-hover {
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
