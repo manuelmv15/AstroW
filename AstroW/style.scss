@@ -11,21 +11,23 @@
 //componentes
 @use './componentes/_componentes.scss' as *;
 
+// Formularios
+@use 'formulario' as *;
 
-body{
+body {
 
     // background-color: $theme-color-red;
     font-family: $alt-font;
 
 }
 
-.theme-font{
+.theme-font {
 
     font-family: $base-font;
     font-weight: 400;
     font-style: normal;
 }
 
-.title{
+.title {
     font-size: clamp(0.75rem, 2vw + 1rem, 3rem);
 }

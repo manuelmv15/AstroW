@@ -1,0 +1,51 @@
+@use '../utilidades/variables' as *;
+
+//
+// Grupo de elementos input con addon/texto a la izquierda o derecha
+//
+
+.input-group {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: $input-group-margin-bottom; // Espacio inferior entre elementos
+}
+
+// Estilo del campo de entrada dentro del grupo
+.input-group .form-control {
+    flex: 1 1 auto; // Hace que el input crezca para ocupar el espacio restante
+    width: 1%; // Requerido para que flex funcione correctamente
+    min-width: 0; // Evita desbordamientos
+    padding: $input-group-padding-y $input-group-padding-x;
+    font-size: $input-group-font-size;
+    line-height: $input-group-line-height;
+    color: #08090a;
+    background-color: $input-group-bg;
+    border: $input-group-text-border;
+    border-left: none; // Evita doble borde junto al .input-group-text
+    border-radius: 0 $input-group-border-radius $input-group-border-radius 0; // Bordes redondeados derecho
+}
+
+//
+// Texto o icono que acompaña al input (lado izquierdo normalmnte)
+//
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: $input-group-padding-y $input-group-padding-x;
+    font-size: $input-group-font-size;
+    font-weight: $input-group-font-weight;
+    line-height: $input-group-line-height;
+    color: $input-group-text-color;
+    background-color: $input-group-addon-bg;
+    border: $input-group-text-border;
+    border-right: none; // Evita doble borde con el input
+    border-radius: $input-group-border-radius 0 0 $input-group-border-radius; // Bordes redondeados izquierdo
+    white-space: nowrap; // Evita que el texto se divida en varias lineas
+}
+
+// Asegura que no haya borde duplicado cuando se usa .input-group-text
+.input-group:has(.input-group-text) .form-control {
+    border-left: none;
+}

@@ -1,0 +1,17 @@
+@use '../utilidades/variables' as *;
+
+//
+// Estilos para la etiqueta label
+//
+
+.form-label {
+    padding-top: $col-label-padding-top;
+    padding-bottom: $col-label-padding-bottom;
+    line-height: $col-label-line-height;
+}
+
+.col-form-label {
+    padding-top: $col-label-padding-top;
+    padding-bottom: $col-label-padding-bottom;
+    line-height: $col-label-line-height;
+}

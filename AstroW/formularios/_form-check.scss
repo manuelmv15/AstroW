@@ -1,0 +1,64 @@
+@use '../utilidades/variables' as *;
+
+//
+// Form Check – Estilo genral del contenedor
+//
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: $form-check-margin-bottom;
+}
+
+//
+// Form Check Input – Estilos base para checkbox y radio personalizados
+//
+.form-check-input {
+    width: $form-check-input-size;
+    height: $form-check-input-size;
+    border: 1px solid $form-check-input-border-color;
+    border-radius: $form-check-input-border-radius;
+    appearance: none;
+    cursor: pointer;
+    margin-right: $form-check-margin-bottom;
+    position: relative;
+    background-color: $form-check-input-bg;
+    transition: $form-check-transition;
+
+    &:checked {
+        background-color: $form-check-input-bg-checked;
+        border-color: $form-check-input-border-checked;
+
+        &::after {
+            content: "✔";
+            color: $form-check-input-checkmark-color;
+            font-size: $form-check-input-checkmark-size;
+            position: absolute;
+            top: 0;
+            left: $form-check-input-checkmark-offset-left;
+            line-height: $form-check-input-size;
+        }
+    }
+
+    // Estilos específicos para inputs de tipo radio
+    &[type="radio"] {
+        border-radius: 50%;
+
+        &:checked::after {
+            content: "";
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: $form-check-input-checkmark-color;
+            border-radius: 50%;
+            position: absolute;
+            top: 0.25rem;
+            left: 0.25rem;
+        }
+    }
+}
+
+//
+// Form Check Label – Estios del texto del checkbox/radio
+//
+.form-check-label {
+    cursor: $form-check-label-cursor;
+}

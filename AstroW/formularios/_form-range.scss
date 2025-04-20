@@ -1,0 +1,55 @@
+@use '../utilidades/variables' as *;
+
+//
+// Form Range – Slider personalizado (input de tipo rango)
+// Se adapta al diseño moderno y mantiene consistencia visual con los controles.
+//
+.form-range {
+    width: 100%; // Ocupa todo el ancho disponible
+    height: $form-range-track-height; // Altura de la pista (track)
+    background-color: $form-range-track-bg; // Color de fondo de la pista
+    border-radius: $form-range-track-height; // Bordes redondeados para una apariencia suave
+    appearance: none; // Elimina el estilo nativo (default) del navegador
+    cursor: pointer; // Cambia el cursor al pasar por encima
+    transition: $form-range-transition; // Transición suave al interactuar
+
+    // Track para Firefox
+    &::-moz-range-track {
+        height: $form-range-track-height;
+        background-color: $form-range-track-bg;
+        border-radius: $form-range-track-height;
+    }
+
+    // Track para navegadores WebKit (Chrome, Safari)
+    &::-webkit-slider-runnable-track {
+        height: $form-range-track-height;
+        background-color: $form-range-track-bg;
+        border-radius: $form-range-track-height;
+    }
+
+    // Thumb (perilla / "pulgar") en WebKit
+    &::-webkit-slider-thumb {
+        appearance: none; // Quita estilo nativo del thumb
+        width: $form-range-thumb-size; // Ancho del thumb
+        height: $form-range-thumb-size; // Alto del thumb
+        background-color: $form-range-thumb-bg; // Color de fondo del thumb
+        border: $form-range-thumb-border; // Borde del thumb (por defecto ninguno)
+        border-radius: $form-range-thumb-radius; // Forma circular (circle)
+        box-shadow: $form-range-thumb-shadow; // Sombra sutil (opcional)
+        margin-top: calc((#{$form-range-track-height} - #{$form-range-thumb-size}) / 2); // Centrado vertical (vertical alignment)
+        transition: $form-range-transition;
+        position: relative; // Posicionamiento necesario para personalización avanzada
+    }
+
+    // Thumb para Firefox
+    &::-moz-range-thumb {
+        width: $form-range-thumb-size;
+        height: $form-range-thumb-size;
+        background-color: $form-range-thumb-bg;
+        border: $form-range-thumb-border;
+        border-radius: $form-range-thumb-radius;
+        box-shadow: $form-range-thumb-shadow;
+        transition: $form-range-transition;
+        position: relative;
+    }
+}
