@@ -1,0 +1,12 @@
+pre{
+    background-color: #423f3f;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: monospace;
+    font-size: 0.9rem;
+}

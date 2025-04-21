@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro-W</title>
     <!-- <link rel="stylesheet" href="https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://{{cdn}}/prismjs@v1.x/themes/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body class="bg-color-blue-dark-2">
@@ -28,32 +28,24 @@
                 <ul>
                     
                         
+                    <li><a href="documentation.html" class="no-decoration link-hover-info text-red-light-2 text-2xl">Inicio - Instalación</a>
+                        
                     </li>
-                    <li><a href="#introduccion" class="no-decoration link-hover-info text-pitch-light-2 text-2xl">Introducción</a>
 
-                        <ul>
-                            <li></li>
-                        </ul>
+                    <li><a href="sections/introduccion.html" target="main-frame" class=" no-decoration link-hover-info text-pitch-light-2 text-2xl">Introducción</a>
+
+                        
                     </li>
-                    <li><a href="#instalacion" class="no-decoration link-hover-info text-red-light-2 text-2xl">Instalación</a>
-                        <ul>
-                            <li></li>
-                        </ul>
+                    
+                    <li><a href="sections/componentes.html" class="no-decoration link-hover-info text-yellow-light-2 text-2xl">Componentes</a>
+
                     </li>
-                    <li><a href="#componentes" class="no-decoration link-hover-info text-yellow-light-2 text-2xl">Componentes</a>
-                        <ul class="pl-1 pb-1 text-area-gray-light-2">
-                            <li><a href="#botones" class="no-decoration">Botones</a></li>
-                            <li><a href="" class="no-decoration">Badges</a></li>
-                            <li><a href="" class="no-decoration">Navbars</a></li>
-                            <li><a href="" class="no-decoration">Cards</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#forms" class="no-decoration link-hover-info text-danger-light-2 text-2xl">Formularios</a></li>
+                    <li><a href="sections/formularios.html" class="no-decoration link-hover-info text-danger-light-2 text-2xl">Formularios</a></li>
                     <li><a href="#layout" class="no-decoration link-hover-info text-primary text-2xl">Layout</a></li>
                     <li><a href="#utilidades" class="no-decoration link-hover-info text-blue-light-9 text-2xl">Utilidades</a></li>
 
 
-                    <li class="mb-2 mt-2"><a href="#inicio" class="no-decoration link-hover-info text-link-light-2 text-2xl">🌌</a>
+                    <li class="mb-2 mt-2"><a href="documentation.html" class="no-decoration link-hover-info text-link-light-2 text-2xl">🌌</a>
                 </ul>
             </nav>
         </div>
@@ -69,7 +61,8 @@
                 <div class="lg:col-10 bg-color-blue m-0 m-auto">
 
 
-                    <main class="bg-color-blue-dark-3">
+                    <main id="main-content" class="bg-color-blue-dark-3">
+
                         <section id="introduccion" class="p-1 text-area-gray">
                             <h2 class="title theme-font pt-2 mb-2">Introducción</h2>
                             <p class="text-xl">Bienvenido a la documentación de tu librería de CSS personalizada...</p>
@@ -155,6 +148,7 @@
                             <h2 class="mt-2 mb-2 title theme-font">Utilidades</h2>
                             <p>Clases para márgenes, padding, alineación y más...</p>
                         </section>
+                        
                     </main>
                 </div>
 
@@ -167,8 +161,7 @@
 
 
 
-    <script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
-	<script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+    
 </body>
 
 </html>
