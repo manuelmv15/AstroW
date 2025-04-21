@@ -12532,6 +12532,23 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: transparent;
 }
+.btn:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
 
 .btn-orange {
   text-decoration: none;
@@ -12615,6 +12632,20 @@ table {
 .btn-complement-orange-sm:hover {
   color: #f4a529;
   background-color: rgb(62.4, 133.5, 245.1);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-orange {
@@ -12701,6 +12732,20 @@ table {
   background-color: rgb(62.4, 133.5, 245.1);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-orange {
   text-decoration: none;
   cursor: pointer;
@@ -12783,6 +12828,20 @@ table {
 .btn-complement-orange-lg:hover {
   color: #f4a529;
   background-color: rgb(62.4, 133.5, 245.1);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-orange {
@@ -12869,6 +12928,20 @@ table {
   background-color: rgb(62.4, 133.5, 245.1);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-yellow {
   text-decoration: none;
   cursor: pointer;
@@ -12951,6 +13024,20 @@ table {
 .btn-complement-yellow-sm:hover {
   color: #fad860;
   background-color: rgb(111.9, 142.5, 250.5);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-yellow {
@@ -13037,6 +13124,20 @@ table {
   background-color: rgb(111.9, 142.5, 250.5);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-yellow {
   text-decoration: none;
   cursor: pointer;
@@ -13119,6 +13220,20 @@ table {
 .btn-complement-yellow-lg:hover {
   color: #fad860;
   background-color: rgb(111.9, 142.5, 250.5);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-yellow {
@@ -13205,6 +13320,20 @@ table {
   background-color: rgb(111.9, 142.5, 250.5);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-red {
   text-decoration: none;
   cursor: pointer;
@@ -13287,6 +13416,20 @@ table {
 .btn-complement-red-sm:hover {
   color: #790707;
   background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-red {
@@ -13373,6 +13516,20 @@ table {
   background-color: rgb(9.0890625, 157.1109375, 157.1109375);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-red {
   text-decoration: none;
   cursor: pointer;
@@ -13455,6 +13612,20 @@ table {
 .btn-complement-red-lg:hover {
   color: #790707;
   background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-red {
@@ -13541,6 +13712,20 @@ table {
   background-color: rgb(9.0890625, 157.1109375, 157.1109375);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-pitch {
   text-decoration: none;
   cursor: pointer;
@@ -13623,6 +13808,20 @@ table {
 .btn-complement-pitch-sm:hover {
   color: #9e6555;
   background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-pitch {
@@ -13709,6 +13908,20 @@ table {
   background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-pitch {
   text-decoration: none;
   cursor: pointer;
@@ -13791,6 +14004,20 @@ table {
 .btn-complement-pitch-lg:hover {
   color: #9e6555;
   background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-pitch {
@@ -13877,6 +14104,20 @@ table {
   background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-gray {
   text-decoration: none;
   cursor: pointer;
@@ -13959,6 +14200,20 @@ table {
 .btn-complement-gray-sm:hover {
   color: #acc1d3;
   background-color: rgb(215.4, 196.5, 180.3);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-gray {
@@ -14045,6 +14300,20 @@ table {
   background-color: rgb(215.4, 196.5, 180.3);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-gray {
   text-decoration: none;
   cursor: pointer;
@@ -14127,6 +14396,20 @@ table {
 .btn-complement-gray-lg:hover {
   color: #acc1d3;
   background-color: rgb(215.4, 196.5, 180.3);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-gray {
@@ -14213,6 +14496,20 @@ table {
   background-color: rgb(215.4, 196.5, 180.3);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-blue {
   text-decoration: none;
   cursor: pointer;
@@ -14295,6 +14592,20 @@ table {
 .btn-complement-blue-sm:hover {
   color: #2a4058;
   background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-blue {
@@ -14381,6 +14692,20 @@ table {
   background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-blue {
   text-decoration: none;
   cursor: pointer;
@@ -14463,6 +14788,20 @@ table {
 .btn-complement-blue-lg:hover {
   color: #2a4058;
   background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-blue {
@@ -14549,6 +14888,20 @@ table {
   background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-link {
   text-decoration: none;
   cursor: pointer;
@@ -14631,6 +14984,20 @@ table {
 .btn-complement-link-sm:hover {
   color: #4258ff;
   background-color: rgb(255, 235.2, 84.9);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-link {
@@ -14717,6 +15084,20 @@ table {
   background-color: rgb(255, 235.2, 84.9);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-link {
   text-decoration: none;
   cursor: pointer;
@@ -14799,6 +15180,20 @@ table {
 .btn-complement-link-lg:hover {
   color: #4258ff;
   background-color: rgb(255, 235.2, 84.9);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-link {
@@ -14885,6 +15280,20 @@ table {
   background-color: rgb(255, 235.2, 84.9);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-primary {
   text-decoration: none;
   cursor: pointer;
@@ -14967,6 +15376,20 @@ table {
 .btn-complement-primary-sm:hover {
   color: #00d1b2;
   background-color: rgb(239.1, 0, 35.4645933014);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-primary {
@@ -15053,6 +15476,20 @@ table {
   background-color: rgb(239.1, 0, 35.4645933014);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-primary {
   text-decoration: none;
   cursor: pointer;
@@ -15135,6 +15572,20 @@ table {
 .btn-complement-primary-lg:hover {
   color: #00d1b2;
   background-color: rgb(239.1, 0, 35.4645933014);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-primary {
@@ -15221,6 +15672,20 @@ table {
   background-color: rgb(239.1, 0, 35.4645933014);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-info {
   text-decoration: none;
   cursor: pointer;
@@ -15303,6 +15768,20 @@ table {
 .btn-complement-info-sm:hover {
   color: #66d1ff;
   background-color: rgb(255, 158.7, 117.3);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-info {
@@ -15389,6 +15868,20 @@ table {
   background-color: rgb(255, 158.7, 117.3);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-info {
   text-decoration: none;
   cursor: pointer;
@@ -15471,6 +15964,20 @@ table {
 .btn-complement-info-lg:hover {
   color: #66d1ff;
   background-color: rgb(255, 158.7, 117.3);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-info {
@@ -15557,6 +16064,20 @@ table {
   background-color: rgb(255, 158.7, 117.3);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-success {
   text-decoration: none;
   cursor: pointer;
@@ -15639,6 +16160,20 @@ table {
 .btn-complement-success-sm:hover {
   color: #48c78e;
   background-color: rgb(204.6, 90.3, 141.6);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-success {
@@ -15725,6 +16260,20 @@ table {
   background-color: rgb(204.6, 90.3, 141.6);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-success {
   text-decoration: none;
   cursor: pointer;
@@ -15807,6 +16356,20 @@ table {
 .btn-complement-success-lg:hover {
   color: #48c78e;
   background-color: rgb(204.6, 90.3, 141.6);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-success {
@@ -15893,6 +16456,20 @@ table {
   background-color: rgb(204.6, 90.3, 141.6);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-warning {
   text-decoration: none;
   cursor: pointer;
@@ -15975,6 +16552,20 @@ table {
 .btn-complement-warning-sm:hover {
   color: #ffb70f;
   background-color: rgb(39, 103.8, 255);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-warning {
@@ -16061,6 +16652,20 @@ table {
   background-color: rgb(39, 103.8, 255);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-warning {
   text-decoration: none;
   cursor: pointer;
@@ -16143,6 +16748,20 @@ table {
 .btn-complement-warning-lg:hover {
   color: #ffb70f;
   background-color: rgb(39, 103.8, 255);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-warning {
@@ -16229,6 +16848,20 @@ table {
   background-color: rgb(39, 103.8, 255);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-danger {
   text-decoration: none;
   cursor: pointer;
@@ -16311,6 +16944,20 @@ table {
 .btn-complement-danger-sm:hover {
   color: #ff6685;
   background-color: rgb(117.3, 255, 227.1);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-danger {
@@ -16397,6 +17044,20 @@ table {
   background-color: rgb(117.3, 255, 227.1);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-danger {
   text-decoration: none;
   cursor: pointer;
@@ -16479,6 +17140,20 @@ table {
 .btn-complement-danger-lg:hover {
   color: #ff6685;
   background-color: rgb(117.3, 255, 227.1);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-danger {
@@ -16565,6 +17240,20 @@ table {
   background-color: rgb(117.3, 255, 227.1);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-black {
   text-decoration: none;
   cursor: pointer;
@@ -16647,6 +17336,20 @@ table {
 .btn-complement-black-sm:hover {
   color: black;
   background-color: rgb(25.5, 25.5, 25.5);
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-black {
@@ -16733,6 +17436,20 @@ table {
   background-color: rgb(25.5, 25.5, 25.5);
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-black {
   text-decoration: none;
   cursor: pointer;
@@ -16815,6 +17532,20 @@ table {
 .btn-complement-black-lg:hover {
   color: black;
   background-color: rgb(25.5, 25.5, 25.5);
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-black {
@@ -16901,6 +17632,20 @@ table {
   background-color: rgb(25.5, 25.5, 25.5);
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-sm:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-white {
   text-decoration: none;
   cursor: pointer;
@@ -16983,6 +17728,20 @@ table {
 .btn-complement-white-sm:hover {
   color: white;
   background-color: white;
+}
+
+.btn-md {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-md:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-white {
@@ -17069,6 +17828,20 @@ table {
   background-color: white;
 }
 
+.btn-lg {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+.btn-lg:hover {
+  background-color: rgba(166, 163, 219, 0.075);
+}
+
 .btn-white {
   text-decoration: none;
   cursor: pointer;
@@ -17151,6 +17924,20 @@ table {
 .btn-complement-white-lg:hover {
   color: white;
   background-color: white;
+}
+
+.btn-xl {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.btn-xl:hover {
+  background-color: rgba(166, 163, 219, 0.075);
 }
 
 .btn-white {
@@ -17290,6 +18077,218 @@ table {
   color: #f4a529;
 }
 
+.badge-solid-orange-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #f4a529;
+  color: rgb(62.4, 133.5, 245.1);
+}
+
+.badge-outlined-orange-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #f4a529;
+  color: #f4a529;
+}
+
+.badge-soft-orange-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(252.25, 232.5, 201.5);
+  color: #f4a529;
+}
+
+.badge-inverted-orange-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529;
+}
+
+.badge-solid-orange-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #f4a529;
+  color: rgb(62.4, 133.5, 245.1);
+}
+
+.badge-outlined-orange-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #f4a529;
+  color: #f4a529;
+}
+
+.badge-soft-orange-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(252.25, 232.5, 201.5);
+  color: #f4a529;
+}
+
+.badge-inverted-orange-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529;
+}
+
+.badge-solid-orange-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #f4a529;
+  color: rgb(62.4, 133.5, 245.1);
+}
+
+.badge-outlined-orange-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #f4a529;
+  color: #f4a529;
+}
+
+.badge-soft-orange-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(252.25, 232.5, 201.5);
+  color: #f4a529;
+}
+
+.badge-inverted-orange-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529;
+}
+
+.badge-solid-orange-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #f4a529;
+  color: rgb(62.4, 133.5, 245.1);
+}
+
+.badge-outlined-orange-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #f4a529;
+  color: #f4a529;
+}
+
+.badge-soft-orange-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(252.25, 232.5, 201.5);
+  color: #f4a529;
+}
+
+.badge-inverted-orange-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529;
+}
+
 .badge-solid-yellow {
   display: inline-block;
   padding: 0.25rem 0.5rem;
@@ -17334,6 +18333,218 @@ table {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860;
+}
+
+.badge-solid-yellow-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #fad860;
+  color: rgb(111.9, 142.5, 250.5);
+}
+
+.badge-outlined-yellow-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #fad860;
+  color: #fad860;
+}
+
+.badge-soft-yellow-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(253.75, 245.25, 215.25);
+  color: #fad860;
+}
+
+.badge-inverted-yellow-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860;
+}
+
+.badge-solid-yellow-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #fad860;
+  color: rgb(111.9, 142.5, 250.5);
+}
+
+.badge-outlined-yellow-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #fad860;
+  color: #fad860;
+}
+
+.badge-soft-yellow-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(253.75, 245.25, 215.25);
+  color: #fad860;
+}
+
+.badge-inverted-yellow-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860;
+}
+
+.badge-solid-yellow-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #fad860;
+  color: rgb(111.9, 142.5, 250.5);
+}
+
+.badge-outlined-yellow-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #fad860;
+  color: #fad860;
+}
+
+.badge-soft-yellow-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(253.75, 245.25, 215.25);
+  color: #fad860;
+}
+
+.badge-inverted-yellow-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860;
+}
+
+.badge-solid-yellow-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #fad860;
+  color: rgb(111.9, 142.5, 250.5);
+}
+
+.badge-outlined-yellow-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #fad860;
+  color: #fad860;
+}
+
+.badge-soft-yellow-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(253.75, 245.25, 215.25);
+  color: #fad860;
+}
+
+.badge-inverted-yellow-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -17396,6 +18607,218 @@ table {
   color: #790707;
 }
 
+.badge-solid-red-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #790707;
+  color: rgb(9.0890625, 157.1109375, 157.1109375);
+}
+
+.badge-outlined-red-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #790707;
+  color: #790707;
+}
+
+.badge-soft-red-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(249.77734375, 164.72265625, 164.72265625);
+  color: #790707;
+}
+
+.badge-inverted-red-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707;
+}
+
+.badge-solid-red-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #790707;
+  color: rgb(9.0890625, 157.1109375, 157.1109375);
+}
+
+.badge-outlined-red-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #790707;
+  color: #790707;
+}
+
+.badge-soft-red-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(249.77734375, 164.72265625, 164.72265625);
+  color: #790707;
+}
+
+.badge-inverted-red-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707;
+}
+
+.badge-solid-red-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #790707;
+  color: rgb(9.0890625, 157.1109375, 157.1109375);
+}
+
+.badge-outlined-red-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #790707;
+  color: #790707;
+}
+
+.badge-soft-red-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(249.77734375, 164.72265625, 164.72265625);
+  color: #790707;
+}
+
+.badge-inverted-red-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707;
+}
+
+.badge-solid-red-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #790707;
+  color: rgb(9.0890625, 157.1109375, 157.1109375);
+}
+
+.badge-outlined-red-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #790707;
+  color: #790707;
+}
+
+.badge-soft-red-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(249.77734375, 164.72265625, 164.72265625);
+  color: #790707;
+}
+
+.badge-inverted-red-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707;
+}
+
 .badge-solid-pitch {
   display: inline-block;
   padding: 0.25rem 0.5rem;
@@ -17440,6 +18863,218 @@ table {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555;
+}
+
+.badge-solid-pitch-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #9e6555;
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+}
+
+.badge-outlined-pitch-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #9e6555;
+  color: #9e6555;
+}
+
+.badge-soft-pitch-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(231.6512345679, 215.9938271605, 211.5987654321);
+  color: #9e6555;
+}
+
+.badge-inverted-pitch-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555;
+}
+
+.badge-solid-pitch-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #9e6555;
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+}
+
+.badge-outlined-pitch-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #9e6555;
+  color: #9e6555;
+}
+
+.badge-soft-pitch-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(231.6512345679, 215.9938271605, 211.5987654321);
+  color: #9e6555;
+}
+
+.badge-inverted-pitch-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555;
+}
+
+.badge-solid-pitch-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #9e6555;
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+}
+
+.badge-outlined-pitch-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #9e6555;
+  color: #9e6555;
+}
+
+.badge-soft-pitch-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(231.6512345679, 215.9938271605, 211.5987654321);
+  color: #9e6555;
+}
+
+.badge-inverted-pitch-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555;
+}
+
+.badge-solid-pitch-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #9e6555;
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+}
+
+.badge-outlined-pitch-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #9e6555;
+  color: #9e6555;
+}
+
+.badge-soft-pitch-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(231.6512345679, 215.9938271605, 211.5987654321);
+  color: #9e6555;
+}
+
+.badge-inverted-pitch-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -17502,6 +19137,218 @@ table {
   color: #acc1d3;
 }
 
+.badge-solid-gray-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #acc1d3;
+  color: rgb(215.4, 196.5, 180.3);
+}
+
+.badge-outlined-gray-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #acc1d3;
+  color: #acc1d3;
+}
+
+.badge-soft-gray-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(234.25, 239.5, 244);
+  color: #acc1d3;
+}
+
+.badge-inverted-gray-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3;
+}
+
+.badge-solid-gray-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #acc1d3;
+  color: rgb(215.4, 196.5, 180.3);
+}
+
+.badge-outlined-gray-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #acc1d3;
+  color: #acc1d3;
+}
+
+.badge-soft-gray-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(234.25, 239.5, 244);
+  color: #acc1d3;
+}
+
+.badge-inverted-gray-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3;
+}
+
+.badge-solid-gray-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #acc1d3;
+  color: rgb(215.4, 196.5, 180.3);
+}
+
+.badge-outlined-gray-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #acc1d3;
+  color: #acc1d3;
+}
+
+.badge-soft-gray-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(234.25, 239.5, 244);
+  color: #acc1d3;
+}
+
+.badge-inverted-gray-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3;
+}
+
+.badge-solid-gray-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #acc1d3;
+  color: rgb(215.4, 196.5, 180.3);
+}
+
+.badge-outlined-gray-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #acc1d3;
+  color: #acc1d3;
+}
+
+.badge-soft-gray-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(234.25, 239.5, 244);
+  color: #acc1d3;
+}
+
+.badge-inverted-gray-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3;
+}
+
 .badge-solid-blue {
   display: inline-block;
   padding: 0.25rem 0.5rem;
@@ -17546,6 +19393,218 @@ table {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058;
+}
+
+.badge-solid-blue-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #2a4058;
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+}
+
+.badge-outlined-blue-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #2a4058;
+  color: #2a4058;
+}
+
+.badge-soft-blue-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(190.6923076923, 206.7692307692, 224.3076923077);
+  color: #2a4058;
+}
+
+.badge-inverted-blue-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058;
+}
+
+.badge-solid-blue-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #2a4058;
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+}
+
+.badge-outlined-blue-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #2a4058;
+  color: #2a4058;
+}
+
+.badge-soft-blue-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(190.6923076923, 206.7692307692, 224.3076923077);
+  color: #2a4058;
+}
+
+.badge-inverted-blue-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058;
+}
+
+.badge-solid-blue-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #2a4058;
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+}
+
+.badge-outlined-blue-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #2a4058;
+  color: #2a4058;
+}
+
+.badge-soft-blue-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(190.6923076923, 206.7692307692, 224.3076923077);
+  color: #2a4058;
+}
+
+.badge-inverted-blue-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058;
+}
+
+.badge-solid-blue-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #2a4058;
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+}
+
+.badge-outlined-blue-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #2a4058;
+  color: #2a4058;
+}
+
+.badge-soft-blue-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(190.6923076923, 206.7692307692, 224.3076923077);
+  color: #2a4058;
+}
+
+.badge-inverted-blue-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -17608,6 +19667,218 @@ table {
   color: #4258ff;
 }
 
+.badge-solid-link-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #4258ff;
+  color: rgb(255, 235.2, 84.9);
+}
+
+.badge-outlined-link-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #4258ff;
+  color: #4258ff;
+}
+
+.badge-soft-link-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(207.75, 213.25, 255);
+  color: #4258ff;
+}
+
+.badge-inverted-link-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff;
+}
+
+.badge-solid-link-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #4258ff;
+  color: rgb(255, 235.2, 84.9);
+}
+
+.badge-outlined-link-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #4258ff;
+  color: #4258ff;
+}
+
+.badge-soft-link-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(207.75, 213.25, 255);
+  color: #4258ff;
+}
+
+.badge-inverted-link-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff;
+}
+
+.badge-solid-link-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #4258ff;
+  color: rgb(255, 235.2, 84.9);
+}
+
+.badge-outlined-link-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #4258ff;
+  color: #4258ff;
+}
+
+.badge-soft-link-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(207.75, 213.25, 255);
+  color: #4258ff;
+}
+
+.badge-inverted-link-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff;
+}
+
+.badge-solid-link-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #4258ff;
+  color: rgb(255, 235.2, 84.9);
+}
+
+.badge-outlined-link-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #4258ff;
+  color: #4258ff;
+}
+
+.badge-soft-link-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(207.75, 213.25, 255);
+  color: #4258ff;
+}
+
+.badge-inverted-link-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff;
+}
+
 .badge-solid-primary {
   display: inline-block;
   padding: 0.25rem 0.5rem;
@@ -17652,6 +19923,218 @@ table {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2;
+}
+
+.badge-solid-primary-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #00d1b2;
+  color: rgb(239.1, 0, 35.4645933014);
+}
+
+.badge-outlined-primary-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #00d1b2;
+  color: #00d1b2;
+}
+
+.badge-soft-primary-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(179.75, 255, 243.8385167464);
+  color: #00d1b2;
+}
+
+.badge-inverted-primary-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2;
+}
+
+.badge-solid-primary-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #00d1b2;
+  color: rgb(239.1, 0, 35.4645933014);
+}
+
+.badge-outlined-primary-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #00d1b2;
+  color: #00d1b2;
+}
+
+.badge-soft-primary-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(179.75, 255, 243.8385167464);
+  color: #00d1b2;
+}
+
+.badge-inverted-primary-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2;
+}
+
+.badge-solid-primary-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #00d1b2;
+  color: rgb(239.1, 0, 35.4645933014);
+}
+
+.badge-outlined-primary-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #00d1b2;
+  color: #00d1b2;
+}
+
+.badge-soft-primary-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(179.75, 255, 243.8385167464);
+  color: #00d1b2;
+}
+
+.badge-inverted-primary-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2;
+}
+
+.badge-solid-primary-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #00d1b2;
+  color: rgb(239.1, 0, 35.4645933014);
+}
+
+.badge-outlined-primary-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #00d1b2;
+  color: #00d1b2;
+}
+
+.badge-soft-primary-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(179.75, 255, 243.8385167464);
+  color: #00d1b2;
+}
+
+.badge-inverted-primary-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -17714,6 +20197,218 @@ table {
   color: #66d1ff;
 }
 
+.badge-solid-info-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #66d1ff;
+  color: rgb(255, 158.7, 117.3);
+}
+
+.badge-outlined-info-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #66d1ff;
+  color: #66d1ff;
+}
+
+.badge-soft-info-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(216.75, 243.5, 255);
+  color: #66d1ff;
+}
+
+.badge-inverted-info-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff;
+}
+
+.badge-solid-info-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #66d1ff;
+  color: rgb(255, 158.7, 117.3);
+}
+
+.badge-outlined-info-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #66d1ff;
+  color: #66d1ff;
+}
+
+.badge-soft-info-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(216.75, 243.5, 255);
+  color: #66d1ff;
+}
+
+.badge-inverted-info-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff;
+}
+
+.badge-solid-info-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #66d1ff;
+  color: rgb(255, 158.7, 117.3);
+}
+
+.badge-outlined-info-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #66d1ff;
+  color: #66d1ff;
+}
+
+.badge-soft-info-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(216.75, 243.5, 255);
+  color: #66d1ff;
+}
+
+.badge-inverted-info-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff;
+}
+
+.badge-solid-info-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #66d1ff;
+  color: rgb(255, 158.7, 117.3);
+}
+
+.badge-outlined-info-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #66d1ff;
+  color: #66d1ff;
+}
+
+.badge-soft-info-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(216.75, 243.5, 255);
+  color: #66d1ff;
+}
+
+.badge-inverted-info-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff;
+}
+
 .badge-solid-success {
   display: inline-block;
   padding: 0.25rem 0.5rem;
@@ -17758,6 +20453,218 @@ table {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e;
+}
+
+.badge-solid-success-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #48c78e;
+  color: rgb(204.6, 90.3, 141.6);
+}
+
+.badge-outlined-success-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #48c78e;
+  color: #48c78e;
+}
+
+.badge-soft-success-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(209.25, 241, 226.75);
+  color: #48c78e;
+}
+
+.badge-inverted-success-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e;
+}
+
+.badge-solid-success-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #48c78e;
+  color: rgb(204.6, 90.3, 141.6);
+}
+
+.badge-outlined-success-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #48c78e;
+  color: #48c78e;
+}
+
+.badge-soft-success-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(209.25, 241, 226.75);
+  color: #48c78e;
+}
+
+.badge-inverted-success-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e;
+}
+
+.badge-solid-success-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #48c78e;
+  color: rgb(204.6, 90.3, 141.6);
+}
+
+.badge-outlined-success-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #48c78e;
+  color: #48c78e;
+}
+
+.badge-soft-success-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(209.25, 241, 226.75);
+  color: #48c78e;
+}
+
+.badge-inverted-success-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e;
+}
+
+.badge-solid-success-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #48c78e;
+  color: rgb(204.6, 90.3, 141.6);
+}
+
+.badge-outlined-success-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #48c78e;
+  color: #48c78e;
+}
+
+.badge-soft-success-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(209.25, 241, 226.75);
+  color: #48c78e;
+}
+
+.badge-inverted-success-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -17820,6 +20727,218 @@ table {
   color: #ffb70f;
 }
 
+.badge-solid-warning-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ffb70f;
+  color: rgb(39, 103.8, 255);
+}
+
+.badge-outlined-warning-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #ffb70f;
+  color: #ffb70f;
+}
+
+.badge-soft-warning-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ffedc3;
+  color: #ffb70f;
+}
+
+.badge-inverted-warning-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f;
+}
+
+.badge-solid-warning-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ffb70f;
+  color: rgb(39, 103.8, 255);
+}
+
+.badge-outlined-warning-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #ffb70f;
+  color: #ffb70f;
+}
+
+.badge-soft-warning-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ffedc3;
+  color: #ffb70f;
+}
+
+.badge-inverted-warning-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f;
+}
+
+.badge-solid-warning-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ffb70f;
+  color: rgb(39, 103.8, 255);
+}
+
+.badge-outlined-warning-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #ffb70f;
+  color: #ffb70f;
+}
+
+.badge-soft-warning-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ffedc3;
+  color: #ffb70f;
+}
+
+.badge-inverted-warning-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f;
+}
+
+.badge-solid-warning-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ffb70f;
+  color: rgb(39, 103.8, 255);
+}
+
+.badge-outlined-warning-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #ffb70f;
+  color: #ffb70f;
+}
+
+.badge-soft-warning-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ffedc3;
+  color: #ffb70f;
+}
+
+.badge-inverted-warning-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f;
+}
+
 .badge-solid-danger {
   display: inline-block;
   padding: 0.25rem 0.5rem;
@@ -17864,6 +20983,218 @@ table {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685;
+}
+
+.badge-solid-danger-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ff6685;
+  color: rgb(117.3, 255, 227.1);
+}
+
+.badge-outlined-danger-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #ff6685;
+  color: #ff6685;
+}
+
+.badge-soft-danger-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 216.75, 224.5);
+  color: #ff6685;
+}
+
+.badge-inverted-danger-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685;
+}
+
+.badge-solid-danger-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ff6685;
+  color: rgb(117.3, 255, 227.1);
+}
+
+.badge-outlined-danger-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #ff6685;
+  color: #ff6685;
+}
+
+.badge-soft-danger-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 216.75, 224.5);
+  color: #ff6685;
+}
+
+.badge-inverted-danger-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685;
+}
+
+.badge-solid-danger-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ff6685;
+  color: rgb(117.3, 255, 227.1);
+}
+
+.badge-outlined-danger-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #ff6685;
+  color: #ff6685;
+}
+
+.badge-soft-danger-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 216.75, 224.5);
+  color: #ff6685;
+}
+
+.badge-inverted-danger-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685;
+}
+
+.badge-solid-danger-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #ff6685;
+  color: rgb(117.3, 255, 227.1);
+}
+
+.badge-outlined-danger-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #ff6685;
+  color: #ff6685;
+}
+
+.badge-soft-danger-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 216.75, 224.5);
+  color: #ff6685;
+}
+
+.badge-inverted-danger-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -17926,6 +21257,218 @@ table {
   color: black;
 }
 
+.badge-solid-black-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: black;
+  color: rgb(25.5, 25.5, 25.5);
+}
+
+.badge-outlined-black-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.badge-soft-black-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(191.25, 191.25, 191.25);
+  color: black;
+}
+
+.badge-inverted-black-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(25.5, 25.5, 25.5);
+  color: black;
+}
+
+.badge-solid-black-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: black;
+  color: rgb(25.5, 25.5, 25.5);
+}
+
+.badge-outlined-black-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.badge-soft-black-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(191.25, 191.25, 191.25);
+  color: black;
+}
+
+.badge-inverted-black-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(25.5, 25.5, 25.5);
+  color: black;
+}
+
+.badge-solid-black-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: black;
+  color: rgb(25.5, 25.5, 25.5);
+}
+
+.badge-outlined-black-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.badge-soft-black-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(191.25, 191.25, 191.25);
+  color: black;
+}
+
+.badge-inverted-black-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(25.5, 25.5, 25.5);
+  color: black;
+}
+
+.badge-solid-black-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: black;
+  color: rgb(25.5, 25.5, 25.5);
+}
+
+.badge-outlined-black-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.badge-soft-black-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(191.25, 191.25, 191.25);
+  color: black;
+}
+
+.badge-inverted-black-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(25.5, 25.5, 25.5);
+  color: black;
+}
+
 .badge-solid-white {
   display: inline-block;
   padding: 0.25rem 0.5rem;
@@ -17970,6 +21513,218 @@ table {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-solid-white-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-outlined-white-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.badge-soft-white-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-inverted-white-sm {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-solid-white-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-outlined-white-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.badge-soft-white-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-inverted-white-md {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-solid-white-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-outlined-white-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.badge-soft-white-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-inverted-white-lg {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-solid-white-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-outlined-white-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.badge-soft-white-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: white;
+  color: white;
+}
+
+.badge-inverted-white-xl {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;

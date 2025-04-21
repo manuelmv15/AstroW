@@ -4,6 +4,7 @@
 @use '../utilidades/variables' as *;
 @use '../utilidades/functions' as *;
 
+
 @mixin btn-base($bg-color: transparent){
 
     text-decoration: none;
@@ -35,11 +36,29 @@
 
 
 .btn{
+
     @include btn-base();
+
+    &:hover{
+        background-color: rgba(166, 163, 219, 0.075);
+    }
+
 }
+
+
+
+
 @each $key, $value in $colors{
 
     @each $size in (sm, md, lg, xl){
+
+        .btn-#{$size}{
+            @include btn-base();
+            @include btn-size($size);
+            &:hover{
+                background-color: rgba(166, 163, 219, 0.075);
+            }
+        }
 
         .btn-#{$key}{//genera un boton ex btn-red con bg-color respectivo
             @include btn-base($value);
@@ -48,6 +67,7 @@
                 background-color: $color-lightness;
             }
         }
+        
         .btn-#{$key}-#{$size}{//genera un boton ex btn-red con bg-color respectivo
             @include btn-base($value);
             @include btn-size($size);

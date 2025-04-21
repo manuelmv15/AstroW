@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro-W</title>
     <link rel="stylesheet" href="../../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/custom.css">
 
 </head>
@@ -60,31 +60,33 @@
 
             
 
-            <div class="row g-4 bg-color-blue-dark-3">
+            <div class="row g-4 bg-color-blue-dark-5">
 
 
                 <div class="lg:col-10 bg-color-blue m-0 m-auto">
 
 
-                    <main id="main-content" class="bg-color-blue-dark-3">
+                    <main id="main-content" class="bg-color-blue-dark-5">
 
                        
 
                         
 
-                        <section id="componentes" class="p-1 text-area-gray h-screen"> <!--SECCION COMPONENTES-->
+                        <section id="#botones" class="p-1 text-area-gray h-screen"> <!--SECCION COMPONENTES-->
                             <h2 class="mt-2 mb-2 title theme-font">Componentes</h2>
 
                             <div class="d-flex justify-space-between">
                                 <h6 id="botones" class="title mb-1">Botones</h6>
-                                <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_buttons.scss" class="link-style-info">ver codigo fuente</a>
+                                <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_buttons.scss" target="_blank" class="link-style-info">ver código fuente</a>
                             </div>
                             <div class="mt-1 mb-1">
                                 <hr class="w-25 m-0 no-border bg-color-info " style="height: 3px;">
                             </div>
-                            <p>Botones clasicos, en diferentes, colores, tamaños y estilos</p>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2">
+                            
+                            <p>Botones clásicos, en diferentes, colores, tamaños y estilos</p>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 mb-1">
                                 <!-- columan izqioerda -->
                                 <div class="mt-1 mb-1">
                                     <div class="d-flex justify-space-between">
@@ -92,20 +94,20 @@
                                     </div>
                                     <br>
                                     <div class="d-flex justify-space-around ai-center">
-                                        <button class="btn br-lg">Boton</button>
-                                        <button class="btn-info-sm br-lg text-white fw-bold">Boton</button>
-                                        <button class="btn-outlined-info-lg br-lg fw-bold">Boton</button>
-                                        <button class="btn-complement-link-xl br-lg fw-bold">Boton</button>
+                                        <button class="btn br-lg">Botón</button>
+                                        <button class="btn-info br-lg text-white fw-bold">Botón</button>
+                                        <button class="btn-outlined-info br-lg fw-bold">Botón</button>
+                                        <button class="btn-complement-link br-lg fw-bold">Botón</button>
                                     </div>
                                     
                                     <div class="mt-2">
                                         <h6 class="fw-bold mb-2">Clases para crear botones</h6>
 
                                         <ul class="">
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br">btn</span>: Botón base sin fondo, Ideal para mantener un estilo minimalista.</li>
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br">btn-{color}</span>: Botón con fondo sólido basado en el color especificado.</li>
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br">btn-{outlined}-{color}</span>: Botón con fondo blanco y borde coloreado.</li>
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br">btn-{complement}-{color}</span>: Botón con estilo complementario: el color de fondo lo definís vos, y al hacer hover, se intercambian los colores del texto y el fondo.</li>
+                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn</span>: Botón base sin fondo, Ideal para mantener un estilo minimalista.</li>
+                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}</span>: Botón con fondo sólido basado en el color especificado.</li>
+                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}</span>: Botón con fondo blanco y borde coloreado.</li>
+                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}</span>: Botón con estilo complementario: el color de fondo lo definís vos, y al hacer hover, se intercambian los colores del texto y el fondo.</li>
                                         </ul>
                                     </div>
                                     
@@ -116,21 +118,68 @@
                                 </div>
                                 <!-- columna derecha -->
                                 <div class="mt-1 mb-1 justify-center d-flex">
-                                    <div class="w-75">
+                                    <div class="">
                                         <div class="d-flex justify-space-between">
                                             <label class="badge-outlined-info">Ejemplo en html</label>
                                         </div>
 <pre><code class="language-html">
 &lt;button class=&quot;btn br-lg&quot;&gt;Boton&lt;/button&gt;<br />
-&lt;button class=&quot;btn-red-sm br-lg&quot;&gt;Boton&lt;/button&gt;<br />
-&lt;button class=&quot;btn-outlined-info-lg br-lg &quot;&gt;Boton&lt;/button&gt;<br />
-&lt;button class=&quot;btn-complement-pitch-xl br-lg&quot;&gt;Boton&lt;/button&gt;    
+&lt;button class=&quot;btn-info br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-outlined-info br-lg &quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-complement-link br-lg&quot;&gt;Boton&lt;/button&gt;    
 </code></pre>
                                     </div>
                                 </div>
                             </div>
 
-                            <p class="text-xl"></p>
+                            <span class="badge-outlined-orange-xl mb-1">Sizes</span>
+                            <p>Variaciones de tamanos para los diferentes tipos de botones</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2">
+                                <!-- columan izqioerda -->
+                                <div class="mt-1 mb-1">
+                                    <div class="d-flex justify-space-between">
+                                        <label class="badge-outlined-info">Ejemplo</label>
+                                    </div>
+                                    <br>
+                                    <div class="d-flex justify-space-around ai-center">
+                                        <button class="btn-sm br-lg">Botón</button>
+                                        <button class="btn-info-md br-lg text-white fw-bold">Botón</button>
+                                        <button class="btn-outlined-info-lg br-lg fw-bold">Botón</button>
+                                        <button class="btn-complement-link-xl br-lg fw-bold">Botón</button>
+                                    </div>
+                                    
+                                    <div class="mt-2">
+                                        <h6 class="fw-bold mb-2">Clases para crear botones con las diferentes variaciones de tamaño.</h6>
+
+                                        <ul class="">
+                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{size}</span>: </li>
+                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}-{size}</span>: </li>
+                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}-{size}</span>: </li>
+                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}-{size}</span>: </li>
+                                        </ul>
+                                    </div>
+                                    
+
+
+                                    
+                                    
+                                </div>
+                                <!-- columna derecha -->
+                                <div class="mt-1 mb-1 justify-center d-flex">
+                                    <div class="">
+                                        <div class="d-flex justify-space-between">
+                                            <label class="badge-outlined-info">Ejemplo en html</label>
+                                        </div>
+<pre><code class="language-html">
+&lt;button class=&quot;btn-sm br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-info-md br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-outlined-info-lg br-lg &quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-complement-link-xl br-lg&quot;&gt;Boton&lt;/button&gt;    
+</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
                         </section>
 
                         
