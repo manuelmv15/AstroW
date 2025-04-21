@@ -1,27 +1,92 @@
+@use '../utilidades/variables' as *;
 
+//
+// Estilos para tarjetas
+//
 
-@use '../utilidades/variables' as util;
+// Contenedor principal de la tarjeta
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: $card-bg;
+    border: $card-border-width solid $card-border-color;
+    border-radius: $card-border-radius;
+    box-shadow: $card-box-shadow;
+    overflow: hidden;
+}
 
-
-
-.card{
-
+// Imagen superior de la tarjeta, con bordes redondeados en la parte superior
+.card-img-top {
+    width: 100%;
+    height: auto;
     display: block;
-    padding: util.$base-padding;
-    border: util.$base-border-thickness solid util.$primary-color;
-    box-shadow: util.$base-box-shadow;
+    border-top-left-radius: $card-border-radius;
+    border-top-right-radius: $card-border-radius;
+}
 
-    .card-title{
-        font-size: util.$base-font-size;
-        padding-bottom: util.$base-padding;
-        font-weight: bold;
-    }
+// Cuerpo de la tarjeta que contiene el contenido textual
+.card-body {
+    padding: $card-padding;
+    flex: 1 1 auto;
+}
 
-    .card-body{
-        font-size: util.$base-font-size;
+// Titulo principal dentro de la tarjeta
+.card-title {
+    margin-bottom: $card-title-margin-bottom;
+    font-size: $card-title-font-size;
+    font-weight: $card-title-font-weight;
+}
 
-        a{
-            text-decoration: underline;
-        }
+// Subtitulo debajo del titulo principal
+.card-subtitle {
+    margin-top: $card-subtitle-margin-top;
+    margin-bottom: $card-subtitle-margin-bottom;
+    font-size: $card-subtitle-font-size;
+    color: $card-subtitle-color;
+}
+
+// Texto del contenido de la tarjeta
+.card-text {
+    margin-bottom: $card-text-margin-bottom;
+    font-size: $card-text-font-size;
+    color: $card-text-color;
+}
+
+// Contenedor para lista de elementos dentro de la tarjeta
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+// Elemento individual de una lista en la tarjeta
+.list-group-item {
+    padding: $list-group-item-padding;
+    background-color: $list-group-item-bg;
+    border-top: $list-group-item-border;
+    color: $list-group-item-color;
+}
+
+// Ajustes para listas que están "pegadas" al borde sin borde lateral
+.list-group-flush .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+// Enlaces dentro del cuerpo de la tarjeta
+.card-body .card-link {
+    font-weight: 400;
+    color: $card-link-color;
+    text-decoration: none;
+    margin-right: $card-link-margin-right;
+
+    // Estilo cuando el enlace está en hover
+    &:hover {
+        text-decoration: $card-link-hover-decoration;
     }
 }
