@@ -5168,20 +5168,77 @@ table {
 }
 
 .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
   display: block;
-  padding: 0.75rem;
-  border: 1px solid #00d1b2;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
 }
-.card .card-title {
+
+.card-body {
+  padding: 1rem;
+  flex: 1 1 auto;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.card-subtitle {
+  margin-top: -0.25rem;
+  margin-bottom: 0.75rem;
   font-size: 1rem;
-  padding-bottom: 0.75rem;
-  font-weight: bold;
+  color: #6c757d;
 }
-.card .card-body {
+
+.card-text {
+  margin-bottom: 1rem;
   font-size: 1rem;
+  color: #212529;
 }
-.card .card-body a {
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.list-group-item {
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+  color: #212529;
+}
+
+.list-group-flush .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+
+.card-body .card-link {
+  font-weight: 400;
+  color: #0d6efd;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.card-body .card-link:hover {
   text-decoration: underline;
 }
 

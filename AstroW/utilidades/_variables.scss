@@ -12,7 +12,6 @@ $alt-font: "Outfit", sans-serif;
 
 
 // theme colors astroworld (estos colores correponden a la tematica de la lib)
-
 $theme-color-orange: #f4a529;
 $theme-color-yellow: #fad860;
 $theme-color-red: #790707;
@@ -122,8 +121,6 @@ $col-label-padding-bottom: 0.5rem;
 $col-label-line-height: 1.5;
 
 
-
-
 //
 // Variables de estilo para input con addon/texto a la izquierda (usar con span)
 //
@@ -211,5 +208,55 @@ $form-range-thumb-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 // Transición suave para el movimiento
 $form-range-transition: all 0.2s ease;
 
+//
+// Variables de estilo para tarjetas(card)
+//
+
+// Fondo de la tarjeta
+$card-bg: #fff !default;
+// Espaciado interno del cuerpo de la tarjeta
+$card-padding: 1rem !default;
+// Grosor del borde de la tarjeta
+$card-border-width: 1px !default;
+// Color del borde de la tarjeta
+$card-border-color: #dee2e6 !default;
+// Radio de borde para esquinas redondeadas de la tarjeta
+$card-border-radius: 0.375rem !default;
+// Sombra de la tarjeta para dar efecto de elevación
+$card-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !default;
+// Tamaño de fuente del titulo de la tarjeta
+$card-title-font-size: 1.25rem !default;
+// Peso de fuente del ttulo (negrita)
+$card-title-font-weight: 500 !default;
+// Margen inferior del titulo de la tarjeta
+$card-title-margin-bottom: 0.5rem !default;
+// Tamaño de fuente del subtítulo
+$card-subtitle-font-size: 1rem !default;
+// Color del texto del subtítulo (gris tenue)
+$card-subtitle-color: #6c757d !default;
+// Margen superior del subtitulo (negativo para acercarlo al título)
+$card-subtitle-margin-top: -0.25rem !default;
+// Margen inferior del subtitulo
+$card-subtitle-margin-bottom: 0.75rem !default;
+// Color del texto del contenido de la tarjeta
+$card-text-color: #212529 !default;
+// Tamaño de fuente del contenido de la tarjeta
+$card-text-font-size: 1rem !default;
+// Margen inferior del contenido de la tarjeta
+$card-text-margin-bottom: 1rem !default;
+// Color del enlace dentro de la tarjeta
+$card-link-color: #0d6efd !default;
+// Estilo de decoración cuando se pasa el mouse sobre el enlace
+$card-link-hover-decoration: underline !default;
+// Margen derecho entre enlaces en la tarjeta
+$card-link-margin-right: 1rem !default;
+// Espaciado interno de los elementos de lista dentro de la tarjeta
+$list-group-item-padding: 0.75rem 1rem !default;
+// Color de fondo de los items de la lista
+$list-group-item-bg: #fff !default;
+// Color del texto de los items de la lista
+$list-group-item-color: #212529 !default;
+// Borde superior de los items de la lista (usa el mismo color del borde de la tarjeta)
+$list-group-item-border: 1px solid $card-border-color !default;
 
 // FIN VARIABLES DE DAVID
