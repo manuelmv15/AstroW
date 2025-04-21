@@ -11684,7 +11684,7 @@ table {
 }
 
 .no-decoration {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .underline-hover {
@@ -18248,4 +18248,8 @@ body {
 
 .title {
   font-size: clamp(0.75rem, 2vw + 1rem, 3rem);
+}
+
+.no-border {
+  border: none;
 }

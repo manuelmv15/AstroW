@@ -79,6 +79,8 @@
         }
     }
 
+    
+
     //tezzt area para cuando hay mucho texto q colorear
     .text-area-#{$key} {
         color: $value;
@@ -195,6 +197,8 @@
                 }
             }
 
+           
+
             // NOVEDAD: Variaciones oscuras para text-area
             .text-area-#{$key}-dark-#{$i} {
                 color: mix(black, $value, $i * 10%);
@@ -222,7 +226,7 @@
 
 
 .no-decoration {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .underline-hover {
