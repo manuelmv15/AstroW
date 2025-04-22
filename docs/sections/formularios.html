@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro-W</title>
-    
+
     <!-- <link rel="stylesheet" href="https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css"> -->
     <link rel="stylesheet" href="../../css/style.css">
 
 </head>
 
-<body class="bg-color-blue-dark-2">
-
+<body class="bg-color-blue-dark-3">
 
     <nav id="inicio" class="navbar-left">
         <ul>
@@ -23,74 +22,245 @@
     </nav>
 
     <div class="grid lg:grid-cols-5">
-
-        <div class="bg-color-blue-dark-2 w-75 pos-sticky top-0">
+        <div class="bg-color-blue-dark-2 pos-sticky w-75 top-0">
             <nav class="pos-sticky top-0 pt-2 pl-1">
                 <ul>
-                    
-                        
-                    <li><a href="../documentation.html" class="no-decoration link-hover-info text-red-light-2 text-2xl">Inicio - Instalación</a>
-                        
+                    <li class="mb-2 mt-2"><a href="../documentation.html"
+                            class="no-decoration link-hover-info text-link-light-2 text-2xl">🌌</a>
+                    <li><a href="../documentation.html"
+                            class="no-decoration link-hover-info text-red-light-2 text-2xl">Inicio - Instalación</a>
                     </li>
-                    <li><a href="introduccion.html" target="main-frame" class=" no-decoration link-hover-info text-pitch-light-2 text-2xl">Introducción</a>
-
-                        
+                    <li><a href="introduccion.html" target="main-frame"
+                            class=" no-decoration link-hover-info text-pitch-light-2 text-2xl">Introducción</a>
                     </li>
-                    <li><a href="componentes.html" class="no-decoration link-hover-info text-yellow-light-2 text-2xl">Componentes</a>
-                        
+                    <li><a href="componentes.html"
+                            class="no-decoration link-hover-info text-yellow-light-2 text-2xl">Componentes</a>
                     </li>
-                    <li><a href="formularios.html" class="no-decoration link-hover-info text-danger-light-2 text-2xl">Formularios</a></li>
+                    <li><a href="formularios.html"
+                            class="no-decoration link-hover-info text-danger-light-2 text-2xl">Formularios</a></li>
                     <li><a href="#layout" class="no-decoration link-hover-info text-primary text-2xl">Layout</a></li>
-                    <li><a href="#utilidades" class="no-decoration link-hover-info text-blue-light-9 text-2xl">Utilidades</a></li>
-
-
-                    <li class="mb-2 mt-2"><a href="../documentation.html" class="no-decoration link-hover-info text-link-light-2 text-2xl">🌌</a>
+                    <li><a href="#utilidades"
+                            class="no-decoration link-hover-info text-blue-light-9 text-2xl">Utilidades</a></li>
                 </ul>
             </nav>
         </div>
 
 
-        <div class="container-full bg-color-red h-screen col-span-4">
-
-            
+        <div class="container-full bg-color-blue-dark-3 h-screen col-span-4">
 
             <div class="row g-4 bg-color-blue-dark-3">
 
-
-                <div class="lg:col-10 bg-color-blue m-0 m-auto">
-
+                <div class="bg-color-blue-dark-3 lg:col-10 bg-color-blue m-0 m-auto">
 
                     <main id="main-content" class="bg-color-blue-dark-3 h-screen">
 
-                        <section id="" class="p-1 text-area-gray">
-                            <h2 class="title theme-font pt-2 mb-2">Formularios</h2>
-                            <p class="text-xl">Bienvenido a la documentación de tu librería de CSS personalizada...</p>
-                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam excepturi
-                                cum minima laudantium dignissimos! Obcaecati quis blanditiis totam ducimus iusto
-                                accusantium iste beatae voluptates ea optio vel quia eveniet facere, accusamus ex
-                                molestias odio placeat ab. Veniam doloribus est quisquam suscipit, dolorum neque. Ab,
-                                nihil eligendi, assumenda eius quis suscipit error dicta, earum minima dolore
-                                voluptates? A quae, itaque ducimus cumque recusandae suscipit quisquam delectus et! Quo
-                                quae consectetur rerum. Optio a quibusdam possimus rem velit aperiam praesentium quos
-                                obcaecati nam officiis libero vero aliquid, mollitia assumenda voluptatem. Qui, illo
-                                odit veniam eius velit quia animi at atque maiores accusantium!</p>
+                        <!-- description -->
+                        <section id="description" class="bg-color-blue-dark-3 p-1 text-area-white">
+                            <h1 class="title text-warning-override pt-2 mb-2">Formularios</h1>
+                            <p class="text-2xl fw-light">
+                                Se proporcionan opciones de diseño y componentes personalizados para crear una amplia
+                                variedad de
+                                formularios básicos.
+                            </p>
                         </section>
 
-                        
-                        
+                        <!-- form-control-label -->
+                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
+                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clases: form-control y form-label</h2>
+
+                            <p class="text-lg fw-light">
+                                Se proporciona las clases <code>form-control</code> para trabajar con las etiquetas
+                                &lt;input&gt; y &lt;textarea&gt;
+                                y la clase <code>form-label</code> para utilizar con la etiqueta &lt;label&gt;.
+                                Estas
+                                clases proporcionan las
+                                características esenciales para el diseño de formularios modernos. <br><br>
+                            </p>
+
+
+                            <div class="container bg-color-white pb-2 pt-2">
+                                <label for="exampleFormControlInput1" class="form-label text-black-override">Email
+                                    address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                                <label for="exampleFormControlTextarea1" class="form-label text-black-override">Example
+                                    textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="code-container text-sm">
+                                <div class="code-header">Código: HTML</div>
+                                <div class="code-body">
+                                    <code>
+&lt;label for="exampleFormControlInput1" class="form-label text-black-override"&gt;Email address&lt;/label&gt;
+&lt;input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"&gt;
+&lt;label for="exampleFormControlTextarea1" class="form-label text-black-override"&gt;Example textarea&lt;/label&gt;
+&lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
+                            </code>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                        <!-- form-control-plaintext -->
+                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
+                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clase: form-control-plaintext</h2>
+
+                            <p class="text-lg fw-light">
+                                La clase <code>form-control-plaintext</code> se usa cuando se desea que los elementos
+                                del formulario tengan el estilo de
+                                texto sin formato. Se usa con las etiqueta &lt;input&gt;. <br> <br>
+                            </p>
+
+
+                            <div class="container bg-color-white pb-2 pt-2">
+                                <label for="staticEmail" class="text-black-override form-label">Email</label>
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                    value="email@example.com">
+                            </div>
+
+                            <div class="code-container text-sm">
+                                <div class="code-header">Código: HTML</div>
+                                <div class="code-body">
+                                    <code>
+&lt;label for="staticEmail" class="text-black-override form-label"&gt;Email&lt;/label&gt;
+&lt;input type="text" readonly class="form-control-plaintext" id="staticEmail"
+value="email@example.com"&gt;
+                                    </code>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                        <!-- input-group e input-group-text -->
+                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
+                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clases: input-group e input-group-text
+                            </h2>
+
+                            <p class="text-lg fw-light">
+                                La clase <code>input-group</code> se usa en contenedores como &lt;div&gt; cuyos
+                                elementos
+                                hacen usa de la clase <code>input-group-text</code>. La clase
+                                <code>input-group-text</code> se usa
+                                generalmente con &lt;span&gt; <br> <br>
+                            </p>
+
+
+                            <div class="container bg-color-white pb-2 pt-2">
+                                <div class="text-black-override input-group">
+                                    <span class="text-black-override input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                            </div>
+
+                            <div class="code-container text-sm">
+                                <div class="code-header">Código: HTML</div>
+                                <div class="code-body">
+                                    <code>
+&lt;div class="text-black-override input-group"&gt;                                       
+    &lt;span class="text-black-override input-group-text"&gt;@&lt;/span&gt;
+    &lt;input type="text" class="form-control" placeholder="Username"&gt;
+&lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                        <!-- form-check, form-check-input y form-check-label -->
+                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
+                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clases: form-check, form-check-input y
+                                form-check-label
+                            </h2>
+
+                            <p class="text-lg fw-light">
+                                La clase <code>form-check</code> se usa en contenedores como &lt;div&gt; cuyos
+                                elementos
+                                hacen usa de las clases <code>form-check-input</code> (Para &lt;input&gt; de tipo
+                                checkbox) y <code>form-check-label</code> (Para &lt;labe&gt;). Estas
+                                clases en conjunto permiten crear Checks y radios. <br> <br>
+                            </p>
+
+
+                            <div class="container bg-color-white pb-2 pt-2">
+                                <div class="text-black-override form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">
+                                        Default checkbox
+                                    </label>
+                                </div>
+                                <div class="text-black-override form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                    <label class="form-check-label" for="radioDefault1">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="code-container text-sm">
+                                <div class="code-header">Código: HTML</div>
+                                <div class="code-body">
+                                    <code>
+&lt;div class=&quot;text-black-override form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;checkDefault&quot;&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;checkDefault&quot;&gt;
+        Default checkbox
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;text-black-override form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;radioDefault&quot; id=&quot;radioDefault1&quot;&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;radioDefault1&quot;&gt;
+        Default radio
+    &lt;/label&gt;
+&lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                        <!-- input-group e input-group-text -->
+                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
+                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clase: form-range
+                            </h2>
+
+                            <p class="text-lg fw-light">
+                                La clase <code>form-range</code> se usa para crear rango personalizadas
+                                junto con la etiqueta @&lt;range&gt; <br> <br>
+                            </p>
+
+
+                            <div class="container bg-color-white pb-2 pt-2">
+                                <label for="customRange1" class="text-black-override form-label">Example range</label>
+                                <input type="range" class="form-range" id="customRange1">
+                            </div>
+
+                            <div class="code-container text-sm">
+                                <div class="code-header">Código: HTML</div>
+                                <div class="code-body">
+                                    <code>
+&lt;label for="customRange1" class="text-black-override form-label"&gt; Example range&lt;/label&gt;  
+&lt;input type="range" class="form-range" id="customRange1"&gt;
+                                    </code>
+                                </div>
+                            </div>
+
+                        </section>
+
                     </main>
+
                 </div>
 
             </div>
 
-
-
         </div>
     </div>
 
-
-
-    
 </body>
 
 </html>

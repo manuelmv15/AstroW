@@ -259,4 +259,29 @@ $list-group-item-color: #212529 !default;
 // Borde superior de los items de la lista (usa el mismo color del borde de la tarjeta)
 $list-group-item-border: 1px solid $card-border-color !default;
 
+// 
+//  variables de estilos para mostrar codigo html puro en la documentacion
+//
+
+// Color de fondo del contenedor de código y
+// Color de fondo del encabezado del código
+$code-background-color: #000;
+// Color del texto dentro del contenedor
+$code-text-color: #fff;
+// Relleno general del contenedor
+$code-padding: 1em;
+// Fuente utilizada en todo el bloque de código
+$code-font-family: monospace;
+
+
+// Color del texto del encabezado
+$code-header-text-color: #0f0;
+// Color del borde superior del cuerpo del código
+$code-border-color: #444;
+
+// Relleno del encabezado
+$code-header-padding: 0.5em 1em;
+
+
+
 // FIN VARIABLES DE DAVID
