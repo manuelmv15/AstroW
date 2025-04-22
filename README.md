@@ -7,7 +7,7 @@
 
 ## Inicio rapido
 
-puedes intalara AstroW de las siguientes maneras:
+Puedes instalar AstroW de las siguientes maneras:
 
 ### Opción 1: Clonar el repositorio
 
