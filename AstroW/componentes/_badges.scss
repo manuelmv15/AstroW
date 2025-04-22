@@ -1,13 +1,39 @@
 @use 'sass:color';
+@use 'sass:map';
 @use '../utilidades/colors' as *;
 @use '../utilidades/variables' as *;
 @use '../utilidades/functions' as *;
 
-// Estilos base para cualquier badge
-@mixin badge-base {
+// === MAPA DE SIZES ===
+$sizes: (
+  default: (
+    padding: 0.25rem 0.5rem,
+    font-size: 0.75rem
+  ),
+  sm: (
+    padding: 0.125rem 0.375rem,
+    font-size: 0.625rem
+  ),
+  md: (
+    padding: 0.25rem 0.5rem,
+    font-size: 0.75rem
+  ),
+  lg: (
+    padding: 0.375rem 0.75rem,
+    font-size: 0.875rem
+  ),
+  xl: (
+    padding: 0.5rem 1rem,
+    font-size: 1rem
+  )
+);
+
+// === MIXIN PARA BADGE BASE CON SIZE DINÁMICO ===
+@mixin badge-base($size: default) {
+  $size-config: map.get($sizes, $size);
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: map.get($size-config, padding);
+  font-size: map.get($size-config, font-size);
   font-weight: 600;
   border-radius: 9999px; // pill shape
   line-height: 1;
@@ -16,36 +42,39 @@
 }
 
 // === GENERADOR DE BADGES POR ESTILO Y COLOR ===
-
-// Estilos: sólido, outlined, suave y invertido
 @each $name, $color in $colors {
   
-  // Badge sólido
-  .badge-solid-#{$name} {
-    @include badge-base;
-    background-color: $color;
-    color: light-comp($color);
-  }
+  // Iterar sobre los sizes
+  @each $size-name, $size-config in $sizes {
+    $suffix: if($size-name == default, '', '-#{$size-name}');
 
-  // Badge outlined
-  .badge-outlined-#{$name} {
-    @include badge-base;
-    background-color: transparent;
-    border: 1px solid $color;
-    color: $color;
-  }
+    // Badge sólido
+    .badge-solid-#{$name}#{$suffix} {
+      @include badge-base($size-name);
+      background-color: $color;
+      color: light-comp($color);
+    }
 
-  // Badge soft (tono suave)
-  .badge-soft-#{$name} {
-    @include badge-base;
-    background-color: color.scale($color, $lightness: 75%);
-    color: $color;
-  }
+    // Badge outlined
+    .badge-outlined-#{$name}#{$suffix} {
+      @include badge-base($size-name);
+      background-color: transparent;
+      border: 1px solid $color;
+      color: $color;
+    }
 
-  // Badge invertido
-  .badge-inverted-#{$name} {
-    @include badge-base;
-    background-color: light-comp($color);
-    color: $color;
+    // Badge soft (tono suave)
+    .badge-soft-#{$name}#{$suffix} {
+      @include badge-base($size-name);
+      background-color: color.scale($color, $lightness: 75%);
+      color: $color;
+    }
+
+    // Badge invertido
+    .badge-inverted-#{$name}#{$suffix} {
+      @include badge-base($size-name);
+      background-color: light-comp($color);
+      color: $color;
+    }
   }
 }
