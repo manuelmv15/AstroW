@@ -33,6 +33,37 @@ body {
 }
 
 
-.no-border{
+.no-border {
     border: none;
+}
+
+//
+// Esta clase define los estilos para mostrar codigo html puro en la documentacion
+//
+
+.code-container {
+    background-color: $code-background-color;
+    color: $code-text-color;
+    padding: $code-padding;
+    overflow-x: auto;
+    max-width: 100%;
+    font-family: $code-font-family;
+    white-space: pre;
+    text-align: left;
+
+    .code-header {
+        background-color: $code-background-color;
+        color: $code-header-text-color;
+        padding: $code-header-padding;
+        font-family: inherit;
+        font-weight: bold;
+    }
+
+    .code-body {
+        border-top: 1px solid $code-border-color;
+
+        code {
+            display: block;
+        }
+    }
 }
