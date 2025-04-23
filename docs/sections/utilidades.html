@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro-W</title>
+    <title>Astro-W Utilidades</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/custom.css">
@@ -27,17 +27,20 @@
         <div class="bg-color-blue-dark-2 w-75 pos-sticky top-0">
             <nav class="pos-sticky top-0 pt-2 pl-1">
                 <ul>
-                    
-                        
-                    
-                    <li><a href="../documentation.html" class="no-decoration link-hover-info text-red-light-2 text-2xl">Inicio - Instalación</a>
-                        
-                    </li>
-                    <li><a href="introduccion.html" target="main-frame" class=" no-decoration link-hover-info text-pitch-light-2 text-2xl">Introducción</a>
 
-                        
+
+
+                    <li><a href="../documentation.html"
+                            class="no-decoration link-hover-info text-red-light-2 text-2xl">Inicio - Instalación</a>
+
                     </li>
-                    <li><a href="componentes.html" class="no-decoration link-hover-info text-yellow-light-2 text-2xl">Componentes</a>
+                    <li><a href="introduccion.html" target="main-frame"
+                            class=" no-decoration link-hover-info text-pitch-light-2 text-2xl">Introducción</a>
+
+
+                    </li>
+                    <li><a href="componentes.html"
+                            class="no-decoration link-hover-info text-yellow-light-2 text-2xl">Componentes</a>
                         <ul class="pl-1 pb-1 text-area-gray-light-2">
                             <li><a href="#botones" class="no-decoration">Botones</a></li>
                             <li><a href="" class="no-decoration">Badges</a></li>
@@ -45,12 +48,15 @@
                             <li><a href="" class="no-decoration">Cards</a></li>
                         </ul>
                     </li>
-                    <li><a href="formularios.html" class="no-decoration link-hover-info text-danger-light-2 text-2xl">Formularios</a></li>
+                    <li><a href="formularios.html"
+                            class="no-decoration link-hover-info text-danger-light-2 text-2xl">Formularios</a></li>
                     <li><a href="#layout" class="no-decoration link-hover-info text-primary text-2xl">Layout</a></li>
-                    <li><a href="#utilidades" class="no-decoration link-hover-info text-blue-light-9 text-2xl">Utilidades</a></li>
+                    <li><a href="#utilidades"
+                            class="no-decoration link-hover-info text-blue-light-9 text-2xl">Utilidades</a></li>
 
 
-                    <li class="mb-2 mt-2"><a href="../documentation.html" class="no-decoration link-hover-info text-link-light-2 text-2xl">🌌</a>
+                    <li class="mb-2 mt-2"><a href="../documentation.html"
+                            class="no-decoration link-hover-info text-link-light-2 text-2xl">🌌</a>
                 </ul>
             </nav>
         </div>
@@ -58,14 +64,166 @@
 
         <div class="container-full bg-color-red h-screen col-span-4">
 
-            
+
 
             <div class="row g-4 bg-color-blue-dark-5">
 
 
                 <div class="lg:col-10 bg-color-blue m-0 m-auto">
                     <main id="main-content" class="bg-color-blue-dark-5">
-                        
+
+                        <section class="p-1 text-area-gray h-screen">
+                            <h2 class="mt-2 mb-2 title theme-font">Utilidades</h2>
+
+
+                            <h2 class="mt-2 mb-2 title theme-font">Padding y Margin</h2>
+                            <div class="mt-1 mb-1">
+                                <hr class="w-25 m-0 no-border bg-color-info " style="height: 3px;">
+                            </div>
+                            <div class="">
+                                <div>
+                                    <div class="mt-2">
+                                        <h6 class="fw-bold mb-2">Astro proporciona padding
+                                            <span
+                                                class="text-md text-red bg-color-primary-dark-9 br fw-bold  pl-1 pr-1">
+                                                p*
+                                            </span>
+                                            y margin
+                                            <span
+                                                class="text-md text-red bg-color-primary-dark-9 br fw-bold  pl-1 pr-1">
+                                                m*
+                                            </span>
+                                            en todas direcciones:
+                                        </h6>
+                                        <ul class="">
+                                            <li class="m-1"><span
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">*l</span>:
+                                                padding a la izquierda.</li>
+                                            <li class="m-1"><span
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">*r</span>:
+                                                padding a la derecha.</li>
+                                            <li class="m-1"><span
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">*t</span>:
+                                                padding superior.</li>
+                                            <li class="m-1"><span
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">*b</span>:
+                                                padding inferior.</li>
+                                        </ul>
+                                        <div class="mt-1 mb-1">
+                                            <hr class="w-25 m-0 no-border bg-color-info " style="height: 3px;">
+                                        </div>
+
+                                        <p>Necesitás combinar un prefijo de margen/padding con sufijo
+                                            de dirección. Por ejemplo:</p>
+                                        <ul class="mb-2">
+                                            <li class="m-1">Para <code
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">margin-top</code>
+                                                se
+                                                usa <code
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">mt-*</code>
+                                            </li>
+                                            <li class="m-1">Para <code
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">padding-bottom</code>
+                                                se usa <code
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">pb-*</code>
+                                            </li>
+                                            <li class="m-1">Para <code
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">margin-left</code>
+                                                y
+                                                <code
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">margin-right</code>
+                                                se usa
+                                                <code
+                                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold ml-1 mr-1 pl-1 pr-1">mr-*</code>
+                                            </li>
+                                        </ul>
+
+                                        <p class="mb-1">Cada combinación debe ser anexada con uno de los <span
+                                                class="text-md text-red bg-color-primary-dark-9 br fw-bold  pl-1 pr-1">
+                                                sufijos
+                                            </span>:</p>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 ">
+                                            <!-- columna izquierda -->
+                                            <div class="mt-1 mb-1 ">
+                                                <table class="w-100 bg-color-primary-dark-9 bordered-orange br">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="p-1 text-left bordered-orange">Suffix</th>
+                                                            <th class="p-1 text-left bordered-orange">Valor</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="p-1 bordered-orange"><code
+                                                                    class="br p-1">*-0</code></td>
+                                                            <td class="p-1 bordered-orange">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="p-1 bordered-orange"><code
+                                                                    class="br p-1">*-1</code></td>
+                                                            <td class="p-1 bordered-orange">0.75rem</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="p-1 bordered-orange"><code
+                                                                    class="br p-1">*-2</code></td>
+                                                            <td class="p-1 bordered-orange">1.5rem</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="p-1 bordered-orange"><code
+                                                                    class="br p-1">*-3</code></td>
+                                                            <td class="p-1 bordered-orange">3rem</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="p-1 bordered-orange"><code
+                                                                    class="br p-1">*-4</code></td>
+                                                            <td class="p-1 bordered-orange">4.5rem</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="p-1 bordered-orange"><code
+                                                                    class="br p-1">*-5</code></td>
+                                                            <td class="p-1 bordered-orange">6rem</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="p-1 bordered-orange"><code
+                                                                    class="br p-1">*-auto</code></td>
+                                                            <td class="p-1 bordered-orange">auto</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <!-- columna derecha -->
+                                            <div class="mt-1 mb-1 justify-center d-flex">
+                                                <div class="">
+                                                    <div class="d-flex justify-space-between">
+                                                        <label class="badge-outlined-info">Ejemplo en html</label>
+                                                    </div>
+                                                    <pre><code class="language-html">
+                                              &lt;!-- agregar 4.5rem al margen de abajo --&gt;
+                                              &lt;p class=&quot;mb-4&quot;&gt;Margin bottom&lt;/p&gt;
+                                              
+                                              &lt;!-- agregar 0.75rem al padding izquierdo --&gt;
+                                              &lt;p class=&quot;pl-1&quot;&gt;Padding left&lt;/p&gt;
+                                              
+                                              &lt;!-- agregar 0 al margen derecho y 3rem al padding superior--&gt;
+                                              &lt;p class=&quot;mr-0 pt-3&quot;&gt;Ambos&lt;/p&gt;
+                                              </code></pre>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+
+
+
+                        </section>
+
+
+
+
                     </main>
                 </div>
 
@@ -79,7 +237,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
-    
+
 </body>
 
 </html>
