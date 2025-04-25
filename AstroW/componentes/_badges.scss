@@ -32,6 +32,7 @@ $sizes: (
 @mixin badge-base($size: default) {
   $size-config: map.get($sizes, $size);
   display: inline-block;
+  text-align: center;
   padding: map.get($size-config, padding);
   font-size: map.get($size-config, font-size);
   font-weight: 600;

@@ -56,6 +56,32 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 16px;
+  /* base: 1rem = 16px */
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px !important;
+    /* escala todo levemente hacia abajo */
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 9px !important;
+  }
+}
 .container-flow {
   width: 100%;
   margin: 0 auto;
@@ -549,6 +575,7 @@ table {
 .row {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .col-1 {
@@ -12266,7 +12293,7 @@ table {
   width: 75%;
 }
 
-.w-100 {
+.w-full {
   width: 100%;
 }
 
@@ -12294,7 +12321,7 @@ table {
   height: 75%;
 }
 
-.h-100 {
+.h-full {
   height: 100%;
 }
 
@@ -12462,24 +12489,16 @@ table {
   left: auto;
 }
 
-.max-w-xs {
-  max-width: 0;
+.max-w-25 {
+  max-width: 25%;
 }
 
-.max-w-sm {
-  max-width: 480px;
+.max-w-50 {
+  max-width: 50%;
 }
 
-.max-w-md {
-  max-width: 640px;
-}
-
-.max-w-lg {
-  max-width: 960px;
-}
-
-.max-w-xl {
-  max-width: 1200px;
+.max-w-75 {
+  max-width: 75%;
 }
 
 .max-w-full {
@@ -12494,24 +12513,16 @@ table {
   max-width: none;
 }
 
-.min-w-xs {
-  min-width: 0;
+.min-w-25 {
+  min-width: 25%;
 }
 
-.min-w-sm {
-  min-width: 480px;
+.min-w-50 {
+  min-width: 50%;
 }
 
-.min-w-md {
-  min-width: 640px;
-}
-
-.min-w-lg {
-  min-width: 960px;
-}
-
-.min-w-xl {
-  min-width: 1200px;
+.min-w-75 {
+  min-width: 75%;
 }
 
 .min-w-full {
@@ -12526,24 +12537,16 @@ table {
   min-width: none;
 }
 
-.max-h-xs {
-  max-height: 0;
+.max-h-25 {
+  max-height: 25%;
 }
 
-.max-h-sm {
-  max-height: 480px;
+.max-h-50 {
+  max-height: 50%;
 }
 
-.max-h-md {
-  max-height: 640px;
-}
-
-.max-h-lg {
-  max-height: 960px;
-}
-
-.max-h-xl {
-  max-height: 1200px;
+.max-h-75 {
+  max-height: 75%;
 }
 
 .max-h-full {
@@ -12551,31 +12554,23 @@ table {
 }
 
 .max-h-screen {
-  max-height: 100vw;
+  max-height: 100vh;
 }
 
 .max-h-none {
   max-height: none;
 }
 
-.min-h-xs {
-  min-height: 0;
+.min-h-25 {
+  min-height: 25%;
 }
 
-.min-h-sm {
-  min-height: 480px;
+.min-h-50 {
+  min-height: 50%;
 }
 
-.min-h-md {
-  min-height: 640px;
-}
-
-.min-h-lg {
-  min-height: 960px;
-}
-
-.min-h-xl {
-  min-height: 1200px;
+.min-h-75 {
+  min-height: 75%;
 }
 
 .min-h-full {
@@ -12583,7 +12578,7 @@ table {
 }
 
 .min-h-screen {
-  min-height: 100vw;
+  min-height: 100vh;
 }
 
 .min-h-none {
@@ -12711,6 +12706,7 @@ table {
 
 .btn {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12723,6 +12719,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12737,6 +12734,7 @@ table {
 
 .btn-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12749,6 +12747,7 @@ table {
 
 .btn-orange-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12763,6 +12762,7 @@ table {
 
 .btn-outlined-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12778,6 +12778,7 @@ table {
 
 .btn-outlined-orange-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12795,6 +12796,7 @@ table {
 
 .btn-complement-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12809,6 +12811,7 @@ table {
 
 .btn-complement-orange-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12825,6 +12828,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12839,6 +12843,7 @@ table {
 
 .btn-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12851,6 +12856,7 @@ table {
 
 .btn-orange-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12865,6 +12871,7 @@ table {
 
 .btn-outlined-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12880,6 +12887,7 @@ table {
 
 .btn-outlined-orange-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12897,6 +12905,7 @@ table {
 
 .btn-complement-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12911,6 +12920,7 @@ table {
 
 .btn-complement-orange-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12927,6 +12937,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12941,6 +12952,7 @@ table {
 
 .btn-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12953,6 +12965,7 @@ table {
 
 .btn-orange-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12967,6 +12980,7 @@ table {
 
 .btn-outlined-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12982,6 +12996,7 @@ table {
 
 .btn-outlined-orange-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -12999,6 +13014,7 @@ table {
 
 .btn-complement-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13013,6 +13029,7 @@ table {
 
 .btn-complement-orange-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13029,6 +13046,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13043,6 +13061,7 @@ table {
 
 .btn-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13055,6 +13074,7 @@ table {
 
 .btn-orange-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13069,6 +13089,7 @@ table {
 
 .btn-outlined-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13084,6 +13105,7 @@ table {
 
 .btn-outlined-orange-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13101,6 +13123,7 @@ table {
 
 .btn-complement-orange {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13115,6 +13138,7 @@ table {
 
 .btn-complement-orange-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13131,6 +13155,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13145,6 +13170,7 @@ table {
 
 .btn-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13157,6 +13183,7 @@ table {
 
 .btn-yellow-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13171,6 +13198,7 @@ table {
 
 .btn-outlined-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13186,6 +13214,7 @@ table {
 
 .btn-outlined-yellow-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13203,6 +13232,7 @@ table {
 
 .btn-complement-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13217,6 +13247,7 @@ table {
 
 .btn-complement-yellow-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13233,6 +13264,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13247,6 +13279,7 @@ table {
 
 .btn-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13259,6 +13292,7 @@ table {
 
 .btn-yellow-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13273,6 +13307,7 @@ table {
 
 .btn-outlined-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13288,6 +13323,7 @@ table {
 
 .btn-outlined-yellow-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13305,6 +13341,7 @@ table {
 
 .btn-complement-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13319,6 +13356,7 @@ table {
 
 .btn-complement-yellow-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13335,6 +13373,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13349,6 +13388,7 @@ table {
 
 .btn-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13361,6 +13401,7 @@ table {
 
 .btn-yellow-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13375,6 +13416,7 @@ table {
 
 .btn-outlined-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13390,6 +13432,7 @@ table {
 
 .btn-outlined-yellow-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13407,6 +13450,7 @@ table {
 
 .btn-complement-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13421,6 +13465,7 @@ table {
 
 .btn-complement-yellow-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13437,6 +13482,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13451,6 +13497,7 @@ table {
 
 .btn-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13463,6 +13510,7 @@ table {
 
 .btn-yellow-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13477,6 +13525,7 @@ table {
 
 .btn-outlined-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13492,6 +13541,7 @@ table {
 
 .btn-outlined-yellow-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13509,6 +13559,7 @@ table {
 
 .btn-complement-yellow {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13523,6 +13574,7 @@ table {
 
 .btn-complement-yellow-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13539,6 +13591,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13553,6 +13606,7 @@ table {
 
 .btn-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13565,6 +13619,7 @@ table {
 
 .btn-red-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13579,6 +13634,7 @@ table {
 
 .btn-outlined-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13594,6 +13650,7 @@ table {
 
 .btn-outlined-red-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13611,6 +13668,7 @@ table {
 
 .btn-complement-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13625,6 +13683,7 @@ table {
 
 .btn-complement-red-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13641,6 +13700,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13655,6 +13715,7 @@ table {
 
 .btn-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13667,6 +13728,7 @@ table {
 
 .btn-red-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13681,6 +13743,7 @@ table {
 
 .btn-outlined-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13696,6 +13759,7 @@ table {
 
 .btn-outlined-red-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13713,6 +13777,7 @@ table {
 
 .btn-complement-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13727,6 +13792,7 @@ table {
 
 .btn-complement-red-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13743,6 +13809,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13757,6 +13824,7 @@ table {
 
 .btn-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13769,6 +13837,7 @@ table {
 
 .btn-red-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13783,6 +13852,7 @@ table {
 
 .btn-outlined-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13798,6 +13868,7 @@ table {
 
 .btn-outlined-red-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13815,6 +13886,7 @@ table {
 
 .btn-complement-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13829,6 +13901,7 @@ table {
 
 .btn-complement-red-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13845,6 +13918,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13859,6 +13933,7 @@ table {
 
 .btn-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13871,6 +13946,7 @@ table {
 
 .btn-red-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13885,6 +13961,7 @@ table {
 
 .btn-outlined-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13900,6 +13977,7 @@ table {
 
 .btn-outlined-red-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13917,6 +13995,7 @@ table {
 
 .btn-complement-red {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13931,6 +14010,7 @@ table {
 
 .btn-complement-red-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13947,6 +14027,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13961,6 +14042,7 @@ table {
 
 .btn-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13973,6 +14055,7 @@ table {
 
 .btn-pitch-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -13987,6 +14070,7 @@ table {
 
 .btn-outlined-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14002,6 +14086,7 @@ table {
 
 .btn-outlined-pitch-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14019,6 +14104,7 @@ table {
 
 .btn-complement-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14033,6 +14119,7 @@ table {
 
 .btn-complement-pitch-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14049,6 +14136,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14063,6 +14151,7 @@ table {
 
 .btn-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14075,6 +14164,7 @@ table {
 
 .btn-pitch-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14089,6 +14179,7 @@ table {
 
 .btn-outlined-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14104,6 +14195,7 @@ table {
 
 .btn-outlined-pitch-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14121,6 +14213,7 @@ table {
 
 .btn-complement-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14135,6 +14228,7 @@ table {
 
 .btn-complement-pitch-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14151,6 +14245,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14165,6 +14260,7 @@ table {
 
 .btn-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14177,6 +14273,7 @@ table {
 
 .btn-pitch-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14191,6 +14288,7 @@ table {
 
 .btn-outlined-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14206,6 +14304,7 @@ table {
 
 .btn-outlined-pitch-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14223,6 +14322,7 @@ table {
 
 .btn-complement-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14237,6 +14337,7 @@ table {
 
 .btn-complement-pitch-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14253,6 +14354,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14267,6 +14369,7 @@ table {
 
 .btn-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14279,6 +14382,7 @@ table {
 
 .btn-pitch-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14293,6 +14397,7 @@ table {
 
 .btn-outlined-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14308,6 +14413,7 @@ table {
 
 .btn-outlined-pitch-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14325,6 +14431,7 @@ table {
 
 .btn-complement-pitch {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14339,6 +14446,7 @@ table {
 
 .btn-complement-pitch-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14355,6 +14463,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14369,6 +14478,7 @@ table {
 
 .btn-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14381,6 +14491,7 @@ table {
 
 .btn-gray-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14395,6 +14506,7 @@ table {
 
 .btn-outlined-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14410,6 +14522,7 @@ table {
 
 .btn-outlined-gray-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14427,6 +14540,7 @@ table {
 
 .btn-complement-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14441,6 +14555,7 @@ table {
 
 .btn-complement-gray-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14457,6 +14572,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14471,6 +14587,7 @@ table {
 
 .btn-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14483,6 +14600,7 @@ table {
 
 .btn-gray-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14497,6 +14615,7 @@ table {
 
 .btn-outlined-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14512,6 +14631,7 @@ table {
 
 .btn-outlined-gray-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14529,6 +14649,7 @@ table {
 
 .btn-complement-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14543,6 +14664,7 @@ table {
 
 .btn-complement-gray-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14559,6 +14681,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14573,6 +14696,7 @@ table {
 
 .btn-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14585,6 +14709,7 @@ table {
 
 .btn-gray-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14599,6 +14724,7 @@ table {
 
 .btn-outlined-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14614,6 +14740,7 @@ table {
 
 .btn-outlined-gray-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14631,6 +14758,7 @@ table {
 
 .btn-complement-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14645,6 +14773,7 @@ table {
 
 .btn-complement-gray-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14661,6 +14790,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14675,6 +14805,7 @@ table {
 
 .btn-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14687,6 +14818,7 @@ table {
 
 .btn-gray-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14701,6 +14833,7 @@ table {
 
 .btn-outlined-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14716,6 +14849,7 @@ table {
 
 .btn-outlined-gray-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14733,6 +14867,7 @@ table {
 
 .btn-complement-gray {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14747,6 +14882,7 @@ table {
 
 .btn-complement-gray-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14763,6 +14899,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14777,6 +14914,7 @@ table {
 
 .btn-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14789,6 +14927,7 @@ table {
 
 .btn-blue-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14803,6 +14942,7 @@ table {
 
 .btn-outlined-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14818,6 +14958,7 @@ table {
 
 .btn-outlined-blue-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14835,6 +14976,7 @@ table {
 
 .btn-complement-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14849,6 +14991,7 @@ table {
 
 .btn-complement-blue-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14865,6 +15008,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14879,6 +15023,7 @@ table {
 
 .btn-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14891,6 +15036,7 @@ table {
 
 .btn-blue-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14905,6 +15051,7 @@ table {
 
 .btn-outlined-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14920,6 +15067,7 @@ table {
 
 .btn-outlined-blue-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14937,6 +15085,7 @@ table {
 
 .btn-complement-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14951,6 +15100,7 @@ table {
 
 .btn-complement-blue-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14967,6 +15117,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14981,6 +15132,7 @@ table {
 
 .btn-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -14993,6 +15145,7 @@ table {
 
 .btn-blue-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15007,6 +15160,7 @@ table {
 
 .btn-outlined-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15022,6 +15176,7 @@ table {
 
 .btn-outlined-blue-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15039,6 +15194,7 @@ table {
 
 .btn-complement-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15053,6 +15209,7 @@ table {
 
 .btn-complement-blue-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15069,6 +15226,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15083,6 +15241,7 @@ table {
 
 .btn-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15095,6 +15254,7 @@ table {
 
 .btn-blue-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15109,6 +15269,7 @@ table {
 
 .btn-outlined-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15124,6 +15285,7 @@ table {
 
 .btn-outlined-blue-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15141,6 +15303,7 @@ table {
 
 .btn-complement-blue {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15155,6 +15318,7 @@ table {
 
 .btn-complement-blue-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15171,6 +15335,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15185,6 +15350,7 @@ table {
 
 .btn-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15197,6 +15363,7 @@ table {
 
 .btn-link-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15211,6 +15378,7 @@ table {
 
 .btn-outlined-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15226,6 +15394,7 @@ table {
 
 .btn-outlined-link-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15243,6 +15412,7 @@ table {
 
 .btn-complement-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15257,6 +15427,7 @@ table {
 
 .btn-complement-link-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15273,6 +15444,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15287,6 +15459,7 @@ table {
 
 .btn-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15299,6 +15472,7 @@ table {
 
 .btn-link-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15313,6 +15487,7 @@ table {
 
 .btn-outlined-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15328,6 +15503,7 @@ table {
 
 .btn-outlined-link-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15345,6 +15521,7 @@ table {
 
 .btn-complement-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15359,6 +15536,7 @@ table {
 
 .btn-complement-link-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15375,6 +15553,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15389,6 +15568,7 @@ table {
 
 .btn-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15401,6 +15581,7 @@ table {
 
 .btn-link-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15415,6 +15596,7 @@ table {
 
 .btn-outlined-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15430,6 +15612,7 @@ table {
 
 .btn-outlined-link-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15447,6 +15630,7 @@ table {
 
 .btn-complement-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15461,6 +15645,7 @@ table {
 
 .btn-complement-link-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15477,6 +15662,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15491,6 +15677,7 @@ table {
 
 .btn-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15503,6 +15690,7 @@ table {
 
 .btn-link-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15517,6 +15705,7 @@ table {
 
 .btn-outlined-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15532,6 +15721,7 @@ table {
 
 .btn-outlined-link-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15549,6 +15739,7 @@ table {
 
 .btn-complement-link {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15563,6 +15754,7 @@ table {
 
 .btn-complement-link-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15579,6 +15771,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15593,6 +15786,7 @@ table {
 
 .btn-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15605,6 +15799,7 @@ table {
 
 .btn-primary-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15619,6 +15814,7 @@ table {
 
 .btn-outlined-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15634,6 +15830,7 @@ table {
 
 .btn-outlined-primary-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15651,6 +15848,7 @@ table {
 
 .btn-complement-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15665,6 +15863,7 @@ table {
 
 .btn-complement-primary-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15681,6 +15880,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15695,6 +15895,7 @@ table {
 
 .btn-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15707,6 +15908,7 @@ table {
 
 .btn-primary-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15721,6 +15923,7 @@ table {
 
 .btn-outlined-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15736,6 +15939,7 @@ table {
 
 .btn-outlined-primary-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15753,6 +15957,7 @@ table {
 
 .btn-complement-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15767,6 +15972,7 @@ table {
 
 .btn-complement-primary-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15783,6 +15989,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15797,6 +16004,7 @@ table {
 
 .btn-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15809,6 +16017,7 @@ table {
 
 .btn-primary-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15823,6 +16032,7 @@ table {
 
 .btn-outlined-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15838,6 +16048,7 @@ table {
 
 .btn-outlined-primary-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15855,6 +16066,7 @@ table {
 
 .btn-complement-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15869,6 +16081,7 @@ table {
 
 .btn-complement-primary-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15885,6 +16098,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15899,6 +16113,7 @@ table {
 
 .btn-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15911,6 +16126,7 @@ table {
 
 .btn-primary-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15925,6 +16141,7 @@ table {
 
 .btn-outlined-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15940,6 +16157,7 @@ table {
 
 .btn-outlined-primary-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15957,6 +16175,7 @@ table {
 
 .btn-complement-primary {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15971,6 +16190,7 @@ table {
 
 .btn-complement-primary-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -15987,6 +16207,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16001,6 +16222,7 @@ table {
 
 .btn-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16013,6 +16235,7 @@ table {
 
 .btn-info-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16027,6 +16250,7 @@ table {
 
 .btn-outlined-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16042,6 +16266,7 @@ table {
 
 .btn-outlined-info-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16059,6 +16284,7 @@ table {
 
 .btn-complement-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16073,6 +16299,7 @@ table {
 
 .btn-complement-info-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16089,6 +16316,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16103,6 +16331,7 @@ table {
 
 .btn-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16115,6 +16344,7 @@ table {
 
 .btn-info-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16129,6 +16359,7 @@ table {
 
 .btn-outlined-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16144,6 +16375,7 @@ table {
 
 .btn-outlined-info-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16161,6 +16393,7 @@ table {
 
 .btn-complement-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16175,6 +16408,7 @@ table {
 
 .btn-complement-info-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16191,6 +16425,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16205,6 +16440,7 @@ table {
 
 .btn-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16217,6 +16453,7 @@ table {
 
 .btn-info-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16231,6 +16468,7 @@ table {
 
 .btn-outlined-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16246,6 +16484,7 @@ table {
 
 .btn-outlined-info-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16263,6 +16502,7 @@ table {
 
 .btn-complement-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16277,6 +16517,7 @@ table {
 
 .btn-complement-info-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16293,6 +16534,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16307,6 +16549,7 @@ table {
 
 .btn-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16319,6 +16562,7 @@ table {
 
 .btn-info-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16333,6 +16577,7 @@ table {
 
 .btn-outlined-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16348,6 +16593,7 @@ table {
 
 .btn-outlined-info-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16365,6 +16611,7 @@ table {
 
 .btn-complement-info {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16379,6 +16626,7 @@ table {
 
 .btn-complement-info-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16395,6 +16643,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16409,6 +16658,7 @@ table {
 
 .btn-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16421,6 +16671,7 @@ table {
 
 .btn-success-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16435,6 +16686,7 @@ table {
 
 .btn-outlined-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16450,6 +16702,7 @@ table {
 
 .btn-outlined-success-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16467,6 +16720,7 @@ table {
 
 .btn-complement-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16481,6 +16735,7 @@ table {
 
 .btn-complement-success-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16497,6 +16752,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16511,6 +16767,7 @@ table {
 
 .btn-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16523,6 +16780,7 @@ table {
 
 .btn-success-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16537,6 +16795,7 @@ table {
 
 .btn-outlined-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16552,6 +16811,7 @@ table {
 
 .btn-outlined-success-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16569,6 +16829,7 @@ table {
 
 .btn-complement-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16583,6 +16844,7 @@ table {
 
 .btn-complement-success-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16599,6 +16861,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16613,6 +16876,7 @@ table {
 
 .btn-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16625,6 +16889,7 @@ table {
 
 .btn-success-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16639,6 +16904,7 @@ table {
 
 .btn-outlined-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16654,6 +16920,7 @@ table {
 
 .btn-outlined-success-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16671,6 +16938,7 @@ table {
 
 .btn-complement-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16685,6 +16953,7 @@ table {
 
 .btn-complement-success-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16701,6 +16970,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16715,6 +16985,7 @@ table {
 
 .btn-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16727,6 +16998,7 @@ table {
 
 .btn-success-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16741,6 +17013,7 @@ table {
 
 .btn-outlined-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16756,6 +17029,7 @@ table {
 
 .btn-outlined-success-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16773,6 +17047,7 @@ table {
 
 .btn-complement-success {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16787,6 +17062,7 @@ table {
 
 .btn-complement-success-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16803,6 +17079,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16817,6 +17094,7 @@ table {
 
 .btn-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16829,6 +17107,7 @@ table {
 
 .btn-warning-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16843,6 +17122,7 @@ table {
 
 .btn-outlined-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16858,6 +17138,7 @@ table {
 
 .btn-outlined-warning-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16875,6 +17156,7 @@ table {
 
 .btn-complement-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16889,6 +17171,7 @@ table {
 
 .btn-complement-warning-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16905,6 +17188,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16919,6 +17203,7 @@ table {
 
 .btn-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16931,6 +17216,7 @@ table {
 
 .btn-warning-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16945,6 +17231,7 @@ table {
 
 .btn-outlined-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16960,6 +17247,7 @@ table {
 
 .btn-outlined-warning-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16977,6 +17265,7 @@ table {
 
 .btn-complement-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -16991,6 +17280,7 @@ table {
 
 .btn-complement-warning-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17007,6 +17297,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17021,6 +17312,7 @@ table {
 
 .btn-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17033,6 +17325,7 @@ table {
 
 .btn-warning-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17047,6 +17340,7 @@ table {
 
 .btn-outlined-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17062,6 +17356,7 @@ table {
 
 .btn-outlined-warning-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17079,6 +17374,7 @@ table {
 
 .btn-complement-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17093,6 +17389,7 @@ table {
 
 .btn-complement-warning-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17109,6 +17406,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17123,6 +17421,7 @@ table {
 
 .btn-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17135,6 +17434,7 @@ table {
 
 .btn-warning-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17149,6 +17449,7 @@ table {
 
 .btn-outlined-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17164,6 +17465,7 @@ table {
 
 .btn-outlined-warning-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17181,6 +17483,7 @@ table {
 
 .btn-complement-warning {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17195,6 +17498,7 @@ table {
 
 .btn-complement-warning-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17211,6 +17515,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17225,6 +17530,7 @@ table {
 
 .btn-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17237,6 +17543,7 @@ table {
 
 .btn-danger-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17251,6 +17558,7 @@ table {
 
 .btn-outlined-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17266,6 +17574,7 @@ table {
 
 .btn-outlined-danger-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17283,6 +17592,7 @@ table {
 
 .btn-complement-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17297,6 +17607,7 @@ table {
 
 .btn-complement-danger-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17313,6 +17624,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17327,6 +17639,7 @@ table {
 
 .btn-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17339,6 +17652,7 @@ table {
 
 .btn-danger-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17353,6 +17667,7 @@ table {
 
 .btn-outlined-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17368,6 +17683,7 @@ table {
 
 .btn-outlined-danger-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17385,6 +17701,7 @@ table {
 
 .btn-complement-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17399,6 +17716,7 @@ table {
 
 .btn-complement-danger-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17415,6 +17733,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17429,6 +17748,7 @@ table {
 
 .btn-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17441,6 +17761,7 @@ table {
 
 .btn-danger-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17455,6 +17776,7 @@ table {
 
 .btn-outlined-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17470,6 +17792,7 @@ table {
 
 .btn-outlined-danger-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17487,6 +17810,7 @@ table {
 
 .btn-complement-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17501,6 +17825,7 @@ table {
 
 .btn-complement-danger-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17517,6 +17842,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17531,6 +17857,7 @@ table {
 
 .btn-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17543,6 +17870,7 @@ table {
 
 .btn-danger-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17557,6 +17885,7 @@ table {
 
 .btn-outlined-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17572,6 +17901,7 @@ table {
 
 .btn-outlined-danger-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17589,6 +17919,7 @@ table {
 
 .btn-complement-danger {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17603,6 +17934,7 @@ table {
 
 .btn-complement-danger-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17619,6 +17951,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17633,6 +17966,7 @@ table {
 
 .btn-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17645,6 +17979,7 @@ table {
 
 .btn-black-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17659,6 +17994,7 @@ table {
 
 .btn-outlined-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17674,6 +18010,7 @@ table {
 
 .btn-outlined-black-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17691,6 +18028,7 @@ table {
 
 .btn-complement-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17705,6 +18043,7 @@ table {
 
 .btn-complement-black-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17721,6 +18060,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17735,6 +18075,7 @@ table {
 
 .btn-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17747,6 +18088,7 @@ table {
 
 .btn-black-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17761,6 +18103,7 @@ table {
 
 .btn-outlined-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17776,6 +18119,7 @@ table {
 
 .btn-outlined-black-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17793,6 +18137,7 @@ table {
 
 .btn-complement-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17807,6 +18152,7 @@ table {
 
 .btn-complement-black-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17823,6 +18169,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17837,6 +18184,7 @@ table {
 
 .btn-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17849,6 +18197,7 @@ table {
 
 .btn-black-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17863,6 +18212,7 @@ table {
 
 .btn-outlined-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17878,6 +18228,7 @@ table {
 
 .btn-outlined-black-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17895,6 +18246,7 @@ table {
 
 .btn-complement-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17909,6 +18261,7 @@ table {
 
 .btn-complement-black-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17925,6 +18278,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17939,6 +18293,7 @@ table {
 
 .btn-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17951,6 +18306,7 @@ table {
 
 .btn-black-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17965,6 +18321,7 @@ table {
 
 .btn-outlined-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17980,6 +18337,7 @@ table {
 
 .btn-outlined-black-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -17997,6 +18355,7 @@ table {
 
 .btn-complement-black {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18011,6 +18370,7 @@ table {
 
 .btn-complement-black-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18027,6 +18387,7 @@ table {
 
 .btn-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18041,6 +18402,7 @@ table {
 
 .btn-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18053,6 +18415,7 @@ table {
 
 .btn-white-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18067,6 +18430,7 @@ table {
 
 .btn-outlined-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18082,6 +18446,7 @@ table {
 
 .btn-outlined-white-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18099,6 +18464,7 @@ table {
 
 .btn-complement-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18113,6 +18479,7 @@ table {
 
 .btn-complement-white-sm {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18129,6 +18496,7 @@ table {
 
 .btn-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18143,6 +18511,7 @@ table {
 
 .btn-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18155,6 +18524,7 @@ table {
 
 .btn-white-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18169,6 +18539,7 @@ table {
 
 .btn-outlined-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18184,6 +18555,7 @@ table {
 
 .btn-outlined-white-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18201,6 +18573,7 @@ table {
 
 .btn-complement-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18215,6 +18588,7 @@ table {
 
 .btn-complement-white-md {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18231,6 +18605,7 @@ table {
 
 .btn-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18245,6 +18620,7 @@ table {
 
 .btn-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18257,6 +18633,7 @@ table {
 
 .btn-white-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18271,6 +18648,7 @@ table {
 
 .btn-outlined-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18286,6 +18664,7 @@ table {
 
 .btn-outlined-white-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18303,6 +18682,7 @@ table {
 
 .btn-complement-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18317,6 +18697,7 @@ table {
 
 .btn-complement-white-lg {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18333,6 +18714,7 @@ table {
 
 .btn-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18347,6 +18729,7 @@ table {
 
 .btn-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18359,6 +18742,7 @@ table {
 
 .btn-white-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18373,6 +18757,7 @@ table {
 
 .btn-outlined-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18388,6 +18773,7 @@ table {
 
 .btn-outlined-white-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18405,6 +18791,7 @@ table {
 
 .btn-complement-white {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18419,6 +18806,7 @@ table {
 
 .btn-complement-white-xl {
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
@@ -18435,6 +18823,7 @@ table {
 
 .badge-solid-orange {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18448,6 +18837,7 @@ table {
 
 .badge-outlined-orange {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18462,6 +18852,7 @@ table {
 
 .badge-soft-orange {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18475,6 +18866,7 @@ table {
 
 .badge-inverted-orange {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18488,6 +18880,7 @@ table {
 
 .badge-solid-orange-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -18501,6 +18894,7 @@ table {
 
 .badge-outlined-orange-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -18515,6 +18909,7 @@ table {
 
 .badge-soft-orange-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -18528,6 +18923,7 @@ table {
 
 .badge-inverted-orange-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -18541,6 +18937,7 @@ table {
 
 .badge-solid-orange-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -18554,6 +18951,7 @@ table {
 
 .badge-outlined-orange-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -18568,6 +18966,7 @@ table {
 
 .badge-soft-orange-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -18581,6 +18980,7 @@ table {
 
 .badge-inverted-orange-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -18594,6 +18994,7 @@ table {
 
 .badge-solid-orange-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -18607,6 +19008,7 @@ table {
 
 .badge-outlined-orange-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -18621,6 +19023,7 @@ table {
 
 .badge-soft-orange-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -18634,6 +19037,7 @@ table {
 
 .badge-inverted-orange-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -18647,6 +19051,7 @@ table {
 
 .badge-solid-orange-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -18660,6 +19065,7 @@ table {
 
 .badge-outlined-orange-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -18674,6 +19080,7 @@ table {
 
 .badge-soft-orange-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -18687,6 +19094,7 @@ table {
 
 .badge-inverted-orange-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -18700,6 +19108,7 @@ table {
 
 .badge-solid-yellow {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18713,6 +19122,7 @@ table {
 
 .badge-outlined-yellow {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18727,6 +19137,7 @@ table {
 
 .badge-soft-yellow {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18740,6 +19151,7 @@ table {
 
 .badge-inverted-yellow {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18753,6 +19165,7 @@ table {
 
 .badge-solid-yellow-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -18766,6 +19179,7 @@ table {
 
 .badge-outlined-yellow-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -18780,6 +19194,7 @@ table {
 
 .badge-soft-yellow-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -18793,6 +19208,7 @@ table {
 
 .badge-inverted-yellow-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -18806,6 +19222,7 @@ table {
 
 .badge-solid-yellow-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -18819,6 +19236,7 @@ table {
 
 .badge-outlined-yellow-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -18833,6 +19251,7 @@ table {
 
 .badge-soft-yellow-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -18846,6 +19265,7 @@ table {
 
 .badge-inverted-yellow-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -18859,6 +19279,7 @@ table {
 
 .badge-solid-yellow-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -18872,6 +19293,7 @@ table {
 
 .badge-outlined-yellow-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -18886,6 +19308,7 @@ table {
 
 .badge-soft-yellow-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -18899,6 +19322,7 @@ table {
 
 .badge-inverted-yellow-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -18912,6 +19336,7 @@ table {
 
 .badge-solid-yellow-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -18925,6 +19350,7 @@ table {
 
 .badge-outlined-yellow-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -18939,6 +19365,7 @@ table {
 
 .badge-soft-yellow-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -18952,6 +19379,7 @@ table {
 
 .badge-inverted-yellow-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -18965,6 +19393,7 @@ table {
 
 .badge-solid-red {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18978,6 +19407,7 @@ table {
 
 .badge-outlined-red {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -18992,6 +19422,7 @@ table {
 
 .badge-soft-red {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19005,6 +19436,7 @@ table {
 
 .badge-inverted-red {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19018,6 +19450,7 @@ table {
 
 .badge-solid-red-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19031,6 +19464,7 @@ table {
 
 .badge-outlined-red-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19045,6 +19479,7 @@ table {
 
 .badge-soft-red-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19058,6 +19493,7 @@ table {
 
 .badge-inverted-red-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19071,6 +19507,7 @@ table {
 
 .badge-solid-red-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19084,6 +19521,7 @@ table {
 
 .badge-outlined-red-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19098,6 +19536,7 @@ table {
 
 .badge-soft-red-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19111,6 +19550,7 @@ table {
 
 .badge-inverted-red-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19124,6 +19564,7 @@ table {
 
 .badge-solid-red-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19137,6 +19578,7 @@ table {
 
 .badge-outlined-red-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19151,6 +19593,7 @@ table {
 
 .badge-soft-red-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19164,6 +19607,7 @@ table {
 
 .badge-inverted-red-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19177,6 +19621,7 @@ table {
 
 .badge-solid-red-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19190,6 +19635,7 @@ table {
 
 .badge-outlined-red-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19204,6 +19650,7 @@ table {
 
 .badge-soft-red-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19217,6 +19664,7 @@ table {
 
 .badge-inverted-red-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19230,6 +19678,7 @@ table {
 
 .badge-solid-pitch {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19243,6 +19692,7 @@ table {
 
 .badge-outlined-pitch {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19257,6 +19707,7 @@ table {
 
 .badge-soft-pitch {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19270,6 +19721,7 @@ table {
 
 .badge-inverted-pitch {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19283,6 +19735,7 @@ table {
 
 .badge-solid-pitch-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19296,6 +19749,7 @@ table {
 
 .badge-outlined-pitch-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19310,6 +19764,7 @@ table {
 
 .badge-soft-pitch-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19323,6 +19778,7 @@ table {
 
 .badge-inverted-pitch-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19336,6 +19792,7 @@ table {
 
 .badge-solid-pitch-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19349,6 +19806,7 @@ table {
 
 .badge-outlined-pitch-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19363,6 +19821,7 @@ table {
 
 .badge-soft-pitch-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19376,6 +19835,7 @@ table {
 
 .badge-inverted-pitch-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19389,6 +19849,7 @@ table {
 
 .badge-solid-pitch-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19402,6 +19863,7 @@ table {
 
 .badge-outlined-pitch-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19416,6 +19878,7 @@ table {
 
 .badge-soft-pitch-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19429,6 +19892,7 @@ table {
 
 .badge-inverted-pitch-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19442,6 +19906,7 @@ table {
 
 .badge-solid-pitch-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19455,6 +19920,7 @@ table {
 
 .badge-outlined-pitch-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19469,6 +19935,7 @@ table {
 
 .badge-soft-pitch-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19482,6 +19949,7 @@ table {
 
 .badge-inverted-pitch-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19495,6 +19963,7 @@ table {
 
 .badge-solid-gray {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19508,6 +19977,7 @@ table {
 
 .badge-outlined-gray {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19522,6 +19992,7 @@ table {
 
 .badge-soft-gray {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19535,6 +20006,7 @@ table {
 
 .badge-inverted-gray {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19548,6 +20020,7 @@ table {
 
 .badge-solid-gray-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19561,6 +20034,7 @@ table {
 
 .badge-outlined-gray-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19575,6 +20049,7 @@ table {
 
 .badge-soft-gray-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19588,6 +20063,7 @@ table {
 
 .badge-inverted-gray-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19601,6 +20077,7 @@ table {
 
 .badge-solid-gray-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19614,6 +20091,7 @@ table {
 
 .badge-outlined-gray-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19628,6 +20106,7 @@ table {
 
 .badge-soft-gray-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19641,6 +20120,7 @@ table {
 
 .badge-inverted-gray-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19654,6 +20134,7 @@ table {
 
 .badge-solid-gray-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19667,6 +20148,7 @@ table {
 
 .badge-outlined-gray-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19681,6 +20163,7 @@ table {
 
 .badge-soft-gray-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19694,6 +20177,7 @@ table {
 
 .badge-inverted-gray-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19707,6 +20191,7 @@ table {
 
 .badge-solid-gray-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19720,6 +20205,7 @@ table {
 
 .badge-outlined-gray-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19734,6 +20220,7 @@ table {
 
 .badge-soft-gray-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19747,6 +20234,7 @@ table {
 
 .badge-inverted-gray-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19760,6 +20248,7 @@ table {
 
 .badge-solid-blue {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19773,6 +20262,7 @@ table {
 
 .badge-outlined-blue {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19787,6 +20277,7 @@ table {
 
 .badge-soft-blue {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19800,6 +20291,7 @@ table {
 
 .badge-inverted-blue {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -19813,6 +20305,7 @@ table {
 
 .badge-solid-blue-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19826,6 +20319,7 @@ table {
 
 .badge-outlined-blue-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19840,6 +20334,7 @@ table {
 
 .badge-soft-blue-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19853,6 +20348,7 @@ table {
 
 .badge-inverted-blue-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -19866,6 +20362,7 @@ table {
 
 .badge-solid-blue-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19879,6 +20376,7 @@ table {
 
 .badge-outlined-blue-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19893,6 +20391,7 @@ table {
 
 .badge-soft-blue-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19906,6 +20405,7 @@ table {
 
 .badge-inverted-blue-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -19919,6 +20419,7 @@ table {
 
 .badge-solid-blue-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19932,6 +20433,7 @@ table {
 
 .badge-outlined-blue-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19946,6 +20448,7 @@ table {
 
 .badge-soft-blue-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19959,6 +20462,7 @@ table {
 
 .badge-inverted-blue-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -19972,6 +20476,7 @@ table {
 
 .badge-solid-blue-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19985,6 +20490,7 @@ table {
 
 .badge-outlined-blue-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -19999,6 +20505,7 @@ table {
 
 .badge-soft-blue-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20012,6 +20519,7 @@ table {
 
 .badge-inverted-blue-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20025,6 +20533,7 @@ table {
 
 .badge-solid-link {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20038,6 +20547,7 @@ table {
 
 .badge-outlined-link {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20052,6 +20562,7 @@ table {
 
 .badge-soft-link {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20065,6 +20576,7 @@ table {
 
 .badge-inverted-link {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20078,6 +20590,7 @@ table {
 
 .badge-solid-link-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20091,6 +20604,7 @@ table {
 
 .badge-outlined-link-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20105,6 +20619,7 @@ table {
 
 .badge-soft-link-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20118,6 +20633,7 @@ table {
 
 .badge-inverted-link-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20131,6 +20647,7 @@ table {
 
 .badge-solid-link-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20144,6 +20661,7 @@ table {
 
 .badge-outlined-link-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20158,6 +20676,7 @@ table {
 
 .badge-soft-link-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20171,6 +20690,7 @@ table {
 
 .badge-inverted-link-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20184,6 +20704,7 @@ table {
 
 .badge-solid-link-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20197,6 +20718,7 @@ table {
 
 .badge-outlined-link-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20211,6 +20733,7 @@ table {
 
 .badge-soft-link-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20224,6 +20747,7 @@ table {
 
 .badge-inverted-link-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20237,6 +20761,7 @@ table {
 
 .badge-solid-link-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20250,6 +20775,7 @@ table {
 
 .badge-outlined-link-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20264,6 +20790,7 @@ table {
 
 .badge-soft-link-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20277,6 +20804,7 @@ table {
 
 .badge-inverted-link-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20290,6 +20818,7 @@ table {
 
 .badge-solid-primary {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20303,6 +20832,7 @@ table {
 
 .badge-outlined-primary {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20317,6 +20847,7 @@ table {
 
 .badge-soft-primary {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20330,6 +20861,7 @@ table {
 
 .badge-inverted-primary {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20343,6 +20875,7 @@ table {
 
 .badge-solid-primary-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20356,6 +20889,7 @@ table {
 
 .badge-outlined-primary-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20370,6 +20904,7 @@ table {
 
 .badge-soft-primary-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20383,6 +20918,7 @@ table {
 
 .badge-inverted-primary-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20396,6 +20932,7 @@ table {
 
 .badge-solid-primary-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20409,6 +20946,7 @@ table {
 
 .badge-outlined-primary-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20423,6 +20961,7 @@ table {
 
 .badge-soft-primary-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20436,6 +20975,7 @@ table {
 
 .badge-inverted-primary-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20449,6 +20989,7 @@ table {
 
 .badge-solid-primary-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20462,6 +21003,7 @@ table {
 
 .badge-outlined-primary-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20476,6 +21018,7 @@ table {
 
 .badge-soft-primary-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20489,6 +21032,7 @@ table {
 
 .badge-inverted-primary-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20502,6 +21046,7 @@ table {
 
 .badge-solid-primary-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20515,6 +21060,7 @@ table {
 
 .badge-outlined-primary-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20529,6 +21075,7 @@ table {
 
 .badge-soft-primary-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20542,6 +21089,7 @@ table {
 
 .badge-inverted-primary-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20555,6 +21103,7 @@ table {
 
 .badge-solid-info {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20568,6 +21117,7 @@ table {
 
 .badge-outlined-info {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20582,6 +21132,7 @@ table {
 
 .badge-soft-info {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20595,6 +21146,7 @@ table {
 
 .badge-inverted-info {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20608,6 +21160,7 @@ table {
 
 .badge-solid-info-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20621,6 +21174,7 @@ table {
 
 .badge-outlined-info-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20635,6 +21189,7 @@ table {
 
 .badge-soft-info-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20648,6 +21203,7 @@ table {
 
 .badge-inverted-info-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20661,6 +21217,7 @@ table {
 
 .badge-solid-info-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20674,6 +21231,7 @@ table {
 
 .badge-outlined-info-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20688,6 +21246,7 @@ table {
 
 .badge-soft-info-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20701,6 +21260,7 @@ table {
 
 .badge-inverted-info-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20714,6 +21274,7 @@ table {
 
 .badge-solid-info-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20727,6 +21288,7 @@ table {
 
 .badge-outlined-info-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20741,6 +21303,7 @@ table {
 
 .badge-soft-info-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20754,6 +21317,7 @@ table {
 
 .badge-inverted-info-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20767,6 +21331,7 @@ table {
 
 .badge-solid-info-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20780,6 +21345,7 @@ table {
 
 .badge-outlined-info-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20794,6 +21360,7 @@ table {
 
 .badge-soft-info-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20807,6 +21374,7 @@ table {
 
 .badge-inverted-info-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -20820,6 +21388,7 @@ table {
 
 .badge-solid-success {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20833,6 +21402,7 @@ table {
 
 .badge-outlined-success {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20847,6 +21417,7 @@ table {
 
 .badge-soft-success {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20860,6 +21431,7 @@ table {
 
 .badge-inverted-success {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -20873,6 +21445,7 @@ table {
 
 .badge-solid-success-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20886,6 +21459,7 @@ table {
 
 .badge-outlined-success-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20900,6 +21474,7 @@ table {
 
 .badge-soft-success-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20913,6 +21488,7 @@ table {
 
 .badge-inverted-success-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -20926,6 +21502,7 @@ table {
 
 .badge-solid-success-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20939,6 +21516,7 @@ table {
 
 .badge-outlined-success-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20953,6 +21531,7 @@ table {
 
 .badge-soft-success-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20966,6 +21545,7 @@ table {
 
 .badge-inverted-success-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -20979,6 +21559,7 @@ table {
 
 .badge-solid-success-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -20992,6 +21573,7 @@ table {
 
 .badge-outlined-success-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21006,6 +21588,7 @@ table {
 
 .badge-soft-success-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21019,6 +21602,7 @@ table {
 
 .badge-inverted-success-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21032,6 +21616,7 @@ table {
 
 .badge-solid-success-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21045,6 +21630,7 @@ table {
 
 .badge-outlined-success-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21059,6 +21645,7 @@ table {
 
 .badge-soft-success-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21072,6 +21659,7 @@ table {
 
 .badge-inverted-success-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21085,6 +21673,7 @@ table {
 
 .badge-solid-warning {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21098,6 +21687,7 @@ table {
 
 .badge-outlined-warning {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21112,6 +21702,7 @@ table {
 
 .badge-soft-warning {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21125,6 +21716,7 @@ table {
 
 .badge-inverted-warning {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21138,6 +21730,7 @@ table {
 
 .badge-solid-warning-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21151,6 +21744,7 @@ table {
 
 .badge-outlined-warning-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21165,6 +21759,7 @@ table {
 
 .badge-soft-warning-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21178,6 +21773,7 @@ table {
 
 .badge-inverted-warning-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21191,6 +21787,7 @@ table {
 
 .badge-solid-warning-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21204,6 +21801,7 @@ table {
 
 .badge-outlined-warning-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21218,6 +21816,7 @@ table {
 
 .badge-soft-warning-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21231,6 +21830,7 @@ table {
 
 .badge-inverted-warning-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21244,6 +21844,7 @@ table {
 
 .badge-solid-warning-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21257,6 +21858,7 @@ table {
 
 .badge-outlined-warning-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21271,6 +21873,7 @@ table {
 
 .badge-soft-warning-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21284,6 +21887,7 @@ table {
 
 .badge-inverted-warning-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21297,6 +21901,7 @@ table {
 
 .badge-solid-warning-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21310,6 +21915,7 @@ table {
 
 .badge-outlined-warning-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21324,6 +21930,7 @@ table {
 
 .badge-soft-warning-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21337,6 +21944,7 @@ table {
 
 .badge-inverted-warning-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21350,6 +21958,7 @@ table {
 
 .badge-solid-danger {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21363,6 +21972,7 @@ table {
 
 .badge-outlined-danger {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21377,6 +21987,7 @@ table {
 
 .badge-soft-danger {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21390,6 +22001,7 @@ table {
 
 .badge-inverted-danger {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21403,6 +22015,7 @@ table {
 
 .badge-solid-danger-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21416,6 +22029,7 @@ table {
 
 .badge-outlined-danger-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21430,6 +22044,7 @@ table {
 
 .badge-soft-danger-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21443,6 +22058,7 @@ table {
 
 .badge-inverted-danger-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21456,6 +22072,7 @@ table {
 
 .badge-solid-danger-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21469,6 +22086,7 @@ table {
 
 .badge-outlined-danger-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21483,6 +22101,7 @@ table {
 
 .badge-soft-danger-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21496,6 +22115,7 @@ table {
 
 .badge-inverted-danger-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21509,6 +22129,7 @@ table {
 
 .badge-solid-danger-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21522,6 +22143,7 @@ table {
 
 .badge-outlined-danger-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21536,6 +22158,7 @@ table {
 
 .badge-soft-danger-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21549,6 +22172,7 @@ table {
 
 .badge-inverted-danger-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21562,6 +22186,7 @@ table {
 
 .badge-solid-danger-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21575,6 +22200,7 @@ table {
 
 .badge-outlined-danger-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21589,6 +22215,7 @@ table {
 
 .badge-soft-danger-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21602,6 +22229,7 @@ table {
 
 .badge-inverted-danger-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21615,6 +22243,7 @@ table {
 
 .badge-solid-black {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21628,6 +22257,7 @@ table {
 
 .badge-outlined-black {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21642,6 +22272,7 @@ table {
 
 .badge-soft-black {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21655,6 +22286,7 @@ table {
 
 .badge-inverted-black {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21668,6 +22300,7 @@ table {
 
 .badge-solid-black-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21681,6 +22314,7 @@ table {
 
 .badge-outlined-black-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21695,6 +22329,7 @@ table {
 
 .badge-soft-black-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21708,6 +22343,7 @@ table {
 
 .badge-inverted-black-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21721,6 +22357,7 @@ table {
 
 .badge-solid-black-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21734,6 +22371,7 @@ table {
 
 .badge-outlined-black-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21748,6 +22386,7 @@ table {
 
 .badge-soft-black-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21761,6 +22400,7 @@ table {
 
 .badge-inverted-black-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21774,6 +22414,7 @@ table {
 
 .badge-solid-black-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21787,6 +22428,7 @@ table {
 
 .badge-outlined-black-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21801,6 +22443,7 @@ table {
 
 .badge-soft-black-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21814,6 +22457,7 @@ table {
 
 .badge-inverted-black-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21827,6 +22471,7 @@ table {
 
 .badge-solid-black-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21840,6 +22485,7 @@ table {
 
 .badge-outlined-black-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21854,6 +22500,7 @@ table {
 
 .badge-soft-black-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21867,6 +22514,7 @@ table {
 
 .badge-inverted-black-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -21880,6 +22528,7 @@ table {
 
 .badge-solid-white {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21893,6 +22542,7 @@ table {
 
 .badge-outlined-white {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21907,6 +22557,7 @@ table {
 
 .badge-soft-white {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21920,6 +22571,7 @@ table {
 
 .badge-inverted-white {
   display: inline-block;
+  text-align: center;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -21933,6 +22585,7 @@ table {
 
 .badge-solid-white-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21946,6 +22599,7 @@ table {
 
 .badge-outlined-white-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21960,6 +22614,7 @@ table {
 
 .badge-soft-white-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21973,6 +22628,7 @@ table {
 
 .badge-inverted-white-sm {
   display: inline-block;
+  text-align: center;
   padding: 0.125rem 0.375rem;
   font-size: 0.625rem;
   font-weight: 600;
@@ -21986,6 +22642,7 @@ table {
 
 .badge-solid-white-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -21999,6 +22656,7 @@ table {
 
 .badge-outlined-white-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -22013,6 +22671,7 @@ table {
 
 .badge-soft-white-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -22026,6 +22685,7 @@ table {
 
 .badge-inverted-white-md {
   display: inline-block;
+  text-align: center;
   padding: 0.35rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -22039,6 +22699,7 @@ table {
 
 .badge-solid-white-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -22052,6 +22713,7 @@ table {
 
 .badge-outlined-white-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -22066,6 +22728,7 @@ table {
 
 .badge-soft-white-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -22079,6 +22742,7 @@ table {
 
 .badge-inverted-white-lg {
   display: inline-block;
+  text-align: center;
   padding: 0.375rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -22092,6 +22756,7 @@ table {
 
 .badge-solid-white-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -22105,6 +22770,7 @@ table {
 
 .badge-outlined-white-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -22119,6 +22785,7 @@ table {
 
 .badge-soft-white-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -22132,6 +22799,7 @@ table {
 
 .badge-inverted-white-xl {
   display: inline-block;
+  text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -22178,6 +22846,7 @@ body {
 .header-wrapper .right a {
   text-decoration: none;
   display: flex;
+  gap: 0.1rem;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
@@ -22196,7 +22865,7 @@ body {
   background-color: #dbcccc;
 }
 .header-wrapper .left {
-  gap: 1.4rem;
+  gap: 0.4rem;
 }
 .header-wrapper .right {
   gap: 0.6rem;
@@ -22372,13 +23041,19 @@ body {
   .header-wrapper {
     padding: 0.4rem 0.6rem;
   }
-  .header-wrapper .right .items-header,
-  .header-wrapper .left .items-header {
+  .header-wrapper .right .item-icon,
+  .header-wrapper .left .item-icon {
     display: none;
   }
   .header-wrapper .menu-container {
     margin-left: auto;
     padding-left: 0.5rem;
+  }
+}
+@media (max-width: 690px) {
+  .right .item-title,
+  .left .item-title {
+    display: none;
   }
 }
 @media (min-width: 501px) {
