@@ -58,8 +58,7 @@ table {
 
 .container-flow {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 100%;
@@ -67,8 +66,7 @@ table {
 
 .container-base-xs {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 100%;
@@ -76,8 +74,7 @@ table {
 
 .container-base-sm {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -89,12 +86,11 @@ table {
 
 .container-base-md {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .container-base-md {
     max-width: 720px;
   }
@@ -102,8 +98,7 @@ table {
 
 .container-base-lg {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -115,8 +110,7 @@ table {
 
 .container-base-xl {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -128,8 +122,7 @@ table {
 
 .container-bordered-xs {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   border: 1px solid #ccc;
@@ -139,8 +132,7 @@ table {
 
 .container-bordered-sm {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   border: 1px solid #ccc;
@@ -154,14 +146,13 @@ table {
 
 .container-bordered-md {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .container-bordered-md {
     max-width: 720px;
   }
@@ -169,8 +160,7 @@ table {
 
 .container-bordered-lg {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   border: 1px solid #ccc;
@@ -184,8 +174,7 @@ table {
 
 .container-bordered-xl {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   border: 1px solid #ccc;
@@ -199,8 +188,7 @@ table {
 
 .container-shadow-xs {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -210,8 +198,7 @@ table {
 
 .container-shadow-sm {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -225,14 +212,13 @@ table {
 
 .container-shadow-md {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .container-shadow-md {
     max-width: 720px;
   }
@@ -240,8 +226,7 @@ table {
 
 .container-shadow-lg {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -255,8 +240,7 @@ table {
 
 .container-shadow-xl {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -270,8 +254,7 @@ table {
 
 .container-solid-xs {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #f8f9fa;
@@ -281,8 +264,7 @@ table {
 
 .container-solid-sm {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #f8f9fa;
@@ -296,14 +278,13 @@ table {
 
 .container-solid-md {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #f8f9fa;
   border-radius: 0.5rem;
 }
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .container-solid-md {
     max-width: 720px;
   }
@@ -311,8 +292,7 @@ table {
 
 .container-solid-lg {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #f8f9fa;
@@ -326,8 +306,7 @@ table {
 
 .container-solid-xl {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #f8f9fa;
@@ -337,6 +316,12 @@ table {
   .container-solid-xl {
     max-width: 1140px;
   }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .justify-flex-start {
@@ -393,7 +378,7 @@ table {
     flex-direction: column-reverse;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .md\:flex-row {
     flex-direction: row;
   }
@@ -432,6 +417,20 @@ table {
     flex-direction: row-reverse;
   }
   .xl\:flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 1440px) {
+  .xxl\:flex-row {
+    flex-direction: row;
+  }
+  .xxl\:flex-column {
+    flex-direction: column;
+  }
+  .xxl\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .xxl\:flex-column-reverse {
     flex-direction: column-reverse;
   }
 }
@@ -547,51 +546,9 @@ table {
   order: 12;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.gap-0 > * {
-  padding: 0;
-}
-
-.gap-0 {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.gap-1 > * {
-  padding: 10px;
-}
-
-.gap-1 {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.gap-2 > * {
-  padding: 20px;
-}
-
-.gap-2 {
-  margin-left: -20px;
-  margin-right: -20px;
-}
-
-.gap-3 > * {
-  padding: 30px;
-}
-
-.gap-3 {
-  margin-left: -30px;
-  margin-right: -30px;
 }
 
 .col-1 {
@@ -728,7 +685,7 @@ table {
     width: 100%;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .md\:col-1 {
     box-sizing: border-box;
     flex-grow: 0;
@@ -909,6 +866,68 @@ table {
     width: 91.6666666667%;
   }
   .xl\:col-12 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .xxl\:col-1 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .xxl\:col-2 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .xxl\:col-3 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .xxl\:col-4 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .xxl\:col-5 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .xxl\:col-6 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .xxl\:col-7 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .xxl\:col-8 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .xxl\:col-9 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .xxl\:col-10 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .xxl\:col-11 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .xxl\:col-12 {
     box-sizing: border-box;
     flex-grow: 0;
     width: 100%;
@@ -1229,7 +1248,7 @@ table {
     gap: auto;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1628,6 +1647,140 @@ table {
     gap: 3rem;
   }
   .xl\:gap-auto {
+    gap: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .xxl\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .xxl\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+  .xxl\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xxl\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+  .xxl\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .xxl\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+  .xxl\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .xxl\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+  .xxl\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .xxl\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+  .xxl\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .xxl\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+  .xxl\:grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .xxl\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+  .xxl\:grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .xxl\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+  .xxl\:grid-cols-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .xxl\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+  .xxl\:grid-cols-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .xxl\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+  .xxl\:grid-cols-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .xxl\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+  .xxl\:grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .xxl\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+  .xxl\:grid-rows-1 {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .xxl\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+  .xxl\:grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .xxl\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+  .xxl\:grid-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .xxl\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+  .xxl\:grid-rows-4 {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .xxl\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+  .xxl\:grid-rows-5 {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .xxl\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+  .xxl\:grid-rows-6 {
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .xxl\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+  .xxl\:gap-0 {
+    gap: 0;
+  }
+  .xxl\:gap-1 {
+    gap: 0.25rem;
+  }
+  .xxl\:gap-2 {
+    gap: 0.5rem;
+  }
+  .xxl\:gap-3 {
+    gap: 0.75rem;
+  }
+  .xxl\:gap-4 {
+    gap: 1rem;
+  }
+  .xxl\:gap-5 {
+    gap: 1.5rem;
+  }
+  .xxl\:gap-6 {
+    gap: 3rem;
+  }
+  .xxl\:gap-auto {
     gap: auto;
   }
 }
@@ -11701,6 +11854,38 @@ table {
   text-decoration: none;
 }
 
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.custom-table thead {
+  background-color: #471ec5;
+  color: #c3b8b8;
+}
+.custom-table thead th {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-weight: 600;
+}
+.custom-table tbody tr:nth-child(even) {
+  background-color: #281c4e;
+}
+.custom-table tbody tr td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
 .p-0 {
   padding: 0;
 }
@@ -12286,7 +12471,7 @@ table {
 }
 
 .max-w-md {
-  max-width: 720px;
+  max-width: 640px;
 }
 
 .max-w-lg {
@@ -12318,7 +12503,7 @@ table {
 }
 
 .min-w-md {
-  min-width: 720px;
+  min-width: 640px;
 }
 
 .min-w-lg {
@@ -12350,7 +12535,7 @@ table {
 }
 
 .max-h-md {
-  max-height: 720px;
+  max-height: 640px;
 }
 
 .max-h-lg {
@@ -12382,7 +12567,7 @@ table {
 }
 
 .min-h-md {
-  min-height: 720px;
+  min-height: 640px;
 }
 
 .min-h-lg {
@@ -12584,9 +12769,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #f4a529;
+  color: #f4a529;
 }
 .btn-outlined-orange:hover {
   background-color: #f4a529;
+  color: #fff;
 }
 
 .btn-outlined-orange-sm {
@@ -12598,10 +12785,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #f4a529;
+  border: 2.5px solid #f4a529;
+  color: #f4a529;
 }
 .btn-outlined-orange-sm:hover {
   background-color: #f4a529;
+  color: #fff;
 }
 
 .btn-complement-orange {
@@ -12682,9 +12871,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #f4a529;
+  color: #f4a529;
 }
 .btn-outlined-orange:hover {
   background-color: #f4a529;
+  color: #fff;
 }
 
 .btn-outlined-orange-md {
@@ -12696,10 +12887,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #f4a529;
+  border: 2.5px solid #f4a529;
+  color: #f4a529;
 }
 .btn-outlined-orange-md:hover {
   background-color: #f4a529;
+  color: #fff;
 }
 
 .btn-complement-orange {
@@ -12780,9 +12973,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #f4a529;
+  color: #f4a529;
 }
 .btn-outlined-orange:hover {
   background-color: #f4a529;
+  color: #fff;
 }
 
 .btn-outlined-orange-lg {
@@ -12794,10 +12989,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #f4a529;
+  border: 2.5px solid #f4a529;
+  color: #f4a529;
 }
 .btn-outlined-orange-lg:hover {
   background-color: #f4a529;
+  color: #fff;
 }
 
 .btn-complement-orange {
@@ -12878,9 +13075,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #f4a529;
+  color: #f4a529;
 }
 .btn-outlined-orange:hover {
   background-color: #f4a529;
+  color: #fff;
 }
 
 .btn-outlined-orange-xl {
@@ -12892,10 +13091,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #f4a529;
+  border: 2.5px solid #f4a529;
+  color: #f4a529;
 }
 .btn-outlined-orange-xl:hover {
   background-color: #f4a529;
+  color: #fff;
 }
 
 .btn-complement-orange {
@@ -12976,9 +13177,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #fad860;
+  color: #fad860;
 }
 .btn-outlined-yellow:hover {
   background-color: #fad860;
+  color: #fff;
 }
 
 .btn-outlined-yellow-sm {
@@ -12990,10 +13193,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #fad860;
+  border: 2.5px solid #fad860;
+  color: #fad860;
 }
 .btn-outlined-yellow-sm:hover {
   background-color: #fad860;
+  color: #fff;
 }
 
 .btn-complement-yellow {
@@ -13074,9 +13279,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #fad860;
+  color: #fad860;
 }
 .btn-outlined-yellow:hover {
   background-color: #fad860;
+  color: #fff;
 }
 
 .btn-outlined-yellow-md {
@@ -13088,10 +13295,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #fad860;
+  border: 2.5px solid #fad860;
+  color: #fad860;
 }
 .btn-outlined-yellow-md:hover {
   background-color: #fad860;
+  color: #fff;
 }
 
 .btn-complement-yellow {
@@ -13172,9 +13381,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #fad860;
+  color: #fad860;
 }
 .btn-outlined-yellow:hover {
   background-color: #fad860;
+  color: #fff;
 }
 
 .btn-outlined-yellow-lg {
@@ -13186,10 +13397,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #fad860;
+  border: 2.5px solid #fad860;
+  color: #fad860;
 }
 .btn-outlined-yellow-lg:hover {
   background-color: #fad860;
+  color: #fff;
 }
 
 .btn-complement-yellow {
@@ -13270,9 +13483,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #fad860;
+  color: #fad860;
 }
 .btn-outlined-yellow:hover {
   background-color: #fad860;
+  color: #fff;
 }
 
 .btn-outlined-yellow-xl {
@@ -13284,10 +13499,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #fad860;
+  border: 2.5px solid #fad860;
+  color: #fad860;
 }
 .btn-outlined-yellow-xl:hover {
   background-color: #fad860;
+  color: #fff;
 }
 
 .btn-complement-yellow {
@@ -13368,9 +13585,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #790707;
+  color: #790707;
 }
 .btn-outlined-red:hover {
   background-color: #790707;
+  color: #fff;
 }
 
 .btn-outlined-red-sm {
@@ -13382,10 +13601,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #790707;
+  border: 2.5px solid #790707;
+  color: #790707;
 }
 .btn-outlined-red-sm:hover {
   background-color: #790707;
+  color: #fff;
 }
 
 .btn-complement-red {
@@ -13466,9 +13687,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #790707;
+  color: #790707;
 }
 .btn-outlined-red:hover {
   background-color: #790707;
+  color: #fff;
 }
 
 .btn-outlined-red-md {
@@ -13480,10 +13703,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #790707;
+  border: 2.5px solid #790707;
+  color: #790707;
 }
 .btn-outlined-red-md:hover {
   background-color: #790707;
+  color: #fff;
 }
 
 .btn-complement-red {
@@ -13564,9 +13789,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #790707;
+  color: #790707;
 }
 .btn-outlined-red:hover {
   background-color: #790707;
+  color: #fff;
 }
 
 .btn-outlined-red-lg {
@@ -13578,10 +13805,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #790707;
+  border: 2.5px solid #790707;
+  color: #790707;
 }
 .btn-outlined-red-lg:hover {
   background-color: #790707;
+  color: #fff;
 }
 
 .btn-complement-red {
@@ -13662,9 +13891,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #790707;
+  color: #790707;
 }
 .btn-outlined-red:hover {
   background-color: #790707;
+  color: #fff;
 }
 
 .btn-outlined-red-xl {
@@ -13676,10 +13907,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #790707;
+  border: 2.5px solid #790707;
+  color: #790707;
 }
 .btn-outlined-red-xl:hover {
   background-color: #790707;
+  color: #fff;
 }
 
 .btn-complement-red {
@@ -13760,9 +13993,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #9e6555;
+  color: #9e6555;
 }
 .btn-outlined-pitch:hover {
   background-color: #9e6555;
+  color: #fff;
 }
 
 .btn-outlined-pitch-sm {
@@ -13774,10 +14009,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #9e6555;
+  border: 2.5px solid #9e6555;
+  color: #9e6555;
 }
 .btn-outlined-pitch-sm:hover {
   background-color: #9e6555;
+  color: #fff;
 }
 
 .btn-complement-pitch {
@@ -13858,9 +14095,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #9e6555;
+  color: #9e6555;
 }
 .btn-outlined-pitch:hover {
   background-color: #9e6555;
+  color: #fff;
 }
 
 .btn-outlined-pitch-md {
@@ -13872,10 +14111,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #9e6555;
+  border: 2.5px solid #9e6555;
+  color: #9e6555;
 }
 .btn-outlined-pitch-md:hover {
   background-color: #9e6555;
+  color: #fff;
 }
 
 .btn-complement-pitch {
@@ -13956,9 +14197,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #9e6555;
+  color: #9e6555;
 }
 .btn-outlined-pitch:hover {
   background-color: #9e6555;
+  color: #fff;
 }
 
 .btn-outlined-pitch-lg {
@@ -13970,10 +14213,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #9e6555;
+  border: 2.5px solid #9e6555;
+  color: #9e6555;
 }
 .btn-outlined-pitch-lg:hover {
   background-color: #9e6555;
+  color: #fff;
 }
 
 .btn-complement-pitch {
@@ -14054,9 +14299,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #9e6555;
+  color: #9e6555;
 }
 .btn-outlined-pitch:hover {
   background-color: #9e6555;
+  color: #fff;
 }
 
 .btn-outlined-pitch-xl {
@@ -14068,10 +14315,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #9e6555;
+  border: 2.5px solid #9e6555;
+  color: #9e6555;
 }
 .btn-outlined-pitch-xl:hover {
   background-color: #9e6555;
+  color: #fff;
 }
 
 .btn-complement-pitch {
@@ -14152,9 +14401,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #acc1d3;
+  color: #acc1d3;
 }
 .btn-outlined-gray:hover {
   background-color: #acc1d3;
+  color: #fff;
 }
 
 .btn-outlined-gray-sm {
@@ -14166,10 +14417,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #acc1d3;
+  border: 2.5px solid #acc1d3;
+  color: #acc1d3;
 }
 .btn-outlined-gray-sm:hover {
   background-color: #acc1d3;
+  color: #fff;
 }
 
 .btn-complement-gray {
@@ -14250,9 +14503,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #acc1d3;
+  color: #acc1d3;
 }
 .btn-outlined-gray:hover {
   background-color: #acc1d3;
+  color: #fff;
 }
 
 .btn-outlined-gray-md {
@@ -14264,10 +14519,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #acc1d3;
+  border: 2.5px solid #acc1d3;
+  color: #acc1d3;
 }
 .btn-outlined-gray-md:hover {
   background-color: #acc1d3;
+  color: #fff;
 }
 
 .btn-complement-gray {
@@ -14348,9 +14605,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #acc1d3;
+  color: #acc1d3;
 }
 .btn-outlined-gray:hover {
   background-color: #acc1d3;
+  color: #fff;
 }
 
 .btn-outlined-gray-lg {
@@ -14362,10 +14621,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #acc1d3;
+  border: 2.5px solid #acc1d3;
+  color: #acc1d3;
 }
 .btn-outlined-gray-lg:hover {
   background-color: #acc1d3;
+  color: #fff;
 }
 
 .btn-complement-gray {
@@ -14446,9 +14707,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #acc1d3;
+  color: #acc1d3;
 }
 .btn-outlined-gray:hover {
   background-color: #acc1d3;
+  color: #fff;
 }
 
 .btn-outlined-gray-xl {
@@ -14460,10 +14723,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #acc1d3;
+  border: 2.5px solid #acc1d3;
+  color: #acc1d3;
 }
 .btn-outlined-gray-xl:hover {
   background-color: #acc1d3;
+  color: #fff;
 }
 
 .btn-complement-gray {
@@ -14544,9 +14809,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #2a4058;
+  color: #2a4058;
 }
 .btn-outlined-blue:hover {
   background-color: #2a4058;
+  color: #fff;
 }
 
 .btn-outlined-blue-sm {
@@ -14558,10 +14825,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #2a4058;
+  border: 2.5px solid #2a4058;
+  color: #2a4058;
 }
 .btn-outlined-blue-sm:hover {
   background-color: #2a4058;
+  color: #fff;
 }
 
 .btn-complement-blue {
@@ -14642,9 +14911,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #2a4058;
+  color: #2a4058;
 }
 .btn-outlined-blue:hover {
   background-color: #2a4058;
+  color: #fff;
 }
 
 .btn-outlined-blue-md {
@@ -14656,10 +14927,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #2a4058;
+  border: 2.5px solid #2a4058;
+  color: #2a4058;
 }
 .btn-outlined-blue-md:hover {
   background-color: #2a4058;
+  color: #fff;
 }
 
 .btn-complement-blue {
@@ -14740,9 +15013,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #2a4058;
+  color: #2a4058;
 }
 .btn-outlined-blue:hover {
   background-color: #2a4058;
+  color: #fff;
 }
 
 .btn-outlined-blue-lg {
@@ -14754,10 +15029,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #2a4058;
+  border: 2.5px solid #2a4058;
+  color: #2a4058;
 }
 .btn-outlined-blue-lg:hover {
   background-color: #2a4058;
+  color: #fff;
 }
 
 .btn-complement-blue {
@@ -14838,9 +15115,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #2a4058;
+  color: #2a4058;
 }
 .btn-outlined-blue:hover {
   background-color: #2a4058;
+  color: #fff;
 }
 
 .btn-outlined-blue-xl {
@@ -14852,10 +15131,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #2a4058;
+  border: 2.5px solid #2a4058;
+  color: #2a4058;
 }
 .btn-outlined-blue-xl:hover {
   background-color: #2a4058;
+  color: #fff;
 }
 
 .btn-complement-blue {
@@ -14936,9 +15217,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #4258ff;
+  color: #4258ff;
 }
 .btn-outlined-link:hover {
   background-color: #4258ff;
+  color: #fff;
 }
 
 .btn-outlined-link-sm {
@@ -14950,10 +15233,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #4258ff;
+  border: 2.5px solid #4258ff;
+  color: #4258ff;
 }
 .btn-outlined-link-sm:hover {
   background-color: #4258ff;
+  color: #fff;
 }
 
 .btn-complement-link {
@@ -15034,9 +15319,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #4258ff;
+  color: #4258ff;
 }
 .btn-outlined-link:hover {
   background-color: #4258ff;
+  color: #fff;
 }
 
 .btn-outlined-link-md {
@@ -15048,10 +15335,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #4258ff;
+  border: 2.5px solid #4258ff;
+  color: #4258ff;
 }
 .btn-outlined-link-md:hover {
   background-color: #4258ff;
+  color: #fff;
 }
 
 .btn-complement-link {
@@ -15132,9 +15421,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #4258ff;
+  color: #4258ff;
 }
 .btn-outlined-link:hover {
   background-color: #4258ff;
+  color: #fff;
 }
 
 .btn-outlined-link-lg {
@@ -15146,10 +15437,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #4258ff;
+  border: 2.5px solid #4258ff;
+  color: #4258ff;
 }
 .btn-outlined-link-lg:hover {
   background-color: #4258ff;
+  color: #fff;
 }
 
 .btn-complement-link {
@@ -15230,9 +15523,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #4258ff;
+  color: #4258ff;
 }
 .btn-outlined-link:hover {
   background-color: #4258ff;
+  color: #fff;
 }
 
 .btn-outlined-link-xl {
@@ -15244,10 +15539,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #4258ff;
+  border: 2.5px solid #4258ff;
+  color: #4258ff;
 }
 .btn-outlined-link-xl:hover {
   background-color: #4258ff;
+  color: #fff;
 }
 
 .btn-complement-link {
@@ -15328,9 +15625,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #00d1b2;
+  color: #00d1b2;
 }
 .btn-outlined-primary:hover {
   background-color: #00d1b2;
+  color: #fff;
 }
 
 .btn-outlined-primary-sm {
@@ -15342,10 +15641,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #00d1b2;
+  border: 2.5px solid #00d1b2;
+  color: #00d1b2;
 }
 .btn-outlined-primary-sm:hover {
   background-color: #00d1b2;
+  color: #fff;
 }
 
 .btn-complement-primary {
@@ -15426,9 +15727,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #00d1b2;
+  color: #00d1b2;
 }
 .btn-outlined-primary:hover {
   background-color: #00d1b2;
+  color: #fff;
 }
 
 .btn-outlined-primary-md {
@@ -15440,10 +15743,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #00d1b2;
+  border: 2.5px solid #00d1b2;
+  color: #00d1b2;
 }
 .btn-outlined-primary-md:hover {
   background-color: #00d1b2;
+  color: #fff;
 }
 
 .btn-complement-primary {
@@ -15524,9 +15829,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #00d1b2;
+  color: #00d1b2;
 }
 .btn-outlined-primary:hover {
   background-color: #00d1b2;
+  color: #fff;
 }
 
 .btn-outlined-primary-lg {
@@ -15538,10 +15845,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #00d1b2;
+  border: 2.5px solid #00d1b2;
+  color: #00d1b2;
 }
 .btn-outlined-primary-lg:hover {
   background-color: #00d1b2;
+  color: #fff;
 }
 
 .btn-complement-primary {
@@ -15622,9 +15931,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #00d1b2;
+  color: #00d1b2;
 }
 .btn-outlined-primary:hover {
   background-color: #00d1b2;
+  color: #fff;
 }
 
 .btn-outlined-primary-xl {
@@ -15636,10 +15947,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #00d1b2;
+  border: 2.5px solid #00d1b2;
+  color: #00d1b2;
 }
 .btn-outlined-primary-xl:hover {
   background-color: #00d1b2;
+  color: #fff;
 }
 
 .btn-complement-primary {
@@ -15720,9 +16033,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #66d1ff;
+  color: #66d1ff;
 }
 .btn-outlined-info:hover {
   background-color: #66d1ff;
+  color: #fff;
 }
 
 .btn-outlined-info-sm {
@@ -15734,10 +16049,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #66d1ff;
+  border: 2.5px solid #66d1ff;
+  color: #66d1ff;
 }
 .btn-outlined-info-sm:hover {
   background-color: #66d1ff;
+  color: #fff;
 }
 
 .btn-complement-info {
@@ -15818,9 +16135,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #66d1ff;
+  color: #66d1ff;
 }
 .btn-outlined-info:hover {
   background-color: #66d1ff;
+  color: #fff;
 }
 
 .btn-outlined-info-md {
@@ -15832,10 +16151,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #66d1ff;
+  border: 2.5px solid #66d1ff;
+  color: #66d1ff;
 }
 .btn-outlined-info-md:hover {
   background-color: #66d1ff;
+  color: #fff;
 }
 
 .btn-complement-info {
@@ -15916,9 +16237,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #66d1ff;
+  color: #66d1ff;
 }
 .btn-outlined-info:hover {
   background-color: #66d1ff;
+  color: #fff;
 }
 
 .btn-outlined-info-lg {
@@ -15930,10 +16253,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #66d1ff;
+  border: 2.5px solid #66d1ff;
+  color: #66d1ff;
 }
 .btn-outlined-info-lg:hover {
   background-color: #66d1ff;
+  color: #fff;
 }
 
 .btn-complement-info {
@@ -16014,9 +16339,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #66d1ff;
+  color: #66d1ff;
 }
 .btn-outlined-info:hover {
   background-color: #66d1ff;
+  color: #fff;
 }
 
 .btn-outlined-info-xl {
@@ -16028,10 +16355,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #66d1ff;
+  border: 2.5px solid #66d1ff;
+  color: #66d1ff;
 }
 .btn-outlined-info-xl:hover {
   background-color: #66d1ff;
+  color: #fff;
 }
 
 .btn-complement-info {
@@ -16112,9 +16441,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #48c78e;
+  color: #48c78e;
 }
 .btn-outlined-success:hover {
   background-color: #48c78e;
+  color: #fff;
 }
 
 .btn-outlined-success-sm {
@@ -16126,10 +16457,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #48c78e;
+  border: 2.5px solid #48c78e;
+  color: #48c78e;
 }
 .btn-outlined-success-sm:hover {
   background-color: #48c78e;
+  color: #fff;
 }
 
 .btn-complement-success {
@@ -16210,9 +16543,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #48c78e;
+  color: #48c78e;
 }
 .btn-outlined-success:hover {
   background-color: #48c78e;
+  color: #fff;
 }
 
 .btn-outlined-success-md {
@@ -16224,10 +16559,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #48c78e;
+  border: 2.5px solid #48c78e;
+  color: #48c78e;
 }
 .btn-outlined-success-md:hover {
   background-color: #48c78e;
+  color: #fff;
 }
 
 .btn-complement-success {
@@ -16308,9 +16645,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #48c78e;
+  color: #48c78e;
 }
 .btn-outlined-success:hover {
   background-color: #48c78e;
+  color: #fff;
 }
 
 .btn-outlined-success-lg {
@@ -16322,10 +16661,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #48c78e;
+  border: 2.5px solid #48c78e;
+  color: #48c78e;
 }
 .btn-outlined-success-lg:hover {
   background-color: #48c78e;
+  color: #fff;
 }
 
 .btn-complement-success {
@@ -16406,9 +16747,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #48c78e;
+  color: #48c78e;
 }
 .btn-outlined-success:hover {
   background-color: #48c78e;
+  color: #fff;
 }
 
 .btn-outlined-success-xl {
@@ -16420,10 +16763,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #48c78e;
+  border: 2.5px solid #48c78e;
+  color: #48c78e;
 }
 .btn-outlined-success-xl:hover {
   background-color: #48c78e;
+  color: #fff;
 }
 
 .btn-complement-success {
@@ -16504,9 +16849,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ffb70f;
+  color: #ffb70f;
 }
 .btn-outlined-warning:hover {
   background-color: #ffb70f;
+  color: #fff;
 }
 
 .btn-outlined-warning-sm {
@@ -16518,10 +16865,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #ffb70f;
+  border: 2.5px solid #ffb70f;
+  color: #ffb70f;
 }
 .btn-outlined-warning-sm:hover {
   background-color: #ffb70f;
+  color: #fff;
 }
 
 .btn-complement-warning {
@@ -16602,9 +16951,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ffb70f;
+  color: #ffb70f;
 }
 .btn-outlined-warning:hover {
   background-color: #ffb70f;
+  color: #fff;
 }
 
 .btn-outlined-warning-md {
@@ -16616,10 +16967,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #ffb70f;
+  border: 2.5px solid #ffb70f;
+  color: #ffb70f;
 }
 .btn-outlined-warning-md:hover {
   background-color: #ffb70f;
+  color: #fff;
 }
 
 .btn-complement-warning {
@@ -16700,9 +17053,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ffb70f;
+  color: #ffb70f;
 }
 .btn-outlined-warning:hover {
   background-color: #ffb70f;
+  color: #fff;
 }
 
 .btn-outlined-warning-lg {
@@ -16714,10 +17069,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #ffb70f;
+  border: 2.5px solid #ffb70f;
+  color: #ffb70f;
 }
 .btn-outlined-warning-lg:hover {
   background-color: #ffb70f;
+  color: #fff;
 }
 
 .btn-complement-warning {
@@ -16798,9 +17155,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ffb70f;
+  color: #ffb70f;
 }
 .btn-outlined-warning:hover {
   background-color: #ffb70f;
+  color: #fff;
 }
 
 .btn-outlined-warning-xl {
@@ -16812,10 +17171,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #ffb70f;
+  border: 2.5px solid #ffb70f;
+  color: #ffb70f;
 }
 .btn-outlined-warning-xl:hover {
   background-color: #ffb70f;
+  color: #fff;
 }
 
 .btn-complement-warning {
@@ -16896,9 +17257,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ff6685;
+  color: #ff6685;
 }
 .btn-outlined-danger:hover {
   background-color: #ff6685;
+  color: #fff;
 }
 
 .btn-outlined-danger-sm {
@@ -16910,10 +17273,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid #ff6685;
+  border: 2.5px solid #ff6685;
+  color: #ff6685;
 }
 .btn-outlined-danger-sm:hover {
   background-color: #ff6685;
+  color: #fff;
 }
 
 .btn-complement-danger {
@@ -16994,9 +17359,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ff6685;
+  color: #ff6685;
 }
 .btn-outlined-danger:hover {
   background-color: #ff6685;
+  color: #fff;
 }
 
 .btn-outlined-danger-md {
@@ -17008,10 +17375,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #ff6685;
+  border: 2.5px solid #ff6685;
+  color: #ff6685;
 }
 .btn-outlined-danger-md:hover {
   background-color: #ff6685;
+  color: #fff;
 }
 
 .btn-complement-danger {
@@ -17092,9 +17461,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ff6685;
+  color: #ff6685;
 }
 .btn-outlined-danger:hover {
   background-color: #ff6685;
+  color: #fff;
 }
 
 .btn-outlined-danger-lg {
@@ -17106,10 +17477,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid #ff6685;
+  border: 2.5px solid #ff6685;
+  color: #ff6685;
 }
 .btn-outlined-danger-lg:hover {
   background-color: #ff6685;
+  color: #fff;
 }
 
 .btn-complement-danger {
@@ -17190,9 +17563,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ff6685;
+  color: #ff6685;
 }
 .btn-outlined-danger:hover {
   background-color: #ff6685;
+  color: #fff;
 }
 
 .btn-outlined-danger-xl {
@@ -17204,10 +17579,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid #ff6685;
+  border: 2.5px solid #ff6685;
+  color: #ff6685;
 }
 .btn-outlined-danger-xl:hover {
   background-color: #ff6685;
+  color: #fff;
 }
 
 .btn-complement-danger {
@@ -17288,9 +17665,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid black;
+  color: black;
 }
 .btn-outlined-black:hover {
   background-color: black;
+  color: #fff;
 }
 
 .btn-outlined-black-sm {
@@ -17302,10 +17681,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid black;
+  border: 2.5px solid black;
+  color: black;
 }
 .btn-outlined-black-sm:hover {
   background-color: black;
+  color: #fff;
 }
 
 .btn-complement-black {
@@ -17386,9 +17767,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid black;
+  color: black;
 }
 .btn-outlined-black:hover {
   background-color: black;
+  color: #fff;
 }
 
 .btn-outlined-black-md {
@@ -17400,10 +17783,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid black;
+  border: 2.5px solid black;
+  color: black;
 }
 .btn-outlined-black-md:hover {
   background-color: black;
+  color: #fff;
 }
 
 .btn-complement-black {
@@ -17484,9 +17869,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid black;
+  color: black;
 }
 .btn-outlined-black:hover {
   background-color: black;
+  color: #fff;
 }
 
 .btn-outlined-black-lg {
@@ -17498,10 +17885,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid black;
+  border: 2.5px solid black;
+  color: black;
 }
 .btn-outlined-black-lg:hover {
   background-color: black;
+  color: #fff;
 }
 
 .btn-complement-black {
@@ -17582,9 +17971,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid black;
+  color: black;
 }
 .btn-outlined-black:hover {
   background-color: black;
+  color: #fff;
 }
 
 .btn-outlined-black-xl {
@@ -17596,10 +17987,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid black;
+  border: 2.5px solid black;
+  color: black;
 }
 .btn-outlined-black-xl:hover {
   background-color: black;
+  color: #fff;
 }
 
 .btn-complement-black {
@@ -17680,9 +18073,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid white;
+  color: white;
 }
 .btn-outlined-white:hover {
   background-color: white;
+  color: #fff;
 }
 
 .btn-outlined-white-sm {
@@ -17694,10 +18089,12 @@ table {
   background-color: #fff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border: 2px solid white;
+  border: 2.5px solid white;
+  color: white;
 }
 .btn-outlined-white-sm:hover {
   background-color: white;
+  color: #fff;
 }
 
 .btn-complement-white {
@@ -17778,9 +18175,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid white;
+  color: white;
 }
 .btn-outlined-white:hover {
   background-color: white;
+  color: #fff;
 }
 
 .btn-outlined-white-md {
@@ -17792,10 +18191,12 @@ table {
   background-color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid white;
+  border: 2.5px solid white;
+  color: white;
 }
 .btn-outlined-white-md:hover {
   background-color: white;
+  color: #fff;
 }
 
 .btn-complement-white {
@@ -17876,9 +18277,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid white;
+  color: white;
 }
 .btn-outlined-white:hover {
   background-color: white;
+  color: #fff;
 }
 
 .btn-outlined-white-lg {
@@ -17890,10 +18293,12 @@ table {
   background-color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  border: 2px solid white;
+  border: 2.5px solid white;
+  color: white;
 }
 .btn-outlined-white-lg:hover {
   background-color: white;
+  color: #fff;
 }
 
 .btn-complement-white {
@@ -17974,9 +18379,11 @@ table {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid white;
+  color: white;
 }
 .btn-outlined-white:hover {
   background-color: white;
+  color: #fff;
 }
 
 .btn-outlined-white-xl {
@@ -17988,10 +18395,12 @@ table {
   background-color: #fff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  border: 2px solid white;
+  border: 2.5px solid white;
+  color: white;
 }
 .btn-outlined-white-xl:hover {
   background-color: white;
+  color: #fff;
 }
 
 .btn-complement-white {
@@ -18132,8 +18541,8 @@ table {
 
 .badge-solid-orange-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18145,8 +18554,8 @@ table {
 
 .badge-outlined-orange-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18159,8 +18568,8 @@ table {
 
 .badge-soft-orange-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18172,8 +18581,8 @@ table {
 
 .badge-inverted-orange-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18397,8 +18806,8 @@ table {
 
 .badge-solid-yellow-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18410,8 +18819,8 @@ table {
 
 .badge-outlined-yellow-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18424,8 +18833,8 @@ table {
 
 .badge-soft-yellow-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18437,8 +18846,8 @@ table {
 
 .badge-inverted-yellow-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18662,8 +19071,8 @@ table {
 
 .badge-solid-red-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18675,8 +19084,8 @@ table {
 
 .badge-outlined-red-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18689,8 +19098,8 @@ table {
 
 .badge-soft-red-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18702,8 +19111,8 @@ table {
 
 .badge-inverted-red-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18927,8 +19336,8 @@ table {
 
 .badge-solid-pitch-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18940,8 +19349,8 @@ table {
 
 .badge-outlined-pitch-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18954,8 +19363,8 @@ table {
 
 .badge-soft-pitch-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -18967,8 +19376,8 @@ table {
 
 .badge-inverted-pitch-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19192,8 +19601,8 @@ table {
 
 .badge-solid-gray-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19205,8 +19614,8 @@ table {
 
 .badge-outlined-gray-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19219,8 +19628,8 @@ table {
 
 .badge-soft-gray-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19232,8 +19641,8 @@ table {
 
 .badge-inverted-gray-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19457,8 +19866,8 @@ table {
 
 .badge-solid-blue-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19470,8 +19879,8 @@ table {
 
 .badge-outlined-blue-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19484,8 +19893,8 @@ table {
 
 .badge-soft-blue-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19497,8 +19906,8 @@ table {
 
 .badge-inverted-blue-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19722,8 +20131,8 @@ table {
 
 .badge-solid-link-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19735,8 +20144,8 @@ table {
 
 .badge-outlined-link-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19749,8 +20158,8 @@ table {
 
 .badge-soft-link-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19762,8 +20171,8 @@ table {
 
 .badge-inverted-link-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -19987,8 +20396,8 @@ table {
 
 .badge-solid-primary-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20000,8 +20409,8 @@ table {
 
 .badge-outlined-primary-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20014,8 +20423,8 @@ table {
 
 .badge-soft-primary-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20027,8 +20436,8 @@ table {
 
 .badge-inverted-primary-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20252,8 +20661,8 @@ table {
 
 .badge-solid-info-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20265,8 +20674,8 @@ table {
 
 .badge-outlined-info-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20279,8 +20688,8 @@ table {
 
 .badge-soft-info-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20292,8 +20701,8 @@ table {
 
 .badge-inverted-info-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20517,8 +20926,8 @@ table {
 
 .badge-solid-success-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20530,8 +20939,8 @@ table {
 
 .badge-outlined-success-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20544,8 +20953,8 @@ table {
 
 .badge-soft-success-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20557,8 +20966,8 @@ table {
 
 .badge-inverted-success-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20782,8 +21191,8 @@ table {
 
 .badge-solid-warning-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20795,8 +21204,8 @@ table {
 
 .badge-outlined-warning-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20809,8 +21218,8 @@ table {
 
 .badge-soft-warning-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -20822,8 +21231,8 @@ table {
 
 .badge-inverted-warning-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21047,8 +21456,8 @@ table {
 
 .badge-solid-danger-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21060,8 +21469,8 @@ table {
 
 .badge-outlined-danger-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21074,8 +21483,8 @@ table {
 
 .badge-soft-danger-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21087,8 +21496,8 @@ table {
 
 .badge-inverted-danger-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21312,8 +21721,8 @@ table {
 
 .badge-solid-black-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21325,8 +21734,8 @@ table {
 
 .badge-outlined-black-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21339,8 +21748,8 @@ table {
 
 .badge-soft-black-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21352,8 +21761,8 @@ table {
 
 .badge-inverted-black-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21577,8 +21986,8 @@ table {
 
 .badge-solid-white-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21590,8 +21999,8 @@ table {
 
 .badge-outlined-white-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21604,8 +22013,8 @@ table {
 
 .badge-soft-white-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21617,8 +22026,8 @@ table {
 
 .badge-inverted-white-md {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 9999px;
   line-height: 1;
@@ -21734,128 +22143,252 @@ table {
   color: white;
 }
 
-.navbar-left {
-  justify-content: flex-start;
-  display: flex;
-  align-items: center;
-  padding: 0.75rem;
-  background-color: #2a4058;
-  font-family: "Spicy Rice", serif;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
-  align-items: flex-start;
-}
-.navbar-left ul {
-  list-style: none;
-  display: flex;
-  gap: 0.75rem;
-  padding: 0;
+* {
+  box-sizing: border-box;
   margin: 0;
-}
-.navbar-left ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-.navbar-left ul li a:hover {
-  background-color: #4258ff;
-}
-.navbar-left ul {
-  flex-direction: column;
-  gap: 0.75rem;
-}
-@media (min-width: 480px) {
-  .navbar-left {
-    flex-direction: row;
-  }
-  .navbar-left ul {
-    flex-direction: row;
-  }
-}
-@media (min-width: 720px) {
-  .navbar-left {
-    font-size: 0.75rem;
-  }
-}
-@media (min-width: 960px) {
-  .navbar-left {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar-left {
-    font-size: 1.5rem;
-  }
-  .navbar-left a {
-    color: black;
-  }
+  padding: 0;
 }
 
-.navbar-right {
-  justify-content: flex-end;
-  display: flex;
-  align-items: center;
-  padding: 0.75rem;
-  background-color: #2a4058;
-  font-family: "Spicy Rice", serif;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
-  align-items: flex-start;
-}
-.navbar-right ul {
-  list-style: none;
-  display: flex;
-  gap: 0.75rem;
-  padding: 0;
-  margin: 0;
-}
-.navbar-right ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-.navbar-right ul li a:hover {
-  background-color: #4258ff;
-}
-.navbar-right ul {
-  flex-direction: column;
-  gap: 0.75rem;
-}
-@media (min-width: 480px) {
-  .navbar-right {
-    flex-direction: row;
-  }
-  .navbar-right ul {
-    flex-direction: row;
-  }
-}
-@media (min-width: 720px) {
-  .navbar-right {
-    font-size: 0.75rem;
-  }
-}
-@media (min-width: 960px) {
-  .navbar-right {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar-right {
-    font-size: 1.5rem;
-  }
-  .navbar-right a {
-    color: black;
-  }
+body {
+  height: 100vh;
+  background-color: cadetblue;
+  width: 100%;
 }
 
+.header-wrapper {
+  z-index: 20;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 3.5rem;
+  padding: 0.45rem 1rem 0.45rem 1.27rem;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  background-color: aliceblue;
+  top: 0;
+  left: 0;
+}
+.header-wrapper .left,
+.header-wrapper .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-wrapper .left a,
+.header-wrapper .right a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+  color: #7c7676;
+  padding: 0.2rem 0.5rem;
+}
+.header-wrapper .left a img,
+.header-wrapper .right a img {
+  width: 1.6rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.header-wrapper .left a:hover,
+.header-wrapper .right a:hover {
+  background-color: #dbcccc;
+}
+.header-wrapper .left {
+  gap: 1.4rem;
+}
+.header-wrapper .right {
+  gap: 0.6rem;
+}
+.header-wrapper .brand {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+}
+.header-wrapper .brand .brand-logo {
+  width: 1.7rem;
+}
+.header-wrapper .brand .brand-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.header-wrapper .menu-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header-wrapper .menu-container .menu {
+  width: 1.5rem;
+  height: 37%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-wrapper .menu-container .menu div {
+  width: 100%;
+  height: 0.15rem;
+  background-color: #7c7676;
+  transition: all 0.2s ease;
+}
+.header-wrapper .menu-container .menu.menu-toggle div:first-child {
+  width: 100%;
+  transform: rotate(-45deg) translate(-0.2rem, 0.3rem);
+}
+.header-wrapper .menu-container .menu.menu-toggle div:nth-child(2) {
+  opacity: 0%;
+}
+.header-wrapper .menu-container .menu.menu-toggle div:last-child {
+  width: 100%;
+  transform: rotate(45deg) translate(-0.2rem, -0.3rem);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 3.5rem;
+  right: 0;
+  width: 75%;
+  max-width: 280px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem 0 0 0.5rem;
+  z-index: 100;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+.mobile-menu.show {
+  display: block;
+  transform: translateX(0%);
+}
+.mobile-menu .mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.8rem;
+}
+.mobile-menu .mobile-menu-content a {
+  text-decoration: none;
+  color: #7c7676;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  transition: background-color 0.2s ease;
+}
+.mobile-menu .mobile-menu-content a:hover {
+  background-color: #e2d7d7;
+  cursor: pointer;
+}
+.mobile-menu .mobile-menu-content a img {
+  width: 1.6rem;
+}
+
+.sidebar {
+  margin-top: 3.4rem;
+  width: 4rem;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0.8rem 0rem 1.1rem 1rem;
+  border-right: 1px solid gray;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: aliceblue;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sidebar img {
+  width: 1.6rem;
+}
+.sidebar ul li {
+  list-style: none;
+}
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 0.9rem 0.7rem;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #7c7676;
+}
+.sidebar a:hover {
+  background-color: #e9e2e2;
+}
+.sidebar.menu-toggle {
+  min-width: 10rem;
+  width: min(50%, 18.75rem);
+  height: 100%;
+}
+.sidebar .menu-sidebar {
+  width: 1.5rem;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar .menu-sidebar:hover {
+  cursor: pointer;
+}
+.sidebar .menu-sidebar div {
+  width: 100%;
+  height: 0.15rem;
+  background-color: #7c7676;
+  transition: all 0.2s ease;
+  transform-origin: center;
+}
+.sidebar .menu-sidebar.toggle-menu-sidebar div:first-child {
+  width: 100%;
+  transform: rotate(-45deg) translate(-0.3rem, 0.3rem);
+}
+.sidebar .menu-sidebar.toggle-menu-sidebar div:nth-child(2) {
+  opacity: 0%;
+}
+.sidebar .menu-sidebar.toggle-menu-sidebar div:last-child {
+  width: 100%;
+  transform: rotate(45deg) translate(-0.3rem, -0.3rem);
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 4rem;
+  }
+  .header-wrapper {
+    padding: 0.4rem 0.6rem;
+  }
+  .header-wrapper .right .items-header,
+  .header-wrapper .left .items-header {
+    display: none;
+  }
+  .header-wrapper .menu-container {
+    margin-left: auto;
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 501px) {
+  .mobile-menu {
+    display: none !important;
+  }
+  .menu-container {
+    display: none !important;
+  }
+}
 .form-control {
   display: block;
   width: 98%;
@@ -22088,4 +22621,11 @@ body {
 }
 .code-container .code-body code {
   display: block;
+}
+
+.h-rule {
+  width: 25%;
+  margin: 0;
+  border: none;
+  height: 3px;
 }

@@ -1,0 +1,60 @@
+// Variables sugeridas (ajustá según tu sistema de diseño)
+$border-color: #e2e8f0;
+$header-bg: #471ec5;
+$header-color: #c3b8b8;
+$cell-padding: 0.75rem;
+$font-size: 0.95rem;
+$font-mono: 'Courier New', Courier, monospace;
+$table-radius: 0.5rem;
+
+// Responsivo: scroll horizontal en pantallas pequeñas
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+// Estilo base para tabla
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: $font-size;
+  margin-top: 1rem;
+  border: 1px solid $border-color;
+  border-radius: $table-radius;
+  overflow: hidden;
+
+  thead {
+    background-color: $header-bg;
+    color: $header-color;
+
+    th {
+      text-align: left;
+      padding: $cell-padding;
+      border-bottom: 1px solid $border-color;
+      font-weight: 600;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: #281c4e;
+      }
+
+      td {
+        padding: $cell-padding;
+        border-bottom: 1px solid $border-color;
+        vertical-align: top;
+
+        code {
+        //   background-color: #2d2d2d;
+        //   padding: 0.2rem 0.4rem;
+        //   border-radius: 0.25rem;
+        //   font-family: $font-mono;
+        //   font-size: 0.9em;
+        //   display: inline-block;
+        }
+      }
+    }
+  }
+}

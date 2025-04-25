@@ -11,192 +11,273 @@
 
 </head>
 
-<body class="bg-color-blue-dark-2">
+<body class="bg-color-red-dark-2">
 
 
-    <nav id="inicio" class="navbar-left">
-        <ul>
-            <li><a href="" class="text-black-override">Opcion 1</a></li>
-            <li><a href="" class="text-black-override">Opcion 2</a></li>
-            <li><a href="" class="text-black-override">Opcion 3</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="header-wrapper">
+            <div class="left">
+                <div>
+                    <a href="" class="items-header">Inicio</a>
+                </div>
+                <div>
+                    <a href="formularios.html" class="items-header">Formularios
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="items-header">Layout
+                        <!-- <img src="icons/cloud.svg" alt=""> -->
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="items-header">Utilidades
 
-    <div class="grid lg:grid-cols-5">
+                    </a>
+                </div>
 
-        <div class="bg-color-blue-dark-2 w-75 pos-sticky top-0">
-            <nav class="pos-sticky top-0 pt-2 pl-1">
-                <ul>
-                    
-                        
-                    
-                    <li><a href="../documentation.html" class="no-decoration link-hover-info text-red-light-2 text-2xl">Inicio - Instalación</a>
-                        
-                    </li>
-                    <li><a href="introduccion.html" target="main-frame" class=" no-decoration link-hover-info text-pitch-light-2 text-2xl">Introducción</a>
+            </div>
 
-                        
-                    </li>
-                    <li><a href="componentes.html" class="no-decoration link-hover-info text-yellow-light-2 text-2xl">Componentes</a>
-                        <ul class="pl-1 pb-1 text-area-gray-light-2">
-                            <li><a href="#botones" class="no-decoration">Botones</a></li>
-                            <li><a href="" class="no-decoration">Badges</a></li>
-                            <li><a href="" class="no-decoration">Navbars</a></li>
-                            <li><a href="" class="no-decoration">Cards</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="formularios.html" class="no-decoration link-hover-info text-danger-light-2 text-2xl">Formularios</a></li>
-                    <li><a href="#layout" class="no-decoration link-hover-info text-primary text-2xl">Layout</a></li>
-                    <li><a href="#utilidades" class="no-decoration link-hover-info text-blue-light-9 text-2xl">Utilidades</a></li>
+            <div class="right">
+
+                <div class="brand">
+                    <img src="../icons/logo.svg" alt="" class="brand-logo">
+                    <span class="brand-name theme-font">AstroW</span>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu" id="menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 🔽 Modal mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="">Inicio</a>
+            <a href="formularios.html">Formularios</a>
+            <a href="">
+                <img src="../icons/logo.svg" alt="">
+                Componentes
+            </a>
+            <a href="">Layout</a>
+            <a href="">Utilidades</a>
+        </div>
+    </div>
+
+    <main class="p-2 mt-2 bg-color-blue-dark-4 text-area-gray-light-4 container-bordered-xl" style="overflow: hidden;">
 
 
-                    <li class="mb-2 mt-2"><a href="../documentation.html" class="no-decoration link-hover-info text-link-light-2 text-2xl">🌌</a>
-                </ul>
-            </nav>
+        <h2 class="mt-2 mb-2 title theme-font text-center">Componentes</h2>
+        <div class="d-flex justify-space-between ai-center">
+            <h6 id="botones" class="title mb-1">Botones</h6>
+            <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_buttons.scss" target="_blank"
+                class="link-style-info">ver código fuente</a>
         </div>
 
+        <div class="mt-1 mb-1">
+            <hr class="h-rule bg-color-info">
+        </div>
 
-        <div class="container-full bg-color-red h-screen col-span-4">
+        <p>Botones clásicos, en diferentes, colores, tamaños y estilos</p>
 
-            
+        <label class="badge-outlined-info m-2">Ejemplo</label>
+        <div class="d-flex ai-center justify-space-around w-75 m-auto">
+            <button class="btn br-lg ">Botón</button>
+            <button class="btn-info br-lg text-white fw-bold">Botón</button>
+            <button class="btn-outlined-info br-lg fw-bold ">Botón</button>
+            <button class="btn-complement-link br-lg fw-bold ">Botón</button>
+        </div>
 
-            <div class="row g-4 bg-color-blue-dark-5">
+        <div class="mt-2">
+            <h6 class="fw-bold mb-2">Clases para crear botones</h6>
 
+            <ul class="">
+                <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn</span>:
+                    Botón base sin fondo, Ideal para mantener un estilo minimalista.</li>
+                <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}</span>:
+                    Botón con fondo sólido basado en el color especificado.</li>
+                <li class="m-1"><span
+                        class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}</span>:
+                    Botón con fondo blanco y borde coloreado.</li>
+                <li class="m-1"><span
+                        class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}</span>:
+                    Botón con estilo complementario: el color de fondo lo definís vos, y al hacer
+                    hover, se intercambian los colores del texto y el fondo.</li>
+            </ul>
+        </div>
 
-                <div class="lg:col-10 bg-color-blue m-0 m-auto">
+        <label class="badge-outlined-info m-2">Ejemplo en html</label>
 
-
-                    <main id="main-content" class="bg-color-blue-dark-5">
-
-                       
-
-                        
-
-                        <section id="#botones" class="p-1 text-area-gray h-screen"> <!--SECCION COMPONENTES-->
-                            <h2 class="mt-2 mb-2 title theme-font">Componentes</h2>
-
-                            <div class="d-flex justify-space-between">
-                                <h6 id="botones" class="title mb-1">Botones</h6>
-                                <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_buttons.scss" target="_blank" class="link-style-info">ver código fuente</a>
-                            </div>
-                            <div class="mt-1 mb-1">
-                                <hr class="w-25 m-0 no-border bg-color-info " style="height: 3px;">
-                            </div>
-
-                            
-                            <p>Botones clásicos, en diferentes, colores, tamaños y estilos</p>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 mb-1">
-                                <!-- columan izqioerda -->
-                                <div class="mt-1 mb-1">
-                                    <div class="d-flex justify-space-between">
-                                        <label class="badge-outlined-info">Ejemplo</label>
-                                    </div>
-                                    <br>
-                                    <div class="d-flex justify-space-around ai-center">
-                                        <button class="btn br-lg">Botón</button>
-                                        <button class="btn-info br-lg text-white fw-bold">Botón</button>
-                                        <button class="btn-outlined-info br-lg fw-bold">Botón</button>
-                                        <button class="btn-complement-link br-lg fw-bold">Botón</button>
-                                    </div>
-                                    
-                                    <div class="mt-2">
-                                        <h6 class="fw-bold mb-2">Clases para crear botones</h6>
-
-                                        <ul class="">
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn</span>: Botón base sin fondo, Ideal para mantener un estilo minimalista.</li>
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}</span>: Botón con fondo sólido basado en el color especificado.</li>
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}</span>: Botón con fondo blanco y borde coloreado.</li>
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}</span>: Botón con estilo complementario: el color de fondo lo definís vos, y al hacer hover, se intercambian los colores del texto y el fondo.</li>
-                                        </ul>
-                                    </div>
-                                    
-
-
-                                    
-                                    
-                                </div>
-                                <!-- columna derecha -->
-                                <div class="mt-1 mb-1 justify-center d-flex">
-                                    <div class="">
-                                        <div class="d-flex justify-space-between">
-                                            <label class="badge-outlined-info">Ejemplo en html</label>
-                                        </div>
-<pre><code class="language-html">
+        <div class="d-flex justify-center br">
+            <!-- para envolver el code -->
+            <div style="max-width: 75%;">
+                <pre><code class="language-html">
 &lt;button class=&quot;btn br-lg&quot;&gt;Boton&lt;/button&gt;<br />
 &lt;button class=&quot;btn-info br-lg&quot;&gt;Boton&lt;/button&gt;<br />
 &lt;button class=&quot;btn-outlined-info br-lg &quot;&gt;Boton&lt;/button&gt;<br />
 &lt;button class=&quot;btn-complement-link br-lg&quot;&gt;Boton&lt;/button&gt;    
-</code></pre>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <span class="badge-outlined-orange-xl mb-1">Sizes</span>
-                            <p>Variaciones de tamanos para los diferentes tipos de botones</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2">
-                                <!-- columan izqioerda -->
-                                <div class="mt-1 mb-1">
-                                    <div class="d-flex justify-space-between">
-                                        <label class="badge-outlined-info">Ejemplo</label>
-                                    </div>
-                                    <br>
-                                    <div class="d-flex justify-space-around ai-center">
-                                        <button class="btn-sm br-lg">Botón</button>
-                                        <button class="btn-info-md br-lg text-white fw-bold">Botón</button>
-                                        <button class="btn-outlined-info-lg br-lg fw-bold">Botón</button>
-                                        <button class="btn-complement-link-xl br-lg fw-bold">Botón</button>
-                                    </div>
-                                    
-                                    <div class="mt-2">
-                                        <h6 class="fw-bold mb-2">Clases para crear botones con las diferentes variaciones de tamaño.</h6>
-
-                                        <ul class="">
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{size}</span>: </li>
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}-{size}</span>: </li>
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}-{size}</span>: </li>
-                                            <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}-{size}</span>: </li>
-                                        </ul>
-                                    </div>
-                                    
+                </code></pre>
+            </div>
+        </div>
 
 
-                                    
-                                    
-                                </div>
-                                <!-- columna derecha -->
-                                <div class="mt-1 mb-1 justify-center d-flex">
-                                    <div class="">
-                                        <div class="d-flex justify-space-between">
-                                            <label class="badge-outlined-info">Ejemplo en html</label>
-                                        </div>
+        <!-- vivo aqui loco -->
+
+        <span class="badge-outlined-orange-xl mb-1">Sizes</span>
+        <p>Variaciones de tamanos para los diferentes tipos de botones</p>
+
+        <div class="mt-1 mb-1">
+            <div class="d-flex justify-space-between">
+                <label class="badge-outlined-info">Ejemplo</label>
+            </div>
+            <br>
+            <div class="d-flex justify-space-around ai-center">
+                <button class="btn-sm br-lg">Botón</button>
+                <button class="btn-info-md br-lg text-white fw-bold">Botón</button>
+                <button class="btn-outlined-info-lg br-lg fw-bold">Botón</button>
+                <button class="btn-complement-link-xl br-lg fw-bold">Botón</button>
+            </div>
+            
+            <div class="mt-2">
+                <h6 class="fw-bold mb-2">Clases para crear botones con las diferentes variaciones de tamaño.</h6>
+
+                <ul class="">
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{size}</span></li>
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}-{size}</span></li>
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}-{size}</span></li>
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}-{size}</span></li>
+                </ul>
+            </div>
+
+
+            <div class="mt-1 mb-1 justify-center d-flex">
+                <div class="">
+                    <div class="d-flex justify-space-between">
+                        <label class="badge-outlined-info">Ejemplo en html</label>
+                    </div>
 <pre><code class="language-html">
 &lt;button class=&quot;btn-sm br-lg&quot;&gt;Boton&lt;/button&gt;<br />
 &lt;button class=&quot;btn-info-md br-lg&quot;&gt;Boton&lt;/button&gt;<br />
 &lt;button class=&quot;btn-outlined-info-lg br-lg &quot;&gt;Boton&lt;/button&gt;<br />
 &lt;button class=&quot;btn-complement-link-xl br-lg&quot;&gt;Boton&lt;/button&gt;    
 </code></pre>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+            </div>
+            
+        </div>
 
-                        </section>
+        <div class="d-flex justify-space-between ai-center">
+            <h4 id="badges" class="title mt-2"> Badges</h4>
+            <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_badges.scss" target="_blank" class="link-style-info">ver código fuente</a>
+        </div>
 
-                        
-                    </main>
+        <div class="mt-1 mb-1">
+            <hr class="w-25 m-0 no-border bg-color-info " style="height: 3px;">
+        </div>
+
+        <div class="mt-1 mb-1">
+           
+            
+            <div class="mt-2">
+                <h6 class="fw-bold mb-2">Clases para crear botones con las diferentes variaciones de tamaño.</h6>
+
+                <ul class="mb-2">
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-solid-{color}</span>: Badge con fondo solido y texto</li>
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-outlined-{color}</span>: Badge con borde de color y fondo transparente</li>
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-soft-{color}</span>: Badge con un fondo claro (tono suave del color)</li>
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-inverted-{color}</span>: Badge con fondo claro y texto del color base. Ideal para fondos oscuros</li>
+                </ul>
+
+                <div class="d-flex justify-space-between mb-2">
+                    <label class="badge-outlined-info">Ejemplo</label>
+                </div>
+                <br>
+                <div class="d-flex justify-space-around ai-center mb-2">
+                    <span class="badge-solid-link-sm">Sizes</span>
+                    <span class="badge-outlined-link-md ">Sizes</span>
+                    <span class="badge-soft-link-xl">Sizes</span>
+                    <span class="badge-inverted-link-lg">Sizes</span>
+                    <span class="badge-solid-success">Sizes</span>
                 </div>
 
+                <p class="text-orange-override">Variaciones de tamaños para los badges</p>
+                <div class="mb-2 mt-1">
+                    <hr class="h-rule bg-color-success">
+                </div> 
             </div>
 
+            <div class="m-auto table-responsive">
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Sufijo</th>
+                      <th>Ejemplo en HTML</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Default</span></td>
+                      <td>Sin sufijo</td>
+                      <td><code class="language-html">&lt;span class="badge-solid-link"&gt;Sizes&lt;/span&gt;</code></td>
+                    </tr>
+                    <tr>
+                      <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Small</span></td>
+                      <td>-sm</td>
+                      <td><code class="language-html">&lt;span class="badge-solid-link-sm"&gt;Sizes&lt;/span&gt;</code></td>
+                    </tr>
+                    <tr>
+                      <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Medium</span></td>
+                      <td>-md</td>
+                      <td><code class="language-html">&lt;span class="badge-outlined-link-md"&gt;Sizes&lt;/span&gt;</code></td>
+                    </tr>
+                    <tr>
+                      <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Large</span></td>
+                      <td>-lg</td>
+                      <td><code class="language-html">&lt;span class="badge-inverted-link-lg"&gt;Sizes&lt;/span&gt;</code></td>
+                    </tr>
+                    <tr>
+                      <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Extra large</span></td>
+                      <td>-xl</td>
+                      <td><code class="language-html">&lt;span class="badge-soft-link-xl"&gt;Sizes&lt;/span&gt;</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+            
+           
+        </div> 
 
 
+            
+            
         </div>
-    </div>
+            
 
 
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="../js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
-    
+
 </body>
 
 </html>
