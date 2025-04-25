@@ -6,17 +6,6 @@
 
 $grid-columns: 12;
 
-$grid-gaps: (
-
-    "0": 0,
-    '1': 10px,
-    '2': 20px,
-    '3': 30px,
-
-);
-
-
-
 //FLEX FELX FLEX FLEX FLEX
 
 $justify-content-values: flex-start, flex-end, center, space-between, space-around, space-evenly;
@@ -34,6 +23,7 @@ $align-items-values: flex-start, flex-end, center, baseline, stretch;
         justify-content: $value;
     }
 }
+
 //calses poara flex directions
 @each $value in $flex-directions-values{
     .flex-dir-#{$value}{
@@ -82,34 +72,14 @@ $align-items-values: flex-start, flex-end, center, baseline, stretch;
     }
 }
 
-.container{
 
-    // width: 100%;
-    // max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
 
 .row {
 
     display: flex;
     flex-wrap: wrap;
 }
-//grid gaps calses
 
-
-@each $k, $v in $grid-gaps{
-
-    .gap-#{$k} > *{
-        padding: $v;//padding?
-    }
-
-    .gap-#{$k}{
-        margin-left: -$v;
-        margin-right: -$v;
-    }
-}
 
 
 
@@ -192,7 +162,7 @@ $gap-atajos: (
     }
   }
   
-  // Filas del grid (opcional)
+  
   @for $i from 1 through 6 {
     .grid-rows-#{$i} {
       grid-template-rows: repeat(#{$i}, 1fr);

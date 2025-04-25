@@ -84,16 +84,20 @@
         .btn-outlined-#{$key}{//gen a boton con fondo blanco delineado con color respectivo
             @include btn-base(#fff);
             border: $base-border-thickness solid $value;
+            color: $value;
             &:hover{
                 background-color: $value;
+                color: #fff
             }
         }
         .btn-outlined-#{$key}-#{$size}{//gen a boton con fondo blanco delineado con color respectivo
             @include btn-base(#fff);
             @include btn-size($size);
-            border: calc($base-border-thickness + 1px) solid $value;
+            border: calc($base-border-thickness + 1.5px) solid $value;
+            color: $value;
             &:hover{
                 background-color: $value;
+                color: #fff
             }
         }
     
