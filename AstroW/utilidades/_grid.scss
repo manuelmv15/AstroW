@@ -78,6 +78,7 @@ $align-items-values: flex-start, flex-end, center, baseline, stretch;
 
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 
