@@ -104,6 +104,27 @@
         }
     }
 
+    .text-area-#{$key}-ov{
+        color: $value;
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: mix(black, $value, 20%) !important; // Títulos más oscuros
+        }
+        
+        p {
+            color: mix(white, $value, 15%) !important; // Párrafos ligeramente más claros
+        }
+        
+        a {
+            color: adjust($color: $value, $hue: 30deg) !important; // Enlaces con variación de tono
+            text-decoration: underline;
+            
+            &:hover {
+                color: $value !important;
+            }
+        }
+    }
+
     @if($value !=black and $value !=white) {
         //nos aseguramod que no genere variaciones de colores para balnco y negro
 
