@@ -1,5 +1,5 @@
 .nav-header {
-    position: absolute;
+    position: fixed;
     background-color: rgb(253, 253, 253);
     padding: 0.2rem;
     padding-bottom: 0;
@@ -20,6 +20,9 @@
 }
 
 .nav-mobile-links {
+    // position: relative;
+    // top: 3.5rem;
+    // z-index: 19;
     margin-top: 3.6rem;
     max-height: 0;
     overflow: hidden;
@@ -154,6 +157,9 @@
 
     .nav-brand-logo {
         width: 1.7rem;
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .nav-brand-name {

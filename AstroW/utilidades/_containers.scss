@@ -3,7 +3,7 @@
 @use '../utilidades/variables' as *;
 
 //variables de diseño
-$container-padding: 1rem;
+$container-padding: 0.5rem;
 $container-border: 1px solid #ccc;
 $container-radius: 0.5rem;
 $container-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -14,7 +14,8 @@ $container-widths: (
   "sm": 540px,
   "md": 720px,
   "lg": 960px,
-  "xl": 1140px,
+  "xl": 1200px,
+  "xxl": 1440px,
 );
 
 // === ESTILOS BASE ===
@@ -22,8 +23,7 @@ $container-widths: (
 @mixin container-base {
   width: 100%;
   margin: 0 auto;
-  padding-left: $container-padding;
-  padding-right: $container-padding;
+  padding: $container-padding;
 }
 
 // === VARIACIONES DE ESTILO ===

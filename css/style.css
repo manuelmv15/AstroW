@@ -85,24 +85,25 @@ html {
 .container-flow {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   max-width: 100%;
 }
 
 .container-base-xs {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 100%;
+  padding: 0.5rem;
+}
+@media (min-width: 250px) {
+  .container-base-xs {
+    max-width: 100%;
+  }
 }
 
 .container-base-sm {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
 }
 @media (min-width: 480px) {
   .container-base-sm {
@@ -113,8 +114,7 @@ html {
 .container-base-md {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
 }
 @media (min-width: 640px) {
   .container-base-md {
@@ -125,8 +125,7 @@ html {
 .container-base-lg {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
 }
 @media (min-width: 960px) {
   .container-base-lg {
@@ -137,30 +136,42 @@ html {
 .container-base-xl {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
 }
 @media (min-width: 1200px) {
   .container-base-xl {
-    max-width: 1140px;
+    max-width: 1200px;
+  }
+}
+
+.container-base-xxl {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+@media (min-width: 1440px) {
+  .container-base-xxl {
+    max-width: 1440px;
   }
 }
 
 .container-bordered-xs {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
-  max-width: 100%;
+}
+@media (min-width: 250px) {
+  .container-bordered-xs {
+    max-width: 100%;
+  }
 }
 
 .container-bordered-sm {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
@@ -173,8 +184,7 @@ html {
 .container-bordered-md {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
@@ -187,8 +197,7 @@ html {
 .container-bordered-lg {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
@@ -201,32 +210,46 @@ html {
 .container-bordered-xl {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
   .container-bordered-xl {
-    max-width: 1140px;
+    max-width: 1200px;
+  }
+}
+
+.container-bordered-xxl {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+@media (min-width: 1440px) {
+  .container-bordered-xxl {
+    max-width: 1440px;
   }
 }
 
 .container-shadow-xs {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  max-width: 100%;
+}
+@media (min-width: 250px) {
+  .container-shadow-xs {
+    max-width: 100%;
+  }
 }
 
 .container-shadow-sm {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
@@ -239,8 +262,7 @@ html {
 .container-shadow-md {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
@@ -253,8 +275,7 @@ html {
 .container-shadow-lg {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
@@ -267,32 +288,46 @@ html {
 .container-shadow-xl {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
   .container-shadow-xl {
-    max-width: 1140px;
+    max-width: 1200px;
+  }
+}
+
+.container-shadow-xxl {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+@media (min-width: 1440px) {
+  .container-shadow-xxl {
+    max-width: 1440px;
   }
 }
 
 .container-solid-xs {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   background-color: #f8f9fa;
   border-radius: 0.5rem;
-  max-width: 100%;
+}
+@media (min-width: 250px) {
+  .container-solid-xs {
+    max-width: 100%;
+  }
 }
 
 .container-solid-sm {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   background-color: #f8f9fa;
   border-radius: 0.5rem;
 }
@@ -305,8 +340,7 @@ html {
 .container-solid-md {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   background-color: #f8f9fa;
   border-radius: 0.5rem;
 }
@@ -319,8 +353,7 @@ html {
 .container-solid-lg {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   background-color: #f8f9fa;
   border-radius: 0.5rem;
 }
@@ -333,14 +366,26 @@ html {
 .container-solid-xl {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   background-color: #f8f9fa;
   border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
   .container-solid-xl {
-    max-width: 1140px;
+    max-width: 1200px;
+  }
+}
+
+.container-solid-xxl {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+}
+@media (min-width: 1440px) {
+  .container-solid-xxl {
+    max-width: 1440px;
   }
 }
 
@@ -350,6 +395,1639 @@ html {
   box-sizing: border-box;
 }
 
+.g-0 {
+  gap: 0;
+}
+
+.g-1 {
+  gap: 0.25rem;
+}
+
+.g-2 {
+  gap: 0.5rem;
+}
+
+.g-3 {
+  gap: 0.75rem;
+}
+
+.g-4 {
+  gap: 1rem;
+}
+
+.g-5 {
+  gap: 1.5rem;
+}
+
+.g-6 {
+  gap: 3rem;
+}
+
+.g-auto {
+  gap: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.col-span-1 {
+  grid-column: span 1/span 1;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-end-1 {
+  grid-column-end: 1;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-span-2 {
+  grid-column: span 2/span 2;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col-span-3 {
+  grid-column: span 3/span 3;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col-span-4 {
+  grid-column: span 4/span 4;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.col-span-5 {
+  grid-column: span 5/span 5;
+}
+
+.col-start-5 {
+  grid-column-start: 5;
+}
+
+.col-end-5 {
+  grid-column-end: 5;
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.col-span-6 {
+  grid-column: span 6/span 6;
+}
+
+.col-start-6 {
+  grid-column-start: 6;
+}
+
+.col-end-6 {
+  grid-column-end: 6;
+}
+
+.grid-cols-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.col-span-7 {
+  grid-column: span 7/span 7;
+}
+
+.col-start-7 {
+  grid-column-start: 7;
+}
+
+.col-end-7 {
+  grid-column-end: 7;
+}
+
+.grid-cols-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.col-span-8 {
+  grid-column: span 8/span 8;
+}
+
+.col-start-8 {
+  grid-column-start: 8;
+}
+
+.col-end-8 {
+  grid-column-end: 8;
+}
+
+.grid-cols-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.col-span-9 {
+  grid-column: span 9/span 9;
+}
+
+.col-start-9 {
+  grid-column-start: 9;
+}
+
+.col-end-9 {
+  grid-column-end: 9;
+}
+
+.grid-cols-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.col-span-10 {
+  grid-column: span 10/span 10;
+}
+
+.col-start-10 {
+  grid-column-start: 10;
+}
+
+.col-end-10 {
+  grid-column-end: 10;
+}
+
+.grid-cols-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.col-span-11 {
+  grid-column: span 11/span 11;
+}
+
+.col-start-11 {
+  grid-column-start: 11;
+}
+
+.col-end-11 {
+  grid-column-end: 11;
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col-span-12 {
+  grid-column: span 12/span 12;
+}
+
+.col-start-12 {
+  grid-column-start: 12;
+}
+
+.col-end-12 {
+  grid-column-end: 12;
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.row-span-1 {
+  grid-row: span 1/span 1;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-end-1 {
+  grid-row-end: 1;
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.row-span-2 {
+  grid-row: span 2/span 2;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
+.row-end-2 {
+  grid-row-end: 2;
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.row-span-3 {
+  grid-row: span 3/span 3;
+}
+
+.row-start-3 {
+  grid-row-start: 3;
+}
+
+.row-end-3 {
+  grid-row-end: 3;
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.row-span-4 {
+  grid-row: span 4/span 4;
+}
+
+.row-start-4 {
+  grid-row-start: 4;
+}
+
+.row-end-4 {
+  grid-row-end: 4;
+}
+
+.grid-rows-5 {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.row-span-5 {
+  grid-row: span 5/span 5;
+}
+
+.row-start-5 {
+  grid-row-start: 5;
+}
+
+.row-end-5 {
+  grid-row-end: 5;
+}
+
+.grid-rows-6 {
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.row-span-6 {
+  grid-row: span 6/span 6;
+}
+
+.row-start-6 {
+  grid-row-start: 6;
+}
+
+.row-end-6 {
+  grid-row-end: 6;
+}
+
+@media (min-width: 250px) {
+  .xs\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .xs\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+  .xs\:col-start-1 {
+    grid-column-start: 1;
+  }
+  .xs\:col-end-1 {
+    grid-column-end: 1;
+  }
+  .xs\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xs\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+  .xs\:col-start-2 {
+    grid-column-start: 2;
+  }
+  .xs\:col-end-2 {
+    grid-column-end: 2;
+  }
+  .xs\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .xs\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+  .xs\:col-start-3 {
+    grid-column-start: 3;
+  }
+  .xs\:col-end-3 {
+    grid-column-end: 3;
+  }
+  .xs\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .xs\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+  .xs\:col-start-4 {
+    grid-column-start: 4;
+  }
+  .xs\:col-end-4 {
+    grid-column-end: 4;
+  }
+  .xs\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .xs\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+  .xs\:col-start-5 {
+    grid-column-start: 5;
+  }
+  .xs\:col-end-5 {
+    grid-column-end: 5;
+  }
+  .xs\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .xs\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+  .xs\:col-start-6 {
+    grid-column-start: 6;
+  }
+  .xs\:col-end-6 {
+    grid-column-end: 6;
+  }
+  .xs\:grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .xs\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+  .xs\:col-start-7 {
+    grid-column-start: 7;
+  }
+  .xs\:col-end-7 {
+    grid-column-end: 7;
+  }
+  .xs\:grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .xs\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+  .xs\:col-start-8 {
+    grid-column-start: 8;
+  }
+  .xs\:col-end-8 {
+    grid-column-end: 8;
+  }
+  .xs\:grid-cols-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .xs\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+  .xs\:col-start-9 {
+    grid-column-start: 9;
+  }
+  .xs\:col-end-9 {
+    grid-column-end: 9;
+  }
+  .xs\:grid-cols-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .xs\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+  .xs\:col-start-10 {
+    grid-column-start: 10;
+  }
+  .xs\:col-end-10 {
+    grid-column-end: 10;
+  }
+  .xs\:grid-cols-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .xs\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+  .xs\:col-start-11 {
+    grid-column-start: 11;
+  }
+  .xs\:col-end-11 {
+    grid-column-end: 11;
+  }
+  .xs\:grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .xs\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+  .xs\:col-start-12 {
+    grid-column-start: 12;
+  }
+  .xs\:col-end-12 {
+    grid-column-end: 12;
+  }
+  .xs\:grid-rows-1 {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .xs\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+  .xs\:row-start-1 {
+    grid-row-start: 1;
+  }
+  .xs\:row-end-1 {
+    grid-row-end: 1;
+  }
+  .xs\:grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .xs\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+  .xs\:row-start-2 {
+    grid-row-start: 2;
+  }
+  .xs\:row-end-2 {
+    grid-row-end: 2;
+  }
+  .xs\:grid-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .xs\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+  .xs\:row-start-3 {
+    grid-row-start: 3;
+  }
+  .xs\:row-end-3 {
+    grid-row-end: 3;
+  }
+  .xs\:grid-rows-4 {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .xs\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+  .xs\:row-start-4 {
+    grid-row-start: 4;
+  }
+  .xs\:row-end-4 {
+    grid-row-end: 4;
+  }
+  .xs\:grid-rows-5 {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .xs\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+  .xs\:row-start-5 {
+    grid-row-start: 5;
+  }
+  .xs\:row-end-5 {
+    grid-row-end: 5;
+  }
+  .xs\:grid-rows-6 {
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .xs\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+  .xs\:row-start-6 {
+    grid-row-start: 6;
+  }
+  .xs\:row-end-6 {
+    grid-row-end: 6;
+  }
+}
+@media (min-width: 480px) {
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sm\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+  .sm\:col-start-1 {
+    grid-column-start: 1;
+  }
+  .sm\:col-end-1 {
+    grid-column-end: 1;
+  }
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sm\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+  .sm\:col-start-2 {
+    grid-column-start: 2;
+  }
+  .sm\:col-end-2 {
+    grid-column-end: 2;
+  }
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sm\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+  .sm\:col-start-3 {
+    grid-column-start: 3;
+  }
+  .sm\:col-end-3 {
+    grid-column-end: 3;
+  }
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .sm\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+  .sm\:col-start-4 {
+    grid-column-start: 4;
+  }
+  .sm\:col-end-4 {
+    grid-column-end: 4;
+  }
+  .sm\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .sm\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+  .sm\:col-start-5 {
+    grid-column-start: 5;
+  }
+  .sm\:col-end-5 {
+    grid-column-end: 5;
+  }
+  .sm\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .sm\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+  .sm\:col-start-6 {
+    grid-column-start: 6;
+  }
+  .sm\:col-end-6 {
+    grid-column-end: 6;
+  }
+  .sm\:grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .sm\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+  .sm\:col-start-7 {
+    grid-column-start: 7;
+  }
+  .sm\:col-end-7 {
+    grid-column-end: 7;
+  }
+  .sm\:grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .sm\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+  .sm\:col-start-8 {
+    grid-column-start: 8;
+  }
+  .sm\:col-end-8 {
+    grid-column-end: 8;
+  }
+  .sm\:grid-cols-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .sm\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+  .sm\:col-start-9 {
+    grid-column-start: 9;
+  }
+  .sm\:col-end-9 {
+    grid-column-end: 9;
+  }
+  .sm\:grid-cols-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .sm\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+  .sm\:col-start-10 {
+    grid-column-start: 10;
+  }
+  .sm\:col-end-10 {
+    grid-column-end: 10;
+  }
+  .sm\:grid-cols-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .sm\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+  .sm\:col-start-11 {
+    grid-column-start: 11;
+  }
+  .sm\:col-end-11 {
+    grid-column-end: 11;
+  }
+  .sm\:grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .sm\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+  .sm\:col-start-12 {
+    grid-column-start: 12;
+  }
+  .sm\:col-end-12 {
+    grid-column-end: 12;
+  }
+  .sm\:grid-rows-1 {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .sm\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+  .sm\:row-start-1 {
+    grid-row-start: 1;
+  }
+  .sm\:row-end-1 {
+    grid-row-end: 1;
+  }
+  .sm\:grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .sm\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+  .sm\:row-start-2 {
+    grid-row-start: 2;
+  }
+  .sm\:row-end-2 {
+    grid-row-end: 2;
+  }
+  .sm\:grid-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .sm\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+  .sm\:row-start-3 {
+    grid-row-start: 3;
+  }
+  .sm\:row-end-3 {
+    grid-row-end: 3;
+  }
+  .sm\:grid-rows-4 {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .sm\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+  .sm\:row-start-4 {
+    grid-row-start: 4;
+  }
+  .sm\:row-end-4 {
+    grid-row-end: 4;
+  }
+  .sm\:grid-rows-5 {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .sm\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+  .sm\:row-start-5 {
+    grid-row-start: 5;
+  }
+  .sm\:row-end-5 {
+    grid-row-end: 5;
+  }
+  .sm\:grid-rows-6 {
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .sm\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+  .sm\:row-start-6 {
+    grid-row-start: 6;
+  }
+  .sm\:row-end-6 {
+    grid-row-end: 6;
+  }
+}
+@media (min-width: 640px) {
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .md\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
+  .md\:col-end-1 {
+    grid-column-end: 1;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .md\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+  .md\:col-end-2 {
+    grid-column-end: 2;
+  }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .md\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+  .md\:col-start-3 {
+    grid-column-start: 3;
+  }
+  .md\:col-end-3 {
+    grid-column-end: 3;
+  }
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .md\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+  .md\:col-start-4 {
+    grid-column-start: 4;
+  }
+  .md\:col-end-4 {
+    grid-column-end: 4;
+  }
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .md\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+  .md\:col-start-5 {
+    grid-column-start: 5;
+  }
+  .md\:col-end-5 {
+    grid-column-end: 5;
+  }
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .md\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+  .md\:col-start-6 {
+    grid-column-start: 6;
+  }
+  .md\:col-end-6 {
+    grid-column-end: 6;
+  }
+  .md\:grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .md\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+  .md\:col-start-7 {
+    grid-column-start: 7;
+  }
+  .md\:col-end-7 {
+    grid-column-end: 7;
+  }
+  .md\:grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .md\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+  .md\:col-start-8 {
+    grid-column-start: 8;
+  }
+  .md\:col-end-8 {
+    grid-column-end: 8;
+  }
+  .md\:grid-cols-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .md\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+  .md\:col-start-9 {
+    grid-column-start: 9;
+  }
+  .md\:col-end-9 {
+    grid-column-end: 9;
+  }
+  .md\:grid-cols-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .md\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+  .md\:col-start-10 {
+    grid-column-start: 10;
+  }
+  .md\:col-end-10 {
+    grid-column-end: 10;
+  }
+  .md\:grid-cols-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .md\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+  .md\:col-start-11 {
+    grid-column-start: 11;
+  }
+  .md\:col-end-11 {
+    grid-column-end: 11;
+  }
+  .md\:grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .md\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+  .md\:col-start-12 {
+    grid-column-start: 12;
+  }
+  .md\:col-end-12 {
+    grid-column-end: 12;
+  }
+  .md\:grid-rows-1 {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .md\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+  .md\:row-start-1 {
+    grid-row-start: 1;
+  }
+  .md\:row-end-1 {
+    grid-row-end: 1;
+  }
+  .md\:grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .md\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+  .md\:row-start-2 {
+    grid-row-start: 2;
+  }
+  .md\:row-end-2 {
+    grid-row-end: 2;
+  }
+  .md\:grid-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .md\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+  .md\:row-start-3 {
+    grid-row-start: 3;
+  }
+  .md\:row-end-3 {
+    grid-row-end: 3;
+  }
+  .md\:grid-rows-4 {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .md\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+  .md\:row-start-4 {
+    grid-row-start: 4;
+  }
+  .md\:row-end-4 {
+    grid-row-end: 4;
+  }
+  .md\:grid-rows-5 {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .md\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+  .md\:row-start-5 {
+    grid-row-start: 5;
+  }
+  .md\:row-end-5 {
+    grid-row-end: 5;
+  }
+  .md\:grid-rows-6 {
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .md\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+  .md\:row-start-6 {
+    grid-row-start: 6;
+  }
+  .md\:row-end-6 {
+    grid-row-end: 6;
+  }
+}
+@media (min-width: 960px) {
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .lg\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+  .lg\:col-end-1 {
+    grid-column-end: 1;
+  }
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lg\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+  .lg\:col-start-2 {
+    grid-column-start: 2;
+  }
+  .lg\:col-end-2 {
+    grid-column-end: 2;
+  }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .lg\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+  .lg\:col-start-3 {
+    grid-column-start: 3;
+  }
+  .lg\:col-end-3 {
+    grid-column-end: 3;
+  }
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .lg\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+  .lg\:col-start-4 {
+    grid-column-start: 4;
+  }
+  .lg\:col-end-4 {
+    grid-column-end: 4;
+  }
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .lg\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+  .lg\:col-start-5 {
+    grid-column-start: 5;
+  }
+  .lg\:col-end-5 {
+    grid-column-end: 5;
+  }
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .lg\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+  .lg\:col-start-6 {
+    grid-column-start: 6;
+  }
+  .lg\:col-end-6 {
+    grid-column-end: 6;
+  }
+  .lg\:grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .lg\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+  .lg\:col-start-7 {
+    grid-column-start: 7;
+  }
+  .lg\:col-end-7 {
+    grid-column-end: 7;
+  }
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .lg\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+  .lg\:col-start-8 {
+    grid-column-start: 8;
+  }
+  .lg\:col-end-8 {
+    grid-column-end: 8;
+  }
+  .lg\:grid-cols-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .lg\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+  .lg\:col-start-9 {
+    grid-column-start: 9;
+  }
+  .lg\:col-end-9 {
+    grid-column-end: 9;
+  }
+  .lg\:grid-cols-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .lg\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+  .lg\:col-start-10 {
+    grid-column-start: 10;
+  }
+  .lg\:col-end-10 {
+    grid-column-end: 10;
+  }
+  .lg\:grid-cols-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .lg\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+  .lg\:col-start-11 {
+    grid-column-start: 11;
+  }
+  .lg\:col-end-11 {
+    grid-column-end: 11;
+  }
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .lg\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+  .lg\:col-start-12 {
+    grid-column-start: 12;
+  }
+  .lg\:col-end-12 {
+    grid-column-end: 12;
+  }
+  .lg\:grid-rows-1 {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .lg\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+  .lg\:row-start-1 {
+    grid-row-start: 1;
+  }
+  .lg\:row-end-1 {
+    grid-row-end: 1;
+  }
+  .lg\:grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .lg\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+  .lg\:row-start-2 {
+    grid-row-start: 2;
+  }
+  .lg\:row-end-2 {
+    grid-row-end: 2;
+  }
+  .lg\:grid-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .lg\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+  .lg\:row-start-3 {
+    grid-row-start: 3;
+  }
+  .lg\:row-end-3 {
+    grid-row-end: 3;
+  }
+  .lg\:grid-rows-4 {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .lg\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+  .lg\:row-start-4 {
+    grid-row-start: 4;
+  }
+  .lg\:row-end-4 {
+    grid-row-end: 4;
+  }
+  .lg\:grid-rows-5 {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .lg\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+  .lg\:row-start-5 {
+    grid-row-start: 5;
+  }
+  .lg\:row-end-5 {
+    grid-row-end: 5;
+  }
+  .lg\:grid-rows-6 {
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .lg\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+  .lg\:row-start-6 {
+    grid-row-start: 6;
+  }
+  .lg\:row-end-6 {
+    grid-row-end: 6;
+  }
+}
+@media (min-width: 1200px) {
+  .xl\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .xl\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+  .xl\:col-start-1 {
+    grid-column-start: 1;
+  }
+  .xl\:col-end-1 {
+    grid-column-end: 1;
+  }
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xl\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+  .xl\:col-start-2 {
+    grid-column-start: 2;
+  }
+  .xl\:col-end-2 {
+    grid-column-end: 2;
+  }
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .xl\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+  .xl\:col-start-3 {
+    grid-column-start: 3;
+  }
+  .xl\:col-end-3 {
+    grid-column-end: 3;
+  }
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .xl\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+  .xl\:col-start-4 {
+    grid-column-start: 4;
+  }
+  .xl\:col-end-4 {
+    grid-column-end: 4;
+  }
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .xl\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+  .xl\:col-start-5 {
+    grid-column-start: 5;
+  }
+  .xl\:col-end-5 {
+    grid-column-end: 5;
+  }
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .xl\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+  .xl\:col-start-6 {
+    grid-column-start: 6;
+  }
+  .xl\:col-end-6 {
+    grid-column-end: 6;
+  }
+  .xl\:grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .xl\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+  .xl\:col-start-7 {
+    grid-column-start: 7;
+  }
+  .xl\:col-end-7 {
+    grid-column-end: 7;
+  }
+  .xl\:grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .xl\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+  .xl\:col-start-8 {
+    grid-column-start: 8;
+  }
+  .xl\:col-end-8 {
+    grid-column-end: 8;
+  }
+  .xl\:grid-cols-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .xl\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+  .xl\:col-start-9 {
+    grid-column-start: 9;
+  }
+  .xl\:col-end-9 {
+    grid-column-end: 9;
+  }
+  .xl\:grid-cols-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .xl\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+  .xl\:col-start-10 {
+    grid-column-start: 10;
+  }
+  .xl\:col-end-10 {
+    grid-column-end: 10;
+  }
+  .xl\:grid-cols-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .xl\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+  .xl\:col-start-11 {
+    grid-column-start: 11;
+  }
+  .xl\:col-end-11 {
+    grid-column-end: 11;
+  }
+  .xl\:grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .xl\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+  .xl\:col-start-12 {
+    grid-column-start: 12;
+  }
+  .xl\:col-end-12 {
+    grid-column-end: 12;
+  }
+  .xl\:grid-rows-1 {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .xl\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+  .xl\:row-start-1 {
+    grid-row-start: 1;
+  }
+  .xl\:row-end-1 {
+    grid-row-end: 1;
+  }
+  .xl\:grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .xl\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+  .xl\:row-start-2 {
+    grid-row-start: 2;
+  }
+  .xl\:row-end-2 {
+    grid-row-end: 2;
+  }
+  .xl\:grid-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .xl\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+  .xl\:row-start-3 {
+    grid-row-start: 3;
+  }
+  .xl\:row-end-3 {
+    grid-row-end: 3;
+  }
+  .xl\:grid-rows-4 {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .xl\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+  .xl\:row-start-4 {
+    grid-row-start: 4;
+  }
+  .xl\:row-end-4 {
+    grid-row-end: 4;
+  }
+  .xl\:grid-rows-5 {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .xl\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+  .xl\:row-start-5 {
+    grid-row-start: 5;
+  }
+  .xl\:row-end-5 {
+    grid-row-end: 5;
+  }
+  .xl\:grid-rows-6 {
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .xl\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+  .xl\:row-start-6 {
+    grid-row-start: 6;
+  }
+  .xl\:row-end-6 {
+    grid-row-end: 6;
+  }
+}
+@media (min-width: 1440px) {
+  .xxl\:grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .xxl\:col-span-1 {
+    grid-column: span 1/span 1;
+  }
+  .xxl\:col-start-1 {
+    grid-column-start: 1;
+  }
+  .xxl\:col-end-1 {
+    grid-column-end: 1;
+  }
+  .xxl\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xxl\:col-span-2 {
+    grid-column: span 2/span 2;
+  }
+  .xxl\:col-start-2 {
+    grid-column-start: 2;
+  }
+  .xxl\:col-end-2 {
+    grid-column-end: 2;
+  }
+  .xxl\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .xxl\:col-span-3 {
+    grid-column: span 3/span 3;
+  }
+  .xxl\:col-start-3 {
+    grid-column-start: 3;
+  }
+  .xxl\:col-end-3 {
+    grid-column-end: 3;
+  }
+  .xxl\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .xxl\:col-span-4 {
+    grid-column: span 4/span 4;
+  }
+  .xxl\:col-start-4 {
+    grid-column-start: 4;
+  }
+  .xxl\:col-end-4 {
+    grid-column-end: 4;
+  }
+  .xxl\:grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .xxl\:col-span-5 {
+    grid-column: span 5/span 5;
+  }
+  .xxl\:col-start-5 {
+    grid-column-start: 5;
+  }
+  .xxl\:col-end-5 {
+    grid-column-end: 5;
+  }
+  .xxl\:grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .xxl\:col-span-6 {
+    grid-column: span 6/span 6;
+  }
+  .xxl\:col-start-6 {
+    grid-column-start: 6;
+  }
+  .xxl\:col-end-6 {
+    grid-column-end: 6;
+  }
+  .xxl\:grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .xxl\:col-span-7 {
+    grid-column: span 7/span 7;
+  }
+  .xxl\:col-start-7 {
+    grid-column-start: 7;
+  }
+  .xxl\:col-end-7 {
+    grid-column-end: 7;
+  }
+  .xxl\:grid-cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .xxl\:col-span-8 {
+    grid-column: span 8/span 8;
+  }
+  .xxl\:col-start-8 {
+    grid-column-start: 8;
+  }
+  .xxl\:col-end-8 {
+    grid-column-end: 8;
+  }
+  .xxl\:grid-cols-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .xxl\:col-span-9 {
+    grid-column: span 9/span 9;
+  }
+  .xxl\:col-start-9 {
+    grid-column-start: 9;
+  }
+  .xxl\:col-end-9 {
+    grid-column-end: 9;
+  }
+  .xxl\:grid-cols-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .xxl\:col-span-10 {
+    grid-column: span 10/span 10;
+  }
+  .xxl\:col-start-10 {
+    grid-column-start: 10;
+  }
+  .xxl\:col-end-10 {
+    grid-column-end: 10;
+  }
+  .xxl\:grid-cols-11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .xxl\:col-span-11 {
+    grid-column: span 11/span 11;
+  }
+  .xxl\:col-start-11 {
+    grid-column-start: 11;
+  }
+  .xxl\:col-end-11 {
+    grid-column-end: 11;
+  }
+  .xxl\:grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .xxl\:col-span-12 {
+    grid-column: span 12/span 12;
+  }
+  .xxl\:col-start-12 {
+    grid-column-start: 12;
+  }
+  .xxl\:col-end-12 {
+    grid-column-end: 12;
+  }
+  .xxl\:grid-rows-1 {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .xxl\:row-span-1 {
+    grid-row: span 1/span 1;
+  }
+  .xxl\:row-start-1 {
+    grid-row-start: 1;
+  }
+  .xxl\:row-end-1 {
+    grid-row-end: 1;
+  }
+  .xxl\:grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .xxl\:row-span-2 {
+    grid-row: span 2/span 2;
+  }
+  .xxl\:row-start-2 {
+    grid-row-start: 2;
+  }
+  .xxl\:row-end-2 {
+    grid-row-end: 2;
+  }
+  .xxl\:grid-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .xxl\:row-span-3 {
+    grid-row: span 3/span 3;
+  }
+  .xxl\:row-start-3 {
+    grid-row-start: 3;
+  }
+  .xxl\:row-end-3 {
+    grid-row-end: 3;
+  }
+  .xxl\:grid-rows-4 {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .xxl\:row-span-4 {
+    grid-row: span 4/span 4;
+  }
+  .xxl\:row-start-4 {
+    grid-row-start: 4;
+  }
+  .xxl\:row-end-4 {
+    grid-row-end: 4;
+  }
+  .xxl\:grid-rows-5 {
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .xxl\:row-span-5 {
+    grid-row: span 5/span 5;
+  }
+  .xxl\:row-start-5 {
+    grid-row-start: 5;
+  }
+  .xxl\:row-end-5 {
+    grid-row-end: 5;
+  }
+  .xxl\:grid-rows-6 {
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .xxl\:row-span-6 {
+    grid-row: span 6/span 6;
+  }
+  .xxl\:row-start-6 {
+    grid-row-start: 6;
+  }
+  .xxl\:row-end-6 {
+    grid-row-end: 6;
+  }
+}
 .justify-flex-start {
   justify-content: flex-start;
 }
@@ -390,6 +2068,20 @@ html {
   flex-direction: column-reverse;
 }
 
+@media (min-width: 250px) {
+  .xs\:flex-row {
+    flex-direction: row;
+  }
+  .xs\:flex-column {
+    flex-direction: column;
+  }
+  .xs\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .xs\:flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
 @media (min-width: 480px) {
   .sm\:flex-row {
     flex-direction: row;
@@ -650,6 +2342,68 @@ html {
   width: 100%;
 }
 
+@media (min-width: 250px) {
+  .xs\:col-1 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .xs\:col-2 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .xs\:col-3 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .xs\:col-4 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .xs\:col-5 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .xs\:col-6 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .xs\:col-7 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .xs\:col-8 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .xs\:col-9 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .xs\:col-10 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .xs\:col-11 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .xs\:col-12 {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
 @media (min-width: 480px) {
   .sm\:col-1 {
     box-sizing: border-box;
@@ -958,857 +2712,6 @@ html {
     box-sizing: border-box;
     flex-grow: 0;
     width: 100%;
-  }
-}
-.g-0 {
-  gap: 0;
-}
-
-.g-1 {
-  gap: 0.25rem;
-}
-
-.g-2 {
-  gap: 0.5rem;
-}
-
-.g-3 {
-  gap: 0.75rem;
-}
-
-.g-4 {
-  gap: 1rem;
-}
-
-.g-5 {
-  gap: 1.5rem;
-}
-
-.g-6 {
-  gap: 3rem;
-}
-
-.g-auto {
-  gap: auto;
-}
-
-.grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.col-span-1 {
-  grid-column: span 1/span 1;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.col-span-2 {
-  grid-column: span 2/span 2;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.col-span-3 {
-  grid-column: span 3/span 3;
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.col-span-4 {
-  grid-column: span 4/span 4;
-}
-
-.grid-cols-5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.col-span-5 {
-  grid-column: span 5/span 5;
-}
-
-.grid-cols-6 {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.col-span-6 {
-  grid-column: span 6/span 6;
-}
-
-.grid-cols-7 {
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.col-span-7 {
-  grid-column: span 7/span 7;
-}
-
-.grid-cols-8 {
-  grid-template-columns: repeat(8, 1fr);
-}
-
-.col-span-8 {
-  grid-column: span 8/span 8;
-}
-
-.grid-cols-9 {
-  grid-template-columns: repeat(9, 1fr);
-}
-
-.col-span-9 {
-  grid-column: span 9/span 9;
-}
-
-.grid-cols-10 {
-  grid-template-columns: repeat(10, 1fr);
-}
-
-.col-span-10 {
-  grid-column: span 10/span 10;
-}
-
-.grid-cols-11 {
-  grid-template-columns: repeat(11, 1fr);
-}
-
-.col-span-11 {
-  grid-column: span 11/span 11;
-}
-
-.grid-cols-12 {
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.col-span-12 {
-  grid-column: span 12/span 12;
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, 1fr);
-}
-
-.row-span-1 {
-  grid-row: span 1/span 1;
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.row-span-2 {
-  grid-row: span 2/span 2;
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, 1fr);
-}
-
-.row-span-3 {
-  grid-row: span 3/span 3;
-}
-
-.grid-rows-4 {
-  grid-template-rows: repeat(4, 1fr);
-}
-
-.row-span-4 {
-  grid-row: span 4/span 4;
-}
-
-.grid-rows-5 {
-  grid-template-rows: repeat(5, 1fr);
-}
-
-.row-span-5 {
-  grid-row: span 5/span 5;
-}
-
-.grid-rows-6 {
-  grid-template-rows: repeat(6, 1fr);
-}
-
-.row-span-6 {
-  grid-row: span 6/span 6;
-}
-
-@media (min-width: 480px) {
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .sm\:col-span-1 {
-    grid-column: span 1/span 1;
-  }
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .sm\:col-span-2 {
-    grid-column: span 2/span 2;
-  }
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .sm\:col-span-3 {
-    grid-column: span 3/span 3;
-  }
-  .sm\:grid-cols-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .sm\:col-span-4 {
-    grid-column: span 4/span 4;
-  }
-  .sm\:grid-cols-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .sm\:col-span-5 {
-    grid-column: span 5/span 5;
-  }
-  .sm\:grid-cols-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .sm\:col-span-6 {
-    grid-column: span 6/span 6;
-  }
-  .sm\:grid-cols-7 {
-    grid-template-columns: repeat(7, 1fr);
-  }
-  .sm\:col-span-7 {
-    grid-column: span 7/span 7;
-  }
-  .sm\:grid-cols-8 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .sm\:col-span-8 {
-    grid-column: span 8/span 8;
-  }
-  .sm\:grid-cols-9 {
-    grid-template-columns: repeat(9, 1fr);
-  }
-  .sm\:col-span-9 {
-    grid-column: span 9/span 9;
-  }
-  .sm\:grid-cols-10 {
-    grid-template-columns: repeat(10, 1fr);
-  }
-  .sm\:col-span-10 {
-    grid-column: span 10/span 10;
-  }
-  .sm\:grid-cols-11 {
-    grid-template-columns: repeat(11, 1fr);
-  }
-  .sm\:col-span-11 {
-    grid-column: span 11/span 11;
-  }
-  .sm\:grid-cols-12 {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .sm\:col-span-12 {
-    grid-column: span 12/span 12;
-  }
-  .sm\:grid-rows-1 {
-    grid-template-rows: repeat(1, 1fr);
-  }
-  .sm\:row-span-1 {
-    grid-row: span 1/span 1;
-  }
-  .sm\:grid-rows-2 {
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .sm\:row-span-2 {
-    grid-row: span 2/span 2;
-  }
-  .sm\:grid-rows-3 {
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .sm\:row-span-3 {
-    grid-row: span 3/span 3;
-  }
-  .sm\:grid-rows-4 {
-    grid-template-rows: repeat(4, 1fr);
-  }
-  .sm\:row-span-4 {
-    grid-row: span 4/span 4;
-  }
-  .sm\:grid-rows-5 {
-    grid-template-rows: repeat(5, 1fr);
-  }
-  .sm\:row-span-5 {
-    grid-row: span 5/span 5;
-  }
-  .sm\:grid-rows-6 {
-    grid-template-rows: repeat(6, 1fr);
-  }
-  .sm\:row-span-6 {
-    grid-row: span 6/span 6;
-  }
-  .sm\:gap-0 {
-    gap: 0;
-  }
-  .sm\:gap-1 {
-    gap: 0.25rem;
-  }
-  .sm\:gap-2 {
-    gap: 0.5rem;
-  }
-  .sm\:gap-3 {
-    gap: 0.75rem;
-  }
-  .sm\:gap-4 {
-    gap: 1rem;
-  }
-  .sm\:gap-5 {
-    gap: 1.5rem;
-  }
-  .sm\:gap-6 {
-    gap: 3rem;
-  }
-  .sm\:gap-auto {
-    gap: auto;
-  }
-}
-@media (min-width: 640px) {
-  .md\:grid-cols-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .md\:col-span-1 {
-    grid-column: span 1/span 1;
-  }
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .md\:col-span-2 {
-    grid-column: span 2/span 2;
-  }
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .md\:col-span-3 {
-    grid-column: span 3/span 3;
-  }
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .md\:col-span-4 {
-    grid-column: span 4/span 4;
-  }
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .md\:col-span-5 {
-    grid-column: span 5/span 5;
-  }
-  .md\:grid-cols-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .md\:col-span-6 {
-    grid-column: span 6/span 6;
-  }
-  .md\:grid-cols-7 {
-    grid-template-columns: repeat(7, 1fr);
-  }
-  .md\:col-span-7 {
-    grid-column: span 7/span 7;
-  }
-  .md\:grid-cols-8 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .md\:col-span-8 {
-    grid-column: span 8/span 8;
-  }
-  .md\:grid-cols-9 {
-    grid-template-columns: repeat(9, 1fr);
-  }
-  .md\:col-span-9 {
-    grid-column: span 9/span 9;
-  }
-  .md\:grid-cols-10 {
-    grid-template-columns: repeat(10, 1fr);
-  }
-  .md\:col-span-10 {
-    grid-column: span 10/span 10;
-  }
-  .md\:grid-cols-11 {
-    grid-template-columns: repeat(11, 1fr);
-  }
-  .md\:col-span-11 {
-    grid-column: span 11/span 11;
-  }
-  .md\:grid-cols-12 {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .md\:col-span-12 {
-    grid-column: span 12/span 12;
-  }
-  .md\:grid-rows-1 {
-    grid-template-rows: repeat(1, 1fr);
-  }
-  .md\:row-span-1 {
-    grid-row: span 1/span 1;
-  }
-  .md\:grid-rows-2 {
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .md\:row-span-2 {
-    grid-row: span 2/span 2;
-  }
-  .md\:grid-rows-3 {
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .md\:row-span-3 {
-    grid-row: span 3/span 3;
-  }
-  .md\:grid-rows-4 {
-    grid-template-rows: repeat(4, 1fr);
-  }
-  .md\:row-span-4 {
-    grid-row: span 4/span 4;
-  }
-  .md\:grid-rows-5 {
-    grid-template-rows: repeat(5, 1fr);
-  }
-  .md\:row-span-5 {
-    grid-row: span 5/span 5;
-  }
-  .md\:grid-rows-6 {
-    grid-template-rows: repeat(6, 1fr);
-  }
-  .md\:row-span-6 {
-    grid-row: span 6/span 6;
-  }
-  .md\:gap-0 {
-    gap: 0;
-  }
-  .md\:gap-1 {
-    gap: 0.25rem;
-  }
-  .md\:gap-2 {
-    gap: 0.5rem;
-  }
-  .md\:gap-3 {
-    gap: 0.75rem;
-  }
-  .md\:gap-4 {
-    gap: 1rem;
-  }
-  .md\:gap-5 {
-    gap: 1.5rem;
-  }
-  .md\:gap-6 {
-    gap: 3rem;
-  }
-  .md\:gap-auto {
-    gap: auto;
-  }
-}
-@media (min-width: 960px) {
-  .lg\:grid-cols-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .lg\:col-span-1 {
-    grid-column: span 1/span 1;
-  }
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .lg\:col-span-2 {
-    grid-column: span 2/span 2;
-  }
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .lg\:col-span-3 {
-    grid-column: span 3/span 3;
-  }
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .lg\:col-span-4 {
-    grid-column: span 4/span 4;
-  }
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .lg\:col-span-5 {
-    grid-column: span 5/span 5;
-  }
-  .lg\:grid-cols-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .lg\:col-span-6 {
-    grid-column: span 6/span 6;
-  }
-  .lg\:grid-cols-7 {
-    grid-template-columns: repeat(7, 1fr);
-  }
-  .lg\:col-span-7 {
-    grid-column: span 7/span 7;
-  }
-  .lg\:grid-cols-8 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .lg\:col-span-8 {
-    grid-column: span 8/span 8;
-  }
-  .lg\:grid-cols-9 {
-    grid-template-columns: repeat(9, 1fr);
-  }
-  .lg\:col-span-9 {
-    grid-column: span 9/span 9;
-  }
-  .lg\:grid-cols-10 {
-    grid-template-columns: repeat(10, 1fr);
-  }
-  .lg\:col-span-10 {
-    grid-column: span 10/span 10;
-  }
-  .lg\:grid-cols-11 {
-    grid-template-columns: repeat(11, 1fr);
-  }
-  .lg\:col-span-11 {
-    grid-column: span 11/span 11;
-  }
-  .lg\:grid-cols-12 {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .lg\:col-span-12 {
-    grid-column: span 12/span 12;
-  }
-  .lg\:grid-rows-1 {
-    grid-template-rows: repeat(1, 1fr);
-  }
-  .lg\:row-span-1 {
-    grid-row: span 1/span 1;
-  }
-  .lg\:grid-rows-2 {
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .lg\:row-span-2 {
-    grid-row: span 2/span 2;
-  }
-  .lg\:grid-rows-3 {
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .lg\:row-span-3 {
-    grid-row: span 3/span 3;
-  }
-  .lg\:grid-rows-4 {
-    grid-template-rows: repeat(4, 1fr);
-  }
-  .lg\:row-span-4 {
-    grid-row: span 4/span 4;
-  }
-  .lg\:grid-rows-5 {
-    grid-template-rows: repeat(5, 1fr);
-  }
-  .lg\:row-span-5 {
-    grid-row: span 5/span 5;
-  }
-  .lg\:grid-rows-6 {
-    grid-template-rows: repeat(6, 1fr);
-  }
-  .lg\:row-span-6 {
-    grid-row: span 6/span 6;
-  }
-  .lg\:gap-0 {
-    gap: 0;
-  }
-  .lg\:gap-1 {
-    gap: 0.25rem;
-  }
-  .lg\:gap-2 {
-    gap: 0.5rem;
-  }
-  .lg\:gap-3 {
-    gap: 0.75rem;
-  }
-  .lg\:gap-4 {
-    gap: 1rem;
-  }
-  .lg\:gap-5 {
-    gap: 1.5rem;
-  }
-  .lg\:gap-6 {
-    gap: 3rem;
-  }
-  .lg\:gap-auto {
-    gap: auto;
-  }
-}
-@media (min-width: 1200px) {
-  .xl\:grid-cols-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .xl\:col-span-1 {
-    grid-column: span 1/span 1;
-  }
-  .xl\:grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .xl\:col-span-2 {
-    grid-column: span 2/span 2;
-  }
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .xl\:col-span-3 {
-    grid-column: span 3/span 3;
-  }
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .xl\:col-span-4 {
-    grid-column: span 4/span 4;
-  }
-  .xl\:grid-cols-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .xl\:col-span-5 {
-    grid-column: span 5/span 5;
-  }
-  .xl\:grid-cols-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .xl\:col-span-6 {
-    grid-column: span 6/span 6;
-  }
-  .xl\:grid-cols-7 {
-    grid-template-columns: repeat(7, 1fr);
-  }
-  .xl\:col-span-7 {
-    grid-column: span 7/span 7;
-  }
-  .xl\:grid-cols-8 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .xl\:col-span-8 {
-    grid-column: span 8/span 8;
-  }
-  .xl\:grid-cols-9 {
-    grid-template-columns: repeat(9, 1fr);
-  }
-  .xl\:col-span-9 {
-    grid-column: span 9/span 9;
-  }
-  .xl\:grid-cols-10 {
-    grid-template-columns: repeat(10, 1fr);
-  }
-  .xl\:col-span-10 {
-    grid-column: span 10/span 10;
-  }
-  .xl\:grid-cols-11 {
-    grid-template-columns: repeat(11, 1fr);
-  }
-  .xl\:col-span-11 {
-    grid-column: span 11/span 11;
-  }
-  .xl\:grid-cols-12 {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .xl\:col-span-12 {
-    grid-column: span 12/span 12;
-  }
-  .xl\:grid-rows-1 {
-    grid-template-rows: repeat(1, 1fr);
-  }
-  .xl\:row-span-1 {
-    grid-row: span 1/span 1;
-  }
-  .xl\:grid-rows-2 {
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .xl\:row-span-2 {
-    grid-row: span 2/span 2;
-  }
-  .xl\:grid-rows-3 {
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .xl\:row-span-3 {
-    grid-row: span 3/span 3;
-  }
-  .xl\:grid-rows-4 {
-    grid-template-rows: repeat(4, 1fr);
-  }
-  .xl\:row-span-4 {
-    grid-row: span 4/span 4;
-  }
-  .xl\:grid-rows-5 {
-    grid-template-rows: repeat(5, 1fr);
-  }
-  .xl\:row-span-5 {
-    grid-row: span 5/span 5;
-  }
-  .xl\:grid-rows-6 {
-    grid-template-rows: repeat(6, 1fr);
-  }
-  .xl\:row-span-6 {
-    grid-row: span 6/span 6;
-  }
-  .xl\:gap-0 {
-    gap: 0;
-  }
-  .xl\:gap-1 {
-    gap: 0.25rem;
-  }
-  .xl\:gap-2 {
-    gap: 0.5rem;
-  }
-  .xl\:gap-3 {
-    gap: 0.75rem;
-  }
-  .xl\:gap-4 {
-    gap: 1rem;
-  }
-  .xl\:gap-5 {
-    gap: 1.5rem;
-  }
-  .xl\:gap-6 {
-    gap: 3rem;
-  }
-  .xl\:gap-auto {
-    gap: auto;
-  }
-}
-@media (min-width: 1440px) {
-  .xxl\:grid-cols-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .xxl\:col-span-1 {
-    grid-column: span 1/span 1;
-  }
-  .xxl\:grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .xxl\:col-span-2 {
-    grid-column: span 2/span 2;
-  }
-  .xxl\:grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .xxl\:col-span-3 {
-    grid-column: span 3/span 3;
-  }
-  .xxl\:grid-cols-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .xxl\:col-span-4 {
-    grid-column: span 4/span 4;
-  }
-  .xxl\:grid-cols-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .xxl\:col-span-5 {
-    grid-column: span 5/span 5;
-  }
-  .xxl\:grid-cols-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .xxl\:col-span-6 {
-    grid-column: span 6/span 6;
-  }
-  .xxl\:grid-cols-7 {
-    grid-template-columns: repeat(7, 1fr);
-  }
-  .xxl\:col-span-7 {
-    grid-column: span 7/span 7;
-  }
-  .xxl\:grid-cols-8 {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .xxl\:col-span-8 {
-    grid-column: span 8/span 8;
-  }
-  .xxl\:grid-cols-9 {
-    grid-template-columns: repeat(9, 1fr);
-  }
-  .xxl\:col-span-9 {
-    grid-column: span 9/span 9;
-  }
-  .xxl\:grid-cols-10 {
-    grid-template-columns: repeat(10, 1fr);
-  }
-  .xxl\:col-span-10 {
-    grid-column: span 10/span 10;
-  }
-  .xxl\:grid-cols-11 {
-    grid-template-columns: repeat(11, 1fr);
-  }
-  .xxl\:col-span-11 {
-    grid-column: span 11/span 11;
-  }
-  .xxl\:grid-cols-12 {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .xxl\:col-span-12 {
-    grid-column: span 12/span 12;
-  }
-  .xxl\:grid-rows-1 {
-    grid-template-rows: repeat(1, 1fr);
-  }
-  .xxl\:row-span-1 {
-    grid-row: span 1/span 1;
-  }
-  .xxl\:grid-rows-2 {
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .xxl\:row-span-2 {
-    grid-row: span 2/span 2;
-  }
-  .xxl\:grid-rows-3 {
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .xxl\:row-span-3 {
-    grid-row: span 3/span 3;
-  }
-  .xxl\:grid-rows-4 {
-    grid-template-rows: repeat(4, 1fr);
-  }
-  .xxl\:row-span-4 {
-    grid-row: span 4/span 4;
-  }
-  .xxl\:grid-rows-5 {
-    grid-template-rows: repeat(5, 1fr);
-  }
-  .xxl\:row-span-5 {
-    grid-row: span 5/span 5;
-  }
-  .xxl\:grid-rows-6 {
-    grid-template-rows: repeat(6, 1fr);
-  }
-  .xxl\:row-span-6 {
-    grid-row: span 6/span 6;
-  }
-  .xxl\:gap-0 {
-    gap: 0;
-  }
-  .xxl\:gap-1 {
-    gap: 0.25rem;
-  }
-  .xxl\:gap-2 {
-    gap: 0.5rem;
-  }
-  .xxl\:gap-3 {
-    gap: 0.75rem;
-  }
-  .xxl\:gap-4 {
-    gap: 1rem;
-  }
-  .xxl\:gap-5 {
-    gap: 1.5rem;
-  }
-  .xxl\:gap-6 {
-    gap: 3rem;
-  }
-  .xxl\:gap-auto {
-    gap: auto;
   }
 }
 .text-orange {
@@ -12980,7 +13883,7 @@ html {
   background-color: #f4a529;
 }
 .btn-orange:hover {
-  background-color: rgb(245.1, 174, 62.4);
+  background-color: rgb(245.1, 174, 62.4) !important;
 }
 
 .btn-orange-sm {
@@ -12995,7 +13898,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-orange-sm:hover {
-  background-color: rgb(245.1, 174, 62.4);
+  background-color: rgb(245.1, 174, 62.4) !important;
 }
 
 .btn-outlined-orange {
@@ -13007,11 +13910,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #f4a529;
-  color: #f4a529;
+  color: #f4a529 !important;
 }
 .btn-outlined-orange:hover {
-  background-color: #f4a529;
-  color: #fff;
+  background-color: #f4a529 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-orange-sm {
@@ -13025,11 +13928,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #f4a529;
-  color: #f4a529;
+  color: #f4a529 !important;
 }
 .btn-outlined-orange-sm:hover {
-  background-color: #f4a529;
-  color: #fff;
+  background-color: #f4a529 !important;
+  color: #fff !important;
 }
 
 .btn-complement-orange {
@@ -13040,11 +13943,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
-  color: rgb(62.4, 133.5, 245.1);
+  color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange:hover {
-  color: #f4a529;
-  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529 !important;
+  background-color: rgb(62.4, 133.5, 245.1) !important;
 }
 
 .btn-complement-orange-sm {
@@ -13057,11 +13960,11 @@ html {
   background-color: #f4a529;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(62.4, 133.5, 245.1);
+  color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange-sm:hover {
-  color: #f4a529;
-  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529 !important;
+  background-color: rgb(62.4, 133.5, 245.1) !important;
 }
 
 .btn-md {
@@ -13089,7 +13992,7 @@ html {
   background-color: #f4a529;
 }
 .btn-orange:hover {
-  background-color: rgb(245.1, 174, 62.4);
+  background-color: rgb(245.1, 174, 62.4) !important;
 }
 
 .btn-orange-md {
@@ -13104,7 +14007,7 @@ html {
   font-size: 1rem;
 }
 .btn-orange-md:hover {
-  background-color: rgb(245.1, 174, 62.4);
+  background-color: rgb(245.1, 174, 62.4) !important;
 }
 
 .btn-outlined-orange {
@@ -13116,11 +14019,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #f4a529;
-  color: #f4a529;
+  color: #f4a529 !important;
 }
 .btn-outlined-orange:hover {
-  background-color: #f4a529;
-  color: #fff;
+  background-color: #f4a529 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-orange-md {
@@ -13134,11 +14037,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #f4a529;
-  color: #f4a529;
+  color: #f4a529 !important;
 }
 .btn-outlined-orange-md:hover {
-  background-color: #f4a529;
-  color: #fff;
+  background-color: #f4a529 !important;
+  color: #fff !important;
 }
 
 .btn-complement-orange {
@@ -13149,11 +14052,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
-  color: rgb(62.4, 133.5, 245.1);
+  color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange:hover {
-  color: #f4a529;
-  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529 !important;
+  background-color: rgb(62.4, 133.5, 245.1) !important;
 }
 
 .btn-complement-orange-md {
@@ -13166,11 +14069,11 @@ html {
   background-color: #f4a529;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(62.4, 133.5, 245.1);
+  color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange-md:hover {
-  color: #f4a529;
-  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529 !important;
+  background-color: rgb(62.4, 133.5, 245.1) !important;
 }
 
 .btn-lg {
@@ -13198,7 +14101,7 @@ html {
   background-color: #f4a529;
 }
 .btn-orange:hover {
-  background-color: rgb(245.1, 174, 62.4);
+  background-color: rgb(245.1, 174, 62.4) !important;
 }
 
 .btn-orange-lg {
@@ -13213,7 +14116,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-orange-lg:hover {
-  background-color: rgb(245.1, 174, 62.4);
+  background-color: rgb(245.1, 174, 62.4) !important;
 }
 
 .btn-outlined-orange {
@@ -13225,11 +14128,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #f4a529;
-  color: #f4a529;
+  color: #f4a529 !important;
 }
 .btn-outlined-orange:hover {
-  background-color: #f4a529;
-  color: #fff;
+  background-color: #f4a529 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-orange-lg {
@@ -13243,11 +14146,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #f4a529;
-  color: #f4a529;
+  color: #f4a529 !important;
 }
 .btn-outlined-orange-lg:hover {
-  background-color: #f4a529;
-  color: #fff;
+  background-color: #f4a529 !important;
+  color: #fff !important;
 }
 
 .btn-complement-orange {
@@ -13258,11 +14161,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
-  color: rgb(62.4, 133.5, 245.1);
+  color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange:hover {
-  color: #f4a529;
-  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529 !important;
+  background-color: rgb(62.4, 133.5, 245.1) !important;
 }
 
 .btn-complement-orange-lg {
@@ -13275,11 +14178,11 @@ html {
   background-color: #f4a529;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(62.4, 133.5, 245.1);
+  color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange-lg:hover {
-  color: #f4a529;
-  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529 !important;
+  background-color: rgb(62.4, 133.5, 245.1) !important;
 }
 
 .btn-xl {
@@ -13307,7 +14210,7 @@ html {
   background-color: #f4a529;
 }
 .btn-orange:hover {
-  background-color: rgb(245.1, 174, 62.4);
+  background-color: rgb(245.1, 174, 62.4) !important;
 }
 
 .btn-orange-xl {
@@ -13322,7 +14225,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-orange-xl:hover {
-  background-color: rgb(245.1, 174, 62.4);
+  background-color: rgb(245.1, 174, 62.4) !important;
 }
 
 .btn-outlined-orange {
@@ -13334,11 +14237,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #f4a529;
-  color: #f4a529;
+  color: #f4a529 !important;
 }
 .btn-outlined-orange:hover {
-  background-color: #f4a529;
-  color: #fff;
+  background-color: #f4a529 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-orange-xl {
@@ -13352,11 +14255,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #f4a529;
-  color: #f4a529;
+  color: #f4a529 !important;
 }
 .btn-outlined-orange-xl:hover {
-  background-color: #f4a529;
-  color: #fff;
+  background-color: #f4a529 !important;
+  color: #fff !important;
 }
 
 .btn-complement-orange {
@@ -13367,11 +14270,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
-  color: rgb(62.4, 133.5, 245.1);
+  color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange:hover {
-  color: #f4a529;
-  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529 !important;
+  background-color: rgb(62.4, 133.5, 245.1) !important;
 }
 
 .btn-complement-orange-xl {
@@ -13384,11 +14287,11 @@ html {
   background-color: #f4a529;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(62.4, 133.5, 245.1);
+  color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange-xl:hover {
-  color: #f4a529;
-  background-color: rgb(62.4, 133.5, 245.1);
+  color: #f4a529 !important;
+  background-color: rgb(62.4, 133.5, 245.1) !important;
 }
 
 .btn-sm {
@@ -13416,7 +14319,7 @@ html {
   background-color: #fad860;
 }
 .btn-yellow:hover {
-  background-color: rgb(250.5, 219.9, 111.9);
+  background-color: rgb(250.5, 219.9, 111.9) !important;
 }
 
 .btn-yellow-sm {
@@ -13431,7 +14334,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-yellow-sm:hover {
-  background-color: rgb(250.5, 219.9, 111.9);
+  background-color: rgb(250.5, 219.9, 111.9) !important;
 }
 
 .btn-outlined-yellow {
@@ -13443,11 +14346,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #fad860;
-  color: #fad860;
+  color: #fad860 !important;
 }
 .btn-outlined-yellow:hover {
-  background-color: #fad860;
-  color: #fff;
+  background-color: #fad860 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-yellow-sm {
@@ -13461,11 +14364,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #fad860;
-  color: #fad860;
+  color: #fad860 !important;
 }
 .btn-outlined-yellow-sm:hover {
-  background-color: #fad860;
-  color: #fff;
+  background-color: #fad860 !important;
+  color: #fff !important;
 }
 
 .btn-complement-yellow {
@@ -13476,11 +14379,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
-  color: rgb(111.9, 142.5, 250.5);
+  color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow:hover {
-  color: #fad860;
-  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860 !important;
+  background-color: rgb(111.9, 142.5, 250.5) !important;
 }
 
 .btn-complement-yellow-sm {
@@ -13493,11 +14396,11 @@ html {
   background-color: #fad860;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(111.9, 142.5, 250.5);
+  color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow-sm:hover {
-  color: #fad860;
-  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860 !important;
+  background-color: rgb(111.9, 142.5, 250.5) !important;
 }
 
 .btn-md {
@@ -13525,7 +14428,7 @@ html {
   background-color: #fad860;
 }
 .btn-yellow:hover {
-  background-color: rgb(250.5, 219.9, 111.9);
+  background-color: rgb(250.5, 219.9, 111.9) !important;
 }
 
 .btn-yellow-md {
@@ -13540,7 +14443,7 @@ html {
   font-size: 1rem;
 }
 .btn-yellow-md:hover {
-  background-color: rgb(250.5, 219.9, 111.9);
+  background-color: rgb(250.5, 219.9, 111.9) !important;
 }
 
 .btn-outlined-yellow {
@@ -13552,11 +14455,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #fad860;
-  color: #fad860;
+  color: #fad860 !important;
 }
 .btn-outlined-yellow:hover {
-  background-color: #fad860;
-  color: #fff;
+  background-color: #fad860 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-yellow-md {
@@ -13570,11 +14473,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #fad860;
-  color: #fad860;
+  color: #fad860 !important;
 }
 .btn-outlined-yellow-md:hover {
-  background-color: #fad860;
-  color: #fff;
+  background-color: #fad860 !important;
+  color: #fff !important;
 }
 
 .btn-complement-yellow {
@@ -13585,11 +14488,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
-  color: rgb(111.9, 142.5, 250.5);
+  color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow:hover {
-  color: #fad860;
-  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860 !important;
+  background-color: rgb(111.9, 142.5, 250.5) !important;
 }
 
 .btn-complement-yellow-md {
@@ -13602,11 +14505,11 @@ html {
   background-color: #fad860;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(111.9, 142.5, 250.5);
+  color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow-md:hover {
-  color: #fad860;
-  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860 !important;
+  background-color: rgb(111.9, 142.5, 250.5) !important;
 }
 
 .btn-lg {
@@ -13634,7 +14537,7 @@ html {
   background-color: #fad860;
 }
 .btn-yellow:hover {
-  background-color: rgb(250.5, 219.9, 111.9);
+  background-color: rgb(250.5, 219.9, 111.9) !important;
 }
 
 .btn-yellow-lg {
@@ -13649,7 +14552,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-yellow-lg:hover {
-  background-color: rgb(250.5, 219.9, 111.9);
+  background-color: rgb(250.5, 219.9, 111.9) !important;
 }
 
 .btn-outlined-yellow {
@@ -13661,11 +14564,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #fad860;
-  color: #fad860;
+  color: #fad860 !important;
 }
 .btn-outlined-yellow:hover {
-  background-color: #fad860;
-  color: #fff;
+  background-color: #fad860 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-yellow-lg {
@@ -13679,11 +14582,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #fad860;
-  color: #fad860;
+  color: #fad860 !important;
 }
 .btn-outlined-yellow-lg:hover {
-  background-color: #fad860;
-  color: #fff;
+  background-color: #fad860 !important;
+  color: #fff !important;
 }
 
 .btn-complement-yellow {
@@ -13694,11 +14597,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
-  color: rgb(111.9, 142.5, 250.5);
+  color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow:hover {
-  color: #fad860;
-  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860 !important;
+  background-color: rgb(111.9, 142.5, 250.5) !important;
 }
 
 .btn-complement-yellow-lg {
@@ -13711,11 +14614,11 @@ html {
   background-color: #fad860;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(111.9, 142.5, 250.5);
+  color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow-lg:hover {
-  color: #fad860;
-  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860 !important;
+  background-color: rgb(111.9, 142.5, 250.5) !important;
 }
 
 .btn-xl {
@@ -13743,7 +14646,7 @@ html {
   background-color: #fad860;
 }
 .btn-yellow:hover {
-  background-color: rgb(250.5, 219.9, 111.9);
+  background-color: rgb(250.5, 219.9, 111.9) !important;
 }
 
 .btn-yellow-xl {
@@ -13758,7 +14661,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-yellow-xl:hover {
-  background-color: rgb(250.5, 219.9, 111.9);
+  background-color: rgb(250.5, 219.9, 111.9) !important;
 }
 
 .btn-outlined-yellow {
@@ -13770,11 +14673,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #fad860;
-  color: #fad860;
+  color: #fad860 !important;
 }
 .btn-outlined-yellow:hover {
-  background-color: #fad860;
-  color: #fff;
+  background-color: #fad860 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-yellow-xl {
@@ -13788,11 +14691,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #fad860;
-  color: #fad860;
+  color: #fad860 !important;
 }
 .btn-outlined-yellow-xl:hover {
-  background-color: #fad860;
-  color: #fff;
+  background-color: #fad860 !important;
+  color: #fff !important;
 }
 
 .btn-complement-yellow {
@@ -13803,11 +14706,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
-  color: rgb(111.9, 142.5, 250.5);
+  color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow:hover {
-  color: #fad860;
-  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860 !important;
+  background-color: rgb(111.9, 142.5, 250.5) !important;
 }
 
 .btn-complement-yellow-xl {
@@ -13820,11 +14723,11 @@ html {
   background-color: #fad860;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(111.9, 142.5, 250.5);
+  color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow-xl:hover {
-  color: #fad860;
-  background-color: rgb(111.9, 142.5, 250.5);
+  color: #fad860 !important;
+  background-color: rgb(111.9, 142.5, 250.5) !important;
 }
 
 .btn-sm {
@@ -13852,7 +14755,7 @@ html {
   background-color: #790707;
 }
 .btn-red:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625);
+  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
 }
 
 .btn-red-sm {
@@ -13867,7 +14770,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-red-sm:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625);
+  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
 }
 
 .btn-outlined-red {
@@ -13879,11 +14782,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #790707;
-  color: #790707;
+  color: #790707 !important;
 }
 .btn-outlined-red:hover {
-  background-color: #790707;
-  color: #fff;
+  background-color: #790707 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-red-sm {
@@ -13897,11 +14800,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #790707;
-  color: #790707;
+  color: #790707 !important;
 }
 .btn-outlined-red-sm:hover {
-  background-color: #790707;
-  color: #fff;
+  background-color: #790707 !important;
+  color: #fff !important;
 }
 
 .btn-complement-red {
@@ -13912,11 +14815,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
-  color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red:hover {
-  color: #790707;
-  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707 !important;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 
 .btn-complement-red-sm {
@@ -13929,11 +14832,11 @@ html {
   background-color: #790707;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red-sm:hover {
-  color: #790707;
-  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707 !important;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 
 .btn-md {
@@ -13961,7 +14864,7 @@ html {
   background-color: #790707;
 }
 .btn-red:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625);
+  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
 }
 
 .btn-red-md {
@@ -13976,7 +14879,7 @@ html {
   font-size: 1rem;
 }
 .btn-red-md:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625);
+  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
 }
 
 .btn-outlined-red {
@@ -13988,11 +14891,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #790707;
-  color: #790707;
+  color: #790707 !important;
 }
 .btn-outlined-red:hover {
-  background-color: #790707;
-  color: #fff;
+  background-color: #790707 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-red-md {
@@ -14006,11 +14909,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #790707;
-  color: #790707;
+  color: #790707 !important;
 }
 .btn-outlined-red-md:hover {
-  background-color: #790707;
-  color: #fff;
+  background-color: #790707 !important;
+  color: #fff !important;
 }
 
 .btn-complement-red {
@@ -14021,11 +14924,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
-  color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red:hover {
-  color: #790707;
-  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707 !important;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 
 .btn-complement-red-md {
@@ -14038,11 +14941,11 @@ html {
   background-color: #790707;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red-md:hover {
-  color: #790707;
-  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707 !important;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 
 .btn-lg {
@@ -14070,7 +14973,7 @@ html {
   background-color: #790707;
 }
 .btn-red:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625);
+  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
 }
 
 .btn-red-lg {
@@ -14085,7 +14988,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-red-lg:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625);
+  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
 }
 
 .btn-outlined-red {
@@ -14097,11 +15000,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #790707;
-  color: #790707;
+  color: #790707 !important;
 }
 .btn-outlined-red:hover {
-  background-color: #790707;
-  color: #fff;
+  background-color: #790707 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-red-lg {
@@ -14115,11 +15018,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #790707;
-  color: #790707;
+  color: #790707 !important;
 }
 .btn-outlined-red-lg:hover {
-  background-color: #790707;
-  color: #fff;
+  background-color: #790707 !important;
+  color: #fff !important;
 }
 
 .btn-complement-red {
@@ -14130,11 +15033,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
-  color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red:hover {
-  color: #790707;
-  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707 !important;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 
 .btn-complement-red-lg {
@@ -14147,11 +15050,11 @@ html {
   background-color: #790707;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red-lg:hover {
-  color: #790707;
-  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707 !important;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 
 .btn-xl {
@@ -14179,7 +15082,7 @@ html {
   background-color: #790707;
 }
 .btn-red:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625);
+  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
 }
 
 .btn-red-xl {
@@ -14194,7 +15097,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-red-xl:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625);
+  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
 }
 
 .btn-outlined-red {
@@ -14206,11 +15109,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #790707;
-  color: #790707;
+  color: #790707 !important;
 }
 .btn-outlined-red:hover {
-  background-color: #790707;
-  color: #fff;
+  background-color: #790707 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-red-xl {
@@ -14224,11 +15127,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #790707;
-  color: #790707;
+  color: #790707 !important;
 }
 .btn-outlined-red-xl:hover {
-  background-color: #790707;
-  color: #fff;
+  background-color: #790707 !important;
+  color: #fff !important;
 }
 
 .btn-complement-red {
@@ -14239,11 +15142,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
-  color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red:hover {
-  color: #790707;
-  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707 !important;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 
 .btn-complement-red-xl {
@@ -14256,11 +15159,11 @@ html {
   background-color: #790707;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red-xl:hover {
-  color: #790707;
-  background-color: rgb(9.0890625, 157.1109375, 157.1109375);
+  color: #790707 !important;
+  background-color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 
 .btn-sm {
@@ -14288,7 +15191,7 @@ html {
   background-color: #9e6555;
 }
 .btn-pitch:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556);
+  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
 }
 
 .btn-pitch-sm {
@@ -14303,7 +15206,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-pitch-sm:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556);
+  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
 }
 
 .btn-outlined-pitch {
@@ -14315,11 +15218,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #9e6555;
-  color: #9e6555;
+  color: #9e6555 !important;
 }
 .btn-outlined-pitch:hover {
-  background-color: #9e6555;
-  color: #fff;
+  background-color: #9e6555 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-pitch-sm {
@@ -14333,11 +15236,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #9e6555;
-  color: #9e6555;
+  color: #9e6555 !important;
 }
 .btn-outlined-pitch-sm:hover {
-  background-color: #9e6555;
-  color: #fff;
+  background-color: #9e6555 !important;
+  color: #fff !important;
 }
 
 .btn-complement-pitch {
@@ -14348,11 +15251,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
-  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch:hover {
-  color: #9e6555;
-  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555 !important;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 
 .btn-complement-pitch-sm {
@@ -14365,11 +15268,11 @@ html {
   background-color: #9e6555;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch-sm:hover {
-  color: #9e6555;
-  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555 !important;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 
 .btn-md {
@@ -14397,7 +15300,7 @@ html {
   background-color: #9e6555;
 }
 .btn-pitch:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556);
+  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
 }
 
 .btn-pitch-md {
@@ -14412,7 +15315,7 @@ html {
   font-size: 1rem;
 }
 .btn-pitch-md:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556);
+  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
 }
 
 .btn-outlined-pitch {
@@ -14424,11 +15327,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #9e6555;
-  color: #9e6555;
+  color: #9e6555 !important;
 }
 .btn-outlined-pitch:hover {
-  background-color: #9e6555;
-  color: #fff;
+  background-color: #9e6555 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-pitch-md {
@@ -14442,11 +15345,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #9e6555;
-  color: #9e6555;
+  color: #9e6555 !important;
 }
 .btn-outlined-pitch-md:hover {
-  background-color: #9e6555;
-  color: #fff;
+  background-color: #9e6555 !important;
+  color: #fff !important;
 }
 
 .btn-complement-pitch {
@@ -14457,11 +15360,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
-  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch:hover {
-  color: #9e6555;
-  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555 !important;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 
 .btn-complement-pitch-md {
@@ -14474,11 +15377,11 @@ html {
   background-color: #9e6555;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch-md:hover {
-  color: #9e6555;
-  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555 !important;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 
 .btn-lg {
@@ -14506,7 +15409,7 @@ html {
   background-color: #9e6555;
 }
 .btn-pitch:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556);
+  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
 }
 
 .btn-pitch-lg {
@@ -14521,7 +15424,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-pitch-lg:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556);
+  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
 }
 
 .btn-outlined-pitch {
@@ -14533,11 +15436,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #9e6555;
-  color: #9e6555;
+  color: #9e6555 !important;
 }
 .btn-outlined-pitch:hover {
-  background-color: #9e6555;
-  color: #fff;
+  background-color: #9e6555 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-pitch-lg {
@@ -14551,11 +15454,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #9e6555;
-  color: #9e6555;
+  color: #9e6555 !important;
 }
 .btn-outlined-pitch-lg:hover {
-  background-color: #9e6555;
-  color: #fff;
+  background-color: #9e6555 !important;
+  color: #fff !important;
 }
 
 .btn-complement-pitch {
@@ -14566,11 +15469,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
-  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch:hover {
-  color: #9e6555;
-  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555 !important;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 
 .btn-complement-pitch-lg {
@@ -14583,11 +15486,11 @@ html {
   background-color: #9e6555;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch-lg:hover {
-  color: #9e6555;
-  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555 !important;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 
 .btn-xl {
@@ -14615,7 +15518,7 @@ html {
   background-color: #9e6555;
 }
 .btn-pitch:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556);
+  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
 }
 
 .btn-pitch-xl {
@@ -14630,7 +15533,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-pitch-xl:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556);
+  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
 }
 
 .btn-outlined-pitch {
@@ -14642,11 +15545,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #9e6555;
-  color: #9e6555;
+  color: #9e6555 !important;
 }
 .btn-outlined-pitch:hover {
-  background-color: #9e6555;
-  color: #fff;
+  background-color: #9e6555 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-pitch-xl {
@@ -14660,11 +15563,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #9e6555;
-  color: #9e6555;
+  color: #9e6555 !important;
 }
 .btn-outlined-pitch-xl:hover {
-  background-color: #9e6555;
-  color: #fff;
+  background-color: #9e6555 !important;
+  color: #fff !important;
 }
 
 .btn-complement-pitch {
@@ -14675,11 +15578,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
-  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch:hover {
-  color: #9e6555;
-  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555 !important;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 
 .btn-complement-pitch-xl {
@@ -14692,11 +15595,11 @@ html {
   background-color: #9e6555;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch-xl:hover {
-  color: #9e6555;
-  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444);
+  color: #9e6555 !important;
+  background-color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 
 .btn-sm {
@@ -14724,7 +15627,7 @@ html {
   background-color: #acc1d3;
 }
 .btn-gray:hover {
-  background-color: rgb(180.3, 199.2, 215.4);
+  background-color: rgb(180.3, 199.2, 215.4) !important;
 }
 
 .btn-gray-sm {
@@ -14739,7 +15642,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-gray-sm:hover {
-  background-color: rgb(180.3, 199.2, 215.4);
+  background-color: rgb(180.3, 199.2, 215.4) !important;
 }
 
 .btn-outlined-gray {
@@ -14751,11 +15654,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #acc1d3;
-  color: #acc1d3;
+  color: #acc1d3 !important;
 }
 .btn-outlined-gray:hover {
-  background-color: #acc1d3;
-  color: #fff;
+  background-color: #acc1d3 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-gray-sm {
@@ -14769,11 +15672,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #acc1d3;
-  color: #acc1d3;
+  color: #acc1d3 !important;
 }
 .btn-outlined-gray-sm:hover {
-  background-color: #acc1d3;
-  color: #fff;
+  background-color: #acc1d3 !important;
+  color: #fff !important;
 }
 
 .btn-complement-gray {
@@ -14784,11 +15687,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
-  color: rgb(215.4, 196.5, 180.3);
+  color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray:hover {
-  color: #acc1d3;
-  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3 !important;
+  background-color: rgb(215.4, 196.5, 180.3) !important;
 }
 
 .btn-complement-gray-sm {
@@ -14801,11 +15704,11 @@ html {
   background-color: #acc1d3;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(215.4, 196.5, 180.3);
+  color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray-sm:hover {
-  color: #acc1d3;
-  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3 !important;
+  background-color: rgb(215.4, 196.5, 180.3) !important;
 }
 
 .btn-md {
@@ -14833,7 +15736,7 @@ html {
   background-color: #acc1d3;
 }
 .btn-gray:hover {
-  background-color: rgb(180.3, 199.2, 215.4);
+  background-color: rgb(180.3, 199.2, 215.4) !important;
 }
 
 .btn-gray-md {
@@ -14848,7 +15751,7 @@ html {
   font-size: 1rem;
 }
 .btn-gray-md:hover {
-  background-color: rgb(180.3, 199.2, 215.4);
+  background-color: rgb(180.3, 199.2, 215.4) !important;
 }
 
 .btn-outlined-gray {
@@ -14860,11 +15763,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #acc1d3;
-  color: #acc1d3;
+  color: #acc1d3 !important;
 }
 .btn-outlined-gray:hover {
-  background-color: #acc1d3;
-  color: #fff;
+  background-color: #acc1d3 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-gray-md {
@@ -14878,11 +15781,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #acc1d3;
-  color: #acc1d3;
+  color: #acc1d3 !important;
 }
 .btn-outlined-gray-md:hover {
-  background-color: #acc1d3;
-  color: #fff;
+  background-color: #acc1d3 !important;
+  color: #fff !important;
 }
 
 .btn-complement-gray {
@@ -14893,11 +15796,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
-  color: rgb(215.4, 196.5, 180.3);
+  color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray:hover {
-  color: #acc1d3;
-  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3 !important;
+  background-color: rgb(215.4, 196.5, 180.3) !important;
 }
 
 .btn-complement-gray-md {
@@ -14910,11 +15813,11 @@ html {
   background-color: #acc1d3;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(215.4, 196.5, 180.3);
+  color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray-md:hover {
-  color: #acc1d3;
-  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3 !important;
+  background-color: rgb(215.4, 196.5, 180.3) !important;
 }
 
 .btn-lg {
@@ -14942,7 +15845,7 @@ html {
   background-color: #acc1d3;
 }
 .btn-gray:hover {
-  background-color: rgb(180.3, 199.2, 215.4);
+  background-color: rgb(180.3, 199.2, 215.4) !important;
 }
 
 .btn-gray-lg {
@@ -14957,7 +15860,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-gray-lg:hover {
-  background-color: rgb(180.3, 199.2, 215.4);
+  background-color: rgb(180.3, 199.2, 215.4) !important;
 }
 
 .btn-outlined-gray {
@@ -14969,11 +15872,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #acc1d3;
-  color: #acc1d3;
+  color: #acc1d3 !important;
 }
 .btn-outlined-gray:hover {
-  background-color: #acc1d3;
-  color: #fff;
+  background-color: #acc1d3 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-gray-lg {
@@ -14987,11 +15890,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #acc1d3;
-  color: #acc1d3;
+  color: #acc1d3 !important;
 }
 .btn-outlined-gray-lg:hover {
-  background-color: #acc1d3;
-  color: #fff;
+  background-color: #acc1d3 !important;
+  color: #fff !important;
 }
 
 .btn-complement-gray {
@@ -15002,11 +15905,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
-  color: rgb(215.4, 196.5, 180.3);
+  color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray:hover {
-  color: #acc1d3;
-  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3 !important;
+  background-color: rgb(215.4, 196.5, 180.3) !important;
 }
 
 .btn-complement-gray-lg {
@@ -15019,11 +15922,11 @@ html {
   background-color: #acc1d3;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(215.4, 196.5, 180.3);
+  color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray-lg:hover {
-  color: #acc1d3;
-  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3 !important;
+  background-color: rgb(215.4, 196.5, 180.3) !important;
 }
 
 .btn-xl {
@@ -15051,7 +15954,7 @@ html {
   background-color: #acc1d3;
 }
 .btn-gray:hover {
-  background-color: rgb(180.3, 199.2, 215.4);
+  background-color: rgb(180.3, 199.2, 215.4) !important;
 }
 
 .btn-gray-xl {
@@ -15066,7 +15969,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-gray-xl:hover {
-  background-color: rgb(180.3, 199.2, 215.4);
+  background-color: rgb(180.3, 199.2, 215.4) !important;
 }
 
 .btn-outlined-gray {
@@ -15078,11 +15981,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #acc1d3;
-  color: #acc1d3;
+  color: #acc1d3 !important;
 }
 .btn-outlined-gray:hover {
-  background-color: #acc1d3;
-  color: #fff;
+  background-color: #acc1d3 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-gray-xl {
@@ -15096,11 +15999,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #acc1d3;
-  color: #acc1d3;
+  color: #acc1d3 !important;
 }
 .btn-outlined-gray-xl:hover {
-  background-color: #acc1d3;
-  color: #fff;
+  background-color: #acc1d3 !important;
+  color: #fff !important;
 }
 
 .btn-complement-gray {
@@ -15111,11 +16014,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
-  color: rgb(215.4, 196.5, 180.3);
+  color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray:hover {
-  color: #acc1d3;
-  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3 !important;
+  background-color: rgb(215.4, 196.5, 180.3) !important;
 }
 
 .btn-complement-gray-xl {
@@ -15128,11 +16031,11 @@ html {
   background-color: #acc1d3;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(215.4, 196.5, 180.3);
+  color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray-xl:hover {
-  color: #acc1d3;
-  background-color: rgb(215.4, 196.5, 180.3);
+  color: #acc1d3 !important;
+  background-color: rgb(215.4, 196.5, 180.3) !important;
 }
 
 .btn-sm {
@@ -15160,7 +16063,7 @@ html {
   background-color: #2a4058;
 }
 .btn-blue:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231);
+  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
 }
 
 .btn-blue-sm {
@@ -15175,7 +16078,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-blue-sm:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231);
+  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
 }
 
 .btn-outlined-blue {
@@ -15187,11 +16090,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #2a4058;
-  color: #2a4058;
+  color: #2a4058 !important;
 }
 .btn-outlined-blue:hover {
-  background-color: #2a4058;
-  color: #fff;
+  background-color: #2a4058 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-blue-sm {
@@ -15205,11 +16108,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #2a4058;
-  color: #2a4058;
+  color: #2a4058 !important;
 }
 .btn-outlined-blue-sm:hover {
-  background-color: #2a4058;
-  color: #fff;
+  background-color: #2a4058 !important;
+  color: #fff !important;
 }
 
 .btn-complement-blue {
@@ -15220,11 +16123,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
-  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue:hover {
-  color: #2a4058;
-  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058 !important;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 
 .btn-complement-blue-sm {
@@ -15237,11 +16140,11 @@ html {
   background-color: #2a4058;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue-sm:hover {
-  color: #2a4058;
-  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058 !important;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 
 .btn-md {
@@ -15269,7 +16172,7 @@ html {
   background-color: #2a4058;
 }
 .btn-blue:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231);
+  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
 }
 
 .btn-blue-md {
@@ -15284,7 +16187,7 @@ html {
   font-size: 1rem;
 }
 .btn-blue-md:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231);
+  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
 }
 
 .btn-outlined-blue {
@@ -15296,11 +16199,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #2a4058;
-  color: #2a4058;
+  color: #2a4058 !important;
 }
 .btn-outlined-blue:hover {
-  background-color: #2a4058;
-  color: #fff;
+  background-color: #2a4058 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-blue-md {
@@ -15314,11 +16217,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #2a4058;
-  color: #2a4058;
+  color: #2a4058 !important;
 }
 .btn-outlined-blue-md:hover {
-  background-color: #2a4058;
-  color: #fff;
+  background-color: #2a4058 !important;
+  color: #fff !important;
 }
 
 .btn-complement-blue {
@@ -15329,11 +16232,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
-  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue:hover {
-  color: #2a4058;
-  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058 !important;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 
 .btn-complement-blue-md {
@@ -15346,11 +16249,11 @@ html {
   background-color: #2a4058;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue-md:hover {
-  color: #2a4058;
-  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058 !important;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 
 .btn-lg {
@@ -15378,7 +16281,7 @@ html {
   background-color: #2a4058;
 }
 .btn-blue:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231);
+  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
 }
 
 .btn-blue-lg {
@@ -15393,7 +16296,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-blue-lg:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231);
+  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
 }
 
 .btn-outlined-blue {
@@ -15405,11 +16308,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #2a4058;
-  color: #2a4058;
+  color: #2a4058 !important;
 }
 .btn-outlined-blue:hover {
-  background-color: #2a4058;
-  color: #fff;
+  background-color: #2a4058 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-blue-lg {
@@ -15423,11 +16326,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #2a4058;
-  color: #2a4058;
+  color: #2a4058 !important;
 }
 .btn-outlined-blue-lg:hover {
-  background-color: #2a4058;
-  color: #fff;
+  background-color: #2a4058 !important;
+  color: #fff !important;
 }
 
 .btn-complement-blue {
@@ -15438,11 +16341,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
-  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue:hover {
-  color: #2a4058;
-  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058 !important;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 
 .btn-complement-blue-lg {
@@ -15455,11 +16358,11 @@ html {
   background-color: #2a4058;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue-lg:hover {
-  color: #2a4058;
-  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058 !important;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 
 .btn-xl {
@@ -15487,7 +16390,7 @@ html {
   background-color: #2a4058;
 }
 .btn-blue:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231);
+  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
 }
 
 .btn-blue-xl {
@@ -15502,7 +16405,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-blue-xl:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231);
+  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
 }
 
 .btn-outlined-blue {
@@ -15514,11 +16417,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #2a4058;
-  color: #2a4058;
+  color: #2a4058 !important;
 }
 .btn-outlined-blue:hover {
-  background-color: #2a4058;
-  color: #fff;
+  background-color: #2a4058 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-blue-xl {
@@ -15532,11 +16435,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #2a4058;
-  color: #2a4058;
+  color: #2a4058 !important;
 }
 .btn-outlined-blue-xl:hover {
-  background-color: #2a4058;
-  color: #fff;
+  background-color: #2a4058 !important;
+  color: #fff !important;
 }
 
 .btn-complement-blue {
@@ -15547,11 +16450,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
-  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue:hover {
-  color: #2a4058;
-  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058 !important;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 
 .btn-complement-blue-xl {
@@ -15564,11 +16467,11 @@ html {
   background-color: #2a4058;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue-xl:hover {
-  color: #2a4058;
-  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769);
+  color: #2a4058 !important;
+  background-color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 
 .btn-sm {
@@ -15596,7 +16499,7 @@ html {
   background-color: #4258ff;
 }
 .btn-link:hover {
-  background-color: rgb(84.9, 104.7, 255);
+  background-color: rgb(84.9, 104.7, 255) !important;
 }
 
 .btn-link-sm {
@@ -15611,7 +16514,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-link-sm:hover {
-  background-color: rgb(84.9, 104.7, 255);
+  background-color: rgb(84.9, 104.7, 255) !important;
 }
 
 .btn-outlined-link {
@@ -15623,11 +16526,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #4258ff;
-  color: #4258ff;
+  color: #4258ff !important;
 }
 .btn-outlined-link:hover {
-  background-color: #4258ff;
-  color: #fff;
+  background-color: #4258ff !important;
+  color: #fff !important;
 }
 
 .btn-outlined-link-sm {
@@ -15641,11 +16544,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #4258ff;
-  color: #4258ff;
+  color: #4258ff !important;
 }
 .btn-outlined-link-sm:hover {
-  background-color: #4258ff;
-  color: #fff;
+  background-color: #4258ff !important;
+  color: #fff !important;
 }
 
 .btn-complement-link {
@@ -15656,11 +16559,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
-  color: rgb(255, 235.2, 84.9);
+  color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link:hover {
-  color: #4258ff;
-  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff !important;
+  background-color: rgb(255, 235.2, 84.9) !important;
 }
 
 .btn-complement-link-sm {
@@ -15673,11 +16576,11 @@ html {
   background-color: #4258ff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(255, 235.2, 84.9);
+  color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link-sm:hover {
-  color: #4258ff;
-  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff !important;
+  background-color: rgb(255, 235.2, 84.9) !important;
 }
 
 .btn-md {
@@ -15705,7 +16608,7 @@ html {
   background-color: #4258ff;
 }
 .btn-link:hover {
-  background-color: rgb(84.9, 104.7, 255);
+  background-color: rgb(84.9, 104.7, 255) !important;
 }
 
 .btn-link-md {
@@ -15720,7 +16623,7 @@ html {
   font-size: 1rem;
 }
 .btn-link-md:hover {
-  background-color: rgb(84.9, 104.7, 255);
+  background-color: rgb(84.9, 104.7, 255) !important;
 }
 
 .btn-outlined-link {
@@ -15732,11 +16635,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #4258ff;
-  color: #4258ff;
+  color: #4258ff !important;
 }
 .btn-outlined-link:hover {
-  background-color: #4258ff;
-  color: #fff;
+  background-color: #4258ff !important;
+  color: #fff !important;
 }
 
 .btn-outlined-link-md {
@@ -15750,11 +16653,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #4258ff;
-  color: #4258ff;
+  color: #4258ff !important;
 }
 .btn-outlined-link-md:hover {
-  background-color: #4258ff;
-  color: #fff;
+  background-color: #4258ff !important;
+  color: #fff !important;
 }
 
 .btn-complement-link {
@@ -15765,11 +16668,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
-  color: rgb(255, 235.2, 84.9);
+  color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link:hover {
-  color: #4258ff;
-  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff !important;
+  background-color: rgb(255, 235.2, 84.9) !important;
 }
 
 .btn-complement-link-md {
@@ -15782,11 +16685,11 @@ html {
   background-color: #4258ff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(255, 235.2, 84.9);
+  color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link-md:hover {
-  color: #4258ff;
-  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff !important;
+  background-color: rgb(255, 235.2, 84.9) !important;
 }
 
 .btn-lg {
@@ -15814,7 +16717,7 @@ html {
   background-color: #4258ff;
 }
 .btn-link:hover {
-  background-color: rgb(84.9, 104.7, 255);
+  background-color: rgb(84.9, 104.7, 255) !important;
 }
 
 .btn-link-lg {
@@ -15829,7 +16732,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-link-lg:hover {
-  background-color: rgb(84.9, 104.7, 255);
+  background-color: rgb(84.9, 104.7, 255) !important;
 }
 
 .btn-outlined-link {
@@ -15841,11 +16744,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #4258ff;
-  color: #4258ff;
+  color: #4258ff !important;
 }
 .btn-outlined-link:hover {
-  background-color: #4258ff;
-  color: #fff;
+  background-color: #4258ff !important;
+  color: #fff !important;
 }
 
 .btn-outlined-link-lg {
@@ -15859,11 +16762,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #4258ff;
-  color: #4258ff;
+  color: #4258ff !important;
 }
 .btn-outlined-link-lg:hover {
-  background-color: #4258ff;
-  color: #fff;
+  background-color: #4258ff !important;
+  color: #fff !important;
 }
 
 .btn-complement-link {
@@ -15874,11 +16777,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
-  color: rgb(255, 235.2, 84.9);
+  color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link:hover {
-  color: #4258ff;
-  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff !important;
+  background-color: rgb(255, 235.2, 84.9) !important;
 }
 
 .btn-complement-link-lg {
@@ -15891,11 +16794,11 @@ html {
   background-color: #4258ff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(255, 235.2, 84.9);
+  color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link-lg:hover {
-  color: #4258ff;
-  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff !important;
+  background-color: rgb(255, 235.2, 84.9) !important;
 }
 
 .btn-xl {
@@ -15923,7 +16826,7 @@ html {
   background-color: #4258ff;
 }
 .btn-link:hover {
-  background-color: rgb(84.9, 104.7, 255);
+  background-color: rgb(84.9, 104.7, 255) !important;
 }
 
 .btn-link-xl {
@@ -15938,7 +16841,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-link-xl:hover {
-  background-color: rgb(84.9, 104.7, 255);
+  background-color: rgb(84.9, 104.7, 255) !important;
 }
 
 .btn-outlined-link {
@@ -15950,11 +16853,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #4258ff;
-  color: #4258ff;
+  color: #4258ff !important;
 }
 .btn-outlined-link:hover {
-  background-color: #4258ff;
-  color: #fff;
+  background-color: #4258ff !important;
+  color: #fff !important;
 }
 
 .btn-outlined-link-xl {
@@ -15968,11 +16871,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #4258ff;
-  color: #4258ff;
+  color: #4258ff !important;
 }
 .btn-outlined-link-xl:hover {
-  background-color: #4258ff;
-  color: #fff;
+  background-color: #4258ff !important;
+  color: #fff !important;
 }
 
 .btn-complement-link {
@@ -15983,11 +16886,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
-  color: rgb(255, 235.2, 84.9);
+  color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link:hover {
-  color: #4258ff;
-  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff !important;
+  background-color: rgb(255, 235.2, 84.9) !important;
 }
 
 .btn-complement-link-xl {
@@ -16000,11 +16903,11 @@ html {
   background-color: #4258ff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(255, 235.2, 84.9);
+  color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link-xl:hover {
-  color: #4258ff;
-  background-color: rgb(255, 235.2, 84.9);
+  color: #4258ff !important;
+  background-color: rgb(255, 235.2, 84.9) !important;
 }
 
 .btn-sm {
@@ -16032,7 +16935,7 @@ html {
   background-color: #00d1b2;
 }
 .btn-primary:hover {
-  background-color: rgb(0, 239.1, 203.6354066986);
+  background-color: rgb(0, 239.1, 203.6354066986) !important;
 }
 
 .btn-primary-sm {
@@ -16047,7 +16950,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-primary-sm:hover {
-  background-color: rgb(0, 239.1, 203.6354066986);
+  background-color: rgb(0, 239.1, 203.6354066986) !important;
 }
 
 .btn-outlined-primary {
@@ -16059,11 +16962,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #00d1b2;
-  color: #00d1b2;
+  color: #00d1b2 !important;
 }
 .btn-outlined-primary:hover {
-  background-color: #00d1b2;
-  color: #fff;
+  background-color: #00d1b2 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-primary-sm {
@@ -16077,11 +16980,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #00d1b2;
-  color: #00d1b2;
+  color: #00d1b2 !important;
 }
 .btn-outlined-primary-sm:hover {
-  background-color: #00d1b2;
-  color: #fff;
+  background-color: #00d1b2 !important;
+  color: #fff !important;
 }
 
 .btn-complement-primary {
@@ -16092,11 +16995,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
-  color: rgb(239.1, 0, 35.4645933014);
+  color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary:hover {
-  color: #00d1b2;
-  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2 !important;
+  background-color: rgb(239.1, 0, 35.4645933014) !important;
 }
 
 .btn-complement-primary-sm {
@@ -16109,11 +17012,11 @@ html {
   background-color: #00d1b2;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(239.1, 0, 35.4645933014);
+  color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary-sm:hover {
-  color: #00d1b2;
-  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2 !important;
+  background-color: rgb(239.1, 0, 35.4645933014) !important;
 }
 
 .btn-md {
@@ -16141,7 +17044,7 @@ html {
   background-color: #00d1b2;
 }
 .btn-primary:hover {
-  background-color: rgb(0, 239.1, 203.6354066986);
+  background-color: rgb(0, 239.1, 203.6354066986) !important;
 }
 
 .btn-primary-md {
@@ -16156,7 +17059,7 @@ html {
   font-size: 1rem;
 }
 .btn-primary-md:hover {
-  background-color: rgb(0, 239.1, 203.6354066986);
+  background-color: rgb(0, 239.1, 203.6354066986) !important;
 }
 
 .btn-outlined-primary {
@@ -16168,11 +17071,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #00d1b2;
-  color: #00d1b2;
+  color: #00d1b2 !important;
 }
 .btn-outlined-primary:hover {
-  background-color: #00d1b2;
-  color: #fff;
+  background-color: #00d1b2 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-primary-md {
@@ -16186,11 +17089,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #00d1b2;
-  color: #00d1b2;
+  color: #00d1b2 !important;
 }
 .btn-outlined-primary-md:hover {
-  background-color: #00d1b2;
-  color: #fff;
+  background-color: #00d1b2 !important;
+  color: #fff !important;
 }
 
 .btn-complement-primary {
@@ -16201,11 +17104,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
-  color: rgb(239.1, 0, 35.4645933014);
+  color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary:hover {
-  color: #00d1b2;
-  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2 !important;
+  background-color: rgb(239.1, 0, 35.4645933014) !important;
 }
 
 .btn-complement-primary-md {
@@ -16218,11 +17121,11 @@ html {
   background-color: #00d1b2;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(239.1, 0, 35.4645933014);
+  color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary-md:hover {
-  color: #00d1b2;
-  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2 !important;
+  background-color: rgb(239.1, 0, 35.4645933014) !important;
 }
 
 .btn-lg {
@@ -16250,7 +17153,7 @@ html {
   background-color: #00d1b2;
 }
 .btn-primary:hover {
-  background-color: rgb(0, 239.1, 203.6354066986);
+  background-color: rgb(0, 239.1, 203.6354066986) !important;
 }
 
 .btn-primary-lg {
@@ -16265,7 +17168,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-primary-lg:hover {
-  background-color: rgb(0, 239.1, 203.6354066986);
+  background-color: rgb(0, 239.1, 203.6354066986) !important;
 }
 
 .btn-outlined-primary {
@@ -16277,11 +17180,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #00d1b2;
-  color: #00d1b2;
+  color: #00d1b2 !important;
 }
 .btn-outlined-primary:hover {
-  background-color: #00d1b2;
-  color: #fff;
+  background-color: #00d1b2 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-primary-lg {
@@ -16295,11 +17198,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #00d1b2;
-  color: #00d1b2;
+  color: #00d1b2 !important;
 }
 .btn-outlined-primary-lg:hover {
-  background-color: #00d1b2;
-  color: #fff;
+  background-color: #00d1b2 !important;
+  color: #fff !important;
 }
 
 .btn-complement-primary {
@@ -16310,11 +17213,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
-  color: rgb(239.1, 0, 35.4645933014);
+  color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary:hover {
-  color: #00d1b2;
-  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2 !important;
+  background-color: rgb(239.1, 0, 35.4645933014) !important;
 }
 
 .btn-complement-primary-lg {
@@ -16327,11 +17230,11 @@ html {
   background-color: #00d1b2;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(239.1, 0, 35.4645933014);
+  color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary-lg:hover {
-  color: #00d1b2;
-  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2 !important;
+  background-color: rgb(239.1, 0, 35.4645933014) !important;
 }
 
 .btn-xl {
@@ -16359,7 +17262,7 @@ html {
   background-color: #00d1b2;
 }
 .btn-primary:hover {
-  background-color: rgb(0, 239.1, 203.6354066986);
+  background-color: rgb(0, 239.1, 203.6354066986) !important;
 }
 
 .btn-primary-xl {
@@ -16374,7 +17277,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-primary-xl:hover {
-  background-color: rgb(0, 239.1, 203.6354066986);
+  background-color: rgb(0, 239.1, 203.6354066986) !important;
 }
 
 .btn-outlined-primary {
@@ -16386,11 +17289,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #00d1b2;
-  color: #00d1b2;
+  color: #00d1b2 !important;
 }
 .btn-outlined-primary:hover {
-  background-color: #00d1b2;
-  color: #fff;
+  background-color: #00d1b2 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-primary-xl {
@@ -16404,11 +17307,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #00d1b2;
-  color: #00d1b2;
+  color: #00d1b2 !important;
 }
 .btn-outlined-primary-xl:hover {
-  background-color: #00d1b2;
-  color: #fff;
+  background-color: #00d1b2 !important;
+  color: #fff !important;
 }
 
 .btn-complement-primary {
@@ -16419,11 +17322,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
-  color: rgb(239.1, 0, 35.4645933014);
+  color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary:hover {
-  color: #00d1b2;
-  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2 !important;
+  background-color: rgb(239.1, 0, 35.4645933014) !important;
 }
 
 .btn-complement-primary-xl {
@@ -16436,11 +17339,11 @@ html {
   background-color: #00d1b2;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(239.1, 0, 35.4645933014);
+  color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary-xl:hover {
-  color: #00d1b2;
-  background-color: rgb(239.1, 0, 35.4645933014);
+  color: #00d1b2 !important;
+  background-color: rgb(239.1, 0, 35.4645933014) !important;
 }
 
 .btn-sm {
@@ -16468,7 +17371,7 @@ html {
   background-color: #66d1ff;
 }
 .btn-info:hover {
-  background-color: rgb(117.3, 213.6, 255);
+  background-color: rgb(117.3, 213.6, 255) !important;
 }
 
 .btn-info-sm {
@@ -16483,7 +17386,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-info-sm:hover {
-  background-color: rgb(117.3, 213.6, 255);
+  background-color: rgb(117.3, 213.6, 255) !important;
 }
 
 .btn-outlined-info {
@@ -16495,11 +17398,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #66d1ff;
-  color: #66d1ff;
+  color: #66d1ff !important;
 }
 .btn-outlined-info:hover {
-  background-color: #66d1ff;
-  color: #fff;
+  background-color: #66d1ff !important;
+  color: #fff !important;
 }
 
 .btn-outlined-info-sm {
@@ -16513,11 +17416,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #66d1ff;
-  color: #66d1ff;
+  color: #66d1ff !important;
 }
 .btn-outlined-info-sm:hover {
-  background-color: #66d1ff;
-  color: #fff;
+  background-color: #66d1ff !important;
+  color: #fff !important;
 }
 
 .btn-complement-info {
@@ -16528,11 +17431,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
-  color: rgb(255, 158.7, 117.3);
+  color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info:hover {
-  color: #66d1ff;
-  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff !important;
+  background-color: rgb(255, 158.7, 117.3) !important;
 }
 
 .btn-complement-info-sm {
@@ -16545,11 +17448,11 @@ html {
   background-color: #66d1ff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(255, 158.7, 117.3);
+  color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info-sm:hover {
-  color: #66d1ff;
-  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff !important;
+  background-color: rgb(255, 158.7, 117.3) !important;
 }
 
 .btn-md {
@@ -16577,7 +17480,7 @@ html {
   background-color: #66d1ff;
 }
 .btn-info:hover {
-  background-color: rgb(117.3, 213.6, 255);
+  background-color: rgb(117.3, 213.6, 255) !important;
 }
 
 .btn-info-md {
@@ -16592,7 +17495,7 @@ html {
   font-size: 1rem;
 }
 .btn-info-md:hover {
-  background-color: rgb(117.3, 213.6, 255);
+  background-color: rgb(117.3, 213.6, 255) !important;
 }
 
 .btn-outlined-info {
@@ -16604,11 +17507,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #66d1ff;
-  color: #66d1ff;
+  color: #66d1ff !important;
 }
 .btn-outlined-info:hover {
-  background-color: #66d1ff;
-  color: #fff;
+  background-color: #66d1ff !important;
+  color: #fff !important;
 }
 
 .btn-outlined-info-md {
@@ -16622,11 +17525,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #66d1ff;
-  color: #66d1ff;
+  color: #66d1ff !important;
 }
 .btn-outlined-info-md:hover {
-  background-color: #66d1ff;
-  color: #fff;
+  background-color: #66d1ff !important;
+  color: #fff !important;
 }
 
 .btn-complement-info {
@@ -16637,11 +17540,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
-  color: rgb(255, 158.7, 117.3);
+  color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info:hover {
-  color: #66d1ff;
-  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff !important;
+  background-color: rgb(255, 158.7, 117.3) !important;
 }
 
 .btn-complement-info-md {
@@ -16654,11 +17557,11 @@ html {
   background-color: #66d1ff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(255, 158.7, 117.3);
+  color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info-md:hover {
-  color: #66d1ff;
-  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff !important;
+  background-color: rgb(255, 158.7, 117.3) !important;
 }
 
 .btn-lg {
@@ -16686,7 +17589,7 @@ html {
   background-color: #66d1ff;
 }
 .btn-info:hover {
-  background-color: rgb(117.3, 213.6, 255);
+  background-color: rgb(117.3, 213.6, 255) !important;
 }
 
 .btn-info-lg {
@@ -16701,7 +17604,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-info-lg:hover {
-  background-color: rgb(117.3, 213.6, 255);
+  background-color: rgb(117.3, 213.6, 255) !important;
 }
 
 .btn-outlined-info {
@@ -16713,11 +17616,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #66d1ff;
-  color: #66d1ff;
+  color: #66d1ff !important;
 }
 .btn-outlined-info:hover {
-  background-color: #66d1ff;
-  color: #fff;
+  background-color: #66d1ff !important;
+  color: #fff !important;
 }
 
 .btn-outlined-info-lg {
@@ -16731,11 +17634,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #66d1ff;
-  color: #66d1ff;
+  color: #66d1ff !important;
 }
 .btn-outlined-info-lg:hover {
-  background-color: #66d1ff;
-  color: #fff;
+  background-color: #66d1ff !important;
+  color: #fff !important;
 }
 
 .btn-complement-info {
@@ -16746,11 +17649,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
-  color: rgb(255, 158.7, 117.3);
+  color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info:hover {
-  color: #66d1ff;
-  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff !important;
+  background-color: rgb(255, 158.7, 117.3) !important;
 }
 
 .btn-complement-info-lg {
@@ -16763,11 +17666,11 @@ html {
   background-color: #66d1ff;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(255, 158.7, 117.3);
+  color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info-lg:hover {
-  color: #66d1ff;
-  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff !important;
+  background-color: rgb(255, 158.7, 117.3) !important;
 }
 
 .btn-xl {
@@ -16795,7 +17698,7 @@ html {
   background-color: #66d1ff;
 }
 .btn-info:hover {
-  background-color: rgb(117.3, 213.6, 255);
+  background-color: rgb(117.3, 213.6, 255) !important;
 }
 
 .btn-info-xl {
@@ -16810,7 +17713,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-info-xl:hover {
-  background-color: rgb(117.3, 213.6, 255);
+  background-color: rgb(117.3, 213.6, 255) !important;
 }
 
 .btn-outlined-info {
@@ -16822,11 +17725,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #66d1ff;
-  color: #66d1ff;
+  color: #66d1ff !important;
 }
 .btn-outlined-info:hover {
-  background-color: #66d1ff;
-  color: #fff;
+  background-color: #66d1ff !important;
+  color: #fff !important;
 }
 
 .btn-outlined-info-xl {
@@ -16840,11 +17743,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #66d1ff;
-  color: #66d1ff;
+  color: #66d1ff !important;
 }
 .btn-outlined-info-xl:hover {
-  background-color: #66d1ff;
-  color: #fff;
+  background-color: #66d1ff !important;
+  color: #fff !important;
 }
 
 .btn-complement-info {
@@ -16855,11 +17758,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
-  color: rgb(255, 158.7, 117.3);
+  color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info:hover {
-  color: #66d1ff;
-  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff !important;
+  background-color: rgb(255, 158.7, 117.3) !important;
 }
 
 .btn-complement-info-xl {
@@ -16872,11 +17775,11 @@ html {
   background-color: #66d1ff;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(255, 158.7, 117.3);
+  color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info-xl:hover {
-  color: #66d1ff;
-  background-color: rgb(255, 158.7, 117.3);
+  color: #66d1ff !important;
+  background-color: rgb(255, 158.7, 117.3) !important;
 }
 
 .btn-sm {
@@ -16904,7 +17807,7 @@ html {
   background-color: #48c78e;
 }
 .btn-success:hover {
-  background-color: rgb(90.3, 204.6, 153.3);
+  background-color: rgb(90.3, 204.6, 153.3) !important;
 }
 
 .btn-success-sm {
@@ -16919,7 +17822,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-success-sm:hover {
-  background-color: rgb(90.3, 204.6, 153.3);
+  background-color: rgb(90.3, 204.6, 153.3) !important;
 }
 
 .btn-outlined-success {
@@ -16931,11 +17834,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #48c78e;
-  color: #48c78e;
+  color: #48c78e !important;
 }
 .btn-outlined-success:hover {
-  background-color: #48c78e;
-  color: #fff;
+  background-color: #48c78e !important;
+  color: #fff !important;
 }
 
 .btn-outlined-success-sm {
@@ -16949,11 +17852,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #48c78e;
-  color: #48c78e;
+  color: #48c78e !important;
 }
 .btn-outlined-success-sm:hover {
-  background-color: #48c78e;
-  color: #fff;
+  background-color: #48c78e !important;
+  color: #fff !important;
 }
 
 .btn-complement-success {
@@ -16964,11 +17867,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
-  color: rgb(204.6, 90.3, 141.6);
+  color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success:hover {
-  color: #48c78e;
-  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e !important;
+  background-color: rgb(204.6, 90.3, 141.6) !important;
 }
 
 .btn-complement-success-sm {
@@ -16981,11 +17884,11 @@ html {
   background-color: #48c78e;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(204.6, 90.3, 141.6);
+  color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success-sm:hover {
-  color: #48c78e;
-  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e !important;
+  background-color: rgb(204.6, 90.3, 141.6) !important;
 }
 
 .btn-md {
@@ -17013,7 +17916,7 @@ html {
   background-color: #48c78e;
 }
 .btn-success:hover {
-  background-color: rgb(90.3, 204.6, 153.3);
+  background-color: rgb(90.3, 204.6, 153.3) !important;
 }
 
 .btn-success-md {
@@ -17028,7 +17931,7 @@ html {
   font-size: 1rem;
 }
 .btn-success-md:hover {
-  background-color: rgb(90.3, 204.6, 153.3);
+  background-color: rgb(90.3, 204.6, 153.3) !important;
 }
 
 .btn-outlined-success {
@@ -17040,11 +17943,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #48c78e;
-  color: #48c78e;
+  color: #48c78e !important;
 }
 .btn-outlined-success:hover {
-  background-color: #48c78e;
-  color: #fff;
+  background-color: #48c78e !important;
+  color: #fff !important;
 }
 
 .btn-outlined-success-md {
@@ -17058,11 +17961,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #48c78e;
-  color: #48c78e;
+  color: #48c78e !important;
 }
 .btn-outlined-success-md:hover {
-  background-color: #48c78e;
-  color: #fff;
+  background-color: #48c78e !important;
+  color: #fff !important;
 }
 
 .btn-complement-success {
@@ -17073,11 +17976,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
-  color: rgb(204.6, 90.3, 141.6);
+  color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success:hover {
-  color: #48c78e;
-  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e !important;
+  background-color: rgb(204.6, 90.3, 141.6) !important;
 }
 
 .btn-complement-success-md {
@@ -17090,11 +17993,11 @@ html {
   background-color: #48c78e;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(204.6, 90.3, 141.6);
+  color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success-md:hover {
-  color: #48c78e;
-  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e !important;
+  background-color: rgb(204.6, 90.3, 141.6) !important;
 }
 
 .btn-lg {
@@ -17122,7 +18025,7 @@ html {
   background-color: #48c78e;
 }
 .btn-success:hover {
-  background-color: rgb(90.3, 204.6, 153.3);
+  background-color: rgb(90.3, 204.6, 153.3) !important;
 }
 
 .btn-success-lg {
@@ -17137,7 +18040,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-success-lg:hover {
-  background-color: rgb(90.3, 204.6, 153.3);
+  background-color: rgb(90.3, 204.6, 153.3) !important;
 }
 
 .btn-outlined-success {
@@ -17149,11 +18052,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #48c78e;
-  color: #48c78e;
+  color: #48c78e !important;
 }
 .btn-outlined-success:hover {
-  background-color: #48c78e;
-  color: #fff;
+  background-color: #48c78e !important;
+  color: #fff !important;
 }
 
 .btn-outlined-success-lg {
@@ -17167,11 +18070,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #48c78e;
-  color: #48c78e;
+  color: #48c78e !important;
 }
 .btn-outlined-success-lg:hover {
-  background-color: #48c78e;
-  color: #fff;
+  background-color: #48c78e !important;
+  color: #fff !important;
 }
 
 .btn-complement-success {
@@ -17182,11 +18085,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
-  color: rgb(204.6, 90.3, 141.6);
+  color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success:hover {
-  color: #48c78e;
-  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e !important;
+  background-color: rgb(204.6, 90.3, 141.6) !important;
 }
 
 .btn-complement-success-lg {
@@ -17199,11 +18102,11 @@ html {
   background-color: #48c78e;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(204.6, 90.3, 141.6);
+  color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success-lg:hover {
-  color: #48c78e;
-  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e !important;
+  background-color: rgb(204.6, 90.3, 141.6) !important;
 }
 
 .btn-xl {
@@ -17231,7 +18134,7 @@ html {
   background-color: #48c78e;
 }
 .btn-success:hover {
-  background-color: rgb(90.3, 204.6, 153.3);
+  background-color: rgb(90.3, 204.6, 153.3) !important;
 }
 
 .btn-success-xl {
@@ -17246,7 +18149,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-success-xl:hover {
-  background-color: rgb(90.3, 204.6, 153.3);
+  background-color: rgb(90.3, 204.6, 153.3) !important;
 }
 
 .btn-outlined-success {
@@ -17258,11 +18161,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #48c78e;
-  color: #48c78e;
+  color: #48c78e !important;
 }
 .btn-outlined-success:hover {
-  background-color: #48c78e;
-  color: #fff;
+  background-color: #48c78e !important;
+  color: #fff !important;
 }
 
 .btn-outlined-success-xl {
@@ -17276,11 +18179,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #48c78e;
-  color: #48c78e;
+  color: #48c78e !important;
 }
 .btn-outlined-success-xl:hover {
-  background-color: #48c78e;
-  color: #fff;
+  background-color: #48c78e !important;
+  color: #fff !important;
 }
 
 .btn-complement-success {
@@ -17291,11 +18194,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
-  color: rgb(204.6, 90.3, 141.6);
+  color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success:hover {
-  color: #48c78e;
-  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e !important;
+  background-color: rgb(204.6, 90.3, 141.6) !important;
 }
 
 .btn-complement-success-xl {
@@ -17308,11 +18211,11 @@ html {
   background-color: #48c78e;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(204.6, 90.3, 141.6);
+  color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success-xl:hover {
-  color: #48c78e;
-  background-color: rgb(204.6, 90.3, 141.6);
+  color: #48c78e !important;
+  background-color: rgb(204.6, 90.3, 141.6) !important;
 }
 
 .btn-sm {
@@ -17340,7 +18243,7 @@ html {
   background-color: #ffb70f;
 }
 .btn-warning:hover {
-  background-color: rgb(255, 190.2, 39);
+  background-color: rgb(255, 190.2, 39) !important;
 }
 
 .btn-warning-sm {
@@ -17355,7 +18258,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-warning-sm:hover {
-  background-color: rgb(255, 190.2, 39);
+  background-color: rgb(255, 190.2, 39) !important;
 }
 
 .btn-outlined-warning {
@@ -17367,11 +18270,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ffb70f;
-  color: #ffb70f;
+  color: #ffb70f !important;
 }
 .btn-outlined-warning:hover {
-  background-color: #ffb70f;
-  color: #fff;
+  background-color: #ffb70f !important;
+  color: #fff !important;
 }
 
 .btn-outlined-warning-sm {
@@ -17385,11 +18288,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #ffb70f;
-  color: #ffb70f;
+  color: #ffb70f !important;
 }
 .btn-outlined-warning-sm:hover {
-  background-color: #ffb70f;
-  color: #fff;
+  background-color: #ffb70f !important;
+  color: #fff !important;
 }
 
 .btn-complement-warning {
@@ -17400,11 +18303,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
-  color: rgb(39, 103.8, 255);
+  color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning:hover {
-  color: #ffb70f;
-  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f !important;
+  background-color: rgb(39, 103.8, 255) !important;
 }
 
 .btn-complement-warning-sm {
@@ -17417,11 +18320,11 @@ html {
   background-color: #ffb70f;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(39, 103.8, 255);
+  color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning-sm:hover {
-  color: #ffb70f;
-  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f !important;
+  background-color: rgb(39, 103.8, 255) !important;
 }
 
 .btn-md {
@@ -17449,7 +18352,7 @@ html {
   background-color: #ffb70f;
 }
 .btn-warning:hover {
-  background-color: rgb(255, 190.2, 39);
+  background-color: rgb(255, 190.2, 39) !important;
 }
 
 .btn-warning-md {
@@ -17464,7 +18367,7 @@ html {
   font-size: 1rem;
 }
 .btn-warning-md:hover {
-  background-color: rgb(255, 190.2, 39);
+  background-color: rgb(255, 190.2, 39) !important;
 }
 
 .btn-outlined-warning {
@@ -17476,11 +18379,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ffb70f;
-  color: #ffb70f;
+  color: #ffb70f !important;
 }
 .btn-outlined-warning:hover {
-  background-color: #ffb70f;
-  color: #fff;
+  background-color: #ffb70f !important;
+  color: #fff !important;
 }
 
 .btn-outlined-warning-md {
@@ -17494,11 +18397,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #ffb70f;
-  color: #ffb70f;
+  color: #ffb70f !important;
 }
 .btn-outlined-warning-md:hover {
-  background-color: #ffb70f;
-  color: #fff;
+  background-color: #ffb70f !important;
+  color: #fff !important;
 }
 
 .btn-complement-warning {
@@ -17509,11 +18412,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
-  color: rgb(39, 103.8, 255);
+  color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning:hover {
-  color: #ffb70f;
-  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f !important;
+  background-color: rgb(39, 103.8, 255) !important;
 }
 
 .btn-complement-warning-md {
@@ -17526,11 +18429,11 @@ html {
   background-color: #ffb70f;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(39, 103.8, 255);
+  color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning-md:hover {
-  color: #ffb70f;
-  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f !important;
+  background-color: rgb(39, 103.8, 255) !important;
 }
 
 .btn-lg {
@@ -17558,7 +18461,7 @@ html {
   background-color: #ffb70f;
 }
 .btn-warning:hover {
-  background-color: rgb(255, 190.2, 39);
+  background-color: rgb(255, 190.2, 39) !important;
 }
 
 .btn-warning-lg {
@@ -17573,7 +18476,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-warning-lg:hover {
-  background-color: rgb(255, 190.2, 39);
+  background-color: rgb(255, 190.2, 39) !important;
 }
 
 .btn-outlined-warning {
@@ -17585,11 +18488,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ffb70f;
-  color: #ffb70f;
+  color: #ffb70f !important;
 }
 .btn-outlined-warning:hover {
-  background-color: #ffb70f;
-  color: #fff;
+  background-color: #ffb70f !important;
+  color: #fff !important;
 }
 
 .btn-outlined-warning-lg {
@@ -17603,11 +18506,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #ffb70f;
-  color: #ffb70f;
+  color: #ffb70f !important;
 }
 .btn-outlined-warning-lg:hover {
-  background-color: #ffb70f;
-  color: #fff;
+  background-color: #ffb70f !important;
+  color: #fff !important;
 }
 
 .btn-complement-warning {
@@ -17618,11 +18521,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
-  color: rgb(39, 103.8, 255);
+  color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning:hover {
-  color: #ffb70f;
-  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f !important;
+  background-color: rgb(39, 103.8, 255) !important;
 }
 
 .btn-complement-warning-lg {
@@ -17635,11 +18538,11 @@ html {
   background-color: #ffb70f;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(39, 103.8, 255);
+  color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning-lg:hover {
-  color: #ffb70f;
-  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f !important;
+  background-color: rgb(39, 103.8, 255) !important;
 }
 
 .btn-xl {
@@ -17667,7 +18570,7 @@ html {
   background-color: #ffb70f;
 }
 .btn-warning:hover {
-  background-color: rgb(255, 190.2, 39);
+  background-color: rgb(255, 190.2, 39) !important;
 }
 
 .btn-warning-xl {
@@ -17682,7 +18585,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-warning-xl:hover {
-  background-color: rgb(255, 190.2, 39);
+  background-color: rgb(255, 190.2, 39) !important;
 }
 
 .btn-outlined-warning {
@@ -17694,11 +18597,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ffb70f;
-  color: #ffb70f;
+  color: #ffb70f !important;
 }
 .btn-outlined-warning:hover {
-  background-color: #ffb70f;
-  color: #fff;
+  background-color: #ffb70f !important;
+  color: #fff !important;
 }
 
 .btn-outlined-warning-xl {
@@ -17712,11 +18615,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #ffb70f;
-  color: #ffb70f;
+  color: #ffb70f !important;
 }
 .btn-outlined-warning-xl:hover {
-  background-color: #ffb70f;
-  color: #fff;
+  background-color: #ffb70f !important;
+  color: #fff !important;
 }
 
 .btn-complement-warning {
@@ -17727,11 +18630,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
-  color: rgb(39, 103.8, 255);
+  color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning:hover {
-  color: #ffb70f;
-  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f !important;
+  background-color: rgb(39, 103.8, 255) !important;
 }
 
 .btn-complement-warning-xl {
@@ -17744,11 +18647,11 @@ html {
   background-color: #ffb70f;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(39, 103.8, 255);
+  color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning-xl:hover {
-  color: #ffb70f;
-  background-color: rgb(39, 103.8, 255);
+  color: #ffb70f !important;
+  background-color: rgb(39, 103.8, 255) !important;
 }
 
 .btn-sm {
@@ -17776,7 +18679,7 @@ html {
   background-color: #ff6685;
 }
 .btn-danger:hover {
-  background-color: rgb(255, 117.3, 145.2);
+  background-color: rgb(255, 117.3, 145.2) !important;
 }
 
 .btn-danger-sm {
@@ -17791,7 +18694,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-danger-sm:hover {
-  background-color: rgb(255, 117.3, 145.2);
+  background-color: rgb(255, 117.3, 145.2) !important;
 }
 
 .btn-outlined-danger {
@@ -17803,11 +18706,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ff6685;
-  color: #ff6685;
+  color: #ff6685 !important;
 }
 .btn-outlined-danger:hover {
-  background-color: #ff6685;
-  color: #fff;
+  background-color: #ff6685 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-danger-sm {
@@ -17821,11 +18724,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #ff6685;
-  color: #ff6685;
+  color: #ff6685 !important;
 }
 .btn-outlined-danger-sm:hover {
-  background-color: #ff6685;
-  color: #fff;
+  background-color: #ff6685 !important;
+  color: #fff !important;
 }
 
 .btn-complement-danger {
@@ -17836,11 +18739,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
-  color: rgb(117.3, 255, 227.1);
+  color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger:hover {
-  color: #ff6685;
-  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685 !important;
+  background-color: rgb(117.3, 255, 227.1) !important;
 }
 
 .btn-complement-danger-sm {
@@ -17853,11 +18756,11 @@ html {
   background-color: #ff6685;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(117.3, 255, 227.1);
+  color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger-sm:hover {
-  color: #ff6685;
-  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685 !important;
+  background-color: rgb(117.3, 255, 227.1) !important;
 }
 
 .btn-md {
@@ -17885,7 +18788,7 @@ html {
   background-color: #ff6685;
 }
 .btn-danger:hover {
-  background-color: rgb(255, 117.3, 145.2);
+  background-color: rgb(255, 117.3, 145.2) !important;
 }
 
 .btn-danger-md {
@@ -17900,7 +18803,7 @@ html {
   font-size: 1rem;
 }
 .btn-danger-md:hover {
-  background-color: rgb(255, 117.3, 145.2);
+  background-color: rgb(255, 117.3, 145.2) !important;
 }
 
 .btn-outlined-danger {
@@ -17912,11 +18815,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ff6685;
-  color: #ff6685;
+  color: #ff6685 !important;
 }
 .btn-outlined-danger:hover {
-  background-color: #ff6685;
-  color: #fff;
+  background-color: #ff6685 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-danger-md {
@@ -17930,11 +18833,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #ff6685;
-  color: #ff6685;
+  color: #ff6685 !important;
 }
 .btn-outlined-danger-md:hover {
-  background-color: #ff6685;
-  color: #fff;
+  background-color: #ff6685 !important;
+  color: #fff !important;
 }
 
 .btn-complement-danger {
@@ -17945,11 +18848,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
-  color: rgb(117.3, 255, 227.1);
+  color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger:hover {
-  color: #ff6685;
-  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685 !important;
+  background-color: rgb(117.3, 255, 227.1) !important;
 }
 
 .btn-complement-danger-md {
@@ -17962,11 +18865,11 @@ html {
   background-color: #ff6685;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(117.3, 255, 227.1);
+  color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger-md:hover {
-  color: #ff6685;
-  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685 !important;
+  background-color: rgb(117.3, 255, 227.1) !important;
 }
 
 .btn-lg {
@@ -17994,7 +18897,7 @@ html {
   background-color: #ff6685;
 }
 .btn-danger:hover {
-  background-color: rgb(255, 117.3, 145.2);
+  background-color: rgb(255, 117.3, 145.2) !important;
 }
 
 .btn-danger-lg {
@@ -18009,7 +18912,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-danger-lg:hover {
-  background-color: rgb(255, 117.3, 145.2);
+  background-color: rgb(255, 117.3, 145.2) !important;
 }
 
 .btn-outlined-danger {
@@ -18021,11 +18924,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ff6685;
-  color: #ff6685;
+  color: #ff6685 !important;
 }
 .btn-outlined-danger:hover {
-  background-color: #ff6685;
-  color: #fff;
+  background-color: #ff6685 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-danger-lg {
@@ -18039,11 +18942,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #ff6685;
-  color: #ff6685;
+  color: #ff6685 !important;
 }
 .btn-outlined-danger-lg:hover {
-  background-color: #ff6685;
-  color: #fff;
+  background-color: #ff6685 !important;
+  color: #fff !important;
 }
 
 .btn-complement-danger {
@@ -18054,11 +18957,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
-  color: rgb(117.3, 255, 227.1);
+  color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger:hover {
-  color: #ff6685;
-  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685 !important;
+  background-color: rgb(117.3, 255, 227.1) !important;
 }
 
 .btn-complement-danger-lg {
@@ -18071,11 +18974,11 @@ html {
   background-color: #ff6685;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(117.3, 255, 227.1);
+  color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger-lg:hover {
-  color: #ff6685;
-  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685 !important;
+  background-color: rgb(117.3, 255, 227.1) !important;
 }
 
 .btn-xl {
@@ -18103,7 +19006,7 @@ html {
   background-color: #ff6685;
 }
 .btn-danger:hover {
-  background-color: rgb(255, 117.3, 145.2);
+  background-color: rgb(255, 117.3, 145.2) !important;
 }
 
 .btn-danger-xl {
@@ -18118,7 +19021,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-danger-xl:hover {
-  background-color: rgb(255, 117.3, 145.2);
+  background-color: rgb(255, 117.3, 145.2) !important;
 }
 
 .btn-outlined-danger {
@@ -18130,11 +19033,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid #ff6685;
-  color: #ff6685;
+  color: #ff6685 !important;
 }
 .btn-outlined-danger:hover {
-  background-color: #ff6685;
-  color: #fff;
+  background-color: #ff6685 !important;
+  color: #fff !important;
 }
 
 .btn-outlined-danger-xl {
@@ -18148,11 +19051,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #ff6685;
-  color: #ff6685;
+  color: #ff6685 !important;
 }
 .btn-outlined-danger-xl:hover {
-  background-color: #ff6685;
-  color: #fff;
+  background-color: #ff6685 !important;
+  color: #fff !important;
 }
 
 .btn-complement-danger {
@@ -18163,11 +19066,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
-  color: rgb(117.3, 255, 227.1);
+  color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger:hover {
-  color: #ff6685;
-  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685 !important;
+  background-color: rgb(117.3, 255, 227.1) !important;
 }
 
 .btn-complement-danger-xl {
@@ -18180,11 +19083,11 @@ html {
   background-color: #ff6685;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(117.3, 255, 227.1);
+  color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger-xl:hover {
-  color: #ff6685;
-  background-color: rgb(117.3, 255, 227.1);
+  color: #ff6685 !important;
+  background-color: rgb(117.3, 255, 227.1) !important;
 }
 
 .btn-sm {
@@ -18212,7 +19115,7 @@ html {
   background-color: black;
 }
 .btn-black:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-black-sm {
@@ -18227,7 +19130,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-black-sm:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-outlined-black {
@@ -18239,11 +19142,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid black;
-  color: black;
+  color: black !important;
 }
 .btn-outlined-black:hover {
-  background-color: black;
-  color: #fff;
+  background-color: black !important;
+  color: #fff !important;
 }
 
 .btn-outlined-black-sm {
@@ -18257,11 +19160,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid black;
-  color: black;
+  color: black !important;
 }
 .btn-outlined-black-sm:hover {
-  background-color: black;
-  color: #fff;
+  background-color: black !important;
+  color: #fff !important;
 }
 
 .btn-complement-black {
@@ -18272,11 +19175,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: black;
-  color: rgb(25.5, 25.5, 25.5);
+  color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black:hover {
-  color: black;
-  background-color: rgb(25.5, 25.5, 25.5);
+  color: black !important;
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-complement-black-sm {
@@ -18289,11 +19192,11 @@ html {
   background-color: black;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: rgb(25.5, 25.5, 25.5);
+  color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black-sm:hover {
-  color: black;
-  background-color: rgb(25.5, 25.5, 25.5);
+  color: black !important;
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-md {
@@ -18321,7 +19224,7 @@ html {
   background-color: black;
 }
 .btn-black:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-black-md {
@@ -18336,7 +19239,7 @@ html {
   font-size: 1rem;
 }
 .btn-black-md:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-outlined-black {
@@ -18348,11 +19251,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid black;
-  color: black;
+  color: black !important;
 }
 .btn-outlined-black:hover {
-  background-color: black;
-  color: #fff;
+  background-color: black !important;
+  color: #fff !important;
 }
 
 .btn-outlined-black-md {
@@ -18366,11 +19269,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid black;
-  color: black;
+  color: black !important;
 }
 .btn-outlined-black-md:hover {
-  background-color: black;
-  color: #fff;
+  background-color: black !important;
+  color: #fff !important;
 }
 
 .btn-complement-black {
@@ -18381,11 +19284,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: black;
-  color: rgb(25.5, 25.5, 25.5);
+  color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black:hover {
-  color: black;
-  background-color: rgb(25.5, 25.5, 25.5);
+  color: black !important;
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-complement-black-md {
@@ -18398,11 +19301,11 @@ html {
   background-color: black;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(25.5, 25.5, 25.5);
+  color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black-md:hover {
-  color: black;
-  background-color: rgb(25.5, 25.5, 25.5);
+  color: black !important;
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-lg {
@@ -18430,7 +19333,7 @@ html {
   background-color: black;
 }
 .btn-black:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-black-lg {
@@ -18445,7 +19348,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-black-lg:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-outlined-black {
@@ -18457,11 +19360,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid black;
-  color: black;
+  color: black !important;
 }
 .btn-outlined-black:hover {
-  background-color: black;
-  color: #fff;
+  background-color: black !important;
+  color: #fff !important;
 }
 
 .btn-outlined-black-lg {
@@ -18475,11 +19378,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid black;
-  color: black;
+  color: black !important;
 }
 .btn-outlined-black-lg:hover {
-  background-color: black;
-  color: #fff;
+  background-color: black !important;
+  color: #fff !important;
 }
 
 .btn-complement-black {
@@ -18490,11 +19393,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: black;
-  color: rgb(25.5, 25.5, 25.5);
+  color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black:hover {
-  color: black;
-  background-color: rgb(25.5, 25.5, 25.5);
+  color: black !important;
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-complement-black-lg {
@@ -18507,11 +19410,11 @@ html {
   background-color: black;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: rgb(25.5, 25.5, 25.5);
+  color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black-lg:hover {
-  color: black;
-  background-color: rgb(25.5, 25.5, 25.5);
+  color: black !important;
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-xl {
@@ -18539,7 +19442,7 @@ html {
   background-color: black;
 }
 .btn-black:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-black-xl {
@@ -18554,7 +19457,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-black-xl:hover {
-  background-color: rgb(25.5, 25.5, 25.5);
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-outlined-black {
@@ -18566,11 +19469,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid black;
-  color: black;
+  color: black !important;
 }
 .btn-outlined-black:hover {
-  background-color: black;
-  color: #fff;
+  background-color: black !important;
+  color: #fff !important;
 }
 
 .btn-outlined-black-xl {
@@ -18584,11 +19487,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid black;
-  color: black;
+  color: black !important;
 }
 .btn-outlined-black-xl:hover {
-  background-color: black;
-  color: #fff;
+  background-color: black !important;
+  color: #fff !important;
 }
 
 .btn-complement-black {
@@ -18599,11 +19502,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: black;
-  color: rgb(25.5, 25.5, 25.5);
+  color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black:hover {
-  color: black;
-  background-color: rgb(25.5, 25.5, 25.5);
+  color: black !important;
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-complement-black-xl {
@@ -18616,11 +19519,11 @@ html {
   background-color: black;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: rgb(25.5, 25.5, 25.5);
+  color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black-xl:hover {
-  color: black;
-  background-color: rgb(25.5, 25.5, 25.5);
+  color: black !important;
+  background-color: rgb(25.5, 25.5, 25.5) !important;
 }
 
 .btn-sm {
@@ -18648,7 +19551,7 @@ html {
   background-color: white;
 }
 .btn-white:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .btn-white-sm {
@@ -18663,7 +19566,7 @@ html {
   font-size: 0.875rem;
 }
 .btn-white-sm:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .btn-outlined-white {
@@ -18675,11 +19578,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid white;
-  color: white;
+  color: white !important;
 }
 .btn-outlined-white:hover {
-  background-color: white;
-  color: #fff;
+  background-color: white !important;
+  color: #fff !important;
 }
 
 .btn-outlined-white-sm {
@@ -18693,11 +19596,11 @@ html {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid white;
-  color: white;
+  color: white !important;
 }
 .btn-outlined-white-sm:hover {
-  background-color: white;
-  color: #fff;
+  background-color: white !important;
+  color: #fff !important;
 }
 
 .btn-complement-white {
@@ -18708,11 +19611,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: white;
-  color: white;
+  color: white !important;
 }
 .btn-complement-white:hover {
-  color: white;
-  background-color: white;
+  color: white !important;
+  background-color: white !important;
 }
 
 .btn-complement-white-sm {
@@ -18725,11 +19628,11 @@ html {
   background-color: white;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  color: white;
+  color: white !important;
 }
 .btn-complement-white-sm:hover {
-  color: white;
-  background-color: white;
+  color: white !important;
+  background-color: white !important;
 }
 
 .btn-md {
@@ -18757,7 +19660,7 @@ html {
   background-color: white;
 }
 .btn-white:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .btn-white-md {
@@ -18772,7 +19675,7 @@ html {
   font-size: 1rem;
 }
 .btn-white-md:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .btn-outlined-white {
@@ -18784,11 +19687,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid white;
-  color: white;
+  color: white !important;
 }
 .btn-outlined-white:hover {
-  background-color: white;
-  color: #fff;
+  background-color: white !important;
+  color: #fff !important;
 }
 
 .btn-outlined-white-md {
@@ -18802,11 +19705,11 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid white;
-  color: white;
+  color: white !important;
 }
 .btn-outlined-white-md:hover {
-  background-color: white;
-  color: #fff;
+  background-color: white !important;
+  color: #fff !important;
 }
 
 .btn-complement-white {
@@ -18817,11 +19720,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: white;
-  color: white;
+  color: white !important;
 }
 .btn-complement-white:hover {
-  color: white;
-  background-color: white;
+  color: white !important;
+  background-color: white !important;
 }
 
 .btn-complement-white-md {
@@ -18834,11 +19737,11 @@ html {
   background-color: white;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: white;
+  color: white !important;
 }
 .btn-complement-white-md:hover {
-  color: white;
-  background-color: white;
+  color: white !important;
+  background-color: white !important;
 }
 
 .btn-lg {
@@ -18866,7 +19769,7 @@ html {
   background-color: white;
 }
 .btn-white:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .btn-white-lg {
@@ -18881,7 +19784,7 @@ html {
   font-size: 1.125rem;
 }
 .btn-white-lg:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .btn-outlined-white {
@@ -18893,11 +19796,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid white;
-  color: white;
+  color: white !important;
 }
 .btn-outlined-white:hover {
-  background-color: white;
-  color: #fff;
+  background-color: white !important;
+  color: #fff !important;
 }
 
 .btn-outlined-white-lg {
@@ -18911,11 +19814,11 @@ html {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid white;
-  color: white;
+  color: white !important;
 }
 .btn-outlined-white-lg:hover {
-  background-color: white;
-  color: #fff;
+  background-color: white !important;
+  color: #fff !important;
 }
 
 .btn-complement-white {
@@ -18926,11 +19829,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: white;
-  color: white;
+  color: white !important;
 }
 .btn-complement-white:hover {
-  color: white;
-  background-color: white;
+  color: white !important;
+  background-color: white !important;
 }
 
 .btn-complement-white-lg {
@@ -18943,11 +19846,11 @@ html {
   background-color: white;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
-  color: white;
+  color: white !important;
 }
 .btn-complement-white-lg:hover {
-  color: white;
-  background-color: white;
+  color: white !important;
+  background-color: white !important;
 }
 
 .btn-xl {
@@ -18975,7 +19878,7 @@ html {
   background-color: white;
 }
 .btn-white:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .btn-white-xl {
@@ -18990,7 +19893,7 @@ html {
   font-size: 1.5rem;
 }
 .btn-white-xl:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .btn-outlined-white {
@@ -19002,11 +19905,11 @@ html {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
   border: 1px solid white;
-  color: white;
+  color: white !important;
 }
 .btn-outlined-white:hover {
-  background-color: white;
-  color: #fff;
+  background-color: white !important;
+  color: #fff !important;
 }
 
 .btn-outlined-white-xl {
@@ -19020,11 +19923,11 @@ html {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid white;
-  color: white;
+  color: white !important;
 }
 .btn-outlined-white-xl:hover {
-  background-color: white;
-  color: #fff;
+  background-color: white !important;
+  color: #fff !important;
 }
 
 .btn-complement-white {
@@ -19035,11 +19938,11 @@ html {
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   background-color: white;
-  color: white;
+  color: white !important;
 }
 .btn-complement-white:hover {
-  color: white;
-  background-color: white;
+  color: white !important;
+  background-color: white !important;
 }
 
 .btn-complement-white-xl {
@@ -19052,11 +19955,11 @@ html {
   background-color: white;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
-  color: white;
+  color: white !important;
 }
 .btn-complement-white-xl:hover {
-  color: white;
-  background-color: white;
+  color: white !important;
+  background-color: white !important;
 }
 
 .badge-solid-orange {
@@ -23303,7 +24206,7 @@ body {
   }
 }
 .nav-header {
-  position: absolute;
+  position: fixed;
   background-color: rgb(253, 253, 253);
   padding: 0.2rem;
   padding-bottom: 0;
@@ -23442,6 +24345,9 @@ body {
 }
 .nav-brand .nav-brand-logo {
   width: 1.7rem;
+}
+.nav-brand .nav-brand-logo:hover {
+  cursor: pointer;
 }
 .nav-brand .nav-brand-name {
   font-size: 1.5rem;
@@ -23701,6 +24607,10 @@ body {
   font-size: clamp(0.75rem, 2vw + 1rem, 3rem);
 }
 
+.sub-title {
+  font-size: clamp(0.65rem, 1.5vw + 1rem, 1.75rem);
+}
+
 .no-border {
   border: none;
 }
@@ -23734,4 +24644,37 @@ body {
   margin: 0;
   border: none;
   height: 3px;
+}
+
+.text-is-centered {
+  text-align: center;
+}
+.text-is-centered > h1, .text-is-centered > h2, .text-is-centered > h3, .text-is-centered > h4, .text-is-centered > h5, .text-is-centered > h6, .text-is-centered > p, .text-is-centered > span, .text-is-centered > a {
+  text-align: center;
+}
+
+.text-is-left {
+  text-align: left;
+}
+.text-is-left > h1, .text-is-left > h2, .text-is-left > h3, .text-is-left > h4, .text-is-left > h5, .text-is-left > h6, .text-is-left > p, .text-is-left > span, .text-is-left > a {
+  text-align: left;
+}
+
+.text-is-right {
+  text-align: right;
+}
+.text-is-right > h1, .text-is-right > h2, .text-is-right > h3, .text-is-right > h4, .text-is-right > h5, .text-is-right > h6, .text-is-right > p, .text-is-right > span, .text-is-right > a {
+  text-align: right;
+}
+
+.title-is-centered > h1, .title-is-centered > h2, .title-is-centered > h3, .title-is-centered > h4, .title-is-centered > h5, .title-is-centered > h6 {
+  text-align: center;
+}
+
+.title-is-left > h1, .title-is-left > h2, .title-is-left > h3, .title-is-left > h4, .title-is-left > h5, .title-is-left > h6 {
+  text-align: left;
+}
+
+.title-is-right > h1, .title-is-right > h2, .title-is-right > h3, .title-is-right > h4, .title-is-right > h5, .title-is-right > h6 {
+  text-align: right;
 }

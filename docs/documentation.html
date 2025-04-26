@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro-W</title>
     <!-- <link rel="stylesheet" href="https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -14,17 +15,27 @@
 
 
     
-    <header class="nav-header" id="site-header" style="position: relative !important;">
-        <div class="nav-header-wrapper" style="position: relative !important;">
+    <header class="nav-header" id="site-header">
+        <div class="nav-header-wrapper">
             <div class="nav-left">
 
                 <div>
-                    <a href="" class="nav-items-header">Opcion 1</a>
+                    <a href="documentation.html" class="nav-items-header">Inicio</a>
                 </div>
                 <div>
-                    <a href="" class="nav-items-header">
-                        Opcion 2
-                    </a>
+                    <a href="formularios/formularios.html" class="nav-items-header">Formularios</a>
+                </div>
+
+                <div>
+                    <a href="componentes/componentes.html" class="nav-items-header">Componentes</a>
+                </div>
+
+                <div>
+                    <a href="layout/layout.html" class="nav-items-header">Layout</a>
+                </div>
+
+                <div>
+                    <a href="utilidades/utilidades.html" class="nav-items-header">Utilidades</a>
                 </div>
                
                 
@@ -33,8 +44,8 @@
             <div class="nav-right">
                 
                 <div class="nav-brand">
-                    <img src="icons/ice.svg" alt="" class="nav-brand-logo">
-                    <span class="nav-brand-name">AstroW</span>
+                    <img src="icons/logo.svg" alt="" class="nav-brand-logo">
+                    <span class="nav-brand-name theme-font">AstroW</span>
                 </div>
     
                 <div class="nav-menu-container">
@@ -48,21 +59,80 @@
             </div>
         </div>
 
-        <div class="nav-mobile-links" style="margin-top: 0;">
+        <div class="nav-mobile-links">
             <ul>
-                <li><a href=""></a>Opcion 1</li>
-                <li><a href=""></a>Opcion 2</li>
+                <li><a href="documentation.html">Inicio</a></li>
+                <li><a href="formularios/formularios.html">Formularios</a></li>
+                <li><a href="componentes/componentes.html">Componentes</a></li>
+                <li><a href="layout/layout.html">Layout</a></li>
+                <li><a href="utilidades/utilidades.html">Utilidades</a></li>
             </ul>
         </div>
     </header>
 
-    <main class="p-2 mt-2 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl">
+    <main class="p-2 mt-3 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl">
 
+        <h1 class="title theme-font">Como instalar AstroW</h1>
+
+        <div class="mt-1">
+            <hr class="h-rule bg-color-orange">
+        </div>
+
+        <span class="badge-outlined-danger-xl m-1">Opción 1</span>
+
+        <p>Puedes importar directamente el archivo CSS usando JsDelivr</p>
+
+        <div class="max-w-75 m-auto">
+            <pre class="br"><code class="language-html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/manuelmv15/AstroW/css/style.css&quot;&gt;
+            </code></pre>
+        </div>
+
+
+
+
+        <span class="badge-outlined-success-xl m-1">Opción 2</span>
+
+        <p>También puedes importar el archivo CSS vía Statically CDN</p>
+
+        <div class="max-w-75 m-auto">
+            <pre class="br"><code class="language-html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css&quot;&gt;
+            </code></pre>
+        </div>
+
+
+
+        <span class="badge-outlined-info-xl m-1">Opción 3</span>
+
+        <p>Clonar el repositorio de GitHub</p>
+
+        <div class="max-w-75 m-auto d-flex justify-center">
+            <pre class="br w-fit"><code class="language-html">
+git clone https://github.com/manuelmv15/AstroW
+            </code></pre>
+        </div>
+
+
+        <span class="badge-outlined-warning-xl m-1">Opción 4</span>
+
+
+        
+        <div class="max-w-75 ai-center m-auto row justify-space-around g-2">
+            <div>
+                <p>Descargar el .ZIP con el código de la librería</p>
+            </div>
+            <div>
+                <a href="https://github.com/manuelmv15/AstroW/archive/refs/heads/main.zip" class="btn-outlined-info br">Descargar</a>
+            </div>
+        </div>
+        
     </main>
 
      
-
-
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
     
 </body>
 

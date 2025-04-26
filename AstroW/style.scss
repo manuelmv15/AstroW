@@ -32,6 +32,10 @@ body {
     font-size: clamp(0.75rem, 2vw + 1rem, 3rem);
 }
 
+.sub-title {
+    font-size: clamp(0.65rem, 1.5vw + 1rem, 1.75rem);
+}
+
 
 .no-border {
     border: none;
@@ -77,5 +81,94 @@ body {
     border: none;
     height: 3px;
 }
+
+.text-is-centered {
+    text-align: center;
+  
+    // También fuerza a que los hijos relevantes estén centrados
+    & > h1, 
+    & > h2, 
+    & > h3, 
+    & > h4, 
+    & > h5, 
+    & > h6, 
+    & > p, 
+    & > span, 
+    & > a {
+      text-align: center;
+    }
+  }
+  
+  // Alinear texto a la izquierda
+  .text-is-left {
+    text-align: left;
+  
+    & > h1, 
+    & > h2, 
+    & > h3, 
+    & > h4, 
+    & > h5, 
+    & > h6, 
+    & > p, 
+    & > span, 
+    & > a {
+      text-align: left;
+    }
+  }
+  
+  // Alinear texto a la derecha
+  .text-is-right {
+    text-align: right;
+  
+    & > h1, 
+    & > h2, 
+    & > h3, 
+    & > h4, 
+    & > h5, 
+    & > h6, 
+    & > p, 
+    & > span, 
+    & > a {
+      text-align: right;
+    }
+  }
+  
+  // === Titles specific ===
+  
+  // Centrar solo títulos
+  .title-is-centered {
+    & > h1, 
+    & > h2, 
+    & > h3, 
+    & > h4, 
+    & > h5, 
+    & > h6 {
+      text-align: center;
+    }
+  }
+  
+  // Títulos alineados a la izquierda
+  .title-is-left {
+    & > h1, 
+    & > h2, 
+    & > h3, 
+    & > h4, 
+    & > h5, 
+    & > h6 {
+      text-align: left;
+    }
+  }
+  
+  // Títulos alineados a la derecha
+  .title-is-right {
+    & > h1, 
+    & > h2, 
+    & > h3, 
+    & > h4, 
+    & > h5, 
+    & > h6 {
+      text-align: right;
+    }
+  }
 
     
