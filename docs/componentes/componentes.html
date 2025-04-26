@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro-W</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/custom.css">
+
+</head>
+
+<body class="bg-color-success-light-4">
+
+
+    <header>
+        <div class="header-wrapper">
+            <div class="left">
+                <div>
+                    <a href="../documentation.html">
+                        <p class=" ">Inicio</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="../formularios/formularios.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Formularios</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="componentes.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Componentes</p>
+
+                    </a>
+                </div>
+                <div>
+                    <a href="../layout/layout.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Layout</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="../utilidades/utilidades.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Utilidades</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="right">
+
+                <div class="brand">
+                    <img src="../icons/logo.svg" alt="" class="brand-logo">
+                    <span class="brand-name theme-font">AstroW</span>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu" id="menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 🔽 Modal mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="../documentation.html">Inicio</a>
+            <a href="../formularios/formularios.html">Formularios</a>
+            <a href="componentes.html">Componentes</a>
+            <a href="">Layout</a>
+            <a href="utilidades.html">Utilidades</a>
+        </div>
+    </div>
+
+    <main class="p-2 mt-2 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl" style="overflow: hidden;">
+
+
+        <h2 class="mt-2 mb-2 title theme-font text-center">COMPONENTES</h2>
+        <div class="d-flex justify-space-between ai-center">
+            <h6 id="botones" class="title mb-1">Botones</h6>
+            <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_buttons.scss" target="_blank"
+                class="link-style-info">Ver código fuente</a>
+        </div>
+
+        <div class="mt-1 mb-1">
+            <hr class="h-rule bg-color-info">
+        </div>
+
+        <p>Botones clásicos, en diferentes, colores, tamaños y estilos</p>
+
+        <label class="badge-outlined-info m-2">Ejemplo</label>
+
+        <div class="row g-2 justify-center">
+            <button class="btn br-lg lg:col-1">Botón</button>
+            <button class="btn-info br-lg text-white fw-bold lg:col-1">Botón</button>
+            <button class="btn-outlined-info br-lg fw-bold lg:col-1">Botón</button>
+            <button class="btn-complement-link br-lg fw-bold lg:col-1">Botón</button>
+        </div>
+
+        <div class="mt-2">
+            <h6 class="fw-bold mb-2">Clases para crear botones</h6>
+
+            <ul class="">
+                <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn</span>:
+                    Botón base sin fondo, Ideal para mantener un estilo minimalista.</li>
+                <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}</span>:
+                    Botón con fondo sólido basado en el color especificado.</li>
+                <li class="m-1"><span
+                        class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}</span>:
+                    Botón con fondo blanco y borde coloreado.</li>
+                <li class="m-1"><span
+                        class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}</span>:
+                    Botón con estilo complementario: el color de fondo lo definís vos, y al hacer
+                    hover, se intercambian los colores del texto y el fondo.</li>
+            </ul>
+        </div>
+
+        <label class="badge-outlined-info m-2">Ejemplo en html</label>
+
+        <div class="d-flex justify-center br">
+            <!-- para envolver el code -->
+            <div class="max-w-75">
+                <pre><code class="language-html">
+&lt;button class=&quot;btn br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-info br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-outlined-info br-lg &quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-complement-link br-lg&quot;&gt;Boton&lt;/button&gt;    
+                </code></pre>
+            </div>
+        </div>
+
+
+        <!-- vivo aqui loco -->
+
+        <span class="badge-outlined-orange-xl mb-1">Sizes</span>
+        <p>Variaciones de tamanos para los diferentes tipos de botones</p>
+
+        <div class="mt-1 mb-1">
+            <div class="d-flex justify-space-between">
+                <label class="badge-outlined-info">Ejemplo</label>
+            </div>
+            <br>
+            <div class="row g-4 justify-center ai-center">
+                <button class="btn-sm br-lg ">Botón</button>
+                <button class="btn-info-md br-lg text-white fw-bold ">Botón</button>
+                <button class="btn-outlined-info-lg br-lg fw-bold ">Botón</button>
+                <button class="btn-complement-link-xl br-lg fw-bold ">Botón</button>
+            </div>
+
+            <div class="mt-2">
+                <h6 class="fw-bold mb-2">Clases para crear botones con las diferentes variaciones de tamaño.</h6>
+                <ul class="">
+                    <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{size}</span>
+                    </li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-{color}-{size}</span></li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-outlined-{color}-{size}</span>
+                    </li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">btn-complement-{color}-{size}</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <label class="badge-outlined-info">Ejemplo en html</label>
+            <div class="max-w-75 m-auto">
+                <pre><code class="language-html">
+&lt;button class=&quot;btn-sm br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-info-md br-lg&quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-outlined-info-lg br-lg &quot;&gt;Boton&lt;/button&gt;<br />
+&lt;button class=&quot;btn-complement-link-xl br-lg&quot;&gt;Boton&lt;/button&gt;    
+</code></pre>
+            </div>
+
+
+
+        </div>
+
+        <div class="d-flex justify-space-between ai-center">
+            <h4 id="badges" class="title mt-2"> Badges</h4>
+            <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_badges.scss" target="_blank"
+                class="link-style-info">Ver código fuente</a>
+        </div>
+
+        <div class="mt-1 mb-1">
+            <hr class="h-rule bg-color-info ">
+        </div>
+
+        <div class="mt-1 mb-1">
+
+
+            <div class="mt-2">
+
+                <ul class="mb-2">
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-solid-{color}</span>:
+                        Badge con fondo solido y texto</li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-outlined-{color}</span>:
+                        Badge con borde de color y fondo transparente</li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-soft-{color}</span>: Badge
+                        con un fondo claro (tono suave del color)</li>
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">badge-inverted-{color}</span>:
+                        Badge con fondo claro y texto del color base. Ideal para fondos oscuros</li>
+                </ul>
+
+                <div class="d-flex justify-space-between mb-2">
+                    <label class="badge-outlined-info">Ejemplo</label>
+                </div>
+                <br>
+                <div class="row g-4 justify-center ai-center">
+                    <span class="badge-solid-link-sm lg:col-1">Sizes</span>
+                    <span class="badge-outlined-link-md lg:col-1">Sizes</span>
+                    <span class="badge-soft-link-xl lg:col-1">Sizes</span>
+                    <span class="badge-inverted-link-lg lg:col-1">Sizes</span>
+                    <span class="badge-solid-success lg:col-1">Sizes</span>
+                </div>
+
+                <p class="text-orange-override">Variaciones de tamaños para los badges</p>
+                <div class="mb-2 mt-1">
+                    <hr class="h-rule bg-color-success">
+                </div>
+            </div>
+
+            <div class="m-auto table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Sufijo</th>
+                            <th>Ejemplo en HTML</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Default</span></td>
+                            <td>Sin sufijo</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-solid-link"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Small</span></td>
+                            <td>-sm</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-solid-link-sm"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Medium</span></td>
+                            <td>-md</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-outlined-link-md"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Large</span></td>
+                            <td>-lg</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-inverted-link-lg"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Extra large</span>
+                            </td>
+                            <td>-xl</td>
+                            <td><code
+                                    class="language-html">&lt;span class="badge-soft-link-xl"&gt;Sizes&lt;/span&gt;</code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        <!-- //section para las cards -->
+
+        <div>
+
+            <div class="d-flex justify-space-between ai-center mb-1">
+                <h4 class="title">Cards</h4>
+                <a class="link-style-info" target="_blank" href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_cards.scss">Ver código fuente</a>
+            </div>
+
+            <hr class="h-rule bg-color-info">
+
+            <!-- card1 -->
+            <div class="mt-2 row justify-center g-2 ai-center">
+
+                <div class="text-area-red-ov">
+                    <div class="card" style="width: 13rem;">
+                        <img src="../icons/highest.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle">Card subtitle</h6>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+                <div class="max-w-75">
+                    <div class="">
+                        <pre class="br-lg"><code class="language-html">
+&lt;div class=&quot;card m-auto&quot; style=&quot;width: 18rem;&quot;&gt;
+&lt;img src=&quot;&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+        &lt;h6 class=&quot;card-subtitle&quot;&gt;Card subtitle&lt;/h6&gt;
+        &lt;p class=&quot;card-text&quot;&gt;
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;An item&lt;/li&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;A second item&lt;/li&gt;
+        &lt;li class=&quot;list-group-item&quot;&gt;A third item&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;   
+                        </code></pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- card2 -->
+            <div class="mt-2 row justify-center g-2 ai-center">
+
+                <div class="text-area-danger-ov">
+
+                    <div class="card m-auto" style="width: 13rem;">
+                        <img src="../icons/birds.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-color-orange-light-8 text-area-red">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle">Card subtitle</h6>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+                <div class="max-w-75">
+                    <div class="">
+                        <pre class="br-lg"><code class="language-html">
+&lt;div class=&quot;card m-auto&quot; style=&quot;width: 18rem;&quot;&gt;
+    &lt;img src=&quot;&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+    &lt;div class=&quot;card-body bg-color-orange-light-8 text-area-red&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+        &lt;h6 class=&quot;card-subtitle&quot;&gt;Card subtitle&lt;/h6&gt;
+        &lt;p class=&quot;card-text&quot;&gt;
+            Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- card3 -->
+            <div class="mt-2 row justify-center g-2 ai-center">
+
+                <div class="text-area-success-ov">
+                    <div class="card m-auto" style="width: 13rem;">
+                        <img src="../icons/jackboys.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle">Card subtitle</h6>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+                <div class="max-w-75">
+                    <div class="">
+                        <pre class="br-lg"><code class="language-html">
+&lt;div class=&quot;card m-auto&quot; style=&quot;width: 18rem;&quot;&gt;
+    &lt;img src=&quot;&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+        &lt;h6 class=&quot;card-subtitle&quot;&gt;Card subtitle&lt;/h6&gt;
+        &lt;p class=&quot;card-text&quot;&gt;
+            Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;                          
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="m-auto table-responsive">
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Sufijo</th>
+                        <th>Ejemplo en HTML</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Card contenedor</span></td>
+                        <td>Sin sufijo</td>
+                        <td><code class="language-html">&lt;div class="card"&gt;&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Centrado automático</span></td>
+                        <td>m-auto</td>
+                        <td><code class="language-html">&lt;div class="card m-auto"&gt;&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Imagen superior</span></td>
+                        <td>card-img-top</td>
+                        <td><code class="language-html">&lt;img class="card-img-top" src="..." /&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Cuerpo de la card</span></td>
+                        <td>card-body</td>
+                        <td><code class="language-html">&lt;div class="card-body"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Título</span></td>
+                        <td>card-title</td>
+                        <td><code class="language-html">&lt;h5 class="card-title"&gt;...&lt;/h5&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Subtítulo</span></td>
+                        <td>card-subtitle</td>
+                        <td><code class="language-html">&lt;h6 class="card-subtitle"&gt;...&lt;/h6&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Texto de la card</span></td>
+                        <td>card-text</td>
+                        <td><code class="language-html">&lt;p class="card-text"&gt;...&lt;/p&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Lista interna</span></td>
+                        <td>list-group + list-group-flush</td>
+                        <td><code class="language-html">&lt;ul class="list-group list-group-flush"&gt;...&lt;/ul&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Ítems de la lista</span></td>
+                        <td>list-group-item</td>
+                        <td><code class="language-html">&lt;li class="list-group-item"&gt;...&lt;/li&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">Enlaces</span></td>
+                        <td>card-link</td>
+                        <td><code class="language-html">&lt;a class="card-link" href="#"&gt;...&lt;/a&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- fin cards -->
+
+
+
+        <!-- navbars -->
+        
+        <div class="d-flex justify-space-between ai-center mb-1 mt-3">
+            <h4 class="title">Navbar</h4>
+            <a class="link-style-info" target="_blank" href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/componentes/_navbars.scss">Ver código fuente</a>
+        </div>
+
+        <hr class="h-rule bg-color-info">
+
+        <div class="container-flow bg-color-warning mt-2 text-area-black-ov br-lg"
+            style="height: 300px; padding-left: 0 !important; padding-right: 0 !important;">
+
+            
+            <header class="nav-header" id="site-header" style="position: relative !important;">
+                <div class="nav-header-wrapper" style="position: relative !important;">
+                    <div class="nav-left">
+
+                        <div>
+                            <a href="" class="nav-items-header">Opcion 1</a>
+                        </div>
+                        <div>
+                            <a href="" class="nav-items-header">
+                                Opcion 2
+                            </a>
+                        </div>
+                       
+                        
+                    </div>
+                    
+                    <div class="nav-right">
+                        
+                        <div class="nav-brand">
+                            <img src="icons/ice.svg" alt="" class="nav-brand-logo">
+                            <span class="nav-brand-name">AstroW</span>
+                        </div>
+            
+                        <div class="nav-menu-container">
+                            <div class="nav-menu" id="menuAlt">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <div class="nav-mobile-links" style="margin-top: 0;">
+                    <ul>
+                        <li><a href=""></a>Opcion 1</li>
+                        <li><a href=""></a>Opcion 2</li>
+                    </ul>
+                </div>
+            </header>
+            
+            <p></p>
+        
+        
+        </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
+
+</body>
+
+</html>
