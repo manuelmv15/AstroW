@@ -65,7 +65,7 @@
             @include btn-base($value);
             &:hover{
                 $color-lightness: scale($color: $value, $lightness: 10%);
-                background-color: $color-lightness;
+                background-color: $color-lightness !important;
             }
         }
         
@@ -74,7 +74,7 @@
             @include btn-size($size);
             &:hover{
                 $color-lightness: scale($color: $value, $lightness: 10%);
-                background-color: $color-lightness;
+                background-color: $color-lightness !important;
             }
         }
 
@@ -85,38 +85,38 @@
         .btn-outlined-#{$key}{//gen a boton con fondo blanco delineado con color respectivo
             @include btn-base(#fff);
             border: $base-border-thickness solid $value;
-            color: $value;
+            color: $value !important;
             &:hover{
-                background-color: $value;
-                color: #fff
+                background-color: $value !important;
+                color: #fff !important;
             }
         }
         .btn-outlined-#{$key}-#{$size}{//gen a boton con fondo blanco delineado con color respectivo
             @include btn-base(#fff);
             @include btn-size($size);
             border: calc($base-border-thickness + 1.5px) solid $value;
-            color: $value;
+            color: $value !important;
             &:hover{
-                background-color: $value;
-                color: #fff
+                background-color: $value !important;
+                color: #fff !important;
             }
         }
     
         .btn-complement-#{$key}{
             @include btn-base($value);
-            color: light-comp($value);
+            color: light-comp($value) !important;
             &:hover{
-                color: $value;
-                background-color:light-comp($value) ;
+                color: $value !important;
+                background-color:light-comp($value) !important;
             }
         }
         .btn-complement-#{$key}-#{$size}{
             @include btn-base($value);
             @include btn-size($size);
-            color: light-comp($value);
+            color: light-comp($value) !important;
             &:hover{
-                color: $value;
-                background-color:light-comp($value) ;
+                color: $value !important;
+                background-color:light-comp($value) !important;
             }
         }
     }

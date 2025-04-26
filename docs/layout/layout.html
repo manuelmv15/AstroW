@@ -3,9 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AstroW - Layout</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     
+
+    <header class="nav-header" id="site-header">
+        <div class="nav-header-wrapper">
+            <div class="nav-left">
+
+                <div>
+                    <a href="../documentation.html" class="nav-items-header">Inicio</a>
+                </div>
+                <div>
+                    <a href="../formularios/formularios.html" class="nav-items-header">Formularios</a>
+                </div>
+
+                <div>
+                    <a href="../componentes/componentes.html" class="nav-items-header">Componentes</a>
+                </div>
+
+                <div>
+                    <a href="layout.html" class="nav-items-header">Layout</a>
+                </div>
+
+                <div>
+                    <a href="../utilidades/utilidades.html" class="nav-items-header">Utilidades</a>
+                </div>
+               
+                
+            </div>
+            
+            <div class="nav-right">
+                
+                <div class="nav-brand">
+                    <img src="../icons/logo.svg" alt="" class="nav-brand-logo">
+                    <span class="nav-brand-name theme-font">AstroW</span>
+                </div>
+    
+                <div class="nav-menu-container">
+                    <div class="nav-menu" id="menuAlt">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="nav-mobile-links">
+            <ul>
+                <li><a href="../documentation.html">Inicio</a></li>
+                <li><a href="../formularios/formularios.html">Formularios</a></li>
+                <li><a href="../componentes/componentes.html">Componentes</a></li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="../utilidades/utilidades.html">Utilidades</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="p-2 mt-3 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl">
+
+        <h1 class="title theme-font">SISTEMA DE GRID</h1>
+
+        <div class="mt-1 mb-2">
+            <hr class="h-rule bg-color-danger">
+        </div>
+
+
+        <h1 class="sub-title">Sistema de Layout - Grid Responsivo</h1>
+
+        <div class="max-w-75 m-auto">
+            <div class="m-auto table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Breakpoint</th>
+                            <th>Ancho</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">xs</span></td>
+                            <td>250px</td>
+                            <td><code
+                                    class="language-html">&lt;div class="grid xs:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">sm</span></td>
+                            <td>480px</td>
+                            <td><code
+                                    class="language-html">&lt;div class="grid sm:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">md</span></td>
+                            <td>640px</td>
+                            <td><code
+                                    class="language-html">&lt;div class="grid md:grid-cols-i"&gt;&lt;/div&gt;
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">lg</span></td>
+                            <td>960px</td>
+                            <td><code
+                                    class="language-html">&lt;div class="grid lg:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">xl</span>
+                            </td>
+                            <td>1200px</td>
+                            <td><code
+                                    class="language-html">&lt;div class="grid xl:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">xxl</span>
+                            </td>
+                            <td>1440px</td>
+                            <td><code
+                                    class="language-html">&lt;div class="grid xxl:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="grid xl:grid-cols-12 lg:grid-cols-6 md:grid-cols-3 xs:grid-cols-2  container-flow bg-color-danger m-auto mt-2 text-is-centered br" style="min-height: 7rem;">
+            <div style="border: 1px solid black;">1</div>
+            <div style="border: 1px solid black;">2</div>
+            <div style="border: 1px solid black;">3</div>
+            <div style="border: 1px solid black;">4</div>
+            <div style="border: 1px solid black;">5</div>
+            <div style="border: 1px solid black;">6</div>
+            <div style="border: 1px solid black;">7</div>
+            <div style="border: 1px solid black;">8</div>
+            <div style="border: 1px solid black;">9</div>
+            <div style="border: 1px solid black;">10</div>
+            <div style="border: 1px solid black;">11</div>
+            <div style="border: 1px solid black;">12</div>
+        </div>
+
+        <span class="m-1 badge-soft-danger">Ejemplo HTML</span>
+
+        <div class="m-auto max-w-75">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-html">
+&lt;div class="grid xl:grid-cols-12 lg:grid-cols-6 md:grid-cols-3 xs:grid-cols-2"&gt;
+    &lt;!-- 12 items --&gt;
+&lt;/div&gt;
+            </code></pre>
+        </div>
+
+        <h1 class="sub-title m-1">Comportamiento</h1>
+        <div class="m-1 pl-2 w-full">
+            <p class="m-1">Cuando la pantalla tiene 250px o más (xs): el grid muestra 2 columnas.</p>
+            <p class="m-1">A partir de 640px (md): el grid cambia a 3 columnas.</p>
+            <p class="m-1">A partir de 960px (lg): el grid muestra 6 columnas.</p>
+            <p class="m-1">A partir de 1200px (xl): el grid muestra el máximo de 12 columnas.</p>
+        </div>
+
+
+
+        <div class="grid lg:grid-cols-6 md:grid-cols-3 xs:grid-cols-2 container-flow bg-color-danger m-auto mt-2 text-is-centered" style="min-height: 7rem;">
+            <div class="xs:col-end-3 xs:col-start-1" style="border: 1px solid black;">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,109 @@
+@use 'sass:math';
+@use 'breakpoints' as *;
+
+
+$flex-columns: 12;
+
+//FLEX FELX FLEX FLEX FLEX
+
+$justify-content-values: flex-start, flex-end, center, space-between, space-around, space-evenly;
+
+$flex-directions-values: row, column, row-reverse, column-reverse;
+
+$align-items-values: flex-start, flex-end, center, baseline, stretch;
+
+
+
+//clases para justify content
+@each $value in $justify-content-values{
+
+    .justify-#{$value}{
+        justify-content: $value;
+    }
+}
+
+//calses poara flex directions
+@each $value in $flex-directions-values{
+    .flex-dir-#{$value}{
+        
+        flex-direction: $value;
+    }
+}
+
+// Clases responsive
+@each $bp-name, $bp-value in $breakpoints {
+    @if $bp-value > 0 {
+      @include respond-to($bp-name) {
+        @each $direction in $flex-directions-values {
+          .#{$bp-name}\:flex-#{$direction} {
+            flex-direction: $direction;
+          }
+        }
+      }
+    }
+  }
+
+//clases para aling-items, align-self and align-content ya que tienen los mismos valores
+@each $value in $align-items-values{
+
+    .ai-#{$value}{
+        align-items: $value;
+    }
+
+    .ac-#{$value}{
+        align-content: $value;
+    }
+
+    .as-#{$value}{
+        align-self: $value;
+    }
+}
+//propiedades para elementos flex
+.flex-1{
+    flex: 1;
+}
+
+//clases para order
+@for $i from 1 through $flex-columns{
+    .order-#{$i}{
+        order: #{$i};
+    }
+}
+
+
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+@for $i from 1 through $flex-columns{
+    .col-#{$i}{
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: math.div($i * 100%, $flex-columns);
+    }
+}
+
+
+//NUEVA IMPLEMENTACION PARA LOS MIXINS CON BREAKPOINTS
+@each $bp-name, $bp-value in $breakpoints {
+    @if $bp-value > 0 {
+        @include respond-to($bp-name) {
+            @for $i from 1 through $flex-columns{
+                .#{$bp-name}\:col-#{$i}{
+                    box-sizing: border-box;
+                    flex-grow: 0;
+                    width: math.div($i * 100%, $flex-columns);
+                }
+            }
+        }
+    }
+}
