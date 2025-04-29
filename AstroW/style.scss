@@ -171,4 +171,10 @@ body {
     }
   }
 
+  .borders-are-rounded {
+    & > * {
+      border-radius: 0.5rem;
+    }
+  }
+
     
