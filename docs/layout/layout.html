@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
-    
+
 
     <header class="nav-header" id="site-header">
         <div class="nav-header-wrapper">
@@ -32,17 +34,17 @@
                 <div>
                     <a href="../utilidades/utilidades.html" class="nav-items-header">Utilidades</a>
                 </div>
-               
-                
+
+
             </div>
-            
+
             <div class="nav-right">
-                
+
                 <div class="nav-brand">
                     <img src="../icons/logo.svg" alt="" class="nav-brand-logo">
                     <span class="nav-brand-name theme-font">AstroW</span>
                 </div>
-    
+
                 <div class="nav-menu-container">
                     <div class="nav-menu" id="menuAlt">
                         <div></div>
@@ -50,7 +52,7 @@
                         <div></div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
@@ -90,46 +92,40 @@
                         <tr>
                             <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">xs</span></td>
                             <td>250px</td>
-                            <td><code
-                                    class="language-html">&lt;div class="grid xs:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            <td><code class="language-html">&lt;div class="grid xs:grid-cols-i"&gt;&lt;/div&gt;</code>
                             </td>
                         </tr>
                         <tr>
                             <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">sm</span></td>
                             <td>480px</td>
-                            <td><code
-                                    class="language-html">&lt;div class="grid sm:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            <td><code class="language-html">&lt;div class="grid sm:grid-cols-i"&gt;&lt;/div&gt;</code>
                             </td>
                         </tr>
                         <tr>
                             <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">md</span></td>
                             <td>640px</td>
-                            <td><code
-                                    class="language-html">&lt;div class="grid md:grid-cols-i"&gt;&lt;/div&gt;
+                            <td><code class="language-html">&lt;div class="grid md:grid-cols-i"&gt;&lt;/div&gt;
                                 </code>
                             </td>
                         </tr>
                         <tr>
                             <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">lg</span></td>
                             <td>960px</td>
-                            <td><code
-                                    class="language-html">&lt;div class="grid lg:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            <td><code class="language-html">&lt;div class="grid lg:grid-cols-i"&gt;&lt;/div&gt;</code>
                             </td>
                         </tr>
                         <tr>
                             <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">xl</span>
                             </td>
                             <td>1200px</td>
-                            <td><code
-                                    class="language-html">&lt;div class="grid xl:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            <td><code class="language-html">&lt;div class="grid xl:grid-cols-i"&gt;&lt;/div&gt;</code>
                             </td>
                         </tr>
                         <tr>
                             <td><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">xxl</span>
                             </td>
                             <td>1440px</td>
-                            <td><code
-                                    class="language-html">&lt;div class="grid xxl:grid-cols-i"&gt;&lt;/div&gt;</code>
+                            <td><code class="language-html">&lt;div class="grid xxl:grid-cols-i"&gt;&lt;/div&gt;</code>
                             </td>
                         </tr>
                     </tbody>
@@ -137,7 +133,8 @@
             </div>
         </div>
 
-        <div class="grid xl:grid-cols-12 lg:grid-cols-6 md:grid-cols-3 xs:grid-cols-2  container-flow bg-color-danger m-auto mt-2 text-is-centered br" style="min-height: 7rem;">
+        <div class="grid xl:grid-cols-12 lg:grid-cols-6 md:grid-cols-3 xs:grid-cols-2  container-flow bg-color-danger m-auto mt-2 text-is-centered br"
+            style="min-height: 7rem;">
             <div style="border: 1px solid black;">1</div>
             <div style="border: 1px solid black;">2</div>
             <div style="border: 1px solid black;">3</div>
@@ -171,15 +168,90 @@
         </div>
 
 
-
-        <div class="grid lg:grid-cols-6 md:grid-cols-3 xs:grid-cols-2 container-flow bg-color-danger m-auto mt-2 text-is-centered" style="min-height: 7rem;">
-            <div class="xs:col-end-3 xs:col-start-1" style="border: 1px solid black;">1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
+        <h1 class="sub-title mt-2">Grid column start y Grid column end</h1>
+        <div class="m-1">
+            <hr class="h-rule bg-color-link">
         </div>
+
+        <p class="borders-are-rounded m-1">Uso de las clases <span
+                class="text-red-override bg-color-gray-dark-8 fw-bold">col-start</span> y <span
+                class="text-red-override bg-color-gray-dark-8 fw-bold">col-end</span>
+        </p>
+
+
+        <div class="max-w-75 m-auto">
+            <div class="m-auto table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Clase</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span
+                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold">breakpoint:col-start-{n}</span>
+                            </td>
+                            <td>hace que el elemento empiece en la columna n en el breakpoint indicado.</td>
+                        </tr>
+                        <tr>
+                            <td><span
+                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold">breakpoint:col-end-{n}</span>
+                            </td>
+                            <td>hace que el elemento termine en la columna n en el breakpoint indicado.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-6 xs:grid-cols-3 container-flow bg-color-danger m-auto mt-2 text-is-centered borders-are-rounded br"
+            style="min-height: 7rem;">
+            <div class="xs:col-end-3 xs:col-start-1" style="border: 2px solid #ac0edc;">1</div>
+            <div style="border: 2px solid #1bccc3;">2</div>
+            <div style="border: 2px solid #1bccc3;">3</div>
+            <div style="border: 2px solid #1bccc3;">4</div>
+            <div style="border: 2px solid #1bccc3;">5</div>
+            <div class="xs:col-start-3 xs:col-end-4 md:col-start-6 md:col-end-7" style="border: 2px solid #ac0edc;">6
+            </div>
+        </div>
+
+        <span class="m-1 badge-soft-danger">Ejemplo HTML</span>
+
+        <div class="m-auto max-w-75">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-html">
+&lt;div class="grid md:grid-cols-6 xs:grid-cols-3 text-is-centered borders-are-rounded"&gt;
+    &lt;div class="xs:col-end-3 xs:col-start-1"&gt;1&lt;/div&gt;
+    &lt;div&gt;2&lt;/div&gt;
+    &lt;div&gt;3&lt;/div&gt;
+    &lt;div&gt;4&lt;/div&gt;
+    &lt;div&gt;5&lt;/div&gt;
+    &lt;div class="xs:col-start-3 xs:col-end-4 md:col-start-6 md:col-end-7"&gt;6&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+        </div>
+
+        <p class="m-1 borders-are-rounded">Este ejemplo demuestra el uso de las clases <span
+            class="text-red-override bg-color-gray-dark-8 fw-bold">col-start</span> y <span class="text-red-override bg-color-gray-dark-8 fw-bold">col-end</span>  en el sistema de grid de la librería.</p>
+
+        <p class="m-1">El grid se estructura inicialmente en 6 columnas a partir del breakpoint md (≥ 640px) y en 3 columnas para
+            pantallas más pequeñas (xs).
+        </p>
+
+        <p class="m-1">Dentro del grid, algunos elementos están posicionados manualmente utilizando las clases col-start y col-end,
+            lo que permite definir de forma precisa desde qué columna empieza y hasta qué columna termina un ítem en
+            distintos breakpoints.
+        </p>
+
+        
+
+        <h1 class="sub-title m-1">Por ejemplo</h1>
+        <div class="m-1 pl-2 w-full">
+            <p class="m-1">El primer ítem (1) ocupa desde la columna 1 hasta la 3 en xs.</p>
+            <p class="m-1">El sexto ítem (6) empieza en la columna 3 y termina en la columna 4 en xs, pero en md empieza en la 6 y termina en la 7.</p>
+        </div>
+
     </main>
 
     <script src="scripts.js"></script>
@@ -187,4 +259,5 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
 
 </body>
+
 </html>

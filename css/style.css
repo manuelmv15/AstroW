@@ -24678,3 +24678,7 @@ body {
 .title-is-right > h1, .title-is-right > h2, .title-is-right > h3, .title-is-right > h4, .title-is-right > h5, .title-is-right > h6 {
   text-align: right;
 }
+
+.borders-are-rounded > * {
+  border-radius: 0.5rem;
+}
