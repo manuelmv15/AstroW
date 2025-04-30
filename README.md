@@ -40,4 +40,4 @@ David Elias Romero Claros - RC23030 [luxoritur](https://github.com/luxoritur)
 
 
 ## Licencia
-Licencia del proyecto.
+Sin licencia, libreria de uso libre.
