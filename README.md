@@ -27,7 +27,7 @@ puedes intalara AstroW de las siguientes maneras:
 Puedes aprender como usar nuestra libreria en la [documentacion](https://manuelmv15.github.io/) oficial.
 
 ## Contribuciones
-Jeferson Alexis De La Cruz Ventura - DV23003 [jefersonDeLaCruz ](https://github.com/JefersonDeLaCruz)
+Jeferson Alexis De La Cruz Ventura - DV23003 [jefersonDeLaCruz](https://github.com/JefersonDeLaCruz)
 
 Carlos manuel melendez villatoro - MV23036 [manuelmv15](https://github.com/manuelmv15)
 
