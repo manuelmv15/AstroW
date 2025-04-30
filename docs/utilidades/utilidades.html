@@ -197,27 +197,27 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>25</td>
+                                <td>*-25</td>
                                 <td>25%</td>
                             </tr>
                             <tr>
-                                <td>50</td>
+                                <td>*-50</td>
                                 <td>50%</td>
                             </tr>
                             <tr>
-                                <td>75</td>
+                                <td>*-75</td>
                                 <td>75%</td>
                             </tr>
                             <tr>
-                                <td>full</td>
+                                <td>*-full</td>
                                 <td>100%</td>
                             </tr>
                             <tr>
-                                <td>screen</td>
+                                <td>*-screen</td>
                                 <td>100vw / 100vh</td>
                             </tr>
                             <tr>
-                                <td>none</td>
+                                <td>*-none</td>
                                 <td>none</td>
                             </tr>
                         </tbody>
@@ -304,19 +304,19 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>-0</td>
+                                <td>*-0</td>
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td>-50</td>
+                                <td>*-50</td>
                                 <td>50%</td>
                             </tr>
                             <tr>
-                                <td>-100</td>
+                                <td>*-100</td>
                                 <td>100%</td>
                             </tr>
                             <tr>
-                                <td>-auto</td>
+                                <td>*-auto</td>
                                 <td>auto</td>
                             </tr>
                         </tbody>
@@ -348,31 +348,31 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>-none</td>
+                                <td>*-none</td>
                                 <td>none</td>
                             </tr>
                             <tr>
-                                <td>-inline</td>
+                                <td>*-inline</td>
                                 <td>inline</td>
                             </tr>
                             <tr>
-                                <td>-inline-block</td>
+                                <td>*-inline-block</td>
                                 <td>inline-block</td>
                             </tr>
                             <tr>
-                                <td>-block</td>
+                                <td>*-block</td>
                                 <td>block</td>
                             </tr>
                             <tr>
-                                <td>-flex</td>
+                                <td>*-flex</td>
                                 <td>flex</td>
                             </tr>
                             <tr>
-                                <td>-inline-flex</td>
+                                <td>*-inline-flex</td>
                                 <td>inline-flex</td>
                             </tr>
                             <tr>
-                                <td>-grid</td>
+                                <td>*-grid</td>
                                 <td>grid</td>
                             </tr>
                         </tbody>
@@ -490,7 +490,48 @@
             </div>
         </section>
 
-       
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Box Shadow </h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clases para aplican sombras alrededor de los elementos, sufijo <span class="badge-soft-info">shadow*</span>.</p>
+          
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+              
+              <div>
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>Sufijo</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>*-none</td><td>Sin sombra</td></tr>
+                    <tr><td>*-sm</td><td>Sombra ligera</td></tr>
+                    <tr><td>shadow</td><td>Sombra por defecto</td></tr>
+                    <tr><td>*-md</td><td>Sombra mediana</td></tr>
+                    <tr><td>*-lg</td><td>Sombra grande</td></tr>
+                    <tr><td>*-xl</td><td>Sombra extra grande</td></tr>
+                    <tr><td>*-2xl</td><td>Sombra muy intensa</td></tr>
+                    <tr><td>*-3xl</td><td>Sombra extremadamente profunda</td></tr>
+                    <tr><td>*-boom</td><td>Sombra personalizada fuerte</td></tr>
+                    <tr><td>*-inner</td><td>Sombra interna (inset)</td></tr>
+                    <tr><td>*-outline</td><td>Contorno azul claro</td></tr>
+                  </tbody>
+                </table>
+              </div>
+          
+              <div>
+                <label class="badge-outlined-info">Ejemplo HTML</label>
+                <pre><code class="language-html">&lt;div class=&quot;shadow-sm&quot;&gt;Sombra ligera&lt;/div&gt;
+&lt;div class=&quot;shadow-lg&quot;&gt;Sombra grande&lt;/div&gt;
+&lt;div class=&quot;shadow-inner&quot;&gt;Sombra interna&lt;/div&gt;
+&lt;div class=&quot;shadow-outline&quot;&gt;Contorno&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          
+            <p class="mt-2">Estas sombras se pueden aplicar en cualquier elemento y también combinar con otras utilidades.</p>
+          </section>
           
         
 
