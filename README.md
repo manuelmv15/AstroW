@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/manuelmv15/AstroW-assets/main/astroworld-seeklogo.svg" alt="Banner">
+<img src="https://raw.githubusercontent.com/manuelmv15/AstroW-assets/main/astro.png" alt="Banner">
 
 
 
