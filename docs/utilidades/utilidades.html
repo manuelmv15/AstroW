@@ -59,10 +59,10 @@
       <p class="mt-1">Astro proporciona clases para manejar <span class="badge-soft-info">Padding</span> y <span class="badge-soft-info">Margin</span> en diferentes direcciones.</p>
 
       <ul class="mt-1">
-        <li><strong>*l</strong>: Izquierda</li>
-        <li><strong>*r</strong>: Derecha</li>
-        <li><strong>*t</strong>: Arriba</li>
-        <li><strong>*b</strong>: Abajo</li>
+        <li><strong class="badge-outlined-info">*l</strong>: Izquierda</li>
+        <li><strong class="badge-outlined-info">*r</strong>: Derecha</li>
+        <li><strong class="badge-outlined-info">*t</strong>: Arriba</li>
+        <li><strong class="badge-outlined-info">*b</strong>: Abajo</li>
       </ul>
 
       <p class="mt-2">Combina prefijos de padding/margin con sufijos para valores:</p>
@@ -151,8 +151,42 @@
     </section>
 
     <section class="mt-4">
-        
-    </section>
+        <h2 class="sub-title mb-1">Border Radius</h2>
+        <hr class="h-rule bg-color-info">
+        <p class="mt-1">Clases para redondear los bordes de cualquier elemento con el prefijo <span class="badge-soft-info">br*</span></p>
+      
+        <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+          
+          <div>
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>Clase</th>
+                  <th>Border Radius</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>-none</td><td>0</td></tr>
+                <tr><td>-sm</td><td>2.5px</td></tr>
+                <tr><td>br</td><td>5px (por defecto)</td></tr>
+                <tr><td>-lg</td><td>10px</td></tr>
+                <tr><td>-xl</td><td>20px</td></tr>
+                <tr><td>-full</td><td>50% (círculo)</td></tr>
+              </tbody>
+            </table>
+          </div>
+      
+          <div>
+            <label class="badge-outlined-info">Ejemplo HTML</label>
+            <pre><code class="language-html">&lt;div class=&quot;br&quot;&gt;Default (5px)&lt;/div&gt;
+      &lt;div class=&quot;br-lg&quot;&gt;Large (10px)&lt;/div&gt;
+      &lt;div class=&quot;br-full&quot;&gt;Circular&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      
+      
 
   </main>
 
