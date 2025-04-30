@@ -12,7 +12,13 @@ $flex-directions-values: row, column, row-reverse, column-reverse;
 
 $align-items-values: flex-start, flex-end, center, baseline, stretch;
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
 
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
 
 //clases para justify content
 @each $value in $justify-content-values{
@@ -88,7 +94,9 @@ $align-items-values: flex-start, flex-end, center, baseline, stretch;
     .col-#{$i}{
         box-sizing: border-box;
         flex-grow: 0;
-        width: math.div($i * 100%, $flex-columns);
+        // flex-grow: 0 (no crece), flex-shrink: 1 (puede encogerse), flex-basis: porcentaje puro
+        flex: 0 1 calc(#{ $i } / #{ $flex-columns } * 100%);
+
     }
 }
 
