@@ -4,17 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro-W</title>
+    <title>AstroW</title>
     <!-- <link rel="stylesheet" href="https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
+<style>
+    .github-badges img {
+    vertical-align: middle;
+    height: 24px;
+    margin-left: 0.5rem;
+}
 
+</style>
 </head>
 
-<body class="bg-color-blue-dark-2">
+<body class="bg-color-blue-dark-3">
 
 
-    
+
     <header class="nav-header" id="site-header">
         <div class="nav-header-wrapper">
             <div class="nav-left">
@@ -37,17 +44,17 @@
                 <div>
                     <a href="utilidades/utilidades.html" class="nav-items-header">Utilidades</a>
                 </div>
-               
-                
+
+
             </div>
-            
+
             <div class="nav-right">
-                
+
                 <div class="nav-brand">
                     <img src="icons/logo.svg" alt="" class="nav-brand-logo">
                     <span class="nav-brand-name theme-font">AstroW</span>
                 </div>
-    
+
                 <div class="nav-menu-container">
                     <div class="nav-menu" id="menuAlt">
                         <div></div>
@@ -55,7 +62,7 @@
                         <div></div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
@@ -72,6 +79,60 @@
 
     <main class="p-2 mt-3 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl">
 
+
+        <section class="mt-3 mb-3">
+            <h2 class="theme-font title">Bienvenido a AstroW</h2>
+            <div class="mt-1">
+                <hr class="h-rule bg-color-orange">
+            </div>
+            <p class="mt-1 text-xl">
+                <span class="text-orange">AstroW</span> es una <span class="text-gray-dark-3">librería CSS</span> basada
+                en el album <span class="text-orange">ASTROWORDL</span> del artista <span class="text-orange"> Travis
+                    Scott</span>.
+            </p>
+        </section>
+
+
+        <section class="mt-3 mb-3">
+            <h2 class="theme-font title">Colaboradores</h2>
+
+            <div class="mt-1">
+                <hr class="h-rule bg-color-orange">
+            </div>
+            <div class="github-badges">
+                <ul class="mt-1 ml-3">
+                    <li class="mt-2 text-xl">
+                        Jeferson Alexis De La Cruz Ventura
+                        <span class="badge-outlined-info-lg ml-1">DV23003</span>
+                        <a class="ml-1" href="https://github.com/JefersonDeLaCruz" target="_blank">
+                            <img src="https://img.shields.io/badge/GITHUB-JEFERSONDELACRUZ-181717?style=flat&logo=github&logoColor=white" alt="GitHub - jefersonDeLaCruz" />
+                        </a>
+                    </li>
+                    <li class="mt-2 text-xl">
+                        Carlos Manuel Melendez Villatoro
+                        <span class="badge-outlined-info-lg ml-1">MANUELMV15</span>
+                        <a class="ml-1" href="https://github.com/manuelmv15" target="_blank">
+                            <img src="https://img.shields.io/badge/GITHUB-MANUELMV15-181717?style=flat&logo=github&logoColor=white" alt="GitHub - manuelmv15" />
+                        </a>
+                    </li>
+                    <li class="mt-2 text-xl">
+                        Cristian Alexis Ventura Ventura
+                        <span class="badge-outlined-info-lg ml-1">VV23011</span>
+                        <a class="ml-1" href="https://github.com/kristiankovic" target="_blank">
+                            <img src="https://img.shields.io/badge/GITHUB-KRISTIANKOVIC-181717?style=flat&logo=github&logoColor=white" alt="GitHub - kristiankovic" />
+                        </a>
+                    </li>
+                    <li class="mt-2 text-xl">
+                        David Elias Romero Claros
+                        <span class="badge-outlined-info-lg ml-1">RC23030</span>
+                        <a class="ml-1" href="https://github.com/luxoritur" target="_blank">
+                            <img src="https://img.shields.io/badge/GITHUB-LUXORITUR-181717?style=flat&logo=github&logoColor=white" alt="GitHub - luxoritur" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+              
+        </section>
         <h1 class="title theme-font">Como instalar AstroW</h1>
 
         <div class="mt-1">
@@ -80,7 +141,7 @@
 
         <span class="badge-outlined-danger-xl m-1">Opción 1</span>
 
-        <p>Puedes importar directamente el archivo CSS usando JsDelivr</p>
+        <p class="text-xl">Puedes importar directamente el archivo CSS usando JsDelivr</p>
 
         <div class="max-w-75 m-auto">
             <pre class="br"><code class="language-html">
@@ -93,7 +154,7 @@
 
         <span class="badge-outlined-success-xl m-1">Opción 2</span>
 
-        <p>También puedes importar el archivo CSS vía Statically CDN</p>
+        <p class="text-xl">También puedes importar el archivo CSS vía Statically CDN</p>
 
         <div class="max-w-75 m-auto">
             <pre class="br"><code class="language-html">
@@ -105,7 +166,7 @@
 
         <span class="badge-outlined-info-xl m-1">Opción 3</span>
 
-        <p>Clonar el repositorio de GitHub</p>
+        <p class="text-xl">Clonar el repositorio de GitHub</p>
 
         <div class="max-w-75 m-auto d-flex justify-center">
             <pre class="br w-fit"><code class="language-html">
@@ -117,23 +178,24 @@ git clone https://github.com/manuelmv15/AstroW
         <span class="badge-outlined-warning-xl m-1">Opción 4</span>
 
 
-        
+
         <div class="max-w-75 ai-center m-auto row justify-space-around g-2">
             <div>
-                <p>Descargar el .ZIP con el código de la librería</p>
+                <p class="text-xl">Descargar el .ZIP con el código de la librería</p>
             </div>
             <div>
-                <a href="https://github.com/manuelmv15/AstroW/archive/refs/heads/main.zip" class="btn-outlined-info br">Descargar</a>
+                <a href="https://github.com/manuelmv15/AstroW/archive/refs/heads/main.zip"
+                    class="btn-outlined-info br">Descargar</a>
             </div>
         </div>
-        
+
     </main>
 
-     
+
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
-    
+
 </body>
 
 </html>
