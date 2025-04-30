@@ -24,12 +24,20 @@ puedes intalara AstroW de las siguientes maneras:
 <link rel="stylesheet" href="https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css">
 ```
 ## Uso
-Cómo usar el proyecto.
+Puedes aprender como usar nuestra libreria en la [documentacion](https://manuelmv15.github.io/) oficial.
 
 ## Contribuciones
 Jeferson Alexis De La Cruz Ventura - DV23003 [jefersonDeLaCruz ](https://github.com/JefersonDeLaCruz)
 
 Carlos manuel melendez villatoro - MV23036 [manuelmv15](https://github.com/manuelmv15)
+
+Cristian Alexis Ventura Ventura - VV23011 [kristiankovic](https://github.com/kristiankovic)
+
+David Elias Romero Claros - RC23030 [luxoritur](https://github.com/luxoritur)
+
+
+
+
 
 ## Licencia
 Licencia del proyecto.
