@@ -186,7 +186,7 @@
             </ul>
 
             <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
-                
+
                 <div>
                     <table class="custom-table">
                         <thead>
@@ -236,77 +236,159 @@
         <section class="mt-4">
             <h2 class="sub-title mb-1">Position</h2>
             <hr class="h-rule bg-color-info">
-            <p class="mt-1">Con las clases <code class="badge-soft-info">pos-*</code> puedes controlar el tipo de posicionamiento de un elemento.</p>
-          
+            <p class="mt-1">Con las clases <code class="badge-soft-info">pos-*</code> puedes controlar el tipo de
+                posicionamiento de un elemento.</p>
+
             <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
 
-              <div>
-                <table class="custom-table">
-                  <thead>
-                    <tr>
-                      <th>Sufijo</th>
-                      <th>Valor</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td>-static</td><td>Static</td></tr>
-                    <tr><td>-relative</td><td>relative</td></tr>
-                    <tr><td>-absolute</td><td>absolute</td></tr>
-                    <tr><td>-fixed</td><td>fixed</td></tr>
-                    <tr><td>-sticky</td><td>sticky</td></tr>
-                  </tbody>
-                </table>
-              </div>
-          
-              
-              <div>
-                <label class="badge-outlined-info">Ejemplo HTML</label>
-                <pre><code class="language-html">&lt;div class=&quot;pos-static&quot;&gt;Flujo normal&lt;/div&gt;
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-static</td>
+                                <td>Static</td>
+                            </tr>
+                            <tr>
+                                <td>-relative</td>
+                                <td>relative</td>
+                            </tr>
+                            <tr>
+                                <td>-absolute</td>
+                                <td>absolute</td>
+                            </tr>
+                            <tr>
+                                <td>-fixed</td>
+                                <td>fixed</td>
+                            </tr>
+                            <tr>
+                                <td>-sticky</td>
+                                <td>sticky</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre><code class="language-html">&lt;div class=&quot;pos-static&quot;&gt;Flujo normal&lt;/div&gt;
 &lt;div class=&quot;pos-relative&quot;&gt;Relativo&lt;/div&gt;
 &lt;div class=&quot;pos-fixed top-0 left-0&quot;&gt;Fijo en la esquina&lt;/div&gt;
 &lt;div class=&quot;pos-sticky top-0&quot;&gt;Sticky al hacer scroll&lt;/div&gt;</code></pre>
-              </div>
+                </div>
             </div>
-          </section>
-          
+        </section>
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Posicionamiento 
+            </h2>
+            <h2 class="sub-title mb-1">Top, Right, Bottom, Left</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clase para el posicionamiento de top <span class="badge-soft-info">top*</span> Right <span class="badge-soft-info">right*</span>,<br>Bottom <span class="badge-soft-info">botton*</span> y Left <span class="badge-soft-info">left*</span> </p>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>-50</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>-100</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>-auto</td>
+                                <td>auto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div>
+                <label class="badge-outlined-info">Ejemplo HTML</label>
+                <pre><code class="language-html">&lt;div class=&quot;top-0 %&quot;&gt; top 0&lt;/div&gt;
+&lt;div class=&quot;right-50&quot;&gt;Right 50 %&lt;/div&gt;
+&lt;div class=&quot;bottom-100&quot;&gt;Bottom 100 %&lt;/div&gt;
+&lt;div class=&quot;left-auto&quot;&gt;Left Auto&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        </section>
 
         <section class="mt-4">
             <h2 class="sub-title mb-1">Display</h2>
             <hr class="h-rule bg-color-info">
             <p class="mt-1">Clase para manejar el display <code class="badge-soft-info">d-*</code>.</p>
-          
+
             <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
-              
-              <div>
-                <table class="custom-table">
-                  <thead>
-                    <tr>
-                      <th>Sufijo</th>
-                      <th>Valor</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td>-none</td><td>none</td></tr>
-                    <tr><td>-inline</td><td>inline</td></tr>
-                    <tr><td>-inline-block</td><td>inline-block</td></tr>
-                    <tr><td>-block</td><td>block</td></tr>
-                    <tr><td>-flex</td><td>flex</td></tr>
-                    <tr><td>-inline-flex</td><td>inline-flex</td></tr>
-                    <tr><td>-grid</td><td>grid</td></tr>
-                  </tbody>
-                </table>
-              </div>
-          
-              
-              <div>
-                <label class="badge-outlined-info">Ejemplo HTML</label>
-                <pre><code class="language-html">&lt;div class=&quot;d-none&quot;&gt;Oculto&lt;/div&gt;
+
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-none</td>
+                                <td>none</td>
+                            </tr>
+                            <tr>
+                                <td>-inline</td>
+                                <td>inline</td>
+                            </tr>
+                            <tr>
+                                <td>-inline-block</td>
+                                <td>inline-block</td>
+                            </tr>
+                            <tr>
+                                <td>-block</td>
+                                <td>block</td>
+                            </tr>
+                            <tr>
+                                <td>-flex</td>
+                                <td>flex</td>
+                            </tr>
+                            <tr>
+                                <td>-inline-flex</td>
+                                <td>inline-flex</td>
+                            </tr>
+                            <tr>
+                                <td>-grid</td>
+                                <td>grid</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre><code class="language-html">&lt;div class=&quot;d-none&quot;&gt;Oculto&lt;/div&gt;
 &lt;div class=&quot;d-flex&quot;&gt;Contenedor Flex&lt;/div&gt;</code></pre>
-              </div>
+                </div>
             </div>
-          
-          </section>
-          
+
+        </section>
+
 
         <section class="mt-4">
             <h2 class="sub-title mb-1">Opacity</h2>
@@ -408,7 +490,9 @@
             </div>
         </section>
 
-
+       
+          
+        
 
 
     </main>
