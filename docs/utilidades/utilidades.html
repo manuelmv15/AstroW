@@ -2,196 +2,345 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AstroW - Utilidades</title>
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../css/custom.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroW - Utilidades</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
 <body class="bg-color-blue-dark-2">
 
-  <header class="nav-header" id="site-header">
-    <div class="nav-header-wrapper">
-      <div class="nav-left">
-        <a href="../documentation.html" class="nav-items-header">Inicio</a>
-        <a href="../formularios/formularios.html" class="nav-items-header">Formularios</a>
-        <a href="../componentes/componentes.html" class="nav-items-header">Componentes</a>
-        <a href="../layout/layout.html" class="nav-items-header">Layout</a>
-        <a href="utilidades.html" class="nav-items-header">Utilidades</a>
-      </div>
+    <header class="nav-header" id="site-header">
+        <div class="nav-header-wrapper">
+            <div class="nav-left">
+                <a href="../documentation.html" class="nav-items-header">Inicio</a>
+                <a href="../formularios/formularios.html" class="nav-items-header">Formularios</a>
+                <a href="../componentes/componentes.html" class="nav-items-header">Componentes</a>
+                <a href="../layout/layout.html" class="nav-items-header">Layout</a>
+                <a href="utilidades.html" class="nav-items-header">Utilidades</a>
+            </div>
 
-      <div class="nav-right">
-        <div class="nav-brand">
-          <img src="../icons/logo.svg" alt="AstroW Logo" class="nav-brand-logo">
-          <span class="nav-brand-name theme-font">AstroW</span>
+            <div class="nav-right">
+                <div class="nav-brand">
+                    <img src="../icons/logo.svg" alt="AstroW Logo" class="nav-brand-logo">
+                    <span class="nav-brand-name theme-font">AstroW</span>
+                </div>
+
+                <div class="nav-menu-container">
+                    <div class="nav-menu" id="menuAlt">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="nav-menu-container">
-          <div class="nav-menu" id="menuAlt">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+        <div class="nav-mobile-links">
+            <ul>
+                <li><a href="../documentation.html">Inicio</a></li>
+                <li><a href="../formularios/formularios.html">Formularios</a></li>
+                <li><a href="../componentes/componentes.html">Componentes</a></li>
+                <li><a href="../layout/layout.html">Layout</a></li>
+                <li><a href="utilidades.html">Utilidades</a></li>
+            </ul>
         </div>
-      </div>
-    </div>
+    </header>
 
-    <div class="nav-mobile-links">
-      <ul>
-        <li><a href="../documentation.html">Inicio</a></li>
-        <li><a href="../formularios/formularios.html">Formularios</a></li>
-        <li><a href="../componentes/componentes.html">Componentes</a></li>
-        <li><a href="../layout/layout.html">Layout</a></li>
-        <li><a href="utilidades.html">Utilidades</a></li>
-      </ul>
-    </div>
-  </header>
+    <main class="p-2 mt-3 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl">
 
-  <main class="p-2 mt-3 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl">
+        <h1 class="title theme-font">Utilidades</h1>
 
-    <h1 class="title theme-font">Utilidades</h1>
+        <section class="mt-2">
+            <h2 class="sub-title mb-1">Padding y Margin</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Astro proporciona clases para manejar <span class="badge-soft-info">Padding</span> y <span
+                    class="badge-soft-info">Margin</span> en diferentes direcciones.</p>
 
-    <section class="mt-2">
-      <h2 class="sub-title mb-1">Padding y Margin</h2>
-      <hr class="h-rule bg-color-info">
-      <p class="mt-1">Astro proporciona clases para manejar <span class="badge-soft-info">Padding</span> y <span class="badge-soft-info">Margin</span> en diferentes direcciones.</p>
+            <ul class="mt-1">
+                <li><strong class="badge-outlined-info">*l</strong>: Izquierda</li>
+                <li><strong class="badge-outlined-info">*r</strong>: Derecha</li>
+                <li><strong class="badge-outlined-info">*t</strong>: Arriba</li>
+                <li><strong class="badge-outlined-info">*b</strong>: Abajo</li>
+            </ul>
 
-      <ul class="mt-1">
-        <li><strong class="badge-outlined-info">*l</strong>: Izquierda</li>
-        <li><strong class="badge-outlined-info">*r</strong>: Derecha</li>
-        <li><strong class="badge-outlined-info">*t</strong>: Arriba</li>
-        <li><strong class="badge-outlined-info">*b</strong>: Abajo</li>
-      </ul>
+            <p class="mt-2">Combina prefijos de padding/margin con sufijos para valores:</p>
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
 
-      <p class="mt-2">Combina prefijos de padding/margin con sufijos para valores:</p>
-      <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Suffix</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>*-1</td>
+                                <td>0.75rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-2</td>
+                                <td>1.5rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-3</td>
+                                <td>3rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-4</td>
+                                <td>4.5rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-5</td>
+                                <td>6rem</td>
+                            </tr>
+                            <tr>
+                                <td>*-auto</td>
+                                <td>auto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-        <div>
-          <table class="custom-table">
-            <thead>
-              <tr><th>Suffix</th><th>Valor</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>*-0</td><td>0</td></tr>
-              <tr><td>*-1</td><td>0.75rem</td></tr>
-              <tr><td>*-2</td><td>1.5rem</td></tr>
-              <tr><td>*-3</td><td>3rem</td></tr>
-              <tr><td>*-4</td><td>4.5rem</td></tr>
-              <tr><td>*-5</td><td>6rem</td></tr>
-              <tr><td>*-auto</td><td>auto</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div>
-          <label class="badge-outlined-info">Ejemplo HTML</label>
-          <pre><code class="language-html">&lt;p class="mb-4"&gt;Margin bottom&lt;/p&gt;
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre><code class="language-html">&lt;p class="mb-4"&gt;Margin bottom&lt;/p&gt;
 &lt;p class="pl-1"&gt;Padding left&lt;/p&gt;
 &lt;p class="mr-0 pt-3"&gt;Margin right y padding top&lt;/p&gt;</code></pre>
-        </div>
-      </div>
-    </section>
+                </div>
+            </div>
+        </section>
 
-    <section class="mt-4">
-      <h2 class="sub-title mt-1 mb-1">Width y Height</h2>
-      <hr class="h-rule bg-color-info">
-      <p class="mt-1">Clases para manejar width <span class="badge-soft-info">w*</span> y Height <span class="badge-soft-info">h*</span>.</p>
+        <section class="mt-4">
+            <h2 class="sub-title mt-1 mb-1">Width y Height</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clases para manejar width <span class="badge-soft-info">w*</span> y Height <span
+                    class="badge-soft-info">h*</span>.</p>
 
-      <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
-        <div>
-          <table class="custom-table">
-            <thead>
-              <tr><th>Suffix</th><th>Valor</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>*-auto</td><td>auto</td></tr>
-              <tr><td>*-25</td><td>25%</td></tr>
-              <tr><td>*-50</td><td>50%</td></tr>
-              <tr><td>*-75</td><td>75%</td></tr>
-              <tr><td>*-100</td><td>100%</td></tr>
-              <tr><td>*-screen</td><td>100dvh</td></tr>
-              <tr><td>*-fit</td><td>fit-content</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <label class="badge-outlined-info">Ejemplo HTML</label>
-          <pre><code class="language-html">&lt;div class="w-50 h-75"&gt;&lt;/div&gt;</code></pre>
-        </div>
-      </div>
-    </section>
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Suffix</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*-auto</td>
+                                <td>auto</td>
+                            </tr>
+                            <tr>
+                                <td>*-25</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>*-50</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>*-75</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr>
+                                <td>*-100</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>*-screen</td>
+                                <td>100dvh</td>
+                            </tr>
+                            <tr>
+                                <td>*-fit</td>
+                                <td>fit-content</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre><code class="language-html">&lt;div class="w-50 h-75"&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
 
-    <section class="mt-4">
-      <h2 class="sub-title mb-1">Opacity</h2>
-      <hr class="h-rule bg-color-info">
-      <p class="mt-1">Clases para manejar opacidad con el prefijo <span class="badge-soft-info">opacity*</span>.</p>
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Max/Min Width & Height</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Astro proporciona clases para establecer límites máximos y mínimos de tamaño usando:</p>
 
-      <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
-        <div>
-          <table class="custom-table">
-            <thead>
-              <tr><th>Suffix</th><th>Valor</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>*-0</td><td>0</td></tr>
-              <tr><td>*-25</td><td>0.25</td></tr>
-              <tr><td>*-50</td><td>0.5</td></tr>
-              <tr><td>*-75</td><td>0.75</td></tr>
-              <tr><td>*-100</td><td>1</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <label class="badge-outlined-info">Ejemplo HTML</label>
-          <pre><code class="language-html">&lt;div class="opacity-50"&gt;&lt;/div&gt;</code></pre>
-        </div>
-      </div>
-    </section>
+            <ul class="mt-1 mb-2">
+                <li><strong class="badge-outlined-info">max-w-*</strong> : Ancho máximo</li>
+                <li><strong class="badge-outlined-info">min-w-*</strong> : Ancho mínimo</li>
+                <li><strong class="badge-outlined-info">max-h-*</strong> : Altura máxima</li>
+                <li><strong class="badge-outlined-info">min-h-*</strong> : Altura mínima</li>
+            </ul>
 
-    <section class="mt-4">
-        <h2 class="sub-title mb-1">Border Radius</h2>
-        <hr class="h-rule bg-color-info">
-        <p class="mt-1">Clases para redondear los bordes de cualquier elemento con el prefijo <span class="badge-soft-info">br*</span></p>
-      
-        <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
-          
-          <div>
-            <table class="custom-table">
-              <thead>
-                <tr>
-                  <th>Clase</th>
-                  <th>Border Radius</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>-none</td><td>0</td></tr>
-                <tr><td>-sm</td><td>2.5px</td></tr>
-                <tr><td>br</td><td>5px (por defecto)</td></tr>
-                <tr><td>-lg</td><td>10px</td></tr>
-                <tr><td>-xl</td><td>20px</td></tr>
-                <tr><td>-full</td><td>50% (círculo)</td></tr>
-              </tbody>
-            </table>
-          </div>
-      
-          <div>
-            <label class="badge-outlined-info">Ejemplo HTML</label>
-            <pre><code class="language-html">&lt;div class=&quot;br&quot;&gt;Default (5px)&lt;/div&gt;
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+                
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Sufijo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>25</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>50</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>75</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr>
+                                <td>full</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>screen</td>
+                                <td>100vw / 100vh</td>
+                            </tr>
+                            <tr>
+                                <td>none</td>
+                                <td>none</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre><code class="language-html">&lt;div class=&quot;max-w-50&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;min-w-full&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;max-h-screen&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;min-h-25&quot;&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Opacity</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clases para manejar opacidad con el prefijo <span class="badge-soft-info">opacity*</span>.
+            </p>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Suffix</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*-0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>*-25</td>
+                                <td>0.25</td>
+                            </tr>
+                            <tr>
+                                <td>*-50</td>
+                                <td>0.5</td>
+                            </tr>
+                            <tr>
+                                <td>*-75</td>
+                                <td>0.75</td>
+                            </tr>
+                            <tr>
+                                <td>*-100</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre><code class="language-html">&lt;div class="opacity-50"&gt;&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="sub-title mb-1">Border Radius</h2>
+            <hr class="h-rule bg-color-info">
+            <p class="mt-1">Clases para redondear los bordes de cualquier elemento con el prefijo <span
+                    class="badge-soft-info">br*</span></p>
+
+            <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                <div>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Border Radius</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-none</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>-sm</td>
+                                <td>2.5px</td>
+                            </tr>
+                            <tr>
+                                <td>br</td>
+                                <td>5px (por defecto)</td>
+                            </tr>
+                            <tr>
+                                <td>-lg</td>
+                                <td>10px</td>
+                            </tr>
+                            <tr>
+                                <td>-xl</td>
+                                <td>20px</td>
+                            </tr>
+                            <tr>
+                                <td>-full</td>
+                                <td>50% (círculo)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <label class="badge-outlined-info">Ejemplo HTML</label>
+                    <pre><code class="language-html">&lt;div class=&quot;br&quot;&gt;Default (5px)&lt;/div&gt;
       &lt;div class=&quot;br-lg&quot;&gt;Large (10px)&lt;/div&gt;
       &lt;div class=&quot;br-full&quot;&gt;Circular&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </section>
+                </div>
+            </div>
+        </section>
 
-      
-      
 
-  </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
 </body>
 
 </html>
