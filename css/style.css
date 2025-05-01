@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/astro-world");
 @import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css';
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -107,7 +108,7 @@ html {
 }
 @media (min-width: 480px) {
   .container-base-sm {
-    max-width: 540px;
+    max-width: 460px;
   }
 }
 
@@ -118,7 +119,7 @@ html {
 }
 @media (min-width: 640px) {
   .container-base-md {
-    max-width: 720px;
+    max-width: 620px;
   }
 }
 
@@ -129,7 +130,7 @@ html {
 }
 @media (min-width: 960px) {
   .container-base-lg {
-    max-width: 960px;
+    max-width: 940px;
   }
 }
 
@@ -140,7 +141,7 @@ html {
 }
 @media (min-width: 1200px) {
   .container-base-xl {
-    max-width: 1200px;
+    max-width: 1180px;
   }
 }
 
@@ -151,7 +152,7 @@ html {
 }
 @media (min-width: 1440px) {
   .container-base-xxl {
-    max-width: 1440px;
+    max-width: 1420px;
   }
 }
 
@@ -177,7 +178,7 @@ html {
 }
 @media (min-width: 480px) {
   .container-bordered-sm {
-    max-width: 540px;
+    max-width: 460px;
   }
 }
 
@@ -190,7 +191,7 @@ html {
 }
 @media (min-width: 640px) {
   .container-bordered-md {
-    max-width: 720px;
+    max-width: 620px;
   }
 }
 
@@ -203,7 +204,7 @@ html {
 }
 @media (min-width: 960px) {
   .container-bordered-lg {
-    max-width: 960px;
+    max-width: 940px;
   }
 }
 
@@ -216,7 +217,7 @@ html {
 }
 @media (min-width: 1200px) {
   .container-bordered-xl {
-    max-width: 1200px;
+    max-width: 1180px;
   }
 }
 
@@ -229,7 +230,7 @@ html {
 }
 @media (min-width: 1440px) {
   .container-bordered-xxl {
-    max-width: 1440px;
+    max-width: 1420px;
   }
 }
 
@@ -237,8 +238,6 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
 }
 @media (min-width: 250px) {
   .container-shadow-xs {
@@ -250,12 +249,10 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
 }
 @media (min-width: 480px) {
   .container-shadow-sm {
-    max-width: 540px;
+    max-width: 460px;
   }
 }
 
@@ -263,12 +260,10 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
 }
 @media (min-width: 640px) {
   .container-shadow-md {
-    max-width: 720px;
+    max-width: 620px;
   }
 }
 
@@ -276,12 +271,10 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
 }
 @media (min-width: 960px) {
   .container-shadow-lg {
-    max-width: 960px;
+    max-width: 940px;
   }
 }
 
@@ -289,12 +282,10 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
   .container-shadow-xl {
-    max-width: 1200px;
+    max-width: 1180px;
   }
 }
 
@@ -302,12 +293,10 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
 }
 @media (min-width: 1440px) {
   .container-shadow-xxl {
-    max-width: 1440px;
+    max-width: 1420px;
   }
 }
 
@@ -333,7 +322,7 @@ html {
 }
 @media (min-width: 480px) {
   .container-solid-sm {
-    max-width: 540px;
+    max-width: 460px;
   }
 }
 
@@ -346,7 +335,7 @@ html {
 }
 @media (min-width: 640px) {
   .container-solid-md {
-    max-width: 720px;
+    max-width: 620px;
   }
 }
 
@@ -359,7 +348,7 @@ html {
 }
 @media (min-width: 960px) {
   .container-solid-lg {
-    max-width: 960px;
+    max-width: 940px;
   }
 }
 
@@ -372,7 +361,7 @@ html {
 }
 @media (min-width: 1200px) {
   .container-solid-xl {
-    max-width: 1200px;
+    max-width: 1180px;
   }
 }
 
@@ -385,7 +374,7 @@ html {
 }
 @media (min-width: 1440px) {
   .container-solid-xxl {
-    max-width: 1440px;
+    max-width: 1420px;
   }
 }
 
@@ -13352,6 +13341,10 @@ html {
   margin: 6rem;
 }
 
+.m-c {
+  margin: 0 auto;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -13473,7 +13466,7 @@ html {
 }
 
 .br-none {
-  border-radius: 0;
+  border-radius: 0 \!important;
 }
 
 .br-sm {
@@ -14005,8 +13998,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn:hover {
   background-color: rgba(166, 163, 219, 0.075);
@@ -14018,8 +14014,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -14033,11 +14032,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-orange:hover {
-  background-color: rgb(245.1, 174, 62.4) !important;
+  background-color: rgb(246.75, 187.5, 94.5) !important;
 }
 
 .btn-orange-sm {
@@ -14046,8 +14048,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -14061,8 +14066,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #f4a529;
   color: #f4a529 !important;
 }
@@ -14077,8 +14085,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #f4a529;
@@ -14095,8 +14106,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange:hover {
@@ -14110,8 +14124,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(62.4, 133.5, 245.1) !important;
@@ -14127,8 +14144,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -14142,11 +14162,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-orange:hover {
-  background-color: rgb(245.1, 174, 62.4) !important;
+  background-color: rgb(246.75, 187.5, 94.5) !important;
 }
 
 .btn-orange-md {
@@ -14155,8 +14178,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -14170,8 +14196,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #f4a529;
   color: #f4a529 !important;
 }
@@ -14186,8 +14215,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #f4a529;
@@ -14204,8 +14236,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange:hover {
@@ -14219,8 +14254,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(62.4, 133.5, 245.1) !important;
@@ -14236,8 +14274,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -14251,11 +14292,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-orange:hover {
-  background-color: rgb(245.1, 174, 62.4) !important;
+  background-color: rgb(246.75, 187.5, 94.5) !important;
 }
 
 .btn-orange-lg {
@@ -14264,8 +14308,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -14279,8 +14326,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #f4a529;
   color: #f4a529 !important;
 }
@@ -14295,8 +14345,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #f4a529;
@@ -14313,8 +14366,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange:hover {
@@ -14328,8 +14384,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(62.4, 133.5, 245.1) !important;
@@ -14345,8 +14404,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -14360,11 +14422,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-orange:hover {
-  background-color: rgb(245.1, 174, 62.4) !important;
+  background-color: rgb(246.75, 187.5, 94.5) !important;
 }
 
 .btn-orange-xl {
@@ -14373,8 +14438,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -14388,8 +14456,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #f4a529;
   color: #f4a529 !important;
 }
@@ -14404,8 +14475,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #f4a529;
@@ -14422,8 +14496,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(62.4, 133.5, 245.1) !important;
 }
 .btn-complement-orange:hover {
@@ -14437,8 +14514,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #f4a529;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(62.4, 133.5, 245.1) !important;
@@ -14454,8 +14534,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -14469,11 +14552,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-yellow:hover {
-  background-color: rgb(250.5, 219.9, 111.9) !important;
+  background-color: rgb(251.25, 225.75, 135.75) !important;
 }
 
 .btn-yellow-sm {
@@ -14482,8 +14568,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -14497,8 +14586,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #fad860;
   color: #fad860 !important;
 }
@@ -14513,8 +14605,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #fad860;
@@ -14531,8 +14626,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow:hover {
@@ -14546,8 +14644,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(111.9, 142.5, 250.5) !important;
@@ -14563,8 +14664,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -14578,11 +14682,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-yellow:hover {
-  background-color: rgb(250.5, 219.9, 111.9) !important;
+  background-color: rgb(251.25, 225.75, 135.75) !important;
 }
 
 .btn-yellow-md {
@@ -14591,8 +14698,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -14606,8 +14716,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #fad860;
   color: #fad860 !important;
 }
@@ -14622,8 +14735,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #fad860;
@@ -14640,8 +14756,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow:hover {
@@ -14655,8 +14774,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(111.9, 142.5, 250.5) !important;
@@ -14672,8 +14794,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -14687,11 +14812,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-yellow:hover {
-  background-color: rgb(250.5, 219.9, 111.9) !important;
+  background-color: rgb(251.25, 225.75, 135.75) !important;
 }
 
 .btn-yellow-lg {
@@ -14700,8 +14828,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -14715,8 +14846,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #fad860;
   color: #fad860 !important;
 }
@@ -14731,8 +14865,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #fad860;
@@ -14749,8 +14886,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow:hover {
@@ -14764,8 +14904,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(111.9, 142.5, 250.5) !important;
@@ -14781,8 +14924,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -14796,11 +14942,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-yellow:hover {
-  background-color: rgb(250.5, 219.9, 111.9) !important;
+  background-color: rgb(251.25, 225.75, 135.75) !important;
 }
 
 .btn-yellow-xl {
@@ -14809,8 +14958,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -14824,8 +14976,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #fad860;
   color: #fad860 !important;
 }
@@ -14840,8 +14995,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #fad860;
@@ -14858,8 +15016,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(111.9, 142.5, 250.5) !important;
 }
 .btn-complement-yellow:hover {
@@ -14873,8 +15034,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fad860;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(111.9, 142.5, 250.5) !important;
@@ -14890,8 +15054,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -14905,11 +15072,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-red:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
+  background-color: rgb(211.27734375, 12.22265625, 12.22265625) !important;
 }
 
 .btn-red-sm {
@@ -14918,8 +15088,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -14933,8 +15106,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #790707;
   color: #790707 !important;
 }
@@ -14949,8 +15125,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #790707;
@@ -14967,8 +15146,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red:hover {
@@ -14982,8 +15164,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
@@ -14999,8 +15184,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -15014,11 +15202,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-red:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
+  background-color: rgb(211.27734375, 12.22265625, 12.22265625) !important;
 }
 
 .btn-red-md {
@@ -15027,8 +15218,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -15042,8 +15236,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #790707;
   color: #790707 !important;
 }
@@ -15058,8 +15255,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #790707;
@@ -15076,8 +15276,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red:hover {
@@ -15091,8 +15294,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
@@ -15108,8 +15314,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -15123,11 +15332,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-red:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
+  background-color: rgb(211.27734375, 12.22265625, 12.22265625) !important;
 }
 
 .btn-red-lg {
@@ -15136,8 +15348,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -15151,8 +15366,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #790707;
   color: #790707 !important;
 }
@@ -15167,8 +15385,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #790707;
@@ -15185,8 +15406,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red:hover {
@@ -15200,8 +15424,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
@@ -15217,8 +15444,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -15232,11 +15462,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-red:hover {
-  background-color: rgb(157.1109375, 9.0890625, 9.0890625) !important;
+  background-color: rgb(211.27734375, 12.22265625, 12.22265625) !important;
 }
 
 .btn-red-xl {
@@ -15245,8 +15478,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -15260,8 +15496,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #790707;
   color: #790707 !important;
 }
@@ -15276,8 +15515,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #790707;
@@ -15294,8 +15536,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
 }
 .btn-complement-red:hover {
@@ -15309,8 +15554,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #790707;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(9.0890625, 157.1109375, 157.1109375) !important;
@@ -15326,8 +15574,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -15341,11 +15592,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-pitch:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
+  background-color: rgb(184.9537037037, 137.9814814815, 124.7962962963) !important;
 }
 
 .btn-pitch-sm {
@@ -15354,8 +15608,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -15369,8 +15626,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #9e6555;
   color: #9e6555 !important;
 }
@@ -15385,8 +15645,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #9e6555;
@@ -15403,8 +15666,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch:hover {
@@ -15418,8 +15684,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
@@ -15435,8 +15704,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -15450,11 +15722,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-pitch:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
+  background-color: rgb(184.9537037037, 137.9814814815, 124.7962962963) !important;
 }
 
 .btn-pitch-md {
@@ -15463,8 +15738,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -15478,8 +15756,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #9e6555;
   color: #9e6555 !important;
 }
@@ -15494,8 +15775,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #9e6555;
@@ -15512,8 +15796,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch:hover {
@@ -15527,8 +15814,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
@@ -15544,8 +15834,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -15559,11 +15852,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-pitch:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
+  background-color: rgb(184.9537037037, 137.9814814815, 124.7962962963) !important;
 }
 
 .btn-pitch-lg {
@@ -15572,8 +15868,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -15587,8 +15886,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #9e6555;
   color: #9e6555 !important;
 }
@@ -15603,8 +15905,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #9e6555;
@@ -15621,8 +15926,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch:hover {
@@ -15636,8 +15944,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
@@ -15653,8 +15964,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -15668,11 +15982,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-pitch:hover {
-  background-color: rgb(170.9444444444, 114.5777777778, 98.7555555556) !important;
+  background-color: rgb(184.9537037037, 137.9814814815, 124.7962962963) !important;
 }
 
 .btn-pitch-xl {
@@ -15681,8 +15998,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -15696,8 +16016,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #9e6555;
   color: #9e6555 !important;
 }
@@ -15712,8 +16035,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #9e6555;
@@ -15730,8 +16056,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
 }
 .btn-complement-pitch:hover {
@@ -15745,8 +16074,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #9e6555;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(98.7555555556, 155.1222222222, 170.9444444444) !important;
@@ -15762,8 +16094,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -15777,11 +16112,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-gray:hover {
-  background-color: rgb(180.3, 199.2, 215.4) !important;
+  background-color: rgb(192.75, 208.5, 222) !important;
 }
 
 .btn-gray-sm {
@@ -15790,8 +16128,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -15805,8 +16146,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #acc1d3;
   color: #acc1d3 !important;
 }
@@ -15821,8 +16165,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #acc1d3;
@@ -15839,8 +16186,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray:hover {
@@ -15854,8 +16204,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(215.4, 196.5, 180.3) !important;
@@ -15871,8 +16224,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -15886,11 +16242,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-gray:hover {
-  background-color: rgb(180.3, 199.2, 215.4) !important;
+  background-color: rgb(192.75, 208.5, 222) !important;
 }
 
 .btn-gray-md {
@@ -15899,8 +16258,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -15914,8 +16276,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #acc1d3;
   color: #acc1d3 !important;
 }
@@ -15930,8 +16295,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #acc1d3;
@@ -15948,8 +16316,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray:hover {
@@ -15963,8 +16334,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(215.4, 196.5, 180.3) !important;
@@ -15980,8 +16354,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -15995,11 +16372,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-gray:hover {
-  background-color: rgb(180.3, 199.2, 215.4) !important;
+  background-color: rgb(192.75, 208.5, 222) !important;
 }
 
 .btn-gray-lg {
@@ -16008,8 +16388,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -16023,8 +16406,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #acc1d3;
   color: #acc1d3 !important;
 }
@@ -16039,8 +16425,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #acc1d3;
@@ -16057,8 +16446,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray:hover {
@@ -16072,8 +16464,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(215.4, 196.5, 180.3) !important;
@@ -16089,8 +16484,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -16104,11 +16502,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-gray:hover {
-  background-color: rgb(180.3, 199.2, 215.4) !important;
+  background-color: rgb(192.75, 208.5, 222) !important;
 }
 
 .btn-gray-xl {
@@ -16117,8 +16518,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -16132,8 +16536,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #acc1d3;
   color: #acc1d3 !important;
 }
@@ -16148,8 +16555,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #acc1d3;
@@ -16166,8 +16576,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(215.4, 196.5, 180.3) !important;
 }
 .btn-complement-gray:hover {
@@ -16181,8 +16594,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #acc1d3;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(215.4, 196.5, 180.3) !important;
@@ -16198,8 +16614,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -16213,11 +16632,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-blue:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
+  background-color: rgb(72.6923076923, 110.7692307692, 152.3076923077) !important;
 }
 
 .btn-blue-sm {
@@ -16226,8 +16648,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -16241,8 +16666,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #2a4058;
   color: #2a4058 !important;
 }
@@ -16257,8 +16685,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #2a4058;
@@ -16275,8 +16706,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue:hover {
@@ -16290,8 +16724,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
@@ -16307,8 +16744,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -16322,11 +16762,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-blue:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
+  background-color: rgb(72.6923076923, 110.7692307692, 152.3076923077) !important;
 }
 
 .btn-blue-md {
@@ -16335,8 +16778,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -16350,8 +16796,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #2a4058;
   color: #2a4058 !important;
 }
@@ -16366,8 +16815,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #2a4058;
@@ -16384,8 +16836,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue:hover {
@@ -16399,8 +16854,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
@@ -16416,8 +16874,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -16431,11 +16892,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-blue:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
+  background-color: rgb(72.6923076923, 110.7692307692, 152.3076923077) !important;
 }
 
 .btn-blue-lg {
@@ -16444,8 +16908,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -16459,8 +16926,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #2a4058;
   color: #2a4058 !important;
 }
@@ -16475,8 +16945,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #2a4058;
@@ -16493,8 +16966,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue:hover {
@@ -16508,8 +16984,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
@@ -16525,8 +17004,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -16540,11 +17022,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-blue:hover {
-  background-color: rgb(54.2769230769, 82.7076923077, 113.7230769231) !important;
+  background-color: rgb(72.6923076923, 110.7692307692, 152.3076923077) !important;
 }
 
 .btn-blue-xl {
@@ -16553,8 +17038,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -16568,8 +17056,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #2a4058;
   color: #2a4058 !important;
 }
@@ -16584,8 +17075,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #2a4058;
@@ -16602,8 +17096,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
 }
 .btn-complement-blue:hover {
@@ -16617,8 +17114,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #2a4058;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(113.7230769231, 85.2923076923, 54.2769230769) !important;
@@ -16634,8 +17134,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -16649,11 +17152,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-link:hover {
-  background-color: rgb(84.9, 104.7, 255) !important;
+  background-color: rgb(113.25, 129.75, 255) !important;
 }
 
 .btn-link-sm {
@@ -16662,8 +17168,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -16677,8 +17186,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #4258ff;
   color: #4258ff !important;
 }
@@ -16693,8 +17205,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #4258ff;
@@ -16711,8 +17226,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link:hover {
@@ -16726,8 +17244,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(255, 235.2, 84.9) !important;
@@ -16743,8 +17264,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -16758,11 +17282,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-link:hover {
-  background-color: rgb(84.9, 104.7, 255) !important;
+  background-color: rgb(113.25, 129.75, 255) !important;
 }
 
 .btn-link-md {
@@ -16771,8 +17298,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -16786,8 +17316,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #4258ff;
   color: #4258ff !important;
 }
@@ -16802,8 +17335,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #4258ff;
@@ -16820,8 +17356,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link:hover {
@@ -16835,8 +17374,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(255, 235.2, 84.9) !important;
@@ -16852,8 +17394,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -16867,11 +17412,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-link:hover {
-  background-color: rgb(84.9, 104.7, 255) !important;
+  background-color: rgb(113.25, 129.75, 255) !important;
 }
 
 .btn-link-lg {
@@ -16880,8 +17428,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -16895,8 +17446,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #4258ff;
   color: #4258ff !important;
 }
@@ -16911,8 +17465,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #4258ff;
@@ -16929,8 +17486,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link:hover {
@@ -16944,8 +17504,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(255, 235.2, 84.9) !important;
@@ -16961,8 +17524,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -16976,11 +17542,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-link:hover {
-  background-color: rgb(84.9, 104.7, 255) !important;
+  background-color: rgb(113.25, 129.75, 255) !important;
 }
 
 .btn-link-xl {
@@ -16989,8 +17558,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -17004,8 +17576,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #4258ff;
   color: #4258ff !important;
 }
@@ -17020,8 +17595,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #4258ff;
@@ -17038,8 +17616,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(255, 235.2, 84.9) !important;
 }
 .btn-complement-link:hover {
@@ -17053,8 +17634,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #4258ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(255, 235.2, 84.9) !important;
@@ -17070,8 +17654,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -17085,11 +17672,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-primary:hover {
-  background-color: rgb(0, 239.1, 203.6354066986) !important;
+  background-color: rgb(29.25, 255, 221.5155502392) !important;
 }
 
 .btn-primary-sm {
@@ -17098,8 +17688,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -17113,8 +17706,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #00d1b2;
   color: #00d1b2 !important;
 }
@@ -17129,8 +17725,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #00d1b2;
@@ -17147,8 +17746,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary:hover {
@@ -17162,8 +17764,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(239.1, 0, 35.4645933014) !important;
@@ -17179,8 +17784,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -17194,11 +17802,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-primary:hover {
-  background-color: rgb(0, 239.1, 203.6354066986) !important;
+  background-color: rgb(29.25, 255, 221.5155502392) !important;
 }
 
 .btn-primary-md {
@@ -17207,8 +17818,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -17222,8 +17836,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #00d1b2;
   color: #00d1b2 !important;
 }
@@ -17238,8 +17855,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #00d1b2;
@@ -17256,8 +17876,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary:hover {
@@ -17271,8 +17894,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(239.1, 0, 35.4645933014) !important;
@@ -17288,8 +17914,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -17303,11 +17932,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-primary:hover {
-  background-color: rgb(0, 239.1, 203.6354066986) !important;
+  background-color: rgb(29.25, 255, 221.5155502392) !important;
 }
 
 .btn-primary-lg {
@@ -17316,8 +17948,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -17331,8 +17966,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #00d1b2;
   color: #00d1b2 !important;
 }
@@ -17347,8 +17985,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #00d1b2;
@@ -17365,8 +18006,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary:hover {
@@ -17380,8 +18024,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(239.1, 0, 35.4645933014) !important;
@@ -17397,8 +18044,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -17412,11 +18062,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-primary:hover {
-  background-color: rgb(0, 239.1, 203.6354066986) !important;
+  background-color: rgb(29.25, 255, 221.5155502392) !important;
 }
 
 .btn-primary-xl {
@@ -17425,8 +18078,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -17440,8 +18096,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #00d1b2;
   color: #00d1b2 !important;
 }
@@ -17456,8 +18115,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #00d1b2;
@@ -17474,8 +18136,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(239.1, 0, 35.4645933014) !important;
 }
 .btn-complement-primary:hover {
@@ -17489,8 +18154,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(239.1, 0, 35.4645933014) !important;
@@ -17506,8 +18174,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -17521,11 +18192,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-info:hover {
-  background-color: rgb(117.3, 213.6, 255) !important;
+  background-color: rgb(140.25, 220.5, 255) !important;
 }
 
 .btn-info-sm {
@@ -17534,8 +18208,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -17549,8 +18226,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #66d1ff;
   color: #66d1ff !important;
 }
@@ -17565,8 +18245,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #66d1ff;
@@ -17583,8 +18266,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info:hover {
@@ -17598,8 +18284,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(255, 158.7, 117.3) !important;
@@ -17615,8 +18304,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -17630,11 +18322,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-info:hover {
-  background-color: rgb(117.3, 213.6, 255) !important;
+  background-color: rgb(140.25, 220.5, 255) !important;
 }
 
 .btn-info-md {
@@ -17643,8 +18338,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -17658,8 +18356,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #66d1ff;
   color: #66d1ff !important;
 }
@@ -17674,8 +18375,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #66d1ff;
@@ -17692,8 +18396,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info:hover {
@@ -17707,8 +18414,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(255, 158.7, 117.3) !important;
@@ -17724,8 +18434,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -17739,11 +18452,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-info:hover {
-  background-color: rgb(117.3, 213.6, 255) !important;
+  background-color: rgb(140.25, 220.5, 255) !important;
 }
 
 .btn-info-lg {
@@ -17752,8 +18468,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -17767,8 +18486,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #66d1ff;
   color: #66d1ff !important;
 }
@@ -17783,8 +18505,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #66d1ff;
@@ -17801,8 +18526,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info:hover {
@@ -17816,8 +18544,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(255, 158.7, 117.3) !important;
@@ -17833,8 +18564,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -17848,11 +18582,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-info:hover {
-  background-color: rgb(117.3, 213.6, 255) !important;
+  background-color: rgb(140.25, 220.5, 255) !important;
 }
 
 .btn-info-xl {
@@ -17861,8 +18598,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -17876,8 +18616,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #66d1ff;
   color: #66d1ff !important;
 }
@@ -17892,8 +18635,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #66d1ff;
@@ -17910,8 +18656,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(255, 158.7, 117.3) !important;
 }
 .btn-complement-info:hover {
@@ -17925,8 +18674,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #66d1ff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(255, 158.7, 117.3) !important;
@@ -17942,8 +18694,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -17957,11 +18712,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-success:hover {
-  background-color: rgb(90.3, 204.6, 153.3) !important;
+  background-color: rgb(117.75, 213, 170.25) !important;
 }
 
 .btn-success-sm {
@@ -17970,8 +18728,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -17985,8 +18746,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #48c78e;
   color: #48c78e !important;
 }
@@ -18001,8 +18765,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #48c78e;
@@ -18019,8 +18786,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success:hover {
@@ -18034,8 +18804,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(204.6, 90.3, 141.6) !important;
@@ -18051,8 +18824,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -18066,11 +18842,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-success:hover {
-  background-color: rgb(90.3, 204.6, 153.3) !important;
+  background-color: rgb(117.75, 213, 170.25) !important;
 }
 
 .btn-success-md {
@@ -18079,8 +18858,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -18094,8 +18876,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #48c78e;
   color: #48c78e !important;
 }
@@ -18110,8 +18895,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #48c78e;
@@ -18128,8 +18916,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success:hover {
@@ -18143,8 +18934,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(204.6, 90.3, 141.6) !important;
@@ -18160,8 +18954,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -18175,11 +18972,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-success:hover {
-  background-color: rgb(90.3, 204.6, 153.3) !important;
+  background-color: rgb(117.75, 213, 170.25) !important;
 }
 
 .btn-success-lg {
@@ -18188,8 +18988,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -18203,8 +19006,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #48c78e;
   color: #48c78e !important;
 }
@@ -18219,8 +19025,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #48c78e;
@@ -18237,8 +19046,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success:hover {
@@ -18252,8 +19064,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(204.6, 90.3, 141.6) !important;
@@ -18269,8 +19084,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -18284,11 +19102,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-success:hover {
-  background-color: rgb(90.3, 204.6, 153.3) !important;
+  background-color: rgb(117.75, 213, 170.25) !important;
 }
 
 .btn-success-xl {
@@ -18297,8 +19118,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -18312,8 +19136,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #48c78e;
   color: #48c78e !important;
 }
@@ -18328,8 +19155,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #48c78e;
@@ -18346,8 +19176,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(204.6, 90.3, 141.6) !important;
 }
 .btn-complement-success:hover {
@@ -18361,8 +19194,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #48c78e;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(204.6, 90.3, 141.6) !important;
@@ -18378,8 +19214,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -18393,11 +19232,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-warning:hover {
-  background-color: rgb(255, 190.2, 39) !important;
+  background-color: #ffc94b !important;
 }
 
 .btn-warning-sm {
@@ -18406,8 +19248,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -18421,8 +19266,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #ffb70f;
   color: #ffb70f !important;
 }
@@ -18437,8 +19285,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #ffb70f;
@@ -18455,8 +19306,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning:hover {
@@ -18470,8 +19324,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(39, 103.8, 255) !important;
@@ -18487,8 +19344,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -18502,11 +19362,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-warning:hover {
-  background-color: rgb(255, 190.2, 39) !important;
+  background-color: #ffc94b !important;
 }
 
 .btn-warning-md {
@@ -18515,8 +19378,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -18530,8 +19396,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #ffb70f;
   color: #ffb70f !important;
 }
@@ -18546,8 +19415,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #ffb70f;
@@ -18564,8 +19436,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning:hover {
@@ -18579,8 +19454,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(39, 103.8, 255) !important;
@@ -18596,8 +19474,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -18611,11 +19492,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-warning:hover {
-  background-color: rgb(255, 190.2, 39) !important;
+  background-color: #ffc94b !important;
 }
 
 .btn-warning-lg {
@@ -18624,8 +19508,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -18639,8 +19526,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #ffb70f;
   color: #ffb70f !important;
 }
@@ -18655,8 +19545,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #ffb70f;
@@ -18673,8 +19566,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning:hover {
@@ -18688,8 +19584,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(39, 103.8, 255) !important;
@@ -18705,8 +19604,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -18720,11 +19622,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-warning:hover {
-  background-color: rgb(255, 190.2, 39) !important;
+  background-color: #ffc94b !important;
 }
 
 .btn-warning-xl {
@@ -18733,8 +19638,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -18748,8 +19656,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #ffb70f;
   color: #ffb70f !important;
 }
@@ -18764,8 +19675,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #ffb70f;
@@ -18782,8 +19696,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(39, 103.8, 255) !important;
 }
 .btn-complement-warning:hover {
@@ -18797,8 +19714,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ffb70f;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(39, 103.8, 255) !important;
@@ -18814,8 +19734,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -18829,11 +19752,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-danger:hover {
-  background-color: rgb(255, 117.3, 145.2) !important;
+  background-color: rgb(255, 140.25, 163.5) !important;
 }
 
 .btn-danger-sm {
@@ -18842,8 +19768,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -18857,8 +19786,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #ff6685;
   color: #ff6685 !important;
 }
@@ -18873,8 +19805,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid #ff6685;
@@ -18891,8 +19826,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger:hover {
@@ -18906,8 +19844,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(117.3, 255, 227.1) !important;
@@ -18923,8 +19864,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -18938,11 +19882,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-danger:hover {
-  background-color: rgb(255, 117.3, 145.2) !important;
+  background-color: rgb(255, 140.25, 163.5) !important;
 }
 
 .btn-danger-md {
@@ -18951,8 +19898,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -18966,8 +19916,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #ff6685;
   color: #ff6685 !important;
 }
@@ -18982,8 +19935,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid #ff6685;
@@ -19000,8 +19956,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger:hover {
@@ -19015,8 +19974,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(117.3, 255, 227.1) !important;
@@ -19032,8 +19994,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -19047,11 +20012,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-danger:hover {
-  background-color: rgb(255, 117.3, 145.2) !important;
+  background-color: rgb(255, 140.25, 163.5) !important;
 }
 
 .btn-danger-lg {
@@ -19060,8 +20028,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -19075,8 +20046,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #ff6685;
   color: #ff6685 !important;
 }
@@ -19091,8 +20065,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid #ff6685;
@@ -19109,8 +20086,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger:hover {
@@ -19124,8 +20104,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(117.3, 255, 227.1) !important;
@@ -19141,8 +20124,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -19156,11 +20142,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-danger:hover {
-  background-color: rgb(255, 117.3, 145.2) !important;
+  background-color: rgb(255, 140.25, 163.5) !important;
 }
 
 .btn-danger-xl {
@@ -19169,8 +20158,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -19184,8 +20176,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid #ff6685;
   color: #ff6685 !important;
 }
@@ -19200,8 +20195,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid #ff6685;
@@ -19218,8 +20216,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(117.3, 255, 227.1) !important;
 }
 .btn-complement-danger:hover {
@@ -19233,8 +20234,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #ff6685;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(117.3, 255, 227.1) !important;
@@ -19250,8 +20254,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -19265,11 +20272,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-black:hover {
-  background-color: rgb(25.5, 25.5, 25.5) !important;
+  background-color: rgb(63.75, 63.75, 63.75) !important;
 }
 
 .btn-black-sm {
@@ -19278,8 +20288,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -19293,8 +20306,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid black;
   color: black !important;
 }
@@ -19309,8 +20325,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid black;
@@ -19327,8 +20346,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black:hover {
@@ -19342,8 +20364,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: rgb(25.5, 25.5, 25.5) !important;
@@ -19359,8 +20384,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -19374,11 +20402,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-black:hover {
-  background-color: rgb(25.5, 25.5, 25.5) !important;
+  background-color: rgb(63.75, 63.75, 63.75) !important;
 }
 
 .btn-black-md {
@@ -19387,8 +20418,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -19402,8 +20436,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid black;
   color: black !important;
 }
@@ -19418,8 +20455,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid black;
@@ -19436,8 +20476,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black:hover {
@@ -19451,8 +20494,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(25.5, 25.5, 25.5) !important;
@@ -19468,8 +20514,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -19483,11 +20532,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-black:hover {
-  background-color: rgb(25.5, 25.5, 25.5) !important;
+  background-color: rgb(63.75, 63.75, 63.75) !important;
 }
 
 .btn-black-lg {
@@ -19496,8 +20548,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -19511,8 +20566,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid black;
   color: black !important;
 }
@@ -19527,8 +20585,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid black;
@@ -19545,8 +20606,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black:hover {
@@ -19560,8 +20624,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: rgb(25.5, 25.5, 25.5) !important;
@@ -19577,8 +20644,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -19592,11 +20662,14 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-black:hover {
-  background-color: rgb(25.5, 25.5, 25.5) !important;
+  background-color: rgb(63.75, 63.75, 63.75) !important;
 }
 
 .btn-black-xl {
@@ -19605,8 +20678,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -19620,8 +20696,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid black;
   color: black !important;
 }
@@ -19636,8 +20715,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid black;
@@ -19654,8 +20736,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: rgb(25.5, 25.5, 25.5) !important;
 }
 .btn-complement-black:hover {
@@ -19669,8 +20754,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: rgb(25.5, 25.5, 25.5) !important;
@@ -19686,8 +20774,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -19701,8 +20792,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-white:hover {
   background-color: white !important;
@@ -19714,8 +20808,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -19729,8 +20826,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid white;
   color: white !important;
 }
@@ -19745,8 +20845,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border: 2.5px solid white;
@@ -19763,8 +20866,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: white !important;
 }
 .btn-complement-white:hover {
@@ -19778,8 +20884,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   color: white !important;
@@ -19795,8 +20904,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -19810,8 +20922,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-white:hover {
   background-color: white !important;
@@ -19823,8 +20938,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
@@ -19838,8 +20956,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid white;
   color: white !important;
 }
@@ -19854,8 +20975,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2.5px solid white;
@@ -19872,8 +20996,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: white !important;
 }
 .btn-complement-white:hover {
@@ -19887,8 +21014,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: white !important;
@@ -19904,8 +21034,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -19919,8 +21052,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-white:hover {
   background-color: white !important;
@@ -19932,8 +21068,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
 }
@@ -19947,8 +21086,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid white;
   color: white !important;
 }
@@ -19963,8 +21105,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   border: 2.5px solid white;
@@ -19981,8 +21126,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: white !important;
 }
 .btn-complement-white:hover {
@@ -19996,8 +21144,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   color: white !important;
@@ -20013,8 +21164,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -20028,8 +21182,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .btn-white:hover {
   background-color: white !important;
@@ -20041,8 +21198,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
 }
@@ -20056,8 +21216,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   border: 1px solid white;
   color: white !important;
 }
@@ -20072,8 +21235,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   border: 2.5px solid white;
@@ -20090,8 +21256,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: white !important;
 }
 .btn-complement-white:hover {
@@ -20105,8 +21274,11 @@ html {
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   color: white !important;
@@ -24214,6 +25386,7 @@ body {
   position: fixed;
   top: 3.5rem;
   right: 0;
+  padding-bottom: 0.5rem;
   width: 75%;
   max-width: 280px;
   background-color: #fff;
@@ -24232,6 +25405,8 @@ body {
   flex-direction: column;
   padding: 1rem;
   gap: 0.8rem;
+  max-height: 15rem;
+  overflow-y: scroll;
 }
 .mobile-menu .mobile-menu-content a {
   text-decoration: none;
@@ -24255,8 +25430,8 @@ body {
 
 .sidebar {
   margin-top: 3.4rem;
-  width: 4rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 2.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -24267,6 +25442,7 @@ body {
   overflow-x: hidden;
   background-color: aliceblue;
   transition: width 0.5s ease, height 0.5s ease;
+  border-radius: 4px;
 }
 .sidebar nav {
   display: flex;
@@ -24298,10 +25474,12 @@ body {
   min-width: 10rem;
   width: min(50%, 18.75rem);
   height: 100%;
+  margin-bottom: 0;
 }
 .sidebar .menu-sidebar {
   width: 1.5rem;
   height: 15px;
+  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24556,396 +25734,308 @@ body {
   }
 }
 .alert {
-  padding: 1.25rem;
-  margin: 1rem 0;
+  background: #ffdb9b;
+  padding: 1rem 2rem;
+  min-width: fit-content;
+  position: fixed;
+  right: 0;
+  top: 20px;
   border-radius: 4px;
-  border-left: 4px solid;
-  position: relative;
-  font-family: system-ui, sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  background-color: white;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
+  border-left: 8px solid #ffa502;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 40;
 }
-.alert::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  background-size: contain;
+.alert .fa-exclamation-circle, .alert .fa-check-circle, .alert .fa-info-circle, .alert .fa-exclamation-triangle {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ce8500;
+  font-size: 1.75rem;
 }
-
-.alert-orange {
-  border-color: #f4a529;
-  color: rgb(246.4933333333, 185.4, 89.5066666667);
-  background-color: rgba(244, 165, 41, 0.08);
+.alert .msg {
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: #ce8500;
 }
-.alert-orange::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f4a529;
-  border: 2px solid #f4a529;
-  border-radius: 50%;
-  font-size: 0.9em;
+.alert .close-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffd080;
+  padding: 1rem 0.875rem;
+  cursor: pointer;
 }
-.alert-orange.alert-filled {
-  background-color: #f4a529;
-  color: white;
+.alert .close-btn .fas {
+  color: #ce8500;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
-.alert-orange.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
+.alert .close-btn:hover {
+  background: #ffc766;
 }
-
-.alert-yellow {
-  border-color: #fad860;
-  color: rgb(251.5548780488, 228.1280487805, 145.4451219512);
-  background-color: rgba(250, 216, 96, 0.08);
+.alert.showAlert {
+  opacity: 1;
+  pointer-events: auto;
 }
-.alert-yellow::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fad860;
-  border: 2px solid #fad860;
-  border-radius: 50%;
-  font-size: 0.9em;
+.alert.show {
+  animation: show_slide 1s ease forwards;
 }
-.alert-yellow.alert-filled {
-  background-color: #fad860;
-  color: white;
-}
-.alert-yellow.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-red {
-  border-color: #790707;
-  color: rgb(169.2109375, 9.7890625, 9.7890625);
-  background-color: rgba(121, 7, 7, 0.08);
-}
-.alert-red::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #790707;
-  border: 2px solid #790707;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-red.alert-filled {
-  background-color: #790707;
-  color: white;
-}
-.alert-red.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-pitch {
-  border-color: #9e6555;
-  color: rgb(179.4444444444, 128.7777777778, 114.5555555556);
-  background-color: rgba(158, 101, 85, 0.08);
-}
-.alert-pitch::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #9e6555;
-  border: 2px solid #9e6555;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-pitch.alert-filled {
-  background-color: #9e6555;
-  color: white;
-}
-.alert-pitch.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-gray {
-  border-color: #acc1d3;
-  color: rgb(62.0157480315, 91.6141732283, 116.9842519685);
-  background-color: rgba(172, 193, 211, 0.08);
-}
-.alert-gray::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #acc1d3;
-  border: 2px solid #acc1d3;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-gray.alert-filled {
-  background-color: #acc1d3;
-  color: #333;
-}
-.alert-gray.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-blue {
-  border-color: #2a4058;
-  color: rgb(58.4769230769, 89.1076923077, 122.5230769231);
-  background-color: rgba(42, 64, 88, 0.08);
-}
-.alert-blue::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #2a4058;
-  border: 2px solid #2a4058;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-blue.alert-filled {
-  background-color: #2a4058;
-  color: white;
-}
-.alert-blue.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-link {
-  border-color: #4258ff;
-  color: rgb(117, 133.0634920635, 255);
-  background-color: rgba(66, 88, 255, 0.08);
-}
-.alert-link::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #4258ff;
-  border: 2px solid #4258ff;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-link.alert-filled {
-  background-color: #4258ff;
-  color: white;
-}
-.alert-link.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-primary {
-  border-color: #00d1b2;
-  color: rgb(5, 255, 217.9186602871);
-  background-color: rgba(0, 209, 178, 0.08);
-}
-.alert-primary::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #00d1b2;
-  border: 2px solid #00d1b2;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-primary.alert-filled {
-  background-color: #00d1b2;
-  color: white;
-}
-.alert-primary.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-info {
-  border-color: #66d1ff;
-  color: rgb(153, 224.3333333333, 255);
-  background-color: rgba(102, 209, 255, 0.08);
-}
-.alert-info::before {
-  content: "i";
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #66d1ff;
-  border: 2px solid #66d1ff;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-info.alert-filled {
-  background-color: #66d1ff;
-  color: white;
-}
-.alert-info.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-success {
-  border-color: #48c78e;
-  color: rgb(111.050209205, 210.949790795, 166.1129707113);
-  background-color: rgba(72, 199, 142, 0.08);
-}
-.alert-success::before {
-  content: "✓";
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #48c78e;
-  border: 2px solid #48c78e;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-success.alert-filled {
-  background-color: #48c78e;
-  color: white;
-}
-.alert-success.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
+.alert.hide {
+  animation: hide_slide 1s ease forwards;
 }
 
 .alert-warning {
-  border-color: #ffb70f;
-  color: rgb(255, 198.3, 66);
-  background-color: rgba(255, 183, 15, 0.08);
+  background: #ffdb9b;
+  padding: 1rem 2rem;
+  min-width: fit-content;
+  position: fixed;
+  right: 0;
+  top: 20px;
+  border-radius: 4px;
+  border-left: 8px solid #ffa502;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 40;
 }
-.alert-warning::before {
-  content: "⚠";
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffb70f;
-  border: 2px solid #ffb70f;
-  border-radius: 50%;
-  font-size: 0.9em;
+.alert-warning .fa-exclamation-circle, .alert-warning .fa-check-circle, .alert-warning .fa-info-circle, .alert-warning .fa-exclamation-triangle {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ce8500;
+  font-size: 1.75rem;
 }
-.alert-warning.alert-filled {
-  background-color: #ffb70f;
-  color: white;
+.alert-warning .msg {
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: #ce8500;
 }
-.alert-warning.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
+.alert-warning .close-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffd080;
+  padding: 1rem 0.875rem;
+  cursor: pointer;
+}
+.alert-warning .close-btn .fas {
+  color: #ce8500;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.alert-warning .close-btn:hover {
+  background: #ffc766;
+}
+.alert-warning.showAlert {
+  opacity: 1;
+  pointer-events: auto;
+}
+.alert-warning.show {
+  animation: show_slide 1s ease forwards;
+}
+.alert-warning.hide {
+  animation: hide_slide 1s ease forwards;
+}
+
+.alert-success {
+  background: #d4edda;
+  padding: 1rem 2rem;
+  min-width: fit-content;
+  position: fixed;
+  right: 0;
+  top: 20px;
+  border-radius: 4px;
+  border-left: 8px solid #28a745;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 40;
+}
+.alert-success .fa-exclamation-circle, .alert-success .fa-check-circle, .alert-success .fa-info-circle, .alert-success .fa-exclamation-triangle {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #155724;
+  font-size: 1.75rem;
+}
+.alert-success .msg {
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: #155724;
+}
+.alert-success .close-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c3e6cb;
+  padding: 1rem 0.875rem;
+  cursor: pointer;
+}
+.alert-success .close-btn .fas {
+  color: #155724;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.alert-success .close-btn:hover {
+  background: #b1dfbb;
+}
+.alert-success.showAlert {
+  opacity: 1;
+  pointer-events: auto;
+}
+.alert-success.show {
+  animation: show_slide 1s ease forwards;
+}
+.alert-success.hide {
+  animation: hide_slide 1s ease forwards;
 }
 
 .alert-danger {
-  border-color: #ff6685;
-  color: rgb(255, 153, 173.6666666667);
-  background-color: rgba(255, 102, 133, 0.08);
+  background: #f8d7da;
+  padding: 1rem 2rem;
+  min-width: fit-content;
+  position: fixed;
+  right: 0;
+  top: 20px;
+  border-radius: 4px;
+  border-left: 8px solid #dc3545;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 40;
 }
-.alert-danger::before {
-  content: "!";
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ff6685;
-  border: 2px solid #ff6685;
-  border-radius: 50%;
-  font-size: 0.9em;
+.alert-danger .fa-exclamation-circle, .alert-danger .fa-check-circle, .alert-danger .fa-info-circle, .alert-danger .fa-exclamation-triangle {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #721c24;
+  font-size: 1.75rem;
 }
-.alert-danger.alert-filled {
-  background-color: #ff6685;
-  color: white;
+.alert-danger .msg {
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: #721c24;
 }
-.alert-danger.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-black {
-  border-color: black;
-  color: rgb(25.5, 25.5, 25.5);
-  background-color: rgba(0, 0, 0, 0.08);
-}
-.alert-black::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  border: 2px solid black;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-black.alert-filled {
-  background-color: black;
-  color: white;
-}
-.alert-black.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-white {
-  border-color: white;
-  color: #999999;
-  background-color: rgba(255, 255, 255, 0.08);
-}
-.alert-white::before {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  border: 2px solid white;
-  border-radius: 50%;
-  font-size: 0.9em;
-}
-.alert-white.alert-filled {
-  background-color: white;
-  color: #333;
-}
-.alert-white.alert-filled::before {
-  color: inherit;
-  border-color: currentColor;
-}
-
-.alert-accent {
-  border-left-width: 8px;
-}
-
-.alert-close {
+.alert-danger .close-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f5c6cb;
+  padding: 1rem 0.875rem;
   cursor: pointer;
-  margin-left: auto;
-  padding: 0 0 0 1rem;
-  background: none;
-  border: 0;
-  opacity: 0.6;
 }
-.alert-close:hover {
+.alert-danger .close-btn .fas {
+  color: #721c24;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.alert-danger .close-btn:hover {
+  background: #f1b0b7;
+}
+.alert-danger.showAlert {
   opacity: 1;
+  pointer-events: auto;
+}
+.alert-danger.show {
+  animation: show_slide 1s ease forwards;
+}
+.alert-danger.hide {
+  animation: hide_slide 1s ease forwards;
 }
 
-/*
-<div class="alert alert-success">
-  Operación completada exitosamente
-  <button class="alert-close" aria-label="Cerrar">×</button>
-</div>
+.alert-info {
+  background: #d1ecf1;
+  padding: 1rem 2rem;
+  min-width: fit-content;
+  position: fixed;
+  right: 0;
+  top: 20px;
+  border-radius: 4px;
+  border-left: 8px solid #17a2b8;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 40;
+}
+.alert-info .fa-exclamation-circle, .alert-info .fa-check-circle, .alert-info .fa-info-circle, .alert-info .fa-exclamation-triangle {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0c5460;
+  font-size: 1.75rem;
+}
+.alert-info .msg {
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: #0c5460;
+}
+.alert-info .close-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #bee5eb;
+  padding: 1rem 0.875rem;
+  cursor: pointer;
+}
+.alert-info .close-btn .fas {
+  color: #0c5460;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.alert-info .close-btn:hover {
+  background: #abdde5;
+}
+.alert-info.showAlert {
+  opacity: 1;
+  pointer-events: auto;
+}
+.alert-info.show {
+  animation: show_slide 1s ease forwards;
+}
+.alert-info.hide {
+  animation: hide_slide 1s ease forwards;
+}
 
-<div class="alert alert-danger alert-filled">
-  Error crítico en el sistema
-</div>
-
-<div class="alert alert-info alert-accent">
-  Nueva actualización disponible
-</div>
-*/
+@keyframes show_slide {
+  0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes hide_slide {
+  0% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 .form-control {
   display: block;
   width: 98%;

@@ -125,6 +125,7 @@ body {
   position: fixed;
   top: 3.5rem;
   right: 0;
+  padding-bottom: 0.5rem;
   width: 75%;
   max-width: 280px;
   background-color: #fff;
@@ -144,6 +145,8 @@ body {
     flex-direction: column;
     padding: 1rem;
     gap: 0.8rem;
+    max-height: 15rem;
+    overflow-y: scroll;
 
     a {
       text-decoration: none;
@@ -173,8 +176,8 @@ body {
 //SIDEBARRR
 .sidebar {
   margin-top: 3.4rem;
-  width: 4rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 2.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -185,6 +188,7 @@ body {
   overflow-x: hidden;
   background-color: aliceblue;
   transition: width 0.5s ease, height 0.5s ease;
+  border-radius: 4px;
 
   nav {
     display: flex;
@@ -221,11 +225,13 @@ body {
     min-width: 10rem;
     width: min(50%, 18.75rem);
     height: 100%;
+    margin-bottom: 0;
   }
 
   .menu-sidebar {
     width: 1.5rem;
     height: 15px;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

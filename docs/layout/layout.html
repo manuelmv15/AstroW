@@ -488,6 +488,7 @@
     &lt;div class="flex-1 ai-center d-flex justify-center"&gt;FLEX 1&lt;/div&gt;
 &lt;/div&gt;
             </code></pre>
+
             <div class="mt-1">
                 <ul class="pl-3 list-orange text-sm">
                   <li><code class="language-html">.col-12</code> indica que el elemento ocupa todo el ancho en pantallas pequeñas.</li>
@@ -498,7 +499,84 @@
                 </ul>
             </div>
 
-          </div>
+        </div>
+
+
+        <div>
+            <h1 class="sub-title">Containers</h1>
+        </div>
+        
+        <div>
+            <p class="text-base mb-2 m-1">
+                La libreria ofrece estilos de contenedores adaptativos con tres variantes visuales y anchos máximos definidos por breakpoint.
+            </p>
+        </div>
+
+        <div class="p-2 d-flex flex-dir-column ai-center">
+
+            <div class="">
+              <ul class="pl-4 list-disc space-y-2 text-sm">
+                <li class="m-1">
+                  <code class="language-html">&lt;div class="container-flow"&gt;…&lt;/div&gt;</code>
+                  contenedor <strong>fluido</strong> (100% ancho) en <strong>todas</strong> las pantallas.
+                </li>
+                <li class="m-1">
+                  <code class="language-html">&lt;div class="container-bordered-sm"&gt;…&lt;/div&gt;</code>
+                  contenedor con <strong>borde</strong> y <code>max-width: 540px</code> a partir de <code>sm (480px)</code>.
+                </li>
+                <li class="m-1">
+                  <code class="language-html">&lt;div class="container-solid-lg"&gt;…&lt;/div&gt;</code>
+                  contenedor con <strong>fondo sólido</strong> y <code>max-width: 940px</code> a partir de <code>lg (960px)</code>.
+                </li>
+                <li class="m-1">
+                  <code class="language-html">&lt;div class="container-base-xl"&gt;…&lt;/div&gt;</code>
+                  contenedor fluido con <code>max-width: 1180px</code> a partir de <code>xl (1200px)</code>.
+                </li>
+                <li class="m-1">
+                  <code class="language-html">&lt;div class="container-bordered-xxl"&gt;…&lt;/div&gt;</code>
+                  contenedor con borde y <code>max-width: 1440px</code> a partir de <code>xxl (1440px)</code>.
+                </li>
+              </ul>
+            </div>
+          
+            <div class="">
+                <h3 class="text-lg font-semibold mt-6 mb-2">Variantes de Estilo</h3>
+                <div class="mt-1">
+                <ul class="pl-4 list-orange text-sm space-y-2">
+                    <li><code class="language-html">.container-base-*</code> sin decoración extra, solo ancho y padding.</li>
+                    <li><code class="language-html">.container-bordered-*</code> agrega <code class="language-html">border: 1px solid #ccc</code> y <code>border-radius: .5rem</code>.</li>
+                    <li><code class="language-html">.container-solid-*</code> con fondo <code class="language-html">background-color: #f8f9fa;</code> (blanco) y <code>border-radius: .5rem</code>.</li>
+                </ul>
+                </div>
+            </div>
+            
+          
+        </div>
+
+        <div class="container-flow bg-color-link grid grid-rows-4">
+
+            <div class="container-base-sm bordered-white">
+                <!-- contenedor básico, hasta 540px a partir de 480px -->
+                Contenedor base...
+                hasta 540px
+            </div>
+              
+            <div class="container-bordered-lg">
+                <!-- contenedor con borde, hasta 960px a partir de 960px -->
+                Contenedor bordered... hasta 960px
+            </div>
+              
+            <div class="container-solid-xl text-area-black">
+                <!-- contenedor con fondo, hasta 1200px a partir de 1200px -->
+                Contenedor solid...
+                hasta 1200px
+            </div>
+
+            <div class="container-flow text-area-black bordered-orange">
+                <!-- contenedor con fondo, hasta 1200px a partir de 1200px -->
+                Container Flow
+            </div>
+        </div>
 
 
 

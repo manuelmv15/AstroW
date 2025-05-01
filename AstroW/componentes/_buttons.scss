@@ -12,9 +12,12 @@
     cursor: pointer;
     display: inline-block;
     border: 1px solid black;
+    border-radius: 0.25rem;
     padding: $base-padding $base-padding * 2;
     // border-radius: 5px; lo saque de momento ya que hay una utilidad que aplica esta regla
-    background-color: $bg-color
+    background-color: $bg-color;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 
@@ -64,7 +67,7 @@
         .btn-#{$key}{//genera un boton ex btn-red con bg-color respectivo
             @include btn-base($value);
             &:hover{
-                $color-lightness: scale($color: $value, $lightness: 10%);
+                $color-lightness: scale($color: $value, $lightness: 25%);
                 background-color: $color-lightness !important;
             }
         }
