@@ -227,7 +227,10 @@ git clone https://github.com/manuelmv15/AstroW
                 </section>
                 <!--variacion de colores-->
                 <section class="mt-4 text-xl">
-                    <h2 class="sub-title theme-font ">Variaciones de color por tono</h2>
+                    <h2 class="text-4xl theme-font ">Variaciones de color</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
                     <p class="mt-1 ml-2 text-xl">
                         Cada color dispone de <span class="">variaciones de tonos más claros y más oscuros</span> .
                     </p>
@@ -274,8 +277,11 @@ git clone https://github.com/manuelmv15/AstroW
                 </section>
 
                 <!--text-->
-                <section>
-                    <h2>text</h2>
+                <section class="mt-2">
+                    <h2 class="text-4xl theme-font">text</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
                     <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
 
                         <div>
@@ -315,6 +321,53 @@ git clone https://github.com/manuelmv15/AstroW
                     </div>
                 </section>
 
+                <!--text area-->
+                <section class="mt-4">
+                    <h2 class="text-4xl theme-font">Áreas de texto</h2>
+                    <div class="mt-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+
+                    <div class="grid md:grid-cols-2 xs:grid-cols-1 mt-1">
+
+                        <div>
+                            <table class="custom-table text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Tipos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>text-area-{color}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>text-area-{color}-ov <span class="text-info">!important</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>text-area-{color}-light-{1-9}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>text-area-{color}-dark-{1-9}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <label class="badge-outlined-info">Ejemplo HTML</label>
+                            <pre><code class="language-html">&lt;div class=&quot;text-area-blue-dark-3&quot;&gt;
+    &lt;h2&gt;Título destacado&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;text-area-orange-light-4&quot;&gt;
+    &lt;h3&gt;Subtítulo&lt;/h3&gt;
+  &lt;/div&gt;</code></pre>
+                        </div>
+
+                    </div>
+                </section>
+
+                
 
             </div>
 
