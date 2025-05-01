@@ -133,20 +133,20 @@
             </div>
         </div>
 
-        <div class="grid xl:grid-cols-12 lg:grid-cols-6 md:grid-cols-3 xs:grid-cols-2  container-flow bg-color-danger m-auto mt-2 text-is-centered br"
+        <div class="grid xl:grid-cols-12 lg:grid-cols-6 md:grid-cols-3 xs:grid-cols-2  container-flow bg-color-danger m-auto mt-2 text-is-centered br text-area-danger borders-are-rounded"
             style="min-height: 7rem;">
-            <div style="border: 1px solid black;">1</div>
-            <div style="border: 1px solid black;">2</div>
-            <div style="border: 1px solid black;">3</div>
-            <div style="border: 1px solid black;">4</div>
-            <div style="border: 1px solid black;">5</div>
-            <div style="border: 1px solid black;">6</div>
-            <div style="border: 1px solid black;">7</div>
-            <div style="border: 1px solid black;">8</div>
-            <div style="border: 1px solid black;">9</div>
-            <div style="border: 1px solid black;">10</div>
-            <div style="border: 1px solid black;">11</div>
-            <div style="border: 1px solid black;">12</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">1</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">2</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">3</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">4</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">5</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">6</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">7</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">8</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">9</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">10</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">11</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid black;">12</div>
         </div>
 
         <span class="m-1 badge-soft-danger">Ejemplo HTML</span>
@@ -251,6 +251,256 @@
             <p class="m-1">El primer ítem (1) ocupa desde la columna 1 hasta la 3 en xs.</p>
             <p class="m-1">El sexto ítem (6) empieza en la columna 3 y termina en la columna 4 en xs, pero en md empieza en la 6 y termina en la 7.</p>
         </div>
+
+        <!-- span y filas -->
+
+        <h1 class="sub-title mt-2">Span y filas</h1>
+        <div class="m-1">
+            <hr class="h-rule bg-color-link">
+        </div>
+
+        <p class="borders-are-rounded m-1">
+            Puedes utilizar <span class="text-red-override bg-color-gray-dark-8 fw-bold">col-span-{n}</span> y <span class="text-red-override bg-color-gray-dark-8 fw-bold">row-span-{n}</span> para controlar cuánto espacio ocupa un elemento dentro del grid en columnas o filas.
+        </p>
+
+        <div class="grid grid-cols-4 grid-rows-3  max-w-75 m-auto text-is-centered mt-1 text-area-danger bg-color-danger br p-1" style="min-height: 12rem;">
+            <div class="bg-color-success-light-6 br" style="border: 1px solid black;">1</div>
+            <div class="bg-color-success-light-6 br col-span-2" style="border: 1px solid black;">2 (col-span-2)</div>
+            <div class="bg-color-success-light-6 br" style="border: 1px solid black;">3</div>
+            <div class="bg-color-success-light-6 br row-span-2" style="border: 1px solid black;">4 (row-span-2)</div>
+            <div class="bg-color-success-light-6 br" style="border: 1px solid black;">5</div>
+            <div class="bg-color-success-light-6 br" style="border: 1px solid black;">6</div>
+        </div>
+
+        <span class="m-1 badge-soft-danger">Ejemplo HTML</span>
+
+        <div class="m-auto max-w-75">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-html">
+&lt;div class="grid grid-cols-4 grid-rows-3 g-1"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div class="col-span-2"&gt;2&lt;/div&gt;
+  &lt;div&gt;3&lt;/div&gt;
+  &lt;div class="row-span-2"&gt;4&lt;/div&gt;
+  &lt;div&gt;5&lt;/div&gt;
+  &lt;div&gt;6&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+        </div>
+
+        <h1 class="sub-title mt-2">Uso Responsivo de Grid</h1>
+        <div class="m-1">
+            <hr class="h-rule bg-color-warning">
+        </div>
+
+        <p class="m-1">Las clases responsivas como <code>md:col-span-4</code> o <code>lg:row-span-2</code> permiten modificar el diseño según el ancho de pantalla. Se generan automáticamente usando los breakpoints definidos.</p>
+
+        <!-- sistema de filas -->
+
+
+        <h1 class="sub-title mt-2">Sistema de Filas (Grid Rows)</h1>
+        <div class="m-1">
+            <hr class="h-rule bg-color-success">
+        </div>
+
+        <p class="borders-are-rounded m-1">
+            Puedes definir filas en tu grid con las clases 
+            <span class="text-red-override bg-color-gray-dark-8 fw-bold">grid-rows-{n}</span>, donde <code>n</code> va de 1 a 6.
+        </p>
+
+        <div class="max-w-75 m-auto mt-1">
+            <div class="m-auto table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Clase</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code class="language-html">grid-rows-1</code></td>
+                            <td>Divide el contenedor en 1 fila.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">grid-rows-2</code></td>
+                            <td>Divide el contenedor en 2 filas del mismo tamaño.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">grid-rows-3</code></td>
+                            <td>Divide el contenedor en 3 filas del mismo tamaño.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">grid-rows-4</code></td>
+                            <td>Divide el contenedor en 4 filas del mismo tamaño.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">grid-rows-5</code></td>
+                            <td>Divide el contenedor en 5 filas del mismo tamaño.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">grid-rows-6</code></td>
+                            <td>Divide el contenedor en 6 filas del mismo tamaño.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <span class="m-1 badge-soft-success">Ejemplo HTML</span>
+
+        <div class="m-auto max-w-75">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-html">
+&lt;div class="grid grid-rows-3"&gt;
+    &lt;div style="border: 1px solid black;"&gt;Fila 1&lt;/div&gt;
+    &lt;div style="border: 1px solid black;"&gt;Fila 2&lt;/div&gt;
+    &lt;div style="border: 1px solid black;"&gt;Fila 3&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+        </div>
+
+        <div class="grid grid-rows-3 container-flow bg-color-danger m-auto mt-2 text-is-centered br borders-are-rounded text-area-danger" style="min-height: 12rem;">
+            <div class="bg-color-success-light-6" style="border: 1px solid rgb(0, 0, 0);">Fila 2</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid rgb(0, 0, 0);">Fila 1</div>
+            <div class="bg-color-success-light-6" style="border: 1px solid rgb(0, 0, 0);">Fila 3</div>
+        </div>
+
+
+        <!-- FLEX FLEX FLEX FLEX -->
+
+        <h1 class="sub-title mt-2">Módulo Flex</h1>
+        <div class="m-1">
+            <hr class="h-rule bg-color-link">
+        </div>
+        
+        <p class="borders-are-rounded m-1">
+            El sistema Flex te permite crear contenedores y distribuir elementos en fila o columna. Usa las clases definidas a
+            continuación para controlar dirección, alineación, orden y tamaño de las columnas.
+        </p>
+        
+        <h1 class="title">Utilidades de flex</h1>
+        <div class="m-1">
+            <hr class="h-rule bg-color-success">
+        </div>
+        <div class="max-w-75 m-auto mt-1">
+            <div class="m-auto table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Clase</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code class="language-html">.row</code></td>
+                            <td>Contenedor flex con wrap y box-sizing border-box.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.flex-nowrap</code> / <code class="language-html">.flex-wrap</code></td>
+                            <td>Controla si los ítems envuelven o no (wrap / nowrap).</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.flex-dir-*</code></td>
+                            <td>Dirección: row, column, row-reverse, column-reverse.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.justify-*</code></td>
+                            <td>Justifica contenido: flex-start, flex-end, center, space-between, space-around, space-evenly.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.ai-*</code> / <code class="language-html">.ac-*</code> / <code class="language-html">.as-*</code></td>
+                            <td>Alinea ítems, contenido o self: flex-start, flex-end, center, baseline, stretch.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.flex-1</code></td>
+                            <td>Hace que el ítem crezca para ocupar el espacio disponible.</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.order-{n}</code></td>
+                            <td>Define el orden del ítem en el contenedor (1–12).</td>
+                        </tr>
+                        <tr>
+                            <td><code class="language-html">.col-{n}</code></td>
+                            <td>Define anchura del ítem como n/12 del ancho total.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <span class="m-1 badge-soft-purple">Ejemplo HTML</span>
+        
+        <div class="m-auto max-w-75 mb-3">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-html">
+&lt;div class="row"&gt;
+    &lt;div class="col-2 bg-color-info-light-6 br"&gt;Col 4&lt;/div&gt;
+    &lt;div class="flex-1 bg-color-info-light-6 br flex-1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="col-2 n-order-1 bg-color-info-light-6 br order-1"&gt;Order 1&lt;/div&gt;
+    &lt;div class="col-2 as-flex-end bg-color-info-light-6 br as-baseline"&gt;Align Self&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+
+            <div class="mt-1">
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.col-2</code> establece un ancho proporcional (2 de 12 columnas).</li>
+                  <li><code class="language-html">.flex-1</code> permite que el elemento crezca y ocupe el espacio restante.</li>
+                  <li><code class="language-html">.n-order-1</code> cambia el orden de visualización del elemento (posición negativa).</li>
+                  <li><code class="language-html">.as-baseline</code> alinea individualmente el ítem con <code>align-self: flex end</code>.</li>
+                </ul>
+            </div>
+
+        </div>
+        
+
+        <div class="row flex-wrap container-flow bg-color-purple m-auto mt-2 text-is-centered br bg-color-danger"
+            style="min-height: 7rem;">
+            <div class="col-2" style="border:1px solid black;">Col 4</div>
+            <div class="flex-1" style="border:1px solid black;">Flex 1</div>
+            <div class="col-2 n-order-1" style="border:1px solid black;">Order 1</div>
+            <div class="col-2 as-flex-end" style="border:1px solid black;">Align Self</div>
+        </div>
+
+        <h2 class="m-1 text-xl mt-4 fw-600">Responsive con Flex y Columnas</h2>
+        <div class="m-1">
+            <hr class="h-rule bg-color-pitch">
+        </div>
+        <p class="mb-1">
+            Este ejemplo muestra cómo el sistema <code class="language-html">flex</code> junto con las utilidades responsive de columnas (<code class="language-html">.col-12</code>, <code class="language-html">.md:col-6</code>, <code class="language-html">.xl:col-3</code>) permite crear diseños adaptables. 
+            A medida que el ancho de la pantalla cambia, las columnas se reorganizan para ajustarse según el punto de quiebre definido.
+        </p>
+
+        <div class="row m-auto mt-2 text-is-centered br bg-color-danger borders-are-rounded text-area-danger" style="min-height: 7rem;">
+            <div class="bg-color-primary col-12 md:col-6 xl:col-3 ai-center d-flex justify-center" style="border: 1px solid snow;">1</div>
+            <div class="bg-color-primary col-12 md:col-6 xl:col-3 ai-center d-flex justify-center" style="border: 1px solid snow;">2</div>
+            <div class="bg-color-primary col-12 md:col-6 xl:col-3 ai-center d-flex justify-center" style="border: 1px solid snow;">3</div>
+            <div class="bg-color-primary col-12 md:col-6 xl:col-3 ai-center d-flex justify-center" style="border: 1px solid snow;">4</div>
+            <div class="bg-color-primary flex-1 ai-center d-flex justify-center" style="border: 1px solid snow;">FLEX 1</div>
+        </div>
+
+        <div class="m-auto max-w-75 mt-1 mb-3">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-html">
+&lt;div class="row"&gt;
+    &lt;div class="col-12 md:col-6 xl:col-3 ai-center d-flex justify-center"&gt;1&lt;/div&gt;
+    &lt;div class="col-12 md:col-6 xl:col-3 ai-center d-flex justify-center"&gt;2&lt;/div&gt;
+    &lt;div class="col-12 md:col-6 xl:col-3 ai-center d-flex justify-center"&gt;3&lt;/div&gt;
+    &lt;div class="col-12 md:col-6 xl:col-3 ai-center d-flex justify-center"&gt;4&lt;/div&gt;
+    &lt;div class="flex-1 ai-center d-flex justify-center"&gt;FLEX 1&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+            <div class="mt-1">
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.col-12</code> indica que el elemento ocupa todo el ancho en pantallas pequeñas.</li>
+                  <li><code class="language-html">.md:col-6</code> cambia el ancho a 6/12 (50%) desde pantallas medianas en adelante.</li>
+                  <li><code class="language-html">.xl:col-3</code> cambia a 3/12 (25%) en pantallas extra grandes.</li>
+                  <li><code class="language-html">.flex-1</code> permite que el último ítem se expanda y ocupe el espacio restante.</li>
+                  <li><code class="language-html">.ai-center</code> y <code class="language-html">.justify-center</code> centran el contenido vertical y horizontalmente dentro de cada celda.</li>
+                </ul>
+            </div>
+
+          </div>
+
+
 
     </main>
 
