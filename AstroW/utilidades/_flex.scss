@@ -49,7 +49,7 @@ $align-items-values: flex-start, flex-end, center, baseline, stretch;
     }
   }
 
-//clases para aling-items, align-self and align-content ya que tienen los mismos valores
+//clases para aling-items, align-self and align-content ya que tienen los mismos valoresS
 @each $value in $align-items-values{
 
     .ai-#{$value}{
@@ -103,7 +103,7 @@ $base-gap: 1rem;
 }
 
 
-//NUEVA IMPLEMENTACION PARA LOS MIXINS CON BREAKPOINTS
+
 @each $bp-name, $bp-value in $breakpoints {
   @if $bp-value >0 {
     @include respond-to($bp-name) {

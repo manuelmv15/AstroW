@@ -20,7 +20,7 @@ $gap-atajos: (
   ) !default;
 
 
-//para general las clases con la propiedad gap, solo se aplicara a elementos flex o grid pero en este caso flex ya que de momento no hay gird
+//para general las clases con la propiedad gap
 @each $propiedad, $atajo in $gap-atajos {
   @each $key, $value in $gap-map {
 
@@ -58,7 +58,7 @@ $gap-atajos: (
     }
   }
 
-  // rows (assume up to 6)
+  
   @for $i from 1 through 6 {
     .#{$prefix}grid-rows-#{$i} {
       grid-template-rows: repeat(#{$i}, 1fr);
@@ -77,10 +77,10 @@ $gap-atajos: (
   
 }
 
-// Base (no prefix) generation
+
 @include generar-grid-classes();
 
-// Responsive
+
 @each $bp-name, $bp-value in $breakpoints {
   @if $bp-value > 0 {
     @include respond-to($bp-name) {

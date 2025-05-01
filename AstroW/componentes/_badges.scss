@@ -36,27 +36,27 @@ $sizes: (
   padding: map.get($size-config, padding);
   font-size: map.get($size-config, font-size);
   font-weight: 600;
-  border-radius: 9999px; // pill shape
+  border-radius: 9999px; // pastilla estilo
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
-// === GENERADOR DE BADGES POR ESTILO Y COLOR ===
+
 @each $name, $color in $colors {
   
-  // Iterar sobre los sizes
+  
   @each $size-name, $size-config in $sizes {
     $suffix: if($size-name == default, '', '-#{$size-name}');
 
-    // Badge sólido
+    
     .badge-solid-#{$name}#{$suffix} {
       @include badge-base($size-name);
       background-color: $color;
       color: light-comp($color);
     }
 
-    // Badge outlined
+    
     .badge-outlined-#{$name}#{$suffix} {
       @include badge-base($size-name);
       background-color: transparent;
@@ -64,14 +64,14 @@ $sizes: (
       color: $color;
     }
 
-    // Badge soft (tono suave)
+    
     .badge-soft-#{$name}#{$suffix} {
       @include badge-base($size-name);
       background-color: color.scale($color, $lightness: 75%);
       color: $color;
     }
 
-    // Badge invertido
+    
     .badge-inverted-#{$name}#{$suffix} {
       @include badge-base($size-name);
       background-color: light-comp($color);

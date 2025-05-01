@@ -11,11 +11,11 @@ $container-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 // tamanios máximos por breakpoint
 $container-widths: (
   "xs": 100%,
-  "sm": 540px,
-  "md": 720px,
-  "lg": 960px,
-  "xl": 1200px,
-  "xxl": 1440px,
+  "sm": 460px,
+  "md": 620px,
+  "lg": 940px,
+  "xl": 1180px,
+  "xxl": 1420px,
 );
 
 // === ESTILOS BASE ===
@@ -33,10 +33,7 @@ $container-widths: (
   border-radius: $container-radius;
 }
 
-@mixin container-shadowed {
-  box-shadow: $container-shadow;
-  border-radius: $container-radius;
-}
+
 
 @mixin container-solid($bg-color: #f8f9fa) {
   background-color: $bg-color;
@@ -60,9 +57,8 @@ $container-widths: (
 
       @if $style == bordered {
         @include container-bordered;
-      } @else if $style == shadow {
-        @include container-shadowed;
-      } @else if $style == solid {
+      }
+       @else if $style == solid {
         @include container-solid();
       }
 

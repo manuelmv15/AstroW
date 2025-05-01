@@ -25,6 +25,8 @@
 @forward 'list';
 
 
+
+
 $utilities: (
     "padding": ('prefix': 'p',
         'values': ('0': 0,
@@ -73,6 +75,7 @@ $utilities: (
             '3': $base-margin * 4,
             '4': $base-margin * 6,
             '5': $base-margin * 8,
+            'c': 0 auto,
             'auto': auto),
     ),
     "margin-left": ('prefix': 'ml',
@@ -113,7 +116,7 @@ $utilities: (
     ),
     "border-radius": ('prefix': 'br',
         'values': ('default': $base-border-radius,
-            'none': 0,
+            'none': (0 \!important),
             'sm': $base-border-radius * 0.5,
             'lg': $base-border-radius * 2,
             'xl': $base-border-radius * 4,
