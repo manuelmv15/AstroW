@@ -10,7 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 
-<body class="">
+<body class="bg-color-blue-dark-2">
 
     <header class="nav-header" id="site-header">
         <div class="nav-header-wrapper">
@@ -621,9 +621,117 @@
                 </div>
               </div>
             </div>
-          </section>
-          
 
+            <!--EJEMPLOS DE LOS TAMAÑOS DE TEXTOS (CRISTIAN)-->
+            <div class="mt-4">
+                <h3 class="sub-title text-xl mb-1">Ejemplos de tamaños de fuentes</h3>
+                <hr class="h-rule bg-color-info">
+                <div class="mt-2">
+                    <p class="text-xs bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño XS</p>
+                    <p class="text-sm bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño SM</p>
+                    <p class="text-base bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño BASE</p>
+                    <p class="text-lg bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño LG</p>
+                    <p class="text-2xl bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño 2XL</p>
+                    <p class="text-3xl bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño 3XL</p>
+                    <p class="text-6xl bg-color-primary-dark-6 mb-1 ml-0">Texto con tamaño 6XL</p>
+                </div>
+            </div>
+
+            <div class="mt-4 row">
+
+                <div>
+                    <div class="borders-are-rounded">
+                        <h2 class="text-xl">Clases para la manipulación de titulos</h2>
+
+                    <ul>
+
+                        <!--EXPLICACION DE CLASES PARA MANIPULAR TEXTOS (CRISTIAN)-->
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">theme-font</span> :
+                            Aplica un tema específico al texto</li>
+
+                            <h2 class="text-xl badge-outlined-info m-1">Ejemplo</h2><span class="text-xl theme-font m-1">Texto con la fuente aplicada</span>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">title</span>,
+                            <span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">sub-title</span> : 
+                            Ajustan el tamaño de fuente automáticamente segun el ancho de la pantalla del dispositivo
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">no-border</span> : 
+                            Elimina completamente los bordes de un elemento
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">text-is-centered</span> : 
+                            Centra el texto de un elemento, también se extiende a los hijos dentro del elemento para que tomen la misma alineación 
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">text-is-left</span> : 
+                            Alinea el texto de un elemento a la izquierda, también se extiende a los hijos dentro del elemento para que tomen la misma alineación 
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">text-is-right</span> : 
+                            Alinea el texto de un elemento a la derecha, también se extiende a los hijos dentro del elemento para que tomen la misma alineación 
+                        </li>
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 text-2xl text-is-centered">
+                            <h1>Texto centrado</h1>
+                            <p class="text-lg m-1 pb-1">Hijo de este elemento</p>
+                        </div>
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 text-2xl text-is-left">
+                            <h1>Texto alineado a la izquierda</h1>
+                            <p class="text-lg mb-1 mt-1 pb-1">Hijo de este elemento</p>
+                        </div>   
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 text-2xl text-is-right">
+                            <h1>Texto alineado a la derecha</h1>
+                            <p class="text-lg mb-1 mt-1 pb-1">Hijo de este elemento</p>
+                        </div>  
+                        
+                    </ul>
+
+                    <ul>
+                        <!--EXPLICACION DE CLASES PARA MANIPULAR TÍTULOS (CRISTIAN)-->
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">title-is-centered</span> : 
+                            Centra el título de un elemento 
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">title-is-left</span> : 
+                            Alinea el título de un elemento a la izquierda 
+                        </li>
+
+                        <li class="mb-1 mt-1"><span class="text-lg text-red bg-color-primary-dark-9 br fw-bold">title-is-right</span> : 
+                            Alinea el título de un elemento a la derecha
+                        </li>
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 title-is-centered">
+                            <h1 class="mb-1 text-xl p-1">Título centrado</h1>
+                            <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ea ipsa quibusdam at 
+                                unde eligendi, voluptatem tempore ad magni, excepturi amet vero asperiores ullam repudiandae natus molestias, 
+                                vitae deleniti voluptates.</p>
+                        </div>
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 title-is-left">
+                            <h1 class="mb-1 text-xl p-1">Título alineado a la izquierda</h1>
+                            <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ea ipsa quibusdam at 
+                                unde eligendi, voluptatem tempore ad magni, excepturi amet vero asperiores ullam repudiandae natus molestias, 
+                                vitae deleniti voluptates.</p>
+                        </div>   
+
+                        <div class="bg-color-primary-dark-6 mb-1 mt-1 title-is-right">
+                            <h1 class="mb-1 text-xl p-1">Título alineado a la derecha</h1>
+                            <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ea ipsa quibusdam at 
+                                unde eligendi, voluptatem tempore ad magni, excepturi amet vero asperiores ullam repudiandae natus molestias, 
+                                vitae deleniti voluptates.</p>
+                        </div>  
+
+                    </ul>
+
+                    </div>
+                        
+                </div>
+                
+            </div>
+        </section>
 
     </main>
 <script src="../main.js"></script>
