@@ -5,212 +5,314 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro-W</title>
-
-    <!-- <link rel="stylesheet" href="https://cdn.statically.io/gh/manuelmv15/AstroW/main/css/style.css"> -->
     <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/custom.css">
 
 </head>
 
-<body class="bg-color-blue-dark-3">
-
-    <nav id="inicio" class="navbar-left">
-        <ul>
-            <li><a href="" class="text-black-override">Opcion 1</a></li>
-            <li><a href="" class="text-black-override">Opcion 2</a></li>
-            <li><a href="" class="text-black-override">Opcion 3</a></li>
-        </ul>
-    </nav>
-
-    <div class="grid lg:grid-cols-5 h-auto">
+<body class="bg-color-success-light-4">
 
 
+    <header>
+        <div class="header-wrapper">
+            <div class="left">
+                <div>
+                    <a href="../documentation.html">
+                        <p class=" ">Inicio</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="../formularios/formularios.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Formularios</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="../componentes/componentes.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Componentes</p>
 
-        <div class="bg-color-blue-dark-2 pos-sticky top-0 w-75 h-auto">
-            <ul class="pos-sticky top-0">
-                <li class="mb-2 mt-2"><a href="../documentation.html"
-                        class="no-decoration link-hover-info text-link-light-2 text-2xl">🌌</a>
-                <li><a href="../documentation.html"
-                        class="no-decoration link-hover-info text-red-light-2 text-2xl">Inicio - Instalación</a>
-                </li>
-                <li><a href="introduccion.html" target="main-frame"
-                        class=" no-decoration link-hover-info text-pitch-light-2 text-2xl">Introducción</a>
-                </li>
-                <li><a href="componentes.html"
-                        class="no-decoration link-hover-info text-yellow-light-2 text-2xl">Componentes</a>
-                </li>
-                <li><a href="formularios.html"
-                        class="no-decoration link-hover-info text-danger-light-2 text-2xl">Formularios</a></li>
-                <li><a href="#layout" class="no-decoration link-hover-info text-primary text-2xl">Layout</a></li>
-                <li><a href="utilidades.html"
-                        class="no-decoration link-hover-info text-blue-light-9 text-2xl">Utilidades</a></li>
-            </ul>
+                    </a>
+                </div>
+                <div>
+                    <a href="../layout/layout.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Layout</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="../utilidades/utilidades.html">
+                        <img src="../icons/star.svg" alt="" class="item-icon">
+                        <p class="item-title">Utilidades</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="right">
+
+                <div class="brand">
+                    <img src="../icons/logo.svg" alt="" class="brand-logo">
+                    <span class="brand-name theme-font">AstroW</span>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu" id="menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 🔽 Modal mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="../documentation.html">Inicio</a>
+            <a href="../formularios/formularios.html">Formularios</a>
+            <a href="../componentes/componentes.html">Componentes</a>
+            <a href="../layout/layout.html">Layout</a>
+            <a href="../utilidades/utilidades.html">Utilidades</a>
+        </div>
+    </div>
+
+    <main class="p-2 mt-2 bg-color-blue-dark-6 text-area-gray-light-4 container-bordered-xl" style="overflow: hidden;">
+
+        <h2 class="mt-2 mb-2 title theme-font text-center">FORMULARIOS</h2>
+        <div class="d-flex justify-space-between ai-center">
+            <p>Se proporcionan opciones de diseño y componentes personalizados para crear una amplia variedad de
+                formularios básicos.</p>
+            <a href="https://github.com/manuelmv15/AstroW/blob/main/AstroW/_formulario.scss" target="_blank"
+                class="link-style-info">Ver código fuente</a>
         </div>
 
 
-        <div class="container-full bg-color-blue-dark-3 h-auto col-span-4">
 
-            <div class="row g-4 bg-color-blue-dark-3">
+        <p><br><br><br></p>
+        <div class="mt-1 mb-1">
+            <hr class="h-rule bg-color-info">
+        </div>
 
-                <div class="bg-color-blue-dark-3 lg:col-10 bg-color-blue m-0 m-auto">
+        <div class="d-flex justify-space-between ai-center">
+            <h6 id="botones" class="title mb-1">Clases: form-control y form-label</h6>
+        </div>
 
-                    <main id="main-content" class="bg-color-blue-dark-3 h-auto" >
+        <div class="mt-1 mb-1">
+            <hr class="h-rule bg-color-info">
+        </div>
 
-                        <!-- description -->
-                        <section id="description" class="bg-color-blue-dark-3 p-1 text-area-white">
-                            <h1 class="title text-warning-override pt-2 mb-2">Formularios</h1>
-                            <p class="text-2xl fw-light">
-                                Se proporcionan opciones de diseño y componentes personalizados para crear una amplia
-                                variedad de
-                                formularios básicos.
-                            </p>
-                        </section>
+        <p> Estas
+            clases proporcionan las
+            características esenciales para el diseño de formularios modernos. <br><br>
+        </p>
 
-                        <!-- form-control-label -->
-                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
-                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clases: form-control y form-label</h2>
+        <label class="badge-outlined-info m-2">Ejemplo</label>
 
-                            <p class="text-lg fw-light">
-                                Se proporciona las clases <code>form-control</code> para trabajar con las etiquetas
-                                &lt;input&gt; y &lt;textarea&gt;
-                                y la clase <code>form-label</code> para utilizar con la etiqueta &lt;label&gt;.
-                                Estas
-                                clases proporcionan las
-                                características esenciales para el diseño de formularios modernos. <br><br>
-                            </p>
+        <div class="container bg-color-white pb-2 pt-2 justify-center">
+            <label for="exampleFormControlInput1" class="form-label text-black-override">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="exampleFormControlTextarea1" class="form-label text-black-override">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
+        </div>
 
-                            <div class="container bg-color-white pb-2 pt-2">
-                                <label for="exampleFormControlInput1" class="form-label text-black-override">Email
-                                    address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com">
-                                <label for="exampleFormControlTextarea1" class="form-label text-black-override">Example
-                                    textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
+        <div class="mt-2">
 
+            <ul class="">
+                <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">formr-control</span>:
+                    Para trabajar con las etiquetas
+                    &lt;input&gt; y &lt;textarea&gt;</li>
+                <li class="m-1"><span class="text-md text-red bg-color-primary-dark-9 br fw-bold">form-label</span>:
+                    Para utilizar con la etiqueta &lt;label&gt;.</li>
 
-                            <div class="code-container text-sm">
-                                <div class="code-header">Código: HTML</div>
-                                <div class="code-body">
-                                    <code>
+            </ul>
+        </div>
+
+        <label class="badge-outlined-info m-2">Ejemplo en html</label>
+
+        <div class="d-flex justify-center br">
+            <!-- para envolver el code -->
+            <div class="max-w-75">
+                <pre><code class="language-html">
 &lt;label for="exampleFormControlInput1" class="form-label text-black-override"&gt;Email address&lt;/label&gt;
 &lt;input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"&gt;
 &lt;label for="exampleFormControlTextarea1" class="form-label text-black-override"&gt;Example textarea&lt;/label&gt;
-&lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;
-                            </code>
-                                </div>
-                            </div>
-
-                        </section>
+&lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&gt;&lt;/textarea&gt;    
+                </code></pre>
+            </div>
+        </div>
 
 
-                        <!-- form-control-plaintext -->
-                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
-                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clase: form-control-plaintext</h2>
-
-                            <p class="text-lg fw-light">
-                                La clase <code>form-control-plaintext</code> se usa cuando se desea que los elementos
-                                del formulario tengan el estilo de
-                                texto sin formato. Se usa con las etiqueta &lt;input&gt;. <br> <br>
-                            </p>
 
 
-                            <div class="container bg-color-white pb-2 pt-2">
-                                <label for="staticEmail" class="text-black-override form-label">Email</label>
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail"
-                                    value="email@example.com">
-                            </div>
+        <p><br><br><br></p>
+        <div class="mt-1 mb-1">
+            <hr class="h-rule bg-color-info">
+        </div>
 
-                            <div class="code-container text-sm">
-                                <div class="code-header">Código: HTML</div>
-                                <div class="code-body">
-                                    <code>
+        <div class="d-flex justify-space-between ai-center">
+            <h6 id="botones" class="title mb-1">Clase: form-control-plaintext</h6>
+        </div>
+
+        <div class="mt-1 mb-1">
+            <hr class="h-rule bg-color-info">
+        </div>
+
+        <div class="mt-1 mb-1">
+            <div class="d-flex justify-space-between">
+                <label class="badge-outlined-info">Ejemplo</label>
+            </div>
+            <br>
+            <div class="container bg-color-white row ai-center">
+                <label for="staticEmail" class="text-black-override form-label">Email</label>
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+
+            <div class="mt-2">
+                <ul class="">
+                    <li class="m-1"><span
+                            class="text-md text-red bg-color-primary-dark-9 br fw-bold">form-control-plaintext</span>:
+                        se usa cuando se desea que los elementos
+                        del formulario tengan el estilo de
+                        texto sin formato. Se usa con las etiqueta &lt;input&gt;. <br> <br>
+                    </li>
+                </ul>
+            </div>
+
+
+            <label class="badge-outlined-info">Ejemplo en html</label>
+            <div class="max-w-75 m-auto">
+                <pre><code class="language-html">
 &lt;label for="staticEmail" class="text-black-override form-label"&gt;Email&lt;/label&gt;
 &lt;input type="text" readonly class="form-control-plaintext" id="staticEmail"
-value="email@example.com"&gt;
-                                    </code>
-                                </div>
-                            </div>
-
-                        </section>
+value="email@example.com"&gt;   
+</code></pre>
+            </div>
 
 
-                        <!-- input-group e input-group-text -->
-                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
-                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clases: input-group e input-group-text
-                            </h2>
-
-                            <p class="text-lg fw-light">
-                                La clase <code>input-group</code> se usa en contenedores como &lt;div&gt; cuyos
-                                elementos
-                                hacen usa de la clase <code>input-group-text</code>. La clase
-                                <code>input-group-text</code> se usa
-                                generalmente con &lt;span&gt; <br> <br>
-                            </p>
 
 
-                            <div class="container bg-color-white pb-2 pt-2">
-                                <div class="text-black-override input-group">
-                                    <span class="text-black-override input-group-text">@</span>
-                                    <input type="text" class="form-control" placeholder="Username">
-                                </div>
-                            </div>
+            <p><br><br><br></p>
+            <div class="mt-1 mb-1">
+                <hr class="h-rule bg-color-info">
+            </div>
 
-                            <div class="code-container text-sm">
-                                <div class="code-header">Código: HTML</div>
-                                <div class="code-body">
-                                    <code>
+            <div class="d-flex justify-space-between ai-center">
+                <h6 id="botones" class="title mb-1">Clases: input-group e input-group-text</h6>
+            </div>
+
+            <div class="mt-1 mb-1">
+                <hr class="h-rule bg-color-info">
+            </div>
+
+            <div class="mt-1 mb-1">
+                <div class="d-flex justify-space-between">
+                    <label class="badge-outlined-info">Ejemplo</label>
+                </div>
+                <br>
+                <div class="text-black-override input-group p-2">
+                    <span class="text-black-override input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+
+                <div class="mt-2">
+                    <ul class="">
+                        <li class="m-1"><span
+                                class="text-md text-red bg-color-primary-dark-9 br fw-bold">input-group</span>:
+                            se usa en contenedores como &lt;div&gt; cuyos
+                            elementos
+                            hacen usa de la clase <code>input-group-text</code>
+                        </li>
+                        <li class="m-1"><span
+                                class="text-md text-red bg-color-primary-dark-9 br fw-bold">input-group-text</span>:
+                            se usa
+                            generalmente con &lt;span&gt;
+                        </li>
+                    </ul>
+                </div>
+
+
+                <label class="badge-outlined-info">Ejemplo en html</label>
+                <div class="max-w-75 m-auto">
+                    <pre><code class="language-html">
 &lt;div class="text-black-override input-group"&gt;                                       
-    &lt;span class="text-black-override input-group-text"&gt;@&lt;/span&gt;
-    &lt;input type="text" class="form-control" placeholder="Username"&gt;
+&lt;span class="text-black-override input-group-text"&gt;@&lt;/span&gt;
+&lt;input type="text" class="form-control" placeholder="Username"&gt;
 &lt;/div&gt;
-                                    </code>
-                                </div>
-                            </div>
-
-                        </section>
+    </code></pre>
+                </div>
 
 
-                        <!-- form-check, form-check-input y form-check-label -->
-                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
-                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clases: form-check, form-check-input y
-                                form-check-label
-                            </h2>
 
-                            <p class="text-lg fw-light">
-                                La clase <code>form-check</code> se usa en contenedores como &lt;div&gt; cuyos
+
+
+                <p><br><br><br></p>
+                <div class="mt-1 mb-1">
+                    <hr class="h-rule bg-color-info">
+                </div>
+
+                <div class="d-flex justify-space-between ai-center">
+                    <h6 id="botones" class="title mb-1">Clases: form-check, form-check-input y form-check-label</h6>
+                </div>
+
+                <div class="mt-1 mb-1">
+                    <hr class="h-rule bg-color-info">
+                </div>
+
+                <div class="mt-1 mb-1">
+                    <div class="d-flex justify-space-between">
+                        <label class="badge-outlined-info">Ejemplo</label>
+                    </div>
+                    <br>
+                    <div class="container bg-color-white ai-center">
+                        <div class="text-black-override p-1 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="text-black-override p-1 form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
+                                Default radio
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mt-2">
+                        <ul class="">
+                            <li class="m-1"><span
+                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold">form-check</span>:
+                                se usa en contenedores como &lt;div&gt; cuyos
                                 elementos
-                                hacen usa de las clases <code>form-check-input</code> (Para &lt;input&gt; de tipo
-                                checkbox) y <code>form-check-label</code> (Para &lt;labe&gt;). Estas
-                                clases en conjunto permiten crear Checks y radios. <br> <br>
-                            </p>
+                                hacen usa de las clases <code>form-check-input</code>
+                            </li>
+                            <li class="m-1"><span
+                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold">form-check-input</span>:
+                                para &lt;input&gt; de tipo
+                                checkbox
+                            </li>
+                            <li class="m-1"><span
+                                    class="text-md text-red bg-color-primary-dark-9 br fw-bold">form-check-label</span>:
+                                para el texto que aprarece junto al check
+                            </li>
+                        </ul>
+                    </div>
 
 
-                            <div class="container bg-color-white pb-2 pt-2">
-                                <div class="text-black-override form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                    <label class="form-check-label" for="checkDefault">
-                                        Default checkbox
-                                    </label>
-                                </div>
-                                <div class="text-black-override form-check">
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                                    <label class="form-check-label" for="radioDefault1">
-                                        Default radio
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="code-container text-sm">
-                                <div class="code-header">Código: HTML</div>
-                                <div class="code-body">
-                                    <code>
+                    <label class="badge-outlined-info">Ejemplo en html</label>
+                    <div class="max-w-75 m-auto">
+                        <pre><code class="language-html">
 &lt;div class=&quot;text-black-override form-check&quot;&gt;
-    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;checkDefault&quot;&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;checkDefault&quot;&gt;
-        Default checkbox
-    &lt;/label&gt;
+&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;checkDefault&quot;&gt;
+&lt;label class=&quot;form-check-label&quot; for=&quot;checkDefault&quot;&gt;
+    Default checkbox
+&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;text-black-override form-check&quot;&gt;
     &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;radioDefault&quot; id=&quot;radioDefault1&quot;&gt;
@@ -218,49 +320,62 @@ value="email@example.com"&gt;
         Default radio
     &lt;/label&gt;
 &lt;/div&gt;
-                                    </code>
-                                </div>
-                            </div>
-
-                        </section>
+        </code></pre>
+                    </div>
 
 
-                        <!-- input-group e input-group-text -->
-                        <section id="form-control-label" class="bg-color-blue-dark-3 p-1 text-area-white">
-                            <h2 class="text-3xl text-warning-override pt-2 pb-2">Clase: form-range
-                            </h2>
-
-                            <p class="text-lg fw-light">
-                                La clase <code>form-range</code> se usa para crear rango personalizadas
-                                junto con la etiqueta @&lt;range&gt; <br> <br>
-                            </p>
 
 
-                            <div class="container bg-color-white pb-2 pt-2">
-                                <label for="customRange1" class="text-black-override form-label">Example range</label>
-                                <input type="range" class="form-range" id="customRange1">
-                            </div>
+                    <p><br><br><br></p>
+                    <div class="mt-1 mb-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
 
-                            <div class="code-container text-sm">
-                                <div class="code-header">Código: HTML</div>
-                                <div class="code-body">
-                                    <code>
+                    <div class="d-flex justify-space-between ai-center">
+                        <h6 id="botones" class="title mb-1">Clase: form-range</h6>
+                    </div>
+
+                    <div class="mt-1 mb-1">
+                        <hr class="h-rule bg-color-info">
+                    </div>
+
+                    <div class="mt-1 mb-1">
+                        <div class="d-flex justify-space-between">
+                            <label class="badge-outlined-info">Ejemplo</label>
+                        </div>
+                        <br>
+                        <div class="container bg-color-white pb-2 pt-2">
+                            <label for="customRange1" class="text-black-override form-label">Example range</label>
+                            <input type="range" class="form-range" id="customRange1">
+                        </div>
+
+                        <div class="mt-2">
+                            <ul class="">
+                                <li class="m-1"><span
+                                        class="text-md text-red bg-color-primary-dark-9 br fw-bold">form-range</span>:
+                                    se usa para crear rangos personalizadas
+                                    junto con la etiqueta &lt;range&gt; <br> <br>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <label class="badge-outlined-info">Ejemplo en html</label>
+                        <div class="max-w-75 m-auto">
+                            <pre><code class="language-html">
 &lt;label for="customRange1" class="text-black-override form-label"&gt; Example range&lt;/label&gt;  
 &lt;input type="range" class="form-range" id="customRange1"&gt;
-                                    </code>
-                                </div>
-                            </div>
+value="email@example.com"&gt;   
+            </code></pre>
+                        </div>
 
-                        </section>
 
-                    </main>
 
-                </div>
+    </main>
 
-            </div>
-
-        </div>
-    </div>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-html.min.js"></script>
 
 </body>
 
