@@ -1,0 +1,113 @@
+
+
+// _alerts.scss
+@use '../utilidades/variables' as *;
+@use "sass:color";
+
+$alert-colors: $colors !default;
+
+.alert {
+  padding: 1.25rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  border-left: 4px solid;
+  position: relative;
+  font-family: system-ui, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background-size: contain;
+  }
+}
+
+@each $name, $color in $alert-colors {
+  .alert-#{$name} {
+    border-color: $color;
+    color: if(
+      color.lightness($color) > 70,
+      color.adjust($color, $lightness: -40%),
+      color.adjust($color, $lightness: 10%)
+    );
+    
+    background-color: rgba($color, 0.08);
+    
+    &::before {
+      @if $name == "success" {
+        content: "✓";
+      } @else if $name == "danger" {
+        content: "!";
+      } @else if $name == "warning" {
+        content: "⚠";
+      } @else if $name == "info" {
+        content: "i";
+      }
+      
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color;
+      border: 2px solid $color;
+      border-radius: 50%;
+      font-size: 0.9em;
+    }
+    
+    // Variante oscura
+    // color.channel($color, $lightness, $space: hsl) > 70,
+    &.alert-filled {
+      background-color: $color;
+      color: if(
+        color.lightness($color) > 70,
+        #333,
+        white
+      );
+      
+      &::before {
+        color: inherit;
+        border-color: currentColor;
+      }
+    }
+  }
+}
+
+// Variantes especiales
+.alert-accent {
+  border-left-width: 8px;
+}
+
+.alert-close {
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0 0 0 1rem;
+  background: none;
+  border: 0;
+  opacity: 0.6;
+  
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// Ejemplo de HTML para probar
+/*
+<div class="alert alert-success">
+  Operación completada exitosamente
+  <button class="alert-close" aria-label="Cerrar">×</button>
+</div>
+
+<div class="alert alert-danger alert-filled">
+  Error crítico en el sistema
+</div>
+
+<div class="alert alert-info alert-accent">
+  Nueva actualización disponible
+</div>
+*/

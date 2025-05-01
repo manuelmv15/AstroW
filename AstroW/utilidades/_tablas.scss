@@ -1,4 +1,4 @@
-// Variables sugeridas (ajustá según tu sistema de diseño)
+
 $border-color: #e2e8f0;
 $header-bg: #471ec5;
 $header-color: #c3b8b8;
@@ -7,13 +7,13 @@ $font-size: 0.95rem;
 $font-mono: 'Courier New', Courier, monospace;
 $table-radius: 0.5rem;
 
-// Responsivo: scroll horizontal en pantallas pequeñas
+
 .table-responsive {
   width: 100%;
   overflow-x: auto;
 }
 
-// Estilo base para tabla
+
 .custom-table {
   width: 100%;
   border-collapse: collapse;

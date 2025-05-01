@@ -431,24 +431,74 @@
         
         <span class="m-1 badge-soft-purple">Ejemplo HTML</span>
         
-        <div class="m-auto max-w-75">
+        <div class="m-auto max-w-75 mb-3">
             <pre class="br" style="border: 1px solid snow;"><code class="language-html">
-&lt;div class="row flex-wrap justify-space-between ai-center"&gt;
-    &lt;div class="col-4 bg-color-info-light-6 br"&gt;Col 4&lt;/div&gt;
-    &lt;div class="col-4 bg-color-info-light-6 br flex-1"&gt;Flex 1&lt;/div&gt;
-    &lt;div class="col-2 bg-color-info-light-6 br order-1"&gt;Order 1&lt;/div&gt;
-    &lt;div class="col-2 bg-color-info-light-6 br as-baseline"&gt;Align Self&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-2 bg-color-info-light-6 br"&gt;Col 4&lt;/div&gt;
+    &lt;div class="flex-1 bg-color-info-light-6 br flex-1"&gt;Flex 1&lt;/div&gt;
+    &lt;div class="col-2 n-order-1 bg-color-info-light-6 br order-1"&gt;Order 1&lt;/div&gt;
+    &lt;div class="col-2 as-flex-end bg-color-info-light-6 br as-baseline"&gt;Align Self&lt;/div&gt;
 &lt;/div&gt;
             </code></pre>
+
+            <div class="mt-1">
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.col-2</code> establece un ancho proporcional (2 de 12 columnas).</li>
+                  <li><code class="language-html">.flex-1</code> permite que el elemento crezca y ocupe el espacio restante.</li>
+                  <li><code class="language-html">.n-order-1</code> cambia el orden de visualización del elemento (posición negativa).</li>
+                  <li><code class="language-html">.as-baseline</code> alinea individualmente el ítem con <code>align-self: flex end</code>.</li>
+                </ul>
+            </div>
+
         </div>
         
-        <div class="row flex-wrap ai-center container-flow bg-color-purple m-auto mt-2 text-is-centered br bg-color-danger"
+
+        <div class="row flex-wrap container-flow bg-color-purple m-auto mt-2 text-is-centered br bg-color-danger"
             style="min-height: 7rem;">
-            <div class="col-4" style="border:1px solid black;">Col 4</div>
-            <div class="col-4 flex-1" style="border:1px solid black;">Flex 1</div>
-            <div class="col-2 order-1" style="border:1px solid black;">Order 1</div>
-            <div class="col-2 as-baseline" style="border:1px solid black;">Align Self</div>
+            <div class="col-2" style="border:1px solid black;">Col 4</div>
+            <div class="flex-1" style="border:1px solid black;">Flex 1</div>
+            <div class="col-2 n-order-1" style="border:1px solid black;">Order 1</div>
+            <div class="col-2 as-flex-end" style="border:1px solid black;">Align Self</div>
         </div>
+
+        <h2 class="m-1 text-xl mt-4 fw-600">Responsive con Flex y Columnas</h2>
+        <div class="m-1">
+            <hr class="h-rule bg-color-pitch">
+        </div>
+        <p class="mb-1">
+            Este ejemplo muestra cómo el sistema <code class="language-html">flex</code> junto con las utilidades responsive de columnas (<code class="language-html">.col-12</code>, <code class="language-html">.md:col-6</code>, <code class="language-html">.xl:col-3</code>) permite crear diseños adaptables. 
+            A medida que el ancho de la pantalla cambia, las columnas se reorganizan para ajustarse según el punto de quiebre definido.
+        </p>
+
+        <div class="row m-auto mt-2 text-is-centered br bg-color-danger borders-are-rounded text-area-danger" style="min-height: 7rem;">
+            <div class="bg-color-primary col-12 md:col-6 xl:col-3 ai-center d-flex justify-center" style="border: 1px solid snow;">1</div>
+            <div class="bg-color-primary col-12 md:col-6 xl:col-3 ai-center d-flex justify-center" style="border: 1px solid snow;">2</div>
+            <div class="bg-color-primary col-12 md:col-6 xl:col-3 ai-center d-flex justify-center" style="border: 1px solid snow;">3</div>
+            <div class="bg-color-primary col-12 md:col-6 xl:col-3 ai-center d-flex justify-center" style="border: 1px solid snow;">4</div>
+            <div class="bg-color-primary flex-1 ai-center d-flex justify-center" style="border: 1px solid snow;">FLEX 1</div>
+        </div>
+
+        <div class="m-auto max-w-75 mt-1 mb-3">
+            <pre class="br" style="border: 1px solid snow;"><code class="language-html">
+&lt;div class="row"&gt;
+    &lt;div class="col-12 md:col-6 xl:col-3 ai-center d-flex justify-center"&gt;1&lt;/div&gt;
+    &lt;div class="col-12 md:col-6 xl:col-3 ai-center d-flex justify-center"&gt;2&lt;/div&gt;
+    &lt;div class="col-12 md:col-6 xl:col-3 ai-center d-flex justify-center"&gt;3&lt;/div&gt;
+    &lt;div class="col-12 md:col-6 xl:col-3 ai-center d-flex justify-center"&gt;4&lt;/div&gt;
+    &lt;div class="flex-1 ai-center d-flex justify-center"&gt;FLEX 1&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+            <div class="mt-1">
+                <ul class="pl-3 list-orange text-sm">
+                  <li><code class="language-html">.col-12</code> indica que el elemento ocupa todo el ancho en pantallas pequeñas.</li>
+                  <li><code class="language-html">.md:col-6</code> cambia el ancho a 6/12 (50%) desde pantallas medianas en adelante.</li>
+                  <li><code class="language-html">.xl:col-3</code> cambia a 3/12 (25%) en pantallas extra grandes.</li>
+                  <li><code class="language-html">.flex-1</code> permite que el último ítem se expanda y ocupe el espacio restante.</li>
+                  <li><code class="language-html">.ai-center</code> y <code class="language-html">.justify-center</code> centran el contenido vertical y horizontalmente dentro de cada celda.</li>
+                </ul>
+            </div>
+
+          </div>
 
 
 
