@@ -8,7 +8,6 @@
 
 ### Librería de estilos CSS inspirada en el álbum *ASTROWORLD* de Travis Scott
 
-[Documentación](https://manuelmv15.github.io/) · [Componentes](https://manuelmv15.github.io/componentes/componentes.html) · [Formularios](https://manuelmv15.github.io/formularios/formularios.html) · [Layout](https://manuelmv15.github.io/layout/layout.html) · [Utilidades](https://manuelmv15.github.io/utilidades/utilidades.html)
 
 ![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat&logo=sass&logoColor=white)
 ![Gulp](https://img.shields.io/badge/Gulp-CF4647?style=flat&logo=gulp&logoColor=white)
@@ -85,7 +84,17 @@ Luego enlaza el archivo compilado `css/style.css`:
 | **Colores** | `.bg-color-{color}`, con tonos `-light-1` a `-light-9` y `-dark-1` a `-dark-9` |
 | **Texto** | `.text-is-left`, `.text-is-centered`, `.text-is-right` |
 
-La guía completa, con ejemplos de cada componente, está en la [documentación](https://manuelmv15.github.io/).
+## Documentación
+
+La carpeta [`docs/`](docs/) tiene la guía completa, con ejemplos de cada componente. Para verla, clona el repositorio y abre `docs/documentation.html` en tu navegador.
+
+| Página | Archivo |
+|---|---|
+| Inicio | [`docs/documentation.html`](docs/documentation.html) |
+| Componentes | [`docs/componentes/componentes.html`](docs/componentes/componentes.html) |
+| Formularios | [`docs/formularios/formularios.html`](docs/formularios/formularios.html) |
+| Layout | [`docs/layout/layout.html`](docs/layout/layout.html) |
+| Utilidades | [`docs/utilidades/utilidades.html`](docs/utilidades/utilidades.html) |
 
 ## Paleta de colores
 
